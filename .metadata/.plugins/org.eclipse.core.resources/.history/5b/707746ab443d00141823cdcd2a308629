@@ -1,0 +1,15 @@
+class SimpleDate {
+public:
+	static const double SPEED_OF_LIGHT;
+	double distanceToSun(int days_of_year);
+	double orbitDuration();
+	static bool isNightTime();
+	int getMonth() const;
+	int getDay() const;
+	int getYear() const;
+	int dayOfWeek();
+	static const int daysInMonths[];
+	//const string MONTHS[];
+private:
+
+};

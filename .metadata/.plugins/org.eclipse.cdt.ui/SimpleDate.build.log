@@ -1,0 +1,27 @@
+15:57:26 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:7: error: invalid use of 'this' in non-member function
+  if (!this->isValidDate(month, day, year)) {
+       ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:98:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n) {
+ ^
+
+15:57:27 Build Finished (took 691ms)
+

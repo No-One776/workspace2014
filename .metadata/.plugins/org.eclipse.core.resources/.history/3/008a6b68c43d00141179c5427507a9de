@@ -1,0 +1,19 @@
+class SimpleDate {
+public:
+	int getMonth() const;
+	int getDay() const;
+	int getYear() const;
+	int dayOfWeek();
+	static const int MIN_YEAR;
+	bool isLeapYear(int year);
+	bool isLeapYear();
+	//std::string MONTHS[];
+
+private:
+	int daysInYear(int year);
+	static const int daysInMonths[];
+	static const int DAYS_THUS_FAR[];
+	static const int NUM_MONTHS;
+	int daysInMonth(int month, int year);
+	bool isValidDate(int month, int day, int year);
+};

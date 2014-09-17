@@ -1,0 +1,11 @@
+class SimpleDate {
+public:
+	int getMonth() const;
+	int getDay() const;
+	int getYear() const;
+	int dayOfWeek();
+	static const int daysInMonths[];
+	//std::string MONTHS[];
+private:
+
+};

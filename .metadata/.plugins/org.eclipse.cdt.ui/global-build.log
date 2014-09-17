@@ -1,0 +1,2094 @@
+21:15:57 **** Rebuild of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:26: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+  return daysInMonth[month];
+                          ^
+..\src\SimpleDate.cpp:42:26: error: invalid conversion from 'int (*)(int, int)' to 'int' [-fpermissive]
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:17:21 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:26: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+  return daysInMonth[month];
+                          ^
+..\src\SimpleDate.cpp:42:26: error: invalid conversion from 'int (*)(int, int)' to 'int' [-fpermissive]
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:17:30 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:26: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+  return daysInMonth[month];
+                          ^
+..\src\SimpleDate.cpp:42:26: error: invalid conversion from 'int (*)(int, int)' to 'int' [-fpermissive]
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:23:13 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:16:32: error: 'const int SimpleDate::MY_ARRAY []' is not a static member of 'class SimpleDate'
+ const int SimpleDate::MY_ARRAY[] = { 20, 30, 6, 77 };
+                                ^
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:26: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+  return daysInMonth[month];
+                          ^
+..\src\SimpleDate.cpp:42:26: error: invalid conversion from 'int (*)(int, int)' to 'int' [-fpermissive]
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:24:23 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:16:35: error: 'const int SimpleDate::daysInMonth []' is not a static member of 'class SimpleDate'
+ const int SimpleDate::daysInMonth[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+                                   ^
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:26: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+  return daysInMonth[month];
+                          ^
+..\src\SimpleDate.cpp:42:26: error: invalid conversion from 'int (*)(int, int)' to 'int' [-fpermissive]
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:24:31 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:26: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+  return daysInMonth[month];
+                          ^
+..\src\SimpleDate.cpp:42:26: error: invalid conversion from 'int (*)(int, int)' to 'int' [-fpermissive]
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:24:38 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:9: error: 'daysInMonths' was not declared in this scope
+  return daysInMonths[month];
+         ^
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:24:54 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:33:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:35: error: 'isLeapYear' was not declared in this scope
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp:42:15: error: 'daysInMonths' was not declared in this scope
+  return (int) daysInMonths[month];
+               ^
+..\src\SimpleDate.cpp:38:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:26:42 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:37:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:46:9: error: 'daysInMonths' was not declared in this scope
+  return daysInMonths[month];
+         ^
+..\src\SimpleDate.cpp:42:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:27:01 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:39:9: error: 'daysInMonths' was not declared in this scope
+  return daysInMonths[month];
+         ^
+..\src\SimpleDate.cpp:35:6: warning: unused variable 'days' [-Wunused-variable]
+  int days = 0;
+      ^
+..\src\SimpleDate.cpp:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:27:43 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] =
+ ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:16:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+           ^
+..\src\SimpleDate.cpp:38:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:29:05 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:20:1: error: 'string' does not name a type
+ string SimpleDate::MONTHS[] = { "", "January", "February", "March", "April",
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:29:13 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:20:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March", "April",
+       ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:29:54 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March", "April",
+       ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:37:37: error: invalid use of qualified-name 'SimpleDate::daysInMonths'
+  const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+                                     ^
+..\src\SimpleDate.cpp:39:9: error: 'daysInMonths' is not a member of 'SimpleDate'
+  return SimpleDate::daysInMonths[month];
+         ^
+..\src\SimpleDate.cpp:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:30:10 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:19:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March", "April",
+       ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:37:37: error: invalid use of qualified-name 'SimpleDate::daysInMonths'
+  const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+                                     ^
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:19: error: 'const int SimpleDate::daysInMonths []' is private
+  static const int daysInMonths[];
+                   ^
+..\src\SimpleDate.cpp:39:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:30:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:20:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March", "April",
+       ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:30:50 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:20:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March", "April",
+       ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:31:12 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:20:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March", "April",
+       ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:32:54 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:21:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+21:35:27 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:23:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:33:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)){
+                                   ^
+21:35:46 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:23:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+21:36:43 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:23:7: error: 'string' does not name a type
+ const string[] SimpleDate::MONTHS = { "", "January", "February", "March",
+       ^
+21:36:53 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:23:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS = { "", "January", "February", "March",
+       ^
+21:38:26 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:11:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:22:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+21:48:19 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:22:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:39:35: error: invalid use of 'this' in non-member function
+  for (int year = MIN_YEAR; year < this.year; year++)
+                                   ^
+..\src\SimpleDate.cpp:40:33: error: 'daysInYear' was not declared in this scope
+   daysElapsed += daysInYear(year);
+                                 ^
+..\src\SimpleDate.cpp:42:29: error: 'ordinalDate' was not declared in this scope
+  daysElapsed += ordinalDate();
+                             ^
+21:48:46 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:22:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:40:30: error: 'daysInYear' was not declared in this scope
+   daysElapsed += daysInYear(y);
+                              ^
+..\src\SimpleDate.cpp:42:29: error: 'ordinalDate' was not declared in this scope
+  daysElapsed += ordinalDate();
+                             ^
+21:49:16 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:22:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:46:29: error: 'ordinalDate' was not declared in this scope
+  daysElapsed += ordinalDate();
+                             ^
+21:50:14 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:22:7: error: 'string' does not name a type
+ const string SimpleDate::MONTHS[] = { "", "January", "February", "March",
+       ^
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:42:15: error: 'DAYS_THUS_FAR' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+               ^
+..\src\SimpleDate.cpp:43:17: error: too few arguments to function 'bool isLeapYear(int)'
+  if (isLeapYear() && month > 2) {
+                 ^
+..\src\SimpleDate.cpp:27:6: note: declared here
+ bool isLeapYear(int year) {
+      ^
+21:52:00 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:45:17: error: too few arguments to function 'bool isLeapYear(int)'
+  if (isLeapYear() && month > 2) {
+                 ^
+..\src\SimpleDate.cpp:29:6: note: declared here
+ bool isLeapYear(int year) {
+      ^
+21:52:16 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+21:53:04 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:9:0:
+..\src\SimpleDate.h:12:8: error: 'string' does not name a type
+  const string MONTHS[];
+        ^
+21:54:12 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:45:46: error: expected primary-expression before ';' token
+  (isLeapYear(year) && month > 2) ? answer++: ;
+                                              ^
+21:54:19 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:45:46: error: expected primary-expression before 'continue'
+  (isLeapYear(year) && month > 2) ? answer++: continue;
+                                              ^
+..\src\SimpleDate.cpp:45:46: error: expected ';' before 'continue'
+21:54:29 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+21:56:43 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+21:59:15 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:84:26: error: expected ')' before 'other'
+ int compareTo(SimpleDate other) {
+                          ^
+..\src\SimpleDate.cpp:84:31: error: invalid conversion from 'void (*)(int, int, int)' to 'int' [-fpermissive]
+ int compareTo(SimpleDate other) {
+                               ^
+..\src\SimpleDate.cpp:84:33: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate other) {
+                                 ^
+21:59:31 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:84:15: error: 'other' is not a member of 'SimpleDate'
+ int compareTo(SimpleDate::other) {
+               ^
+..\src\SimpleDate.cpp:84:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate::other) {
+                                  ^
+21:59:59 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:84:39: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate::SimpleDate& other) {
+                                       ^
+..\src\SimpleDate.cpp:84:46: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate::SimpleDate& other) {
+                                              ^
+12:48:49 **** Rebuild of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:84:26: error: expected ')' before 'other'
+ int compareTo(SimpleDate other) {
+                          ^
+..\src\SimpleDate.cpp:84:31: error: invalid conversion from 'void (*)(int, int, int)' to 'int' [-fpermissive]
+ int compareTo(SimpleDate other) {
+                               ^
+..\src\SimpleDate.cpp:84:33: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate other) {
+                                 ^
+12:50:21 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+12:56:54 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+12:57:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:8:8: error: 'string' in namespace 'std' does not name a type
+  const std::string MONTHS[];
+        ^
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+12:58:29 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:8:2: error: 'string' in namespace 'std' does not name a type
+  std::string MONTHS[];
+  ^
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+12:58:36 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:04:35 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:13:26: error: expected ';' at end of member declaration
+  const int DAYS_THUS_FAR[]
+                          ^
+..\src\SimpleDate.h:13:26: warning: non-static const member 'const int SimpleDate::DAYS_THUS_FAR [0]' in class without a constructor [-Wuninitialized]
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:04:45 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:13:26: warning: non-static const member 'const int SimpleDate::DAYS_THUS_FAR [0]' in class without a constructor [-Wuninitialized]
+  const int DAYS_THUS_FAR[];
+                          ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:04:56 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:05:23 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:14:12: warning: non-static const member 'const int SimpleDate::MIN_YEAR' in class without a constructor [-Wuninitialized]
+  const int MIN_YEAR;
+            ^
+..\src\SimpleDate.h:15:12: warning: non-static const member 'const int SimpleDate::NUM_MONTHS' in class without a constructor [-Wuninitialized]
+  const int NUM_MONTHS;
+            ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:05:34 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:05:56 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.h:12:19: error: 'const int SimpleDate::daysInMonths []' is private
+  static const int daysInMonths[];
+                   ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:06:09 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:06:36 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:07:46 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:8:26: error: expected ';' at end of member declaration
+  bool isLeapYear(int year)
+                          ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:07:58 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:32:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:96:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:08:30 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:14:11: error: 'const int SimpleDate::daysInMonths [13]' is private
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:36:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:08:48 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:09:06 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:09:17 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.h:14:19: error: 'const int SimpleDate::daysInMonths []' is private
+  static const int daysInMonths[];
+                   ^
+..\src\SimpleDate.cpp:36:21: error: within this context
+  return SimpleDate::daysInMonths[month];
+                     ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:09:28 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:10:37 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:10:50 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:11:35 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:11:57 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:20:2: error: 'string' in namespace 'std' does not name a type
+  std::string MONTHS[];
+  ^
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:12:04 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:20:9: error: 'string' in namespace 'std' does not name a type
+  static std::string MONTHS[];
+         ^
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:12:07 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:20:15: error: 'string' in namespace 'std' does not name a type
+  static const std::string MONTHS[];
+               ^
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:12:11 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:13:23 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:8:38: error: expected '(' before 'std'
+  SimpleDate daysFromNow(int n) throw std::invalid_agument;
+                                      ^
+..\src\SimpleDate.h:8:38: error: expected type-specifier
+..\src\SimpleDate.h:8:38: error: expected ')'
+..\src\SimpleDate.h:8:32: error: expected ';' at end of member declaration
+  SimpleDate daysFromNow(int n) throw std::invalid_agument;
+                                ^
+..\src\SimpleDate.h:8:43: error: using-declaration for non-member at class scope
+  SimpleDate daysFromNow(int n) throw std::invalid_agument;
+                                           ^
+..\src\SimpleDate.cpp:100:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n)
+ ^
+13:13:45 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+13:14:51 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+13:15:46 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:13:52: error: return type specification for constructor invalid
+  void SimpleDate(int monthin, int dayin, int yearin);
+                                                    ^
+13:15:59 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+13:16:07 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:66:12: error: expected unqualified-id before 'int'
+ SimpleDate(int monthin, int dayin, int yearin) {
+            ^
+..\src\SimpleDate.cpp:66:12: error: expected ')' before 'int'
+13:16:16 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+14:01:57 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:84:15: error: non-member function 'int getYear()' cannot have cv-qualifier
+ int getYear() const {
+               ^
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate& other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate& other) {
+                                  ^
+14:02:17 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate& other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate& other) {
+                                  ^
+15:25:18 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate& other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate& other) {
+                                  ^
+15:25:32 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+15:31:57 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, day = 0, year = 0;
+                 ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:36:9: error: 'daysInMonths' was not declared in this scope
+  return daysInMonths[month];
+         ^
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:44:15: error: 'DAYS_THUS_FAR' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+               ^
+..\src\SimpleDate.cpp:44:29: error: 'month' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                             ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:51:15: error: 'MIN_YEAR' was not declared in this scope
+  for (int y = MIN_YEAR; y < year; y++)
+               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:32:12 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, year = 0;
+                                        ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:36:9: error: 'daysInMonths' was not declared in this scope
+  return daysInMonths[month];
+         ^
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:44:15: error: 'DAYS_THUS_FAR' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+               ^
+..\src\SimpleDate.cpp:44:29: error: 'month' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                             ^
+..\src\SimpleDate.cpp:44:38: error: 'day' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                                      ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:51:15: error: 'MIN_YEAR' was not declared in this scope
+  for (int y = MIN_YEAR; y < year; y++)
+               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'int daysInMonth(int, int)':
+..\src\SimpleDate.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:32:24 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'int daysInYear(int)':
+..\src\SimpleDate.cpp:40:24: error: 'isLeapYear' was not declared in this scope
+  return isLeapYear(year) ? 366 : 365;
+                        ^
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:44:15: error: 'DAYS_THUS_FAR' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+               ^
+..\src\SimpleDate.cpp:44:29: error: 'month' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                             ^
+..\src\SimpleDate.cpp:44:38: error: 'day' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                                      ^
+..\src\SimpleDate.cpp:45:14: error: 'year' was not declared in this scope
+  (isLeapYear(year) && month > 2) ? answer++ : 0;
+              ^
+..\src\SimpleDate.cpp:45:18: error: 'isLeapYear' was not declared in this scope
+  (isLeapYear(year) && month > 2) ? answer++ : 0;
+                  ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:51:15: error: 'MIN_YEAR' was not declared in this scope
+  for (int y = MIN_YEAR; y < year; y++)
+               ^
+..\src\SimpleDate.cpp:51:29: error: 'year' was not declared in this scope
+  for (int y = MIN_YEAR; y < year; y++)
+                             ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'int daysInYear(int)':
+..\src\SimpleDate.cpp:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:32:49 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'int daysInYear(int)':
+..\src\SimpleDate.cpp:40:24: error: 'isLeapYear' was not declared in this scope
+  return isLeapYear(year) ? 366 : 365;
+                        ^
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:44:15: error: 'DAYS_THUS_FAR' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+               ^
+..\src\SimpleDate.cpp:44:29: error: 'month' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                             ^
+..\src\SimpleDate.cpp:44:38: error: 'day' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                                      ^
+..\src\SimpleDate.cpp:45:14: error: 'year' was not declared in this scope
+  (isLeapYear(year) && month > 2) ? answer++ : 0;
+              ^
+..\src\SimpleDate.cpp:45:18: error: 'isLeapYear' was not declared in this scope
+  (isLeapYear(year) && month > 2) ? answer++ : 0;
+                  ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:51:15: error: 'MIN_YEAR' was not declared in this scope
+  for (int y = MIN_YEAR; y < year; y++)
+               ^
+..\src\SimpleDate.cpp:51:29: error: 'year' was not declared in this scope
+  for (int y = MIN_YEAR; y < year; y++)
+                             ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'int daysInYear(int)':
+..\src\SimpleDate.cpp:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:33:00 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:33:30 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, year = 0;
+                                        ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:33:37 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, day = 0, year = 0;
+                 ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:34:17 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:8:30: error: expected ';' at end of member declaration
+  SimpleDate daysFromNow(int n)// throw std::invalid_agument;
+                              ^
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:34:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:34:39 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:59:27: error: 'NUM_MONTHS' was not declared in this scope
+  if (month < 1 || month > NUM_MONTHS)
+                           ^
+..\src\SimpleDate.cpp:61:46: error: 'daysInMonth' was not declared in this scope
+  if (day < 1 || day > daysInMonth(month, year))
+                                              ^
+..\src\SimpleDate.cpp:63:17: error: 'MIN_YEAR' was not declared in this scope
+  return year >= MIN_YEAR;
+                 ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:27: error: 'other' was not declared in this scope
+ int compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:88:34: error: expected ',' or ';' before '{' token
+ int compareTo(SimpleDate* other) {
+                                  ^
+..\src\SimpleDate.cpp: In function 'bool isValidDate(int, int, int)':
+..\src\SimpleDate.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:34:54 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:35:45 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:31: error: 'this' is unavailable for static member functions
+  if (month == 2 && isLeapYear(this->year))
+                               ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:35:56 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:23:17: error: 'int SimpleDate::month' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                 ^
+..\src\SimpleDate.cpp:23:40: error: 'int SimpleDate::day' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                        ^
+..\src\SimpleDate.cpp:23:61: error: 'int SimpleDate::year' is not a static member of 'class SimpleDate'
+ int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
+                                                             ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:38:37 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:38:58 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:39:34 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:37: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(yearin))
+                                     ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:40:06 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:47: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && SimpleDate::isLeapYear(year))
+                                               ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:41:22 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:36: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year1))
+                                    ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:42:00 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: invalid use of 'this' in non-member function
+  this->month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:19: error: 'month' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                   ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:42:39 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:53:07 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:88:5: error: prototype for 'int SimpleDate::compareTo(SimpleDate*)' does not match any in class 'SimpleDate'
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:7:6: error: candidate is: int SimpleDate::compareTo(SimpleDate)
+  int compareTo(SimpleDate other);
+      ^
+15:53:21 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: In member function 'int SimpleDate::compareTo(SimpleDate*)':
+..\src\SimpleDate.cpp:89:20: error: request for member 'getYear' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  if (year != other.getYear()) {
+                    ^
+..\src\SimpleDate.cpp:90:22: error: request for member 'year' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  return year - other.year;
+                      ^
+..\src\SimpleDate.cpp:93:21: error: request for member 'month' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  if (month != other.month) {
+                     ^
+..\src\SimpleDate.cpp:94:23: error: request for member 'month' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  return month - other.month;
+                       ^
+..\src\SimpleDate.cpp:97:21: error: request for member 'getDay' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  return day - other.getDay();
+                     ^
+..\src\SimpleDate.cpp:98:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+15:53:51 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: In member function 'int SimpleDate::compareTo(SimpleDate*)':
+..\src\SimpleDate.cpp:90:22: error: request for member 'year' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  return year - other.year;
+                      ^
+..\src\SimpleDate.cpp:93:21: error: request for member 'month' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  if (month != other.month) {
+                     ^
+..\src\SimpleDate.cpp:94:23: error: request for member 'month' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  return month - other.month;
+                       ^
+..\src\SimpleDate.cpp:97:21: error: request for member 'getDay' in 'other', which is of pointer type 'SimpleDate*' (maybe you meant to use '->' ?)
+  return day - other.getDay();
+                     ^
+..\src\SimpleDate.cpp:98:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+15:54:26 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: In member function 'int SimpleDate::compareTo(SimpleDate*)':
+..\src\SimpleDate.cpp:94:24: error: invalid use of member function (did you forget the '()' ?)
+  return month - other->getMonth;
+                        ^
+15:54:34 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+15:55:08 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: base operand of '->' is not a pointer
+  if (month == 2 && isLeapYear(year->year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+15:55:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+15:57:26 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:7: error: invalid use of 'this' in non-member function
+  if (!this->isValidDate(month, day, year)) {
+       ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:98:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n) {
+ ^
+17:09:21 **** Clean-only build of configuration Debug for project matrix ****
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\WinSCP\;C:\mingw\bin;C:\MinGW\bin;C:\Eclipse;]
+17:09:21 **** Build of configuration Debug for project matrix ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\WinSCP\;C:\mingw\bin;C:\MinGW\bin;C:\Eclipse;]
+17:09:41 **** Incremental Build of configuration Debug for project matrix ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\WinSCP\;C:\mingw\bin;C:\MinGW\bin;C:\Eclipse;]
+17:09:43 **** Incremental Build of configuration Debug for project matrix ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\WinSCP\;C:\mingw\bin;C:\MinGW\bin;C:\Eclipse;]
+17:11:34 **** Incremental Build of configuration Debug for project matrix ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\matrix.o" "..\\src\\matrix.c" 
+..\src\matrix.c: In function 'main':
+..\src\matrix.c:24:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  for (int r = 0; r < 3; r++) {
+  ^
+..\src\matrix.c:24:2: note: use option -std=c99 or -std=gnu99 to compile your code
+..\src\matrix.c:25:3: error: 'for' loop initial declarations are only allowed in C99 mode
+   for (int y = 0; y < 3; y++) {
+   ^
+..\src\matrix.c:34:11: error: redefinition of 'r'
+  for (int r = 0; r < 3; r++) {
+           ^
+..\src\matrix.c:24:11: note: previous definition of 'r' was here
+  for (int r = 0; r < 3; r++) {
+           ^
+..\src\matrix.c:34:2: error: 'for' loop initial declarations are only allowed in C99 mode
+  for (int r = 0; r < 3; r++) {
+  ^
+..\src\matrix.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+17:12:37 **** Incremental Build of configuration Debug for project matrix ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\matrix.o" "..\\src\\matrix.c" 
+gcc -o matrix "src\\matrix.o" 
+Info: Nothing to build for matrix
+Info: Nothing to build for matrix
+Info: Nothing to build for matrix
+17:13:22 **** Incremental Build of configuration Debug for project matrix ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\matrix.o" "..\\src\\matrix.c" 
+gcc -o matrix "src\\matrix.o" 
+17:13:38 **** Incremental Build of configuration Debug for project matrix ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\matrix.o" "..\\src\\matrix.c" 
+gcc -o matrix "src\\matrix.o" 

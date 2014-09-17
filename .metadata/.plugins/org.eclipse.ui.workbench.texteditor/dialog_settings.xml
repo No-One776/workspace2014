@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="nextDate" key="selection"/>
+		<item value="SimpleDate(" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="SimpleDate("/>
+			<item value="new"/>
+			<item value="new Simple"/>
+			<item value="new "/>
 			<item value="nextDate"/>
 			<item value="daysFromNow"/>
 		</list>

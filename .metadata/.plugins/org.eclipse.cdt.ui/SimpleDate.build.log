@@ -1,7 +1,7 @@
-14:16:21 **** Incremental Build of configuration Debug for project SimpleDate ****
+16:22:39 **** Incremental Build of configuration Debug for project SimpleDate ****
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
 
-14:16:22 Build Finished (took 469ms)
+16:22:39 Build Finished (took 455ms)
 

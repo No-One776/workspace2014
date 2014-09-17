@@ -3948,3 +3948,56 @@ Info: Nothing to build for SimpleDate
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+15:55:55 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+16:01:56 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+16:09:10 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+16:10:08 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+16:10:58 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+16:20:51 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::nextDate()':
+..\src\SimpleDate.cpp:130:9: error: type 'class SimpleDate' argument given to 'delete', expected pointer
+  delete next;
+         ^
+16:21:11 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+16:21:32 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::nextDate()':
+..\src\SimpleDate.cpp:130:9: error: no match for 'operator*' (operand type is 'SimpleDate')
+  delete *next;
+         ^
+16:21:37 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+16:22:03 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+16:22:39 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 

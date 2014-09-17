@@ -6,9 +6,6 @@
 //============================================================================
 
 #include "SimpleDate.h"
-#include <iostream>
-#include <sstream>
-#include <string>
 #include <stdexcept>
 
 const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
@@ -17,10 +14,6 @@ const int SimpleDate::DAYS_THUS_FAR[] = { 0, 0, 31, 59, 90, 120, 151, 181, 212,
 		243, 273, 304, 334 };
 const int SimpleDate::MIN_YEAR = 1753;
 const int SimpleDate::NUM_MONTHS = 12;
-const std::string MONTHS[] = { "", "January", "February", "March", "April",
-		"May", "June", "July", "August", "September", "October", "November",
-		"December" };
-//int SimpleDate::month = 0, SimpleDate::day = 0, SimpleDate::year = 0;
 
 bool SimpleDate::isLeapYear(int year) {
 	return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
@@ -63,7 +56,7 @@ bool SimpleDate::isValidDate(int month, int day, int year) {
 	return year >= MIN_YEAR;
 }
 
-void SimpleDate(int monthin, int dayin, int yearin) {
+SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
 	month = monthin;
 	day = dayin;
 	year = yearin;
@@ -95,26 +88,59 @@ int SimpleDate::compareTo(SimpleDate* other) {
 	return day - other->getDay();
 }
 
-SimpleDate daysFromNow(int n) {
-//throws std::invalid_argument {
+SimpleDate SimpleDate::nextDate() {
+	SimpleDate next(1, 1, 2000);
+
+	// handle 31-day months
+	if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+			|| month == 10) {
+		if (day < 31)
+			next = SimpleDate(month, day + 1, year);
+		else
+			next = SimpleDate(month + 1, 1, year);
+	}
+
+	// handle 30-day month
+	if (month == 4 || month == 6 || month == 9 || month == 11) {
+		if (day < 30)
+			next = SimpleDate(month, day + 1, year);
+		else
+			next = SimpleDate(month + 1, 1, year);
+	}
+
+	// handle February month
+	if (month == 2) {
+		if (day < 28)
+			next = SimpleDate(month, day + 1, year);
+		else if (isLeapYear())
+			next = SimpleDate(month, day + 1, year);
+		else
+			next = SimpleDate(month + 1, 1, year);
+	}
+
+	// handle December month
+	if (month == 12) {
+		if (day < 31)
+			next = SimpleDate(month, day + 1, year);
+		else
+			next = SimpleDate(1, 1, year + 1);
+	}
+
+	return next;
+}
+
+SimpleDate SimpleDate::daysFromNow(int n) {
 	if (n == 0)
 		return SimpleDate(month, day, year);
 
-	SimpleDate date;
+	SimpleDate date(month, day, year);
 	if (n < 0)
 		throw std::invalid_argument("n can't be negative");
-	else {
-		date = nextDate();
-		for (int i = 1; i < n; i++) {
-			date = date->nextDate();
-		}
-	}
-	if (date->getYear() < MIN_YEAR)
+	else
+		for (int i = 0; i < n; i++)
+			date = date.nextDate();
+
+	if (date.getYear() < MIN_YEAR)
 		throw std::invalid_argument("Resulting date is before 1/1/1753");
 	return date;
-}
-
-int main() {
-
-	return 0;
 }

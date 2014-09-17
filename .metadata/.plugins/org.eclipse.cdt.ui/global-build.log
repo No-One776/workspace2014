@@ -2092,3 +2092,1859 @@ gcc -o matrix "src\\matrix.o"
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\matrix.o" "..\\src\\matrix.c" 
 gcc -o matrix "src\\matrix.o" 
+11:18:19 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:98:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n) {
+ ^
+11:20:14 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:13:54: error: constructor cannot be static member function
+  static SimpleDate(int monthin, int dayin, int yearin);
+                                                      ^
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: 'month' was not declared in this scope
+  month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:98:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n) {
+ ^
+11:21:37 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'void SimpleDate(int, int, int)':
+..\src\SimpleDate.cpp:67:2: error: invalid use of 'this' in non-member function
+  this->month = monthin;
+  ^
+..\src\SimpleDate.cpp:68:2: error: 'day' was not declared in this scope
+  day = dayin;
+  ^
+..\src\SimpleDate.cpp:69:2: error: 'year' was not declared in this scope
+  year = yearin;
+  ^
+..\src\SimpleDate.cpp:71:19: error: 'month' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                   ^
+..\src\SimpleDate.cpp:71:35: error: 'isValidDate' was not declared in this scope
+  if (!isValidDate(month, day, year)) {
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:98:1: error: 'SimpleDate' does not name a type
+ SimpleDate daysFromNow(int n) {
+ ^
+11:22:50 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:66:63: error: return type specification for constructor invalid
+ void SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+                                                               ^
+..\src\SimpleDate.cpp: In function 'SimpleDate daysFromNow(int)':
+..\src\SimpleDate.cpp:101:21: error: 'month' was not declared in this scope
+   return SimpleDate(month, day, year);
+                     ^
+..\src\SimpleDate.cpp:101:28: error: 'day' was not declared in this scope
+   return SimpleDate(month, day, year);
+                            ^
+..\src\SimpleDate.cpp:101:33: error: 'year' was not declared in this scope
+   return SimpleDate(month, day, year);
+                                 ^
+..\src\SimpleDate.cpp:103:13: error: no matching function for call to 'SimpleDate::SimpleDate()'
+  SimpleDate date;
+             ^
+..\src\SimpleDate.cpp:103:13: note: candidates are:
+..\src\SimpleDate.cpp:66:6: note: SimpleDate::SimpleDate(int, int, int)
+ void SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+      ^
+..\src\SimpleDate.cpp:66:6: note:   candidate expects 3 arguments, 0 provided
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.cpp:107:19: error: 'nextDate' was not declared in this scope
+   date = nextDate();
+                   ^
+..\src\SimpleDate.cpp:109:15: error: base operand of '->' has non-pointer type 'SimpleDate'
+    date = date->nextDate();
+               ^
+..\src\SimpleDate.cpp:112:10: error: base operand of '->' has non-pointer type 'SimpleDate'
+  if (date->getYear() < MIN_YEAR)
+          ^
+..\src\SimpleDate.cpp:112:24: error: 'MIN_YEAR' was not declared in this scope
+  if (date->getYear() < MIN_YEAR)
+                        ^
+11:23:09 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In function 'SimpleDate daysFromNow(int)':
+..\src\SimpleDate.cpp:101:21: error: 'month' was not declared in this scope
+   return SimpleDate(month, day, year);
+                     ^
+..\src\SimpleDate.cpp:101:28: error: 'day' was not declared in this scope
+   return SimpleDate(month, day, year);
+                            ^
+..\src\SimpleDate.cpp:101:33: error: 'year' was not declared in this scope
+   return SimpleDate(month, day, year);
+                                 ^
+..\src\SimpleDate.cpp:103:13: error: no matching function for call to 'SimpleDate::SimpleDate()'
+  SimpleDate date;
+             ^
+..\src\SimpleDate.cpp:103:13: note: candidates are:
+..\src\SimpleDate.cpp:66:1: note: SimpleDate::SimpleDate(int, int, int)
+ SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+ ^
+..\src\SimpleDate.cpp:66:1: note:   candidate expects 3 arguments, 0 provided
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.cpp:107:19: error: 'nextDate' was not declared in this scope
+   date = nextDate();
+                   ^
+..\src\SimpleDate.cpp:109:15: error: base operand of '->' has non-pointer type 'SimpleDate'
+    date = date->nextDate();
+               ^
+..\src\SimpleDate.cpp:112:10: error: base operand of '->' has non-pointer type 'SimpleDate'
+  if (date->getYear() < MIN_YEAR)
+          ^
+..\src\SimpleDate.cpp:112:24: error: 'MIN_YEAR' was not declared in this scope
+  if (date->getYear() < MIN_YEAR)
+                        ^
+11:23:27 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:103:13: error: no matching function for call to 'SimpleDate::SimpleDate()'
+  SimpleDate date;
+             ^
+..\src\SimpleDate.cpp:103:13: note: candidates are:
+..\src\SimpleDate.cpp:66:1: note: SimpleDate::SimpleDate(int, int, int)
+ SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+ ^
+..\src\SimpleDate.cpp:66:1: note:   candidate expects 3 arguments, 0 provided
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.cpp:109:15: error: base operand of '->' has non-pointer type 'SimpleDate'
+    date = date->nextDate();
+               ^
+..\src\SimpleDate.cpp:112:10: error: base operand of '->' has non-pointer type 'SimpleDate'
+  if (date->getYear() < MIN_YEAR)
+          ^
+11:24:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:109:15: error: base operand of '->' has non-pointer type 'SimpleDate'
+    date = date->nextDate();
+               ^
+..\src\SimpleDate.cpp:112:10: error: base operand of '->' has non-pointer type 'SimpleDate'
+  if (date->getYear() < MIN_YEAR)
+          ^
+11:24:38 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:112:10: error: base operand of '->' has non-pointer type 'SimpleDate'
+  if (date->getYear() < MIN_YEAR)
+          ^
+11:24:43 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+11:24:50 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In static member function 'static int SimpleDate::daysInMonth(int, int)':
+..\src\SimpleDate.cpp:34:35: error: cannot call member function 'bool SimpleDate::isLeapYear(int)' without object
+  if (month == 2 && isLeapYear(year))
+                                   ^
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:103:13: error: no matching function for call to 'SimpleDate::SimpleDate()'
+  SimpleDate date;
+             ^
+..\src\SimpleDate.cpp:103:13: note: candidates are:
+..\src\SimpleDate.cpp:66:1: note: SimpleDate::SimpleDate(int, int, int)
+ SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+ ^
+..\src\SimpleDate.cpp:66:1: note:   candidate expects 3 arguments, 0 provided
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+11:25:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h: In static member function 'static bool SimpleDate::isLeapYear()':
+..\src\SimpleDate.h:18:6: error: invalid use of member 'SimpleDate::year' in static member function
+  int year;
+      ^
+..\src\SimpleDate.cpp:30:20: error: from this location
+  return isLeapYear(year);
+                    ^
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:103:13: error: no matching function for call to 'SimpleDate::SimpleDate()'
+  SimpleDate date;
+             ^
+..\src\SimpleDate.cpp:103:13: note: candidates are:
+..\src\SimpleDate.cpp:66:1: note: SimpleDate::SimpleDate(int, int, int)
+ SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+ ^
+..\src\SimpleDate.cpp:66:1: note:   candidate expects 3 arguments, 0 provided
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.cpp: In static member function 'static bool SimpleDate::isLeapYear()':
+..\src\SimpleDate.cpp:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+11:25:39 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:103:13: error: no matching function for call to 'SimpleDate::SimpleDate()'
+  SimpleDate date;
+             ^
+..\src\SimpleDate.cpp:103:13: note: candidates are:
+..\src\SimpleDate.cpp:66:1: note: SimpleDate::SimpleDate(int, int, int)
+ SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+ ^
+..\src\SimpleDate.cpp:66:1: note:   candidate expects 3 arguments, 0 provided
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.h:1:7: note: constexpr SimpleDate::SimpleDate(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   candidate expects 1 argument, 0 provided
+11:33:51 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:34:08 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:38:13 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:38:21 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:43:02 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:43:06 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:43:16 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:43:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:43:53 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:107:10: error: 'date' is not a member of 'SimpleDate'
+   date = SimpleDate::date.nextDate();
+          ^
+11:44:26 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:46:19 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::daysFromNow(int)':
+..\src\SimpleDate.cpp:107:14: error: base operand of '->' has non-pointer type 'SimpleDate'
+   date = date->nextDate();
+              ^
+11:46:25 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:46:54 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:47:05 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:107: undefined reference to `SimpleDate::nextDate()'
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:109: undefined reference to `SimpleDate::nextDate()'
+collect2.exe: error: ld returned 1 exit status
+11:50:28 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'SimpleDate nextDate()':
+..\src\SimpleDate.cpp:99:20: error: 'null' was not declared in this scope
+  SimpleDate next = null;
+                    ^
+..\src\SimpleDate.cpp:102:6: error: 'month' was not declared in this scope
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+      ^
+..\src\SimpleDate.cpp:104:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:105:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:107:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:112:6: error: 'month' was not declared in this scope
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+      ^
+..\src\SimpleDate.cpp:113:7: error: 'day' was not declared in this scope
+   if (day < 30) {
+       ^
+..\src\SimpleDate.cpp:114:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:116:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:121:6: error: 'month' was not declared in this scope
+  if (month == 2) {
+      ^
+..\src\SimpleDate.cpp:122:7: error: 'day' was not declared in this scope
+   if (day < 28) {
+       ^
+..\src\SimpleDate.cpp:123:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:125:19: error: 'isLeapYear' was not declared in this scope
+    if (isLeapYear()) {
+                   ^
+..\src\SimpleDate.cpp:126:43: error: 'year' was not declared in this scope
+     next = new SimpleDate(month, day + 1, year);
+                                           ^
+..\src\SimpleDate.cpp:128:41: error: 'year' was not declared in this scope
+     next = new SimpleDate(month + 1, 1, year);
+                                         ^
+..\src\SimpleDate.cpp:134:6: error: 'month' was not declared in this scope
+  if (month == 12) {
+      ^
+..\src\SimpleDate.cpp:135:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:136:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:138:32: error: 'year' was not declared in this scope
+    next = new SimpleDate(1, 1, year + 1);
+                                ^
+11:51:01 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'SimpleDate nextDate()':
+..\src\SimpleDate.cpp:102:6: error: 'month' was not declared in this scope
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+      ^
+..\src\SimpleDate.cpp:104:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:105:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:107:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:112:6: error: 'month' was not declared in this scope
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+      ^
+..\src\SimpleDate.cpp:113:7: error: 'day' was not declared in this scope
+   if (day < 30) {
+       ^
+..\src\SimpleDate.cpp:114:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:116:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:121:6: error: 'month' was not declared in this scope
+  if (month == 2) {
+      ^
+..\src\SimpleDate.cpp:122:7: error: 'day' was not declared in this scope
+   if (day < 28) {
+       ^
+..\src\SimpleDate.cpp:123:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:125:19: error: 'isLeapYear' was not declared in this scope
+    if (isLeapYear()) {
+                   ^
+..\src\SimpleDate.cpp:126:43: error: 'year' was not declared in this scope
+     next = new SimpleDate(month, day + 1, year);
+                                           ^
+..\src\SimpleDate.cpp:128:41: error: 'year' was not declared in this scope
+     next = new SimpleDate(month + 1, 1, year);
+                                         ^
+..\src\SimpleDate.cpp:134:6: error: 'month' was not declared in this scope
+  if (month == 12) {
+      ^
+..\src\SimpleDate.cpp:135:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:136:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:138:32: error: 'year' was not declared in this scope
+    next = new SimpleDate(1, 1, year + 1);
+                                ^
+11:51:34 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'SimpleDate nextDate()':
+..\src\SimpleDate.cpp:102:6: error: 'month' was not declared in this scope
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+      ^
+..\src\SimpleDate.cpp:104:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:105:38: error: 'year' was not declared in this scope
+    next = SimpleDate(month, day + 1, year);
+                                      ^
+..\src\SimpleDate.cpp:107:36: error: 'year' was not declared in this scope
+    next = SimpleDate(month + 1, 1, year);
+                                    ^
+..\src\SimpleDate.cpp:112:6: error: 'month' was not declared in this scope
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+      ^
+..\src\SimpleDate.cpp:113:7: error: 'day' was not declared in this scope
+   if (day < 30) {
+       ^
+..\src\SimpleDate.cpp:114:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:116:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:121:6: error: 'month' was not declared in this scope
+  if (month == 2) {
+      ^
+..\src\SimpleDate.cpp:122:7: error: 'day' was not declared in this scope
+   if (day < 28) {
+       ^
+..\src\SimpleDate.cpp:123:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:125:19: error: 'isLeapYear' was not declared in this scope
+    if (isLeapYear()) {
+                   ^
+..\src\SimpleDate.cpp:126:43: error: 'year' was not declared in this scope
+     next = new SimpleDate(month, day + 1, year);
+                                           ^
+..\src\SimpleDate.cpp:128:41: error: 'year' was not declared in this scope
+     next = new SimpleDate(month + 1, 1, year);
+                                         ^
+..\src\SimpleDate.cpp:134:6: error: 'month' was not declared in this scope
+  if (month == 12) {
+      ^
+..\src\SimpleDate.cpp:135:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:136:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:138:32: error: 'year' was not declared in this scope
+    next = new SimpleDate(1, 1, year + 1);
+                                ^
+11:52:58 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'SimpleDate nextDate()':
+..\src\SimpleDate.cpp:102:6: error: 'month' was not declared in this scope
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+      ^
+..\src\SimpleDate.cpp:104:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:105:38: error: 'year' was not declared in this scope
+    next = SimpleDate(month, day + 1, year);
+                                      ^
+..\src\SimpleDate.cpp:107:36: error: 'year' was not declared in this scope
+    next = SimpleDate(month + 1, 1, year);
+                                    ^
+..\src\SimpleDate.cpp:112:6: error: 'month' was not declared in this scope
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+      ^
+..\src\SimpleDate.cpp:113:7: error: 'day' was not declared in this scope
+   if (day < 30) {
+       ^
+..\src\SimpleDate.cpp:114:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:116:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:121:6: error: 'month' was not declared in this scope
+  if (month == 2) {
+      ^
+..\src\SimpleDate.cpp:122:7: error: 'day' was not declared in this scope
+   if (day < 28) {
+       ^
+..\src\SimpleDate.cpp:123:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:125:19: error: 'isLeapYear' was not declared in this scope
+    if (isLeapYear()) {
+                   ^
+..\src\SimpleDate.cpp:126:43: error: 'year' was not declared in this scope
+     next = new SimpleDate(month, day + 1, year);
+                                           ^
+..\src\SimpleDate.cpp:128:41: error: 'year' was not declared in this scope
+     next = new SimpleDate(month + 1, 1, year);
+                                         ^
+..\src\SimpleDate.cpp:134:6: error: 'month' was not declared in this scope
+  if (month == 12) {
+      ^
+..\src\SimpleDate.cpp:135:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:136:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:138:32: error: 'year' was not declared in this scope
+    next = new SimpleDate(1, 1, year + 1);
+                                ^
+11:53:31 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'SimpleDate nextDate()':
+..\src\SimpleDate.cpp:102:6: error: invalid use of 'this' in non-member function
+  if (this->month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+      ^
+..\src\SimpleDate.cpp:102:26: error: 'month' was not declared in this scope
+  if (this->month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+                          ^
+..\src\SimpleDate.cpp:104:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:105:38: error: 'year' was not declared in this scope
+    next = SimpleDate(month, day + 1, year);
+                                      ^
+..\src\SimpleDate.cpp:107:36: error: 'year' was not declared in this scope
+    next = SimpleDate(month + 1, 1, year);
+                                    ^
+..\src\SimpleDate.cpp:112:6: error: 'month' was not declared in this scope
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+      ^
+..\src\SimpleDate.cpp:113:7: error: 'day' was not declared in this scope
+   if (day < 30) {
+       ^
+..\src\SimpleDate.cpp:114:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:116:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:121:6: error: 'month' was not declared in this scope
+  if (month == 2) {
+      ^
+..\src\SimpleDate.cpp:122:7: error: 'day' was not declared in this scope
+   if (day < 28) {
+       ^
+..\src\SimpleDate.cpp:123:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:125:19: error: 'isLeapYear' was not declared in this scope
+    if (isLeapYear()) {
+                   ^
+..\src\SimpleDate.cpp:126:43: error: 'year' was not declared in this scope
+     next = new SimpleDate(month, day + 1, year);
+                                           ^
+..\src\SimpleDate.cpp:128:41: error: 'year' was not declared in this scope
+     next = new SimpleDate(month + 1, 1, year);
+                                         ^
+..\src\SimpleDate.cpp:134:6: error: 'month' was not declared in this scope
+  if (month == 12) {
+      ^
+..\src\SimpleDate.cpp:135:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:136:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:138:32: error: 'year' was not declared in this scope
+    next = new SimpleDate(1, 1, year + 1);
+                                ^
+11:53:48 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'SimpleDate nextDate()':
+..\src\SimpleDate.cpp:102:6: error: invalid use of 'this' in non-member function
+  if (this.getMonth() == 1 || month == 3 || month == 5 || month == 7 || month == 8
+      ^
+..\src\SimpleDate.cpp:102:30: error: 'month' was not declared in this scope
+  if (this.getMonth() == 1 || month == 3 || month == 5 || month == 7 || month == 8
+                              ^
+..\src\SimpleDate.cpp:104:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:105:38: error: 'year' was not declared in this scope
+    next = SimpleDate(month, day + 1, year);
+                                      ^
+..\src\SimpleDate.cpp:107:36: error: 'year' was not declared in this scope
+    next = SimpleDate(month + 1, 1, year);
+                                    ^
+..\src\SimpleDate.cpp:112:6: error: 'month' was not declared in this scope
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+      ^
+..\src\SimpleDate.cpp:113:7: error: 'day' was not declared in this scope
+   if (day < 30) {
+       ^
+..\src\SimpleDate.cpp:114:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:116:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:121:6: error: 'month' was not declared in this scope
+  if (month == 2) {
+      ^
+..\src\SimpleDate.cpp:122:7: error: 'day' was not declared in this scope
+   if (day < 28) {
+       ^
+..\src\SimpleDate.cpp:123:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:125:19: error: 'isLeapYear' was not declared in this scope
+    if (isLeapYear()) {
+                   ^
+..\src\SimpleDate.cpp:126:43: error: 'year' was not declared in this scope
+     next = new SimpleDate(month, day + 1, year);
+                                           ^
+..\src\SimpleDate.cpp:128:41: error: 'year' was not declared in this scope
+     next = new SimpleDate(month + 1, 1, year);
+                                         ^
+..\src\SimpleDate.cpp:134:6: error: 'month' was not declared in this scope
+  if (month == 12) {
+      ^
+..\src\SimpleDate.cpp:135:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:136:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:138:32: error: 'year' was not declared in this scope
+    next = new SimpleDate(1, 1, year + 1);
+                                ^
+11:56:40 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'SimpleDate nextDate()':
+..\src\SimpleDate.cpp:101:6: error: 'month' was not declared in this scope
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+      ^
+..\src\SimpleDate.cpp:103:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:104:38: error: 'year' was not declared in this scope
+    next = SimpleDate(month, day + 1, year);
+                                      ^
+..\src\SimpleDate.cpp:106:36: error: 'year' was not declared in this scope
+    next = SimpleDate(month + 1, 1, year);
+                                    ^
+..\src\SimpleDate.cpp:111:6: error: 'month' was not declared in this scope
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+      ^
+..\src\SimpleDate.cpp:112:7: error: 'day' was not declared in this scope
+   if (day < 30) {
+       ^
+..\src\SimpleDate.cpp:113:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:115:40: error: 'year' was not declared in this scope
+    next = new SimpleDate(month + 1, 1, year);
+                                        ^
+..\src\SimpleDate.cpp:120:6: error: 'month' was not declared in this scope
+  if (month == 2) {
+      ^
+..\src\SimpleDate.cpp:121:7: error: 'day' was not declared in this scope
+   if (day < 28) {
+       ^
+..\src\SimpleDate.cpp:122:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:124:19: error: 'isLeapYear' was not declared in this scope
+    if (isLeapYear()) {
+                   ^
+..\src\SimpleDate.cpp:125:43: error: 'year' was not declared in this scope
+     next = new SimpleDate(month, day + 1, year);
+                                           ^
+..\src\SimpleDate.cpp:127:41: error: 'year' was not declared in this scope
+     next = new SimpleDate(month + 1, 1, year);
+                                         ^
+..\src\SimpleDate.cpp:133:6: error: 'month' was not declared in this scope
+  if (month == 12) {
+      ^
+..\src\SimpleDate.cpp:134:7: error: 'day' was not declared in this scope
+   if (day < 31) {
+       ^
+..\src\SimpleDate.cpp:135:42: error: 'year' was not declared in this scope
+    next = new SimpleDate(month, day + 1, year);
+                                          ^
+..\src\SimpleDate.cpp:137:32: error: 'year' was not declared in this scope
+    next = new SimpleDate(1, 1, year + 1);
+                                ^
+11:59:48 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::nextDate()':
+..\src\SimpleDate.cpp:113:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month, day + 1, year);
+         ^
+..\src\SimpleDate.cpp:113:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:115:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month + 1, 1, year);
+         ^
+..\src\SimpleDate.cpp:115:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:122:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month, day + 1, year);
+         ^
+..\src\SimpleDate.cpp:122:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:125:10: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+     next = new SimpleDate(month, day + 1, year);
+          ^
+..\src\SimpleDate.cpp:125:10: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:127:10: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+     next = new SimpleDate(month + 1, 1, year);
+          ^
+..\src\SimpleDate.cpp:127:10: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:135:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month, day + 1, year);
+         ^
+..\src\SimpleDate.cpp:135:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:137:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(1, 1, year + 1);
+         ^
+..\src\SimpleDate.cpp:137:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+12:00:14 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::nextDate()':
+..\src\SimpleDate.cpp:111:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 4 || month == 6 || month == 9 || month == 11)
+     ^
+..\src\SimpleDate.cpp:120:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month, day + 1, year);
+         ^
+..\src\SimpleDate.cpp:120:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:123:10: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+     next = new SimpleDate(month, day + 1, year);
+          ^
+..\src\SimpleDate.cpp:123:10: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:125:10: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+     next = new SimpleDate(month + 1, 1, year);
+          ^
+..\src\SimpleDate.cpp:125:10: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:133:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month, day + 1, year);
+         ^
+..\src\SimpleDate.cpp:133:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:135:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(1, 1, year + 1);
+         ^
+..\src\SimpleDate.cpp:135:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+12:00:43 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::nextDate()':
+..\src\SimpleDate.cpp:101:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+     ^
+..\src\SimpleDate.cpp:109:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 4 || month == 6 || month == 9 || month == 11)
+     ^
+..\src\SimpleDate.cpp:131:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month, day + 1, year);
+         ^
+..\src\SimpleDate.cpp:131:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:133:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(1, 1, year + 1);
+         ^
+..\src\SimpleDate.cpp:133:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+12:01:04 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::nextDate()':
+..\src\SimpleDate.cpp:101:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+     ^
+..\src\SimpleDate.cpp:109:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 4 || month == 6 || month == 9 || month == 11)
+     ^
+..\src\SimpleDate.cpp:116:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 2)
+     ^
+..\src\SimpleDate.cpp:127:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(month, day + 1, year);
+         ^
+..\src\SimpleDate.cpp:127:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+..\src\SimpleDate.cpp:129:9: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+    next = new SimpleDate(1, 1, year + 1);
+         ^
+..\src\SimpleDate.cpp:129:9: note: candidates are:
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:1:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:1:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+12:01:18 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In member function 'SimpleDate SimpleDate::nextDate()':
+..\src\SimpleDate.cpp:101:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+     ^
+..\src\SimpleDate.cpp:109:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 4 || month == 6 || month == 9 || month == 11)
+     ^
+..\src\SimpleDate.cpp:116:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 2)
+     ^
+..\src\SimpleDate.cpp:125:5: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+  if (month == 12)
+     ^
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+12:02:04 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+12:02:15 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+12:02:41 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\SimpleDate.o" 
+12:04:13 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+12:05:23 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:10:2: error: 'SimpleDate' was not declared in this scope
+  SimpleDate date(9,17,2014);
+  ^
+..\src\main.cpp:10:13: error: expected ';' before 'date'
+  SimpleDate date(9,17,2014);
+             ^
+12:05:49 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:10:2: error: 'SimpleDate' has not been declared
+  SimpleDate::SimpleDate date(9,17,2014);
+  ^
+..\src\main.cpp:10:25: error: expected ';' before 'date'
+  SimpleDate::SimpleDate date(9,17,2014);
+                         ^
+12:05:57 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:10:2: error: 'SimpleDate' was not declared in this scope
+  SimpleDate SimpleDate::date(9,17,2014);
+  ^
+..\src\main.cpp:10:13: error: expected ';' before 'SimpleDate'
+  SimpleDate SimpleDate::date(9,17,2014);
+             ^
+12:06:18 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate10isLeapYearEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:21: multiple definition of `SimpleDate::isLeapYear(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:21: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate10isLeapYearEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:25: multiple definition of `SimpleDate::isLeapYear()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:25: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11daysInMonthEii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:29: multiple definition of `SimpleDate::daysInMonth(int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:29: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate10daysInYearEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:35: multiple definition of `SimpleDate::daysInYear(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:35: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11ordinalDateEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:39: multiple definition of `SimpleDate::ordinalDate()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:39: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate9dayOfWeekEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:45: multiple definition of `SimpleDate::dayOfWeek()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:45: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11isValidDateEiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:54: multiple definition of `SimpleDate::isValidDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:54: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDateC2Eiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: multiple definition of `SimpleDate::SimpleDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDateC2Eiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: multiple definition of `SimpleDate::SimpleDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate8getMonthEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:72: multiple definition of `SimpleDate::getMonth() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:72: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate6getDayEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:76: multiple definition of `SimpleDate::getDay() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:76: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate7getYearEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:80: multiple definition of `SimpleDate::getYear() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:80: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate9compareToEPS_':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:84: multiple definition of `SimpleDate::compareTo(SimpleDate*)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:84: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate8nextDateEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:94: multiple definition of `SimpleDate::nextDate()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:94: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:135: multiple definition of `SimpleDate::daysFromNow(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:135: first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x20): multiple definition of `SimpleDate::daysInMonths'
+src\main.o:main.cpp:(.rdata+0x20): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x60): multiple definition of `SimpleDate::DAYS_THUS_FAR'
+src\main.o:main.cpp:(.rdata+0x60): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x94): multiple definition of `SimpleDate::MIN_YEAR'
+src\main.o:main.cpp:(.rdata+0x94): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x98): multiple definition of `SimpleDate::NUM_MONTHS'
+src\main.o:main.cpp:(.rdata+0x98): first defined here
+collect2.exe: error: ld returned 1 exit status
+12:07:24 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0,
+                 from ..\src\main.cpp:9:
+..\src\SimpleDate.h:1:7: error: redefinition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:1:7: error: previous definition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:14:2: error: expected unqualified-id before 'return'
+  return 0;
+  ^
+..\src\main.cpp:14:2: error: expected ';' before 'return'
+12:08:02 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0,
+                 from ..\src\main.cpp:9:
+..\src\SimpleDate.h:1:7: error: redefinition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:1:7: error: previous definition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:13:44: error: expected ')' before ';' token
+  printf("Day of Week: %d", date.dayOfWeek();
+                                            ^
+12:08:10 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0,
+                 from ..\src\main.cpp:9:
+..\src\SimpleDate.h:1:7: error: redefinition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:1:7: error: previous definition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:13:44: error: 'printf' was not declared in this scope
+  printf("Day of Week: %d", date.dayOfWeek());
+                                            ^
+12:08:29 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp:10:17: fatal error: stdio: No such file or directory
+ #include <stdio>
+                 ^
+compilation terminated.
+12:08:35 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0,
+                 from ..\src\main.cpp:9:
+..\src\SimpleDate.h:1:7: error: redefinition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:1:7: error: previous definition of 'class SimpleDate'
+ class SimpleDate {
+       ^
+12:11:18 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:1:0: error: unterminated #ifdef
+ #ifdef  SIMPLEDATE_H_
+ ^
+..\src\SimpleDate.cpp:14:11: error: 'SimpleDate' has not been declared
+ const int SimpleDate::daysInMonths[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30,
+           ^
+..\src\SimpleDate.cpp:16:11: error: 'SimpleDate' has not been declared
+ const int SimpleDate::DAYS_THUS_FAR[] = { 0, 0, 31, 59, 90, 120, 151, 181, 212,
+           ^
+..\src\SimpleDate.cpp:18:11: error: 'SimpleDate' has not been declared
+ const int SimpleDate::MIN_YEAR = 1753;
+           ^
+..\src\SimpleDate.cpp:19:11: error: 'SimpleDate' has not been declared
+ const int SimpleDate::NUM_MONTHS = 12;
+           ^
+..\src\SimpleDate.cpp:21:6: error: 'SimpleDate' has not been declared
+ bool SimpleDate::isLeapYear(int year) {
+      ^
+..\src\SimpleDate.cpp:25:6: error: 'SimpleDate' has not been declared
+ bool SimpleDate::isLeapYear() {
+      ^
+..\src\SimpleDate.cpp: In function 'bool isLeapYear()':
+..\src\SimpleDate.cpp:26:20: error: 'year' was not declared in this scope
+  return isLeapYear(year);
+                    ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:29:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::daysInMonth(int month, int year) {
+     ^
+..\src\SimpleDate.cpp:35:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::daysInYear(int year) {
+     ^
+..\src\SimpleDate.cpp:39:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::ordinalDate() {
+     ^
+..\src\SimpleDate.cpp: In function 'int ordinalDate()':
+..\src\SimpleDate.cpp:40:29: error: 'month' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                             ^
+..\src\SimpleDate.cpp:40:38: error: 'day' was not declared in this scope
+  int answer = DAYS_THUS_FAR[month] + day;
+                                      ^
+..\src\SimpleDate.cpp:41:14: error: 'year' was not declared in this scope
+  (isLeapYear(year) && month > 2) ? answer++ : 0;
+              ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:45:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::dayOfWeek() {
+     ^
+..\src\SimpleDate.cpp: In function 'int dayOfWeek()':
+..\src\SimpleDate.cpp:47:29: error: 'year' was not declared in this scope
+  for (int y = MIN_YEAR; y < year; y++)
+                             ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:54:6: error: 'SimpleDate' has not been declared
+ bool SimpleDate::isValidDate(int month, int day, int year) {
+      ^
+..\src\SimpleDate.cpp:62:1: error: 'SimpleDate' does not name a type
+ SimpleDate::SimpleDate(int monthin, int dayin, int yearin) {
+ ^
+..\src\SimpleDate.cpp:72:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::getMonth() const {
+     ^
+..\src\SimpleDate.cpp:72:28: error: non-member function 'int getMonth()' cannot have cv-qualifier
+ int SimpleDate::getMonth() const {
+                            ^
+..\src\SimpleDate.cpp: In function 'int getMonth()':
+..\src\SimpleDate.cpp:73:9: error: 'month' was not declared in this scope
+  return month;
+         ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:76:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::getDay() const {
+     ^
+..\src\SimpleDate.cpp:76:26: error: non-member function 'int getDay()' cannot have cv-qualifier
+ int SimpleDate::getDay() const {
+                          ^
+..\src\SimpleDate.cpp: In function 'int getDay()':
+..\src\SimpleDate.cpp:77:9: error: 'day' was not declared in this scope
+  return day;
+         ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:80:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::getYear() const {
+     ^
+..\src\SimpleDate.cpp:80:27: error: non-member function 'int getYear()' cannot have cv-qualifier
+ int SimpleDate::getYear() const {
+                           ^
+..\src\SimpleDate.cpp: In function 'int getYear()':
+..\src\SimpleDate.cpp:81:9: error: 'year' was not declared in this scope
+  return year;
+         ^
+..\src\SimpleDate.cpp: At global scope:
+..\src\SimpleDate.cpp:84:5: error: 'SimpleDate' has not been declared
+ int SimpleDate::compareTo(SimpleDate* other) {
+     ^
+..\src\SimpleDate.cpp:84:27: error: 'SimpleDate' was not declared in this scope
+ int SimpleDate::compareTo(SimpleDate* other) {
+                           ^
+..\src\SimpleDate.cpp:84:39: error: 'other' was not declared in this scope
+ int SimpleDate::compareTo(SimpleDate* other) {
+                                       ^
+..\src\SimpleDate.cpp:84:46: error: expected ',' or ';' before '{' token
+ int SimpleDate::compareTo(SimpleDate* other) {
+                                              ^
+..\src\SimpleDate.cpp:94:1: error: 'SimpleDate' does not name a type
+ SimpleDate SimpleDate::nextDate() {
+ ^
+..\src\SimpleDate.cpp:135:1: error: 'SimpleDate' does not name a type
+ SimpleDate SimpleDate::daysFromNow(int n) {
+ ^
+..\src\SimpleDate.cpp: In function 'bool isLeapYear()':
+..\src\SimpleDate.cpp:27:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'int getMonth()':
+..\src\SimpleDate.cpp:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'int getDay()':
+..\src\SimpleDate.cpp:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\SimpleDate.cpp: In function 'int getYear()':
+..\src\SimpleDate.cpp:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+12:11:29 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:1:0: error: unterminated #ifndef
+ #ifndef  SIMPLEDATE_H_
+ ^
+In file included from ..\src\SimpleDate.cpp:8:0,
+                 from ..\src\main.cpp:9:
+..\src\SimpleDate.h:1:0: error: unterminated #ifndef
+ #ifndef  SIMPLEDATE_H_
+ ^
+12:11:49 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate10isLeapYearEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:21: multiple definition of `SimpleDate::isLeapYear(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:21: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate10isLeapYearEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:25: multiple definition of `SimpleDate::isLeapYear()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:25: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11daysInMonthEii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:29: multiple definition of `SimpleDate::daysInMonth(int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:29: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate10daysInYearEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:35: multiple definition of `SimpleDate::daysInYear(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:35: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11ordinalDateEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:39: multiple definition of `SimpleDate::ordinalDate()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:39: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate9dayOfWeekEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:45: multiple definition of `SimpleDate::dayOfWeek()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:45: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11isValidDateEiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:54: multiple definition of `SimpleDate::isValidDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:54: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDateC2Eiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: multiple definition of `SimpleDate::SimpleDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDateC2Eiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: multiple definition of `SimpleDate::SimpleDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate8getMonthEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:72: multiple definition of `SimpleDate::getMonth() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:72: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate6getDayEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:76: multiple definition of `SimpleDate::getDay() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:76: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate7getYearEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:80: multiple definition of `SimpleDate::getYear() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:80: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate9compareToEPS_':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:84: multiple definition of `SimpleDate::compareTo(SimpleDate*)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:84: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate8nextDateEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:94: multiple definition of `SimpleDate::nextDate()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:94: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:135: multiple definition of `SimpleDate::daysFromNow(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:135: first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x20): multiple definition of `SimpleDate::daysInMonths'
+src\main.o:main.cpp:(.rdata+0x20): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x60): multiple definition of `SimpleDate::DAYS_THUS_FAR'
+src\main.o:main.cpp:(.rdata+0x60): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x94): multiple definition of `SimpleDate::MIN_YEAR'
+src\main.o:main.cpp:(.rdata+0x94): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x98): multiple definition of `SimpleDate::NUM_MONTHS'
+src\main.o:main.cpp:(.rdata+0x98): first defined here
+collect2.exe: error: ld returned 1 exit status
+12:12:17 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+src\SimpleDate.o: In function `ZN10SimpleDate10isLeapYearEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:21: multiple definition of `SimpleDate::isLeapYear(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:21: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate10isLeapYearEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:25: multiple definition of `SimpleDate::isLeapYear()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:25: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11daysInMonthEii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:29: multiple definition of `SimpleDate::daysInMonth(int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:29: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate10daysInYearEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:35: multiple definition of `SimpleDate::daysInYear(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:35: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11ordinalDateEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:39: multiple definition of `SimpleDate::ordinalDate()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:39: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate9dayOfWeekEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:45: multiple definition of `SimpleDate::dayOfWeek()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:45: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11isValidDateEiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:54: multiple definition of `SimpleDate::isValidDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:54: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDateC2Eiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: multiple definition of `SimpleDate::SimpleDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDateC2Eiii':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: multiple definition of `SimpleDate::SimpleDate(int, int, int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:62: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate8getMonthEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:72: multiple definition of `SimpleDate::getMonth() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:72: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate6getDayEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:76: multiple definition of `SimpleDate::getDay() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:76: first defined here
+src\SimpleDate.o: In function `ZNK10SimpleDate7getYearEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:80: multiple definition of `SimpleDate::getYear() const'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:80: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate9compareToEPS_':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:84: multiple definition of `SimpleDate::compareTo(SimpleDate*)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:84: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate8nextDateEv':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:94: multiple definition of `SimpleDate::nextDate()'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:94: first defined here
+src\SimpleDate.o: In function `ZN10SimpleDate11daysFromNowEi':
+C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:135: multiple definition of `SimpleDate::daysFromNow(int)'
+src\main.o:C:\Users\Justin\Documents\GitHub\workspace2014\SimpleDate\Debug/../src/SimpleDate.cpp:135: first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x20): multiple definition of `SimpleDate::daysInMonths'
+src\main.o:main.cpp:(.rdata+0x20): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x60): multiple definition of `SimpleDate::DAYS_THUS_FAR'
+src\main.o:main.cpp:(.rdata+0x60): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x94): multiple definition of `SimpleDate::MIN_YEAR'
+src\main.o:main.cpp:(.rdata+0x94): first defined here
+src\SimpleDate.o:SimpleDate.cpp:(.rdata+0x98): multiple definition of `SimpleDate::NUM_MONTHS'
+src\main.o:main.cpp:(.rdata+0x98): first defined here
+collect2.exe: error: ld returned 1 exit status
+12:12:24 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+12:13:27 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+12:15:43 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:14:49: warning: format '%d' expects argument of type 'int', but argument 2 has type 'SimpleDate' [-Wformat=]
+  printf("Days from now: %d", date.daysFromNow(2));
+                                                 ^
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+12:16:14 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+12:48:51 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+12:49:17 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+12:53:02 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:18:21: error: expected primary-expression before '?' token
+  date.isLeapYear(); ? printf("It's a leap year!") : printf("Its not a leap year!");
+                     ^
+12:53:10 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+12:53:24 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+12:55:29 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+12:55:41 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:19:12 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:27:16 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'std::string toString()':
+..\src\SimpleDate.cpp:24:9: error: 'string' was not declared in this scope
+  return string;
+         ^
+..\src\SimpleDate.cpp:24:9: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iosfwd:39:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\SimpleDate.cpp:9:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+..\src\SimpleDate.cpp:25:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+13:27:23 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp: In function 'std::string toString()':
+..\src\SimpleDate.cpp:24:20: error: expected primary-expression before ';' token
+  return std::string;
+                    ^
+..\src\SimpleDate.cpp:25:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+13:27:30 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:28:07 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+..\src\SimpleDate.cpp:21:34: error: no 'std::string SimpleDate::toString()' member function declared in class 'SimpleDate'
+ std::string SimpleDate::toString(){
+                                  ^
+13:28:33 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:17:2: error: 'string' in namespace 'std' does not name a type
+  std::string SimpleDate::toString();
+  ^
+..\src\SimpleDate.cpp:21:34: error: no 'std::string SimpleDate::toString()' member function declared in class 'SimpleDate'
+ std::string SimpleDate::toString(){
+                                  ^
+13:28:52 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:17:2: error: 'string' does not name a type
+  string SimpleDate::toString();
+  ^
+13:28:58 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:17:2: error: 'string' does not name a type
+  string toString();
+  ^
+13:29:03 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+In file included from ..\src\SimpleDate.cpp:8:0:
+..\src\SimpleDate.h:17:2: error: 'string' in namespace 'std' does not name a type
+  std::string toString();
+  ^
+..\src\SimpleDate.cpp:21:34: error: no 'std::string SimpleDate::toString()' member function declared in class 'SimpleDate'
+ std::string SimpleDate::toString(){
+                                  ^
+13:31:36 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:13:2: error: 'string' was not declared in this scope
+  string date;
+  ^
+..\src\main.cpp:13:2: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:39:0,
+                 from ..\src\main.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+..\src\main.cpp:13:9: error: expected ';' before 'date'
+  string date;
+         ^
+13:31:45 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:14:17: error: conflicting declaration 'SimpleDate date'
+  SimpleDate date(9,17,2014);
+                 ^
+..\src\main.cpp:13:14: error: 'date' has a previous declaration as 'std::string date'
+  std::string date;
+              ^
+..\src\main.cpp:15:35: error: 'std::string' has no member named 'dayOfWeek'
+  printf("\nDay of Week: %d", date.dayOfWeek());
+                                   ^
+..\src\main.cpp:16:39: error: 'std::string' has no member named 'daysFromNow'
+  printf("\n2 Days from now: %d", date.daysFromNow(2).getDay());
+                                       ^
+..\src\main.cpp:17:40: error: 'std::string' has no member named 'daysFromNow'
+  printf("\n20 Days from now: %d", date.daysFromNow(20).getDay());
+                                        ^
+..\src\main.cpp:18:27: error: 'std::string' has no member named 'getDay'
+  printf("\nDay: %d", date.getDay());
+                           ^
+..\src\main.cpp:19:29: error: 'std::string' has no member named 'getMonth'
+  printf("\nMonth: %d", date.getMonth());
+                             ^
+..\src\main.cpp:20:30: error: 'std::string' has no member named 'getYear'
+  printf("\nYear: %d\n", date.getYear());
+                              ^
+..\src\main.cpp:21:7: error: 'std::string' has no member named 'isLeapYear'
+  date.isLeapYear() ? printf("It's a leap year!") : printf("Its not a leap year!");
+       ^
+..\src\main.cpp:22:35: error: 'std::string' has no member named 'ordinalDate'
+  printf("\nOrdinal date: %d",date.ordinalDate());
+                                   ^
+13:32:00 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:32:43 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:17:30: error: cannot pass objects of non-trivially-copyable type 'std::string {aka class std::basic_string<char>}' through '...'
+  printf("\n Date: %s", string);
+                              ^
+..\src\main.cpp:17:30: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::string {aka std::basic_string<char>}' [-Wformat=]
+13:33:15 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:17:30: error: cannot pass objects of non-trivially-copyable type 'std::string {aka class std::basic_string<char>}' through '...'
+  printf("\n Date: %c", string);
+                              ^
+..\src\main.cpp:17:30: warning: format '%c' expects argument of type 'int', but argument 2 has type 'std::string {aka std::basic_string<char>}' [-Wformat=]
+13:33:23 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:17:30: error: cannot pass objects of non-trivially-copyable type 'std::string {aka class std::basic_string<char>}' through '...'
+  printf("\n Date: %s", string);
+                              ^
+..\src\main.cpp:17:30: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::string {aka std::basic_string<char>}' [-Wformat=]
+13:33:35 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:17:31: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::string* {aka std::basic_string<char>*}' [-Wformat=]
+  printf("\n Date: %s", &string);
+                               ^
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+13:34:13 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:17:27: error: cannot pass objects of non-trivially-copyable type 'std::string {aka class std::basic_string<char>}' through '...'
+  printf("\n Date: %s", str);
+                           ^
+..\src\main.cpp:17:27: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::string {aka std::basic_string<char>}' [-Wformat=]
+13:34:19 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:17:24: error: no match for 'operator*' (operand type is 'std::string {aka std::basic_string<char>}')
+  printf("\n Date: %s", *str);
+                        ^
+13:34:23 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:17:28: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::string* {aka std::basic_string<char>*}' [-Wformat=]
+  printf("\n Date: %s", &str);
+                            ^
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+13:35:22 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:35:37 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+13:51:51 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:23:32: error: expected ')' before ';' token
+  date = new SimpleDate(2,1,2016;)
+                                ^
+..\src\main.cpp:23:32: error: no matching function for call to 'SimpleDate::SimpleDate()'
+..\src\main.cpp:23:32: note: candidates are:
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:16:2: note: SimpleDate::SimpleDate(int, int, int)
+  SimpleDate(int monthin, int dayin, int yearin);
+  ^
+..\src\SimpleDate.h:16:2: note:   candidate expects 3 arguments, 0 provided
+..\src\SimpleDate.h:4:7: note: constexpr SimpleDate::SimpleDate(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:4:7: note:   candidate expects 1 argument, 0 provided
+..\src\SimpleDate.h:4:7: note: constexpr SimpleDate::SimpleDate(SimpleDate&&)
+..\src\SimpleDate.h:4:7: note:   candidate expects 1 argument, 0 provided
+..\src\main.cpp:23:33: error: expected primary-expression before ')' token
+  date = new SimpleDate(2,1,2016;)
+                                 ^
+..\src\main.cpp:23:33: error: expected ';' before ')' token
+13:51:59 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:23:7: error: no match for 'operator=' (operand types are 'SimpleDate' and 'SimpleDate*')
+  date = new SimpleDate(2,1,2016);
+       ^
+..\src\main.cpp:23:7: note: candidates are:
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:4:7: note: SimpleDate& SimpleDate::operator=(const SimpleDate&)
+ class SimpleDate {
+       ^
+..\src\SimpleDate.h:4:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'const SimpleDate&'
+..\src\SimpleDate.h:4:7: note: SimpleDate& SimpleDate::operator=(SimpleDate&&)
+..\src\SimpleDate.h:4:7: note:   no known conversion for argument 1 from 'SimpleDate*' to 'SimpleDate&&'
+13:52:13 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:52:58 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:53:10 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+14:01:14 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+14:01:20 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+14:01:33 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+14:12:50 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+14:13:06 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\SimpleDate.o" "..\\src\\SimpleDate.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+14:13:49 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:17: error: no match for 'operator*' (operand type is 'SimpleDate')
+  date.compareTo(*SimpleDate(2,1,2016));
+                 ^
+14:13:59 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:37: error: no matching function for call to 'SimpleDate::compareTo(SimpleDate)'
+  date.compareTo(SimpleDate(2,1,2016));
+                                     ^
+..\src\main.cpp:24:37: note: candidate is:
+In file included from ..\src\main.cpp:8:0:
+..\src\SimpleDate.h:11:6: note: int SimpleDate::compareTo(SimpleDate*)
+  int compareTo(SimpleDate* other);
+      ^
+..\src\SimpleDate.h:11:6: note:   no known conversion for argument 1 from 'SimpleDate' to 'SimpleDate*'
+14:14:20 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+14:14:46 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+14:15:59 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+Info: Nothing to build for SimpleDate
+14:16:21 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 

@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
 			win = atoi(argv[2]);
 	}
 	printf(
-			"Welcome to Connect Four!\nBoard size for this game is %d by %d \nConnecntion length is %d\n",
+			"Welcome to Connect Four!\nBoard size for this game is %d by %d \nConnection length is %d\n",
 			size, size, win);
 
 	char board[size][size];
@@ -110,19 +110,20 @@ int main(int argc, char *argv[]) {
 			board[row][col] = '.';
 	printBoard(board);
 
-	while (scanBoard(board) == 0 && checkTie(board) == 0) {
+	while (scanBoard(board) == 0 /*&& checkTie(board) == 0*/) {
 		int col = -1;
 		do {
 			do {
 				printf("Player %d's turn. Enter a column number (1-%d): ",
 						playerTurn, size);
-				scanf("%d", &col);
+				//scanf("%d", &col);
 			} while (col > size || col < 1);
 		} while (placeChecker(board, col));
 
 		printBoard(board);
 		switchPlayer();
 	}
+
 	switchPlayer(); //Unswitch back to the winning player
 	printf("Winner is Player: %d", playerTurn);
 

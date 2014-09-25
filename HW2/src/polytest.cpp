@@ -39,7 +39,7 @@ TEST_CASE_METHOD(PolyTest, "num_terms") {
 	REQUIRE(zero.number_of_terms() == 0);
 	REQUIRE(linear.number_of_terms() == 2);
 }
-#if 0
+
 TEST_CASE_METHOD(PolyTest, "term index") {
 	REQUIRE(Catch::Detail::Approx(linear[0].first) == 9.0);
 	REQUIRE(linear[0].second == 1);
@@ -53,7 +53,7 @@ TEST_CASE_METHOD(PolyTest, "term index") {
 	REQUIRE(Catch::Detail::Approx(p4[2].first) == 8.0);
 	REQUIRE(p4[2].second == 0);
 }
-
+#if 0
 TEST_CASE_METHOD(PolyTest, "addition") {
 	Polynom sum;
 	sum = linear + zero;

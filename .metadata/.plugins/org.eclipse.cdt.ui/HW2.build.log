@@ -1,21 +1,31 @@
-14:37:44 **** Incremental Build of configuration Debug for project HW2 ****
+17:33:00 **** Incremental Build of configuration Debug for project HW2 ****
 Info: Internal Builder is used for build
 g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
-..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
-..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
-  for (auto iteration : coef_list) {
-            ^
-..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
-..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
-    outputBuilder.append(std::to_string(p[i].first));
-                         ^
-..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
-    outputBuilder.append(std::to_string(p[i].second));
-                         ^
-..\src\Polynom.cpp:72:28: error: declaration of 'std::ostream& out' shadows a parameter
-  ostream& out(outputBuilder);
-                            ^
-..\src\Polynom.cpp:72:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:98:40: error: no matching function for call to 'std::vector<std::pair<float, int> >::push_back(double, int) const'
+     this->coeff_expon.push_back(2.0 , 1);// coeff_expon.at(a).second);
+                                        ^
+..\src\Polynom.cpp:98:40: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:901:7: note: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+       push_back(const value_type& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:901:7: note:   candidate expects 1 argument, 2 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:919:7: note: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+       push_back(value_type&& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:919:7: note:   candidate expects 1 argument, 2 provided
+..\src\Polynom.cpp:91:16: warning: unused variable 'coef' [-Wunused-variable]
+  vector<float> coef[num_terms + other.num_terms];
+                ^
+..\src\Polynom.cpp:92:14: warning: unused variable 'exp' [-Wunused-variable]
+  vector<int> exp[num_terms + other.num_terms];
+              ^
+..\src\Polynom.cpp:93:6: warning: unused variable 'l' [-Wunused-variable]
+  int l = 0;
+      ^
 
-14:37:44 Build Finished (took 589ms)
+17:33:01 Build Finished (took 575ms)
 

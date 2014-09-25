@@ -4001,3 +4001,1360 @@ g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o"
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o SimpleDate.exe "src\\main.o" "src\\SimpleDate.o" 
+13:34:44 **** Rebuild of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o Polynom.o "..\\Polynom.cpp" 
+..\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\Polynom.cpp:31:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list){
+            ^
+..\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\Polynom.cpp:60:26: error: 'to_string' is not a member of 'std'
+     outputBuilder.append(std::to_string(p[i].first));
+                          ^
+..\Polynom.cpp:62:26: error: 'to_string' is not a member of 'std'
+     outputBuilder.append(std::to_string(p[i].second));
+                          ^
+..\Polynom.cpp:73:32: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+   ostream& output(outputBuilder);
+                                ^
+..\Polynom.cpp: At global scope:
+..\Polynom.cpp:84:41: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+  pair<float,int> operator[] (int index) const{
+                                         ^
+..\Polynom.cpp:84:41: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+13:37:59 **** Rebuild of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:31:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list){
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:60:26: error: 'to_string' is not a member of 'std'
+     outputBuilder.append(std::to_string(p[i].first));
+                          ^
+..\src\Polynom.cpp:62:26: error: 'to_string' is not a member of 'std'
+     outputBuilder.append(std::to_string(p[i].second));
+                          ^
+..\src\Polynom.cpp:73:32: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+   ostream& output(outputBuilder);
+                                ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:84:41: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+  pair<float,int> operator[] (int index) const{
+                                         ^
+..\src\Polynom.cpp:84:41: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+13:38:51 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:31:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list){
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:60:26: error: 'to_string' is not a member of 'std'
+     outputBuilder.append(std::to_string(p[i].first));
+                          ^
+..\src\Polynom.cpp:62:26: error: 'to_string' is not a member of 'std'
+     outputBuilder.append(std::to_string(p[i].second));
+                          ^
+..\src\Polynom.cpp:73:32: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+   ostream& output(outputBuilder);
+                                ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:84:41: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+  pair<float,int> operator[] (int index) const{
+                                         ^
+..\src\Polynom.cpp:84:41: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+13:56:50 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp:33:18: error: 'E' was not declared in this scope
+  for (int expo : E) {
+                  ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:62:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:64:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:75:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:86:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:86:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+13:57:39 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:62:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:64:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:75:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:86:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:86:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+13:58:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+13:58:25 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+13:58:38 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:00:56 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:79:9: error: 'num_terms' was not declared in this scope
+  return num_terms;
+         ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:01:10 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:78:23: error: non-member function 'int gvsu::number_of_terms()' cannot have cv-qualifier
+ int number_of_terms() const {
+                       ^
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:79:9: error: 'num_terms' was not declared in this scope
+  return num_terms;
+         ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:01:38 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom()':
+..\src\Polynom.cpp:19:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom() {
+ ^
+..\src\Polynom.cpp:20:12: error: assignment of read-only member 'gvsu::Polynom::num_terms'
+  num_terms = 0;
+            ^
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:23:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom(initializer_list<float> coef_list,
+ ^
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp:34:12: error: increment of read-only member 'gvsu::Polynom::num_terms'
+   num_terms++;
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:79:9: error: 'num_terms' was not declared in this scope
+  return num_terms;
+         ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:01:46 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom()':
+..\src\Polynom.cpp:19:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom() {
+ ^
+..\src\Polynom.cpp:20:12: error: assignment of read-only member 'gvsu::Polynom::num_terms'
+  num_terms = 0;
+            ^
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:23:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom(initializer_list<float> coef_list,
+ ^
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp:34:12: error: increment of read-only member 'gvsu::Polynom::num_terms'
+   num_terms++;
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:78:23: error: non-member function 'int gvsu::number_of_terms()' cannot have cv-qualifier
+ int number_of_terms() const{
+                       ^
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:79:9: error: 'num_terms' was not declared in this scope
+  return num_terms;
+         ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:01:52 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom()':
+..\src\Polynom.cpp:19:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom() {
+ ^
+..\src\Polynom.cpp:20:12: error: assignment of read-only member 'gvsu::Polynom::num_terms'
+  num_terms = 0;
+            ^
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:23:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom(initializer_list<float> coef_list,
+ ^
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp:34:12: error: increment of read-only member 'gvsu::Polynom::num_terms'
+   num_terms++;
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:79:9: error: 'num_terms' was not declared in this scope
+  return num_terms;
+         ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+..\src\Polynom.cpp: In function 'int gvsu::number_of_terms()':
+..\src\Polynom.cpp:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:02:30 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom()':
+..\src\Polynom.cpp:19:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom() {
+ ^
+..\src\Polynom.cpp:20:12: error: assignment of read-only member 'gvsu::Polynom::num_terms'
+  num_terms = 0;
+            ^
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:23:1: error: uninitialized member 'gvsu::Polynom::num_terms' with 'const' type 'const int' [-fpermissive]
+ Polynom::Polynom(initializer_list<float> coef_list,
+ ^
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp:34:12: error: increment of read-only member 'gvsu::Polynom::num_terms'
+   num_terms++;
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:03:02 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:78:5: error: prototype for 'int gvsu::Polynom::number_of_terms()' does not match any in class 'gvsu::Polynom'
+ int Polynom::number_of_terms() {
+     ^
+In file included from ..\src\Polynom.cpp:6:0:
+..\src\Polynom.h:46:9: error: candidate is: int gvsu::Polynom::number_of_terms() const
+     int number_of_terms() const; /* number of terms */
+         ^
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:04:09 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:15:45 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:29:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:60:35: error: no matching function for call to 'std::basic_string<char>::append(float)'
+    outputBuilder.append(p[i].first);
+                                   ^
+..\src\Polynom.cpp:60:35: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:973:7: note: std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const std::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       append(const basic_string& __str);
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:973:7: note:   no known conversion for argument 1 from 'float' to 'const std::basic_string<char>&'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:989:7: note: std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+       append(const basic_string& __str, size_type __pos, size_type __n);
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:989:7: note:   candidate expects 3 arguments, 1 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:998:7: note: std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+       append(const _CharT* __s, size_type __n);
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:998:7: note:   candidate expects 2 arguments, 1 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1006:7: note: std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       append(const _CharT* __s)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1006:7: note:   no known conversion for argument 1 from 'float' to 'const char*'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1021:7: note: std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(std::basic_string<_CharT, _Traits, _Alloc>::size_type, _CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+       append(size_type __n, _CharT __c);
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1021:7: note:   candidate expects 2 arguments, 1 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1030:7: note: std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       append(initializer_list<_CharT> __l)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1030:7: note:   no known conversion for argument 1 from 'float' to 'std::initializer_list<char>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1044:9: note: template<class _InputIterator> std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(_InputIterator, _InputIterator) [with _InputIterator = _InputIterator; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+         append(_InputIterator __first, _InputIterator __last)
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:1044:9: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:35: note:   candidate expects 2 arguments, 1 provided
+    outputBuilder.append(p[i].first);
+                                   ^
+..\src\Polynom.cpp:62:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:73:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:84:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:84:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:17:09 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:29:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:60:18: error: no match for 'operator<<' (operand types are 'std::string {aka std::basic_string<char>}' and 'float')
+    outputBuilder << p[i].first;
+                  ^
+..\src\Polynom.cpp:60:18: note: candidates are:
+..\src\Polynom.cpp:48:10: note: std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)
+ ostream& operator<<(ostream& out, const Polynom& p) {
+          ^
+..\src\Polynom.cpp:48:10: note:   no known conversion for argument 1 from 'std::string {aka std::basic_string<char>}' to 'std::ostream& {aka std::basic_ostream<char>&}'
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3310:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::piecewise_linear_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3310:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3094:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::piecewise_constant_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3094:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2884:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::discrete_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2884:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2425:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::student_t_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2425:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2350:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::fisher_f_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2350:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2186:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::chi_squared_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2186:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2113:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::lognormal_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2113:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1817:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::binomial_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1817:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1552:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::poisson_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1552:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1347:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::negative_binomial_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1347:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:831:5: note: template<class _RandomNumberEngine, unsigned int __k, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::shuffle_order_engine<_RandomNumberEngine, __k>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:831:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:702:5: note: template<class _RandomNumberEngine, unsigned int __p, unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::discard_block_engine<_RandomNumberEngine, __p, __r>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:702:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:632:5: note: template<class _UIntType, unsigned int __w, unsigned int __s, unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:632:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:156:5: note: template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::linear_congruential_engine<_UIntType, __a, __c, __m>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:156:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2748:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::extreme_value_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2748:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2672:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::weibull_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2672:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1881:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::exponential_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1881:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2594:5: note: template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::gamma_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2594:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1232:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::geometric_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1232:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2048:5: note: template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::normal_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2048:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1150:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bernoulli_distribution&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1150:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2273:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::cauchy_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2273:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1088:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::uniform_real_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1088:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1029:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::uniform_int_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1029:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:477:5: note: template<class _UIntType1, unsigned int __w1, unsigned int __n1, unsigned int __m1, unsigned int __r1, _UIntType1 __a1, unsigned int __u1, _UIntType1 __d1, unsigned int __s1, _UIntType1 __b1, unsigned int __t1, _UIntType1 __c1, unsigned int __l1, _UIntType1 __f1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:477:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:11:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1277:5: note: template<class _RandomNumberEngine, unsigned int __w, class _UIntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1277:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:602:5: note: template<class _CharT, class _Traits, class _Tp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&)
+     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:602:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:548:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:543:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:530:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:609:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:513:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:493:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:488:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:482:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:476:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:471:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:60:26: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << p[i].first;
+                          ^
+..\src\Polynom.cpp:62:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:73:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:84:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:84:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:17:26 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:29:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:60:21: error: 'to_string' is not a member of 'std'
+    outputBuilder << std::to_string(p[i].first);
+                     ^
+..\src\Polynom.cpp:62:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:73:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:84:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:84:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:18:03 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:18:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:30:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:74:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:85:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:85:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:18:51 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:31:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:62:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:64:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:75:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:86:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:86:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:19:23 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:31:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:62:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(1));
+                         ^
+..\src\Polynom.cpp:64:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:75:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:86:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:86:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:22:13 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp:15:17: fatal error: stdio: No such file or directory
+ #include <stdio>
+                 ^
+compilation terminated.
+14:22:13 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+Assembler messages:
+Fatal error: can't create src\main.o: No such file or directory
+14:22:30 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:32:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:65:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:76:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:87:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:87:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:22:30 **** Incremental Build of configuration Debug for project SimpleDate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\main.o" "..\\src\\main.cpp" 
+Assembler messages:
+Fatal error: can't create src\main.o: No such file or directory
+14:23:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:83:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const {
+                                        ^
+..\src\Polynom.cpp:83:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:23:58 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:83:38: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+ pair<float, int> operator[](int index) {
+                                      ^
+14:25:09 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:45: error: 'to_string' was not declared in this scope
+    outputBuilder.append(to_string(p[i].first));
+                                             ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:83:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const{
+                                        ^
+..\src\Polynom.cpp:83:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:28:59 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:83:40: error: non-member function 'std::pair<float, int> gvsu::operator[](int)' cannot have cv-qualifier
+ pair<float, int> operator[](int index) const{
+                                        ^
+..\src\Polynom.cpp:83:40: error: 'std::pair<float, int> gvsu::operator[](int)' must be a nonstatic member function
+14:30:42 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+14:30:59 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:47:60: error: 'std::ostream& gvsu::Polynom::operator<<(std::ostream&, const gvsu::Polynom&)' must take exactly one argument
+ ostream& Polynom::operator<<(ostream& out, const Polynom& p) {
+                                                            ^
+14:32:23 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:31: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+  ostream& output(outputBuilder);
+                               ^
+14:34:11 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: At global scope:
+..\src\Polynom.cpp:47:60: error: 'std::ostream& gvsu::Polynom::operator<<(std::ostream&, const gvsu::Polynom&)' must take exactly one argument
+ ostream& Polynom::operator<<(ostream& out, const Polynom& p) {
+                                                            ^
+14:34:20 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:28: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream& out(outputBuilder);
+                            ^
+..\src\Polynom.cpp:72:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+..\src\Polynom.cpp:73:9: error: 'output' was not declared in this scope
+  return output;
+         ^
+..\src\Polynom.cpp:72:11: warning: unused variable 'out' [-Wunused-variable]
+  ostream& out(outputBuilder);
+           ^
+..\src\Polynom.cpp:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:34:33 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:28: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream& out(outputBuilder);
+                            ^
+..\src\Polynom.cpp:72:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+14:35:07 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:4: error: 'outputBuilder' is not a member of 'std'
+    std::outputBuilder.append(std::to_string(p[i].first));
+    ^
+..\src\Polynom.cpp:59:30: error: 'to_string' is not a member of 'std'
+    std::outputBuilder.append(std::to_string(p[i].first));
+                              ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:28: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream& out(outputBuilder);
+                            ^
+..\src\Polynom.cpp:72:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+14:36:56 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:28: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream& out(outputBuilder);
+                            ^
+..\src\Polynom.cpp:72:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+14:37:44 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:28: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream& out(outputBuilder);
+                            ^
+..\src\Polynom.cpp:72:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'

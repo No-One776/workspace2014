@@ -1,0 +1,21 @@
+14:37:44 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:12: warning: unused variable 'iteration' [-Wunused-variable]
+  for (auto iteration : coef_list) {
+            ^
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:59:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:61:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
+..\src\Polynom.cpp:72:28: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream& out(outputBuilder);
+                            ^
+..\src\Polynom.cpp:72:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+
+14:37:44 Build Finished (took 589ms)
+

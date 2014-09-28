@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : Project2.c
+ Author      : Justin Rohr & Kyle Niewiada
+ Version     : 1.0
+ Description : FSM Scanner
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main(void) {
+	enum current_state, start, identifier;
+	current_state = start;
+	do {
+		if (current_state == identifier) {
+			printf(“ – Identifier\n”);
+			current_state = start;
+		} else if (current_state == number) {
+			printf(“ – Number\n”);
+			current_state = start;
+		}
+		scanf(“%c”, &transition_char);
+		if (transition_char != ‘ ‘) {
+		printf(“%c”, transition_char);
+	}
+	current_state = transition(current_state, transition_char);
+} while (current_state != stop);
+
+return EXIT_SUCCESS;
+}

@@ -34,6 +34,16 @@ Polynom::Polynom(initializer_list<float> coef_list,
 	}
 }
 
+Polynom::Polynom(vector<float> coeff, vector<int> exp) {
+	auto ex = exp.begin();
+	for (auto iter = coeff.begin(); iter != coeff.end(); ++iter) {
+		num_terms++; //Increase Number of Terms
+		coeff_expon.push_back(std::make_pair(*iter, *ex)); // Inserting into vector
+		cout << "Coefficient: " << *iter << " & Exponent: " << *ex << endl;
+		ex++;
+	}
+}
+
 /* TODO: Add more function below this line as you uncover more test methods
  in polytest.cpp and the required functions in Polynom.h
  */
@@ -79,7 +89,7 @@ pair<float, int> Polynom::operator[](int index) const {
 }
 
 Polynom& Polynom::operator*=(float m) {
-	for (auto iter : coeff_expon){
+	for (auto iter : coeff_expon) {
 		iter.first *= m;
 	}
 	return *this;
@@ -87,25 +97,49 @@ Polynom& Polynom::operator*=(float m) {
 
 /* basic polynomial arithmetic between two polynomials: "*this" and "other" */
 Polynom Polynom::operator+(const Polynom& other) const {
-	Polynom temp;
-	vector<float> coef[num_terms + other.num_terms];
-	vector<int> exp[num_terms + other.num_terms];
-	int l = 0;
+	//Polynom temp;
+	int max = num_terms + other.num_terms;
+	std::vector<float> coef[max];
+	vector<int> exp[max];
+	//int l = 0;
+	//std::vector<float>::iterator c = coef.begin();
+	for (auto iter = coef.begin(); iter < coef.end(); iter++){
+
+	}
+	//auto e = exp.begin();
 	//If the exponents are equal add the coeff.
 	for (int a = 0; a < this->num_terms; a++) {
 		for (int x = 0; x < other.num_terms; x++) {
 			if (other[x].second == coeff_expon.at(a).second) {
-				this->coeff_expon.push_back(2.0 , 1);// coeff_expon.at(a).second);
-				//coef[l]. other[x].first + coeff_expon.at(a).first;
+
+				//this->coeff_expon.at(l) = std::make_pair(other[x].first + coeff_expon.at(a).first, coeff_expon.at(a).second);
+				//.push_back(2.0 , 1);// coeff_expon.at(a).second);
+				//c.push_back(2.0);
+				//c.at(1) = 2.0;
+				//e.push_back(1);
+				//e++;
+				//c++;
+				//pushback(other[x].first + coeff_expon.at(a).first);
 				//exp[l] = coeff_expon.at(a).second;
 			} else if (other[x].second < coeff_expon.at(a).second) {
-			//	coef[l] = coeff_expon.at(a).first;
+				//this->coeff_expon.insert(c,
+				//		make_pair(other[x].first, other[x].second));
+				//coef[l] = coeff_expon.at(a).first;
 				//exp[l] = coeff_expon.at(a).second;
 			}
 		}
 	}
 
-	return temp;
+	int a = 0, x = 0;
+	for (auto t = coeff_expon.begin(); t < coeff_expon.end(); t++)
+		for (auto o = other.coeff_expon.begin(); o < other.coeff_expon.end();
+				o++) {
+			if (coeff_expon.at(a).second == other[x].second)
+				coeff_expon.insert(t, std::make_pair(other[x].first + coeff_expon.at(a).first, coeff_expon.at(a).second));
+			coeff_expon.in
+		}
+
+	return Polynom(*coef, *exp);
 }
 
 }

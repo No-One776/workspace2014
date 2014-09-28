@@ -1,31 +1,52 @@
-17:33:00 **** Incremental Build of configuration Debug for project HW2 ****
+19:10:42 **** Incremental Build of configuration Debug for project HW2 ****
 Info: Internal Builder is used for build
 g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
 ..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
-..\src\Polynom.cpp:98:40: error: no matching function for call to 'std::vector<std::pair<float, int> >::push_back(double, int) const'
-     this->coeff_expon.push_back(2.0 , 1);// coeff_expon.at(a).second);
-                                        ^
-..\src\Polynom.cpp:98:40: note: candidates are:
+..\src\Polynom.cpp:106:24: error: request for member 'begin' in 'coef', which is of non-class type 'std::vector<float> [(((sizetype)(((ssizetype)max) + -1)) + 1)]'
+  for (auto iter = coef.begin(); iter < coef.end(); iter++){
+                        ^
+..\src\Polynom.cpp:106:45: error: request for member 'end' in 'coef', which is of non-class type 'std::vector<float> [(((sizetype)(((ssizetype)max) + -1)) + 1)]'
+  for (auto iter = coef.begin(); iter < coef.end(); iter++){
+                                             ^
+..\src\Polynom.cpp:138:109: error: no matching function for call to 'std::vector<std::pair<float, int> >::insert(__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >&, std::pair<float, int>) const'
+     coeff_expon.insert(t, std::make_pair(other[x].first + coeff_expon.at(a).first, coeff_expon.at(a).second));
+                                                                                                             ^
+..\src\Polynom.cpp:138:109: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:107:5: note: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, const value_type&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+     vector<_Tp, _Alloc>::
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:107:5: note:   no known conversion for argument 1 from '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' to 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
 In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
                  from ..\src\Polynom.h:9,
                  from ..\src\Polynom.cpp:6:
-c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:901:7: note: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
-       push_back(const value_type& __x)
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:988:7: note: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+       insert(iterator __position, value_type&& __x)
        ^
-c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:901:7: note:   candidate expects 1 argument, 2 provided
-c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:919:7: note: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
-       push_back(value_type&& __x)
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:988:7: note:   no known conversion for argument 1 from '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' to 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1005:7: note: void std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, std::initializer_list<_Tp>) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*]
+       insert(iterator __position, initializer_list<value_type> __l)
        ^
-c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:919:7: note:   candidate expects 1 argument, 2 provided
-..\src\Polynom.cpp:91:16: warning: unused variable 'coef' [-Wunused-variable]
-  vector<float> coef[num_terms + other.num_terms];
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1005:7: note:   no known conversion for argument 1 from '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' to 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1023:7: note: void std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+       insert(iterator __position, size_type __n, const value_type& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1023:7: note:   candidate expects 3 arguments, 2 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1044:9: note: template<class _InputIterator, class> void std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >]
+         insert(iterator __position, _InputIterator __first,
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1044:9: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:138:109: note:   cannot convert 't' (type '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >') to type 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
+     coeff_expon.insert(t, std::make_pair(other[x].first + coeff_expon.at(a).first, coeff_expon.at(a).second));
+                                                                                                             ^
+..\src\Polynom.cpp:139:16: error: 'const class std::vector<std::pair<float, int> >' has no member named 'in'
+    coeff_expon.in
                 ^
-..\src\Polynom.cpp:92:14: warning: unused variable 'exp' [-Wunused-variable]
-  vector<int> exp[num_terms + other.num_terms];
-              ^
-..\src\Polynom.cpp:93:6: warning: unused variable 'l' [-Wunused-variable]
-  int l = 0;
-      ^
+..\src\Polynom.cpp:140:3: error: expected ';' before '}' token
+   }
+   ^
 
-17:33:01 Build Finished (took 575ms)
+19:10:43 Build Finished (took 628ms)
 

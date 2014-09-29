@@ -35,6 +35,8 @@ public:
 	/* initializer list are from HIGHEST to LOWEST exponent */
 	Polynom(initializer_list<float> coef_list, initializer_list<int> expo_list);
 
+	Polynom(vector<float> coeff, vector<int> exp);
+
 	int number_of_terms() const; /* number of terms */
 
 	/* Retrieve the term at the given index as a (float,int) pair*/

@@ -27,7 +27,6 @@ class Polynom {
 private:
 	int num_terms;
 	vector<pair<float, int>> coeff_expon;
-	/* TODO: add the instance variable declarations for this class here */
 
 public:
 	Polynom();
@@ -45,6 +44,9 @@ public:
 	/* modify this poly by multiplying all coefficents by m */
 	Polynom& operator *=(float m);
 
+	/* return a polynom as the result of multiplying all coefficiets of this polynom by m */
+	Polynom operator*(float m) const;
+
 	/*----- INSTRUCTIONS -----
 	 Move the "#if 0" line one step further to include the next function
 	 in your compilation. Also write the corresponding function body
@@ -54,22 +56,15 @@ public:
 	/* basic polynomial arithmetic between two polynomials: "*this" and "other" */
 	Polynom operator+(const Polynom& other) const;
 	Polynom operator-(const Polynom& other) const;
-#if 0
 
 	Polynom operator* (const Polynom& other) const;
 
-	/* return a polynom as the result of multiplying all coefficiets of this polynom by m */
-	Polynom operator* (float m) const;
-
 	double operator() (double val) const; /* evaluate polynom at the given x-value */
-#endif
+
 };
 
-#if 0
 /* multiply a scalar "val" with Polynomial "p" */
-Polynom operator* (float val, const Polynom& p);
-#endif
-
+Polynom operator*(float val, const Polynom& p);
 }
 
 #endif

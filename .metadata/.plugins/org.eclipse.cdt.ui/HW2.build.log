@@ -1,7 +1,7 @@
-10:56:08 **** Incremental Build of configuration Debug for project HW2 ****
+15:24:37 **** Incremental Build of configuration Debug for project HW2 ****
 Info: Internal Builder is used for build
 g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
 g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
 
-10:56:11 Build Finished (took 3s.343ms)
+15:24:40 Build Finished (took 2s.777ms)
 

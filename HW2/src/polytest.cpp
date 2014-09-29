@@ -91,33 +91,33 @@ TEST_CASE_METHOD(PolyTest, "subtraction") {
 	REQUIRE(Catch::Detail::Approx(result[3].first) == 4);
 	REQUIRE(result[3].second == 0);
 }
-#if 0
+
 TEST_CASE_METHOD(PolyTest, "scalar multiple, polynom as LHS") {
 	Polynom result;
-	SECTION("Non zero scalar") {
-		result = p4 * 3;
-		REQUIRE(Catch::Detail::Approx(result[0].first) == 30.0);
-		REQUIRE(result[0].second == 5);
-		REQUIRE(Catch::Detail::Approx(result[1].first) == -12.0);
-		REQUIRE(result[1].second == 2);
-		REQUIRE(Catch::Detail::Approx(result[2].first) == 24.0);
-		REQUIRE(result[2].second == 0);
-	}
+	SECTION("Non zero scalar"){
+	result = p4 * 3;
+	REQUIRE(Catch::Detail::Approx(result[0].first) == 30.0);
+	REQUIRE(result[0].second == 5);
+	REQUIRE(Catch::Detail::Approx(result[1].first) == -12.0);
+	REQUIRE(result[1].second == 2);
+	REQUIRE(Catch::Detail::Approx(result[2].first) == 24.0);
+	REQUIRE(result[2].second == 0);
+}
 
-	SECTION("Multiply by one") {
-		result = p4 * 1;
-		REQUIRE(result.number_of_terms() == p4.number_of_terms());
+	SECTION("Multiply by one"){
+	result = p4 * 1;
+	REQUIRE(result.number_of_terms() == p4.number_of_terms());
 
-		for (int k = 0; k < result.number_of_terms(); k++)
-		{
-			REQUIRE(result[k].first == p4[k].first);
-			REQUIRE(result[k].second == p4[k].second);
-		}
+	for (int k = 0; k < result.number_of_terms(); k++)
+	{
+		REQUIRE(result[k].first == p4[k].first);
+		REQUIRE(result[k].second == p4[k].second);
 	}
-	SECTION("Multiply by zero") {
-		result = p4 * 0;
-		REQUIRE(result.number_of_terms() == 0);
-	}
+}
+	SECTION("Multiply by zero"){
+	result = p4 * 0;
+	REQUIRE(result.number_of_terms() == 0);
+}
 }
 
 TEST_CASE_METHOD(PolyTest, "scalar multiple, polynom as RHS") {
@@ -134,12 +134,12 @@ TEST_CASE_METHOD(PolyTest, "scalar multiple and assign") {
 	p4 *= 2.5;
 	REQUIRE(Catch::Detail::Approx(p4[0].first) == 25.0);
 	REQUIRE(p4[0].second == 5);
-	REQUIRE(Catch::Detail::Approx(p4[1].first) ==-10.0);
+	REQUIRE(Catch::Detail::Approx(p4[1].first) == -10.0);
 	REQUIRE(p4[1].second == 2);
 	REQUIRE(Catch::Detail::Approx(p4[2].first) == 20.0);
 	REQUIRE(p4[2].second == 0);
 }
-
+#if 0
 TEST_CASE_METHOD(PolyTest, "multiply two polynomials") {
 	Polynom prod;
 
@@ -197,8 +197,8 @@ TEST_CASE_METHOD(PolyTest, "output stream") {
 	log << linear;
 	REQUIRE (log.str().length() >= 4);
 
-	// To see the output of your "stream push", uncomment the following statement:
-	//cout << linear << endl;
+// To see the output of your "stream push", uncomment the following statement:
+//cout << linear << endl;
 
 	/*
 	 The following statement should output  10x^5  -4x^2  8  (or 10x^5  -4x^2 + 8)
@@ -243,26 +243,22 @@ TEST_CASE_METHOD(PolyTest, "Commutative operations") {
 		}
 	}
 }
-
+#endif
 TEST_CASE_METHOD(PolyTest, "Evaluation polynom") {
-	for (float x = -50; x < 50; x += 0.5)
-	{
+	for (float x = -50; x < 50; x += 0.5) {
 		REQUIRE(zero(x) == 0);
 	}
-	for (float x = -50; x < 50; x += 0.5)
-	{
+	for (float x = -50; x < 50; x += 0.5) {
 		/* Use lambda function/expression to evaluate the expected RHS */
 		REQUIRE(linear(x) == [] (float x) -> float {return 9*x + 4;}(x));
 	}
-	for (float x = -50; x < 50; x += 0.5)
-	{
+	for (float x = -50; x < 50; x += 0.5) {
 		/* Use lambda function/expression to evaluate the expected RHS */
 		REQUIRE(p4(x) == [] (float x) -> double
-				{
-					return 10 * std::pow(x,5) - 4 * std::pow(x,2) + 8;
-				}(x));
+		{
+			return 10 * std::pow(x,5) - 4 * std::pow(x,2) + 8;
+		}(x));
 	}
 
 }
 
-#endif

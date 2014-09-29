@@ -1414,3 +1414,1918 @@ g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o"
 Info: Internal Builder is used for build
 g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
 g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:02:43 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:07:14 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:18: error: invalid initialization of reference of type 'float&' from expression of type 'const std::pair<float, int>'
+  for (float& z : coeff_expon){
+                  ^
+..\src\Polynom.cpp:192:14: warning: unused variable 'z' [-Wunused-variable]
+  for (float& z : coeff_expon){
+              ^
+16:08:08 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:7: error: expected primary-expression before '<' token
+  for (<float,int>& z : coeff_expon){
+       ^
+..\src\Polynom.cpp:192:8: error: expected primary-expression before 'float'
+  for (<float,int>& z : coeff_expon){
+        ^
+..\src\Polynom.cpp:192:8: error: expected ';' before 'float'
+..\src\Polynom.cpp:195:2: error: expected primary-expression before 'return'
+  return temp;
+  ^
+..\src\Polynom.cpp:195:2: error: expected ';' before 'return'
+..\src\Polynom.cpp:195:2: error: expected primary-expression before 'return'
+..\src\Polynom.cpp:195:2: error: expected ')' before 'return'
+..\src\Polynom.cpp:196:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+16:08:16 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:30: error: invalid initialization of reference of type 'std::vector<float, int>&' from expression of type 'const std::pair<float, int>'
+  for (vector<float,int>& z : coeff_expon){
+                              ^
+..\src\Polynom.cpp:192:26: warning: unused variable 'z' [-Wunused-variable]
+  for (vector<float,int>& z : coeff_expon){
+                          ^
+16:08:40 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:36: error: invalid initialization of reference of type 'std::vector<float, int>&' from expression of type 'const std::pair<float, int>'
+  for (vector<float,int>& z : other.coeff_expon){
+                                    ^
+..\src\Polynom.cpp:192:26: warning: unused variable 'z' [-Wunused-variable]
+  for (vector<float,int>& z : other.coeff_expon){
+                          ^
+16:09:03 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:36: error: invalid initialization of reference of type 'std::vector<float, int>&' from expression of type 'const std::pair<float, int>'
+  for (vector<float,int>& z : other.coeff_expon){
+                                    ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:36:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_construct.h:61,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:62,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:90:43: error: 'int' is not a class, struct, or union type
+       typedef typename _Alloc::value_type value_type;
+                                           ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: error: no matching function for call to 'std::allocator_traits<int>::_S_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(pointer, value_type*)
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: note: template<class _Tp> static typename _Tp::pointer std::allocator_traits<_Alloc>::_S_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(pointer, value_type*)
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::pointer std::allocator_traits<_Alloc>::_S_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: error: no matching function for call to 'std::allocator_traits<int>::_S_const_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: note: template<class _Tp> static typename _Tp::const_pointer std::allocator_traits<_Alloc>::_S_const_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::const_pointer std::allocator_traits<_Alloc>::_S_const_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: error: no matching function for call to 'std::allocator_traits<int>::_S_void_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: note: template<class _Tp> static typename _Tp::void_pointer std::allocator_traits<_Alloc>::_S_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::void_pointer std::allocator_traits<_Alloc>::_S_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: error: no matching function for call to 'std::allocator_traits<int>::_S_const_void_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: note: template<class _Tp> static typename _Tp::const_void_pointer std::allocator_traits<_Alloc>::_S_const_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::const_void_pointer std::allocator_traits<_Alloc>::_S_const_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: error: no matching function for call to 'std::allocator_traits<int>::_S_difference_type_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(difference_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: note: template<class _Tp> static typename _Tp::difference_type std::allocator_traits<_Alloc>::_S_difference_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(difference_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::difference_type std::allocator_traits<_Alloc>::_S_difference_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: error: no matching function for call to 'std::allocator_traits<int>::_S_size_type_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(size_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: note: template<class _Tp> static typename _Tp::size_type std::allocator_traits<_Alloc>::_S_size_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(size_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::size_type std::allocator_traits<_Alloc>::_S_size_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: error: 'int' is not a class, struct, or union type
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_construct.h:61:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:62,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h: In instantiation of 'struct __gnu_cxx::__alloc_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:137:23: error: no members matching '__gnu_cxx::__alloc_traits<int>::_Base_type {aka std::allocator_traits<int>}::allocate' in '__gnu_cxx::__alloc_traits<int>::_Base_type {aka struct std::allocator_traits<int>}'
+     using _Base_type::allocate;
+                       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:138:23: error: no members matching '__gnu_cxx::__alloc_traits<int>::_Base_type {aka std::allocator_traits<int>}::deallocate' in '__gnu_cxx::__alloc_traits<int>::_Base_type {aka struct std::allocator_traits<int>}'
+     using _Base_type::deallocate;
+                       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:141:23: error: no members matching '__gnu_cxx::__alloc_traits<int>::_Base_type {aka std::allocator_traits<int>}::max_size' in '__gnu_cxx::__alloc_traits<int>::_Base_type {aka struct std::allocator_traits<int>}'
+     using _Base_type::max_size;
+                       ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:36:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_construct.h:61,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:62,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Alloc> template<class _Tp> using rebind_alloc = typename std::__alloctr_rebind<_Alloc, _Tp>::__type [with _Tp = float; _Alloc = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:196:65:   required from 'struct __gnu_cxx::__alloc_traits<int>::rebind<float>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:202:76: error: invalid use of incomplete type 'struct std::__alloctr_rebind<int, float, false>'
+         using rebind_alloc = typename __alloctr_rebind<_Alloc, _Tp>::__type;
+                                                                            ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:65:12: error: declaration of 'struct std::__alloctr_rebind<int, float, false>'
+     struct __alloctr_rebind;
+            ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h: In instantiation of 'class std::vector<float, int>':
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:213:58: error: 'int' is not a class, struct, or union type
+       typedef typename _Alloc::value_type                _Alloc_value_type;
+                                                          ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:237:20: error: no members matching 'std::vector<float, int>::_Base {aka std::_Vector_base<float, int>}::_M_allocate' in 'std::vector<float, int>::_Base {aka struct std::_Vector_base<float, int>}'
+       using _Base::_M_allocate;
+                    ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:238:20: error: no members matching 'std::vector<float, int>::_Base {aka std::_Vector_base<float, int>}::_M_deallocate' in 'std::vector<float, int>::_Base {aka struct std::_Vector_base<float, int>}'
+       using _Base::_M_deallocate;
+                    ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:240:20: error: no members matching 'std::vector<float, int>::_Base {aka std::_Vector_base<float, int>}::_M_get_Tp_allocator' in 'std::vector<float, int>::_Base {aka struct std::_Vector_base<float, int>}'
+       using _Base::_M_get_Tp_allocator;
+                    ^
+..\src\Polynom.cpp:193:4: error: no 'operator++(int)' declared for postfix '++' [-fpermissive]
+   z++;
+    ^
+16:09:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:36: error: invalid initialization of reference of type 'std::vector<float, int>&' from expression of type 'const std::pair<float, int>'
+  for (vector<float,int>& z : other.coeff_expon){
+                                    ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:36:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_construct.h:61,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:62,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:90:43: error: 'int' is not a class, struct, or union type
+       typedef typename _Alloc::value_type value_type;
+                                           ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: error: no matching function for call to 'std::allocator_traits<int>::_S_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(pointer, value_type*)
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: note: template<class _Tp> static typename _Tp::pointer std::allocator_traits<_Alloc>::_S_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(pointer, value_type*)
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::pointer std::allocator_traits<_Alloc>::_S_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:100:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: error: no matching function for call to 'std::allocator_traits<int>::_S_const_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: note: template<class _Tp> static typename _Tp::const_pointer std::allocator_traits<_Alloc>::_S_const_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::const_pointer std::allocator_traits<_Alloc>::_S_const_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:109:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: error: no matching function for call to 'std::allocator_traits<int>::_S_void_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: note: template<class _Tp> static typename _Tp::void_pointer std::allocator_traits<_Alloc>::_S_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::void_pointer std::allocator_traits<_Alloc>::_S_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:120:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: error: no matching function for call to 'std::allocator_traits<int>::_S_const_void_pointer_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: note: template<class _Tp> static typename _Tp::const_void_pointer std::allocator_traits<_Alloc>::_S_const_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(const_void_pointer,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::const_void_pointer std::allocator_traits<_Alloc>::_S_const_void_pointer_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:131:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: error: no matching function for call to 'std::allocator_traits<int>::_S_difference_type_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(difference_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: note: template<class _Tp> static typename _Tp::difference_type std::allocator_traits<_Alloc>::_S_difference_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(difference_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::difference_type std::allocator_traits<_Alloc>::_S_difference_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:142:1: error: 'int' is not a class, struct, or union type
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In instantiation of 'struct std::allocator_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: error: no matching function for call to 'std::allocator_traits<int>::_S_size_type_helper(int*)'
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(size_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: note: candidate is:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: note: template<class _Tp> static typename _Tp::size_type std::allocator_traits<_Alloc>::_S_size_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int]
+ _GLIBCXX_ALLOC_TR_NESTED_TYPE(size_type,
+ ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Tp> static typename _Tp::size_type std::allocator_traits<_Alloc>::_S_size_type_helper(_Tp*) [with _Tp = _Tp; _Alloc = int] [with _Tp = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1:   required from 'struct std::allocator_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:121:10:   required from 'struct __gnu_cxx::__alloc_traits<int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:153:1: error: 'int' is not a class, struct, or union type
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_construct.h:61:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:62,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h: In instantiation of 'struct __gnu_cxx::__alloc_traits<int>':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:137:23: error: no members matching '__gnu_cxx::__alloc_traits<int>::_Base_type {aka std::allocator_traits<int>}::allocate' in '__gnu_cxx::__alloc_traits<int>::_Base_type {aka struct std::allocator_traits<int>}'
+     using _Base_type::allocate;
+                       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:138:23: error: no members matching '__gnu_cxx::__alloc_traits<int>::_Base_type {aka std::allocator_traits<int>}::deallocate' in '__gnu_cxx::__alloc_traits<int>::_Base_type {aka struct std::allocator_traits<int>}'
+     using _Base_type::deallocate;
+                       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:141:23: error: no members matching '__gnu_cxx::__alloc_traits<int>::_Base_type {aka std::allocator_traits<int>}::max_size' in '__gnu_cxx::__alloc_traits<int>::_Base_type {aka struct std::allocator_traits<int>}'
+     using _Base_type::max_size;
+                       ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:36:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_construct.h:61,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:62,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h: In substitution of 'template<class _Alloc> template<class _Tp> using rebind_alloc = typename std::__alloctr_rebind<_Alloc, _Tp>::__type [with _Tp = float; _Alloc = int]':
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\alloc_traits.h:196:65:   required from 'struct __gnu_cxx::__alloc_traits<int>::rebind<float>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:75:28:   required from 'struct std::_Vector_base<float, int>'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:210:11:   required from 'class std::vector<float, int>'
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:202:76: error: invalid use of incomplete type 'struct std::__alloctr_rebind<int, float, false>'
+         using rebind_alloc = typename __alloctr_rebind<_Alloc, _Tp>::__type;
+                                                                            ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\alloc_traits.h:65:12: error: declaration of 'struct std::__alloctr_rebind<int, float, false>'
+     struct __alloctr_rebind;
+            ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h: In instantiation of 'class std::vector<float, int>':
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:213:58: error: 'int' is not a class, struct, or union type
+       typedef typename _Alloc::value_type                _Alloc_value_type;
+                                                          ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:237:20: error: no members matching 'std::vector<float, int>::_Base {aka std::_Vector_base<float, int>}::_M_allocate' in 'std::vector<float, int>::_Base {aka struct std::_Vector_base<float, int>}'
+       using _Base::_M_allocate;
+                    ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:238:20: error: no members matching 'std::vector<float, int>::_Base {aka std::_Vector_base<float, int>}::_M_deallocate' in 'std::vector<float, int>::_Base {aka struct std::_Vector_base<float, int>}'
+       using _Base::_M_deallocate;
+                    ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:240:20: error: no members matching 'std::vector<float, int>::_Base {aka std::_Vector_base<float, int>}::_M_get_Tp_allocator' in 'std::vector<float, int>::_Base {aka struct std::_Vector_base<float, int>}'
+       using _Base::_M_get_Tp_allocator;
+                    ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc: In instantiation of 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = float; _Alloc = int]':
+..\src\Polynom.cpp:193:4:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:169:37: error: 'const class std::vector<float, int>' has no member named '_M_get_Tp_allocator'
+            && _M_get_Tp_allocator() != __x._M_get_Tp_allocator())
+                                     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:169:35: error: '_M_get_Tp_allocator' was not declared in this scope
+            && _M_get_Tp_allocator() != __x._M_get_Tp_allocator())
+                                   ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:175:29: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+     - this->_M_impl._M_start);
+                             ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:175:5: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+     - this->_M_impl._M_start);
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:175:5: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_end_of_storage'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:175:29: error: '_M_deallocate' was not declared in this scope
+     - this->_M_impl._M_start);
+                             ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:176:28: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+     this->_M_impl._M_start = nullptr;
+                            ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:177:29: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_finish'
+     this->_M_impl._M_finish = nullptr;
+                             ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:178:37: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_end_of_storage'
+     this->_M_impl._M_end_of_storage = nullptr;
+                                     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:180:49: error: '_M_get_Tp_allocator' was not declared in this scope
+        std::__alloc_on_copy(_M_get_Tp_allocator(),
+                                                 ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:181:33: error: 'const class std::vector<float, int>' has no member named '_M_get_Tp_allocator'
+        __x._M_get_Tp_allocator());
+                                 ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:190:29: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+        _M_get_Tp_allocator());
+                             ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:190:29: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_finish'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:190:28: error: '_M_get_Tp_allocator' was not declared in this scope
+        _M_get_Tp_allocator());
+                            ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:193:32: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+        - this->_M_impl._M_start);
+                                ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:193:8: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+        - this->_M_impl._M_start);
+        ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:193:8: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_end_of_storage'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:193:32: error: '_M_deallocate' was not declared in this scope
+        - this->_M_impl._M_start);
+                                ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:194:31: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+        this->_M_impl._M_start = __tmp;
+                               ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:195:65: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+        this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __xlen;
+                                                                 ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:195:40: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_end_of_storage'
+        this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __xlen;
+                                        ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:63: error: 'const class std::vector<float, int>' has no member named 'begin'
+        std::_Destroy(std::copy(__x.begin(), __x.end(), begin()),
+                                                               ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:63: error: 'const class std::vector<float, int>' has no member named 'end'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:62: error: no matching function for call to 'begin()'
+        std::_Destroy(std::copy(__x.begin(), __x.end(), begin()),
+                                                              ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:62: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: note: template<class _Container> decltype (__cont.begin()) std::begin(_Container&)
+     begin(_Container& __cont) -> decltype(__cont.begin())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:62: note:   candidate expects 1 argument, 0 provided
+        std::_Destroy(std::copy(__x.begin(), __x.end(), begin()),
+                                                              ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: note: template<class _Container> decltype (__cont.begin()) std::begin(const _Container&)
+     begin(const _Container& __cont) -> decltype(__cont.begin())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:62: note:   candidate expects 1 argument, 0 provided
+        std::_Destroy(std::copy(__x.begin(), __x.end(), begin()),
+                                                              ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:87:5: note: template<class _Tp, unsigned int _Nm> _Tp* std::begin(_Tp (&)[_Nm])
+     begin(_Tp (&__arr)[_Nm])
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:87:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:62: note:   candidate expects 1 argument, 0 provided
+        std::_Destroy(std::copy(__x.begin(), __x.end(), begin()),
+                                                              ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:42:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:89:5: note: template<class _Tp> constexpr const _Tp* std::begin(std::initializer_list<_Tp>)
+     begin(initializer_list<_Tp> __ils) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:89:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:199:62: note:   candidate expects 1 argument, 0 provided
+        std::_Destroy(std::copy(__x.begin(), __x.end(), begin()),
+                                                              ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:200:12: error: no matching function for call to 'end()'
+        end(), _M_get_Tp_allocator());
+            ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:200:12: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: note: template<class _Container> decltype (__cont.end()) std::end(_Container&)
+     end(_Container& __cont) -> decltype(__cont.end())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:200:12: note:   candidate expects 1 argument, 0 provided
+        end(), _M_get_Tp_allocator());
+            ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: note: template<class _Container> decltype (__cont.end()) std::end(const _Container&)
+     end(const _Container& __cont) -> decltype(__cont.end())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:200:12: note:   candidate expects 1 argument, 0 provided
+        end(), _M_get_Tp_allocator());
+            ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:97:5: note: template<class _Tp, unsigned int _Nm> _Tp* std::end(_Tp (&)[_Nm])
+     end(_Tp (&__arr)[_Nm])
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:97:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:200:12: note:   candidate expects 1 argument, 0 provided
+        end(), _M_get_Tp_allocator());
+            ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:42:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:99:5: note: template<class _Tp> constexpr const _Tp* std::end(std::initializer_list<_Tp>)
+     end(initializer_list<_Tp> __ils) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:99:5: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:200:12: note:   candidate expects 1 argument, 0 provided
+        end(), _M_get_Tp_allocator());
+            ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:200:35: error: '_M_get_Tp_allocator' was not declared in this scope
+        end(), _M_get_Tp_allocator());
+                                   ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:205:26: error: 'const struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+    this->_M_impl._M_start);
+                          ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:204:61: error: 'const struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+        std::copy(__x._M_impl._M_start, __x._M_impl._M_start + size(),
+                                                             ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:205:26: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+    this->_M_impl._M_start);
+                          ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:206:57: error: 'const struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+        std::__uninitialized_copy_a(__x._M_impl._M_start + size(),
+                                                         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:209:29: error: 'const struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_finish'
+        _M_get_Tp_allocator());
+                             ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:209:29: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_finish'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:209:28: error: '_M_get_Tp_allocator' was not declared in this scope
+        _M_get_Tp_allocator());
+                            ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:211:53: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_start'
+    this->_M_impl._M_finish = this->_M_impl._M_start + __xlen;
+                                                     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:211:28: error: 'struct std::_Vector_base<float, int>::_Vector_impl' has no member named '_M_finish'
+    this->_M_impl._M_finish = this->_M_impl._M_start + __xlen;
+                            ^
+16:10:08 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:28:21: error: invalid initialization of reference of type 'float&' from expression of type 'const float'
+  for (float& iter : coef_list) {
+                     ^
+..\src\Polynom.cpp:30:41: error: invalid type argument of unary '*' (have 'float')
+   coeff_expon.push_back(std::make_pair(*iter, *ex)); // Inserting into vector
+                                         ^
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:36: error: invalid initialization of reference of type 'std::vector<float, int>&' from expression of type 'const std::pair<float, int>'
+  for (vector<float,int>& z : other.coeff_expon){
+                                    ^
+..\src\Polynom.cpp:192:26: warning: unused variable 'z' [-Wunused-variable]
+  for (vector<float,int>& z : other.coeff_expon){
+                          ^
+16:11:34 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:12:28 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:16: error: no matching function for call to 'begin(const gvsu::Polynom* const&)'
+  for (auto a : this){
+                ^
+..\src\Polynom.cpp:192:16: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:42:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:89:5: note: template<class _Tp> constexpr const _Tp* std::begin(std::initializer_list<_Tp>)
+     begin(initializer_list<_Tp> __ils) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:89:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:192:16: note:   mismatched types 'std::initializer_list<_Tp>' and 'const gvsu::Polynom*'
+  for (auto a : this){
+                ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:87:5: note: template<class _Tp, unsigned int _Nm> _Tp* std::begin(_Tp (&)[_Nm])
+     begin(_Tp (&__arr)[_Nm])
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:87:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:192:16: note:   mismatched types '_Tp [_Nm]' and 'const gvsu::Polynom* const'
+  for (auto a : this){
+                ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: note: template<class _Container> decltype (__cont.begin()) std::begin(const _Container&)
+     begin(const _Container& __cont) -> decltype(__cont.begin())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.begin()) std::begin(const _Container&) [with _Container = const gvsu::Polynom*]':
+..\src\Polynom.cpp:192:16:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: error: request for member 'begin' in '__cont', which is of pointer type 'const gvsu::Polynom* const' (maybe you meant to use '->' ?)
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: note: template<class _Container> decltype (__cont.begin()) std::begin(_Container&)
+     begin(_Container& __cont) -> decltype(__cont.begin())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.begin()) std::begin(_Container&) [with _Container = const gvsu::Polynom* const]':
+..\src\Polynom.cpp:192:16:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: error: request for member 'begin' in '__cont', which is of pointer type 'const gvsu::Polynom* const' (maybe you meant to use '->' ?)
+..\src\Polynom.cpp:192:16: error: no matching function for call to 'end(const gvsu::Polynom* const&)'
+  for (auto a : this){
+                ^
+..\src\Polynom.cpp:192:16: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:42:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:99:5: note: template<class _Tp> constexpr const _Tp* std::end(std::initializer_list<_Tp>)
+     end(initializer_list<_Tp> __ils) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:99:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:192:16: note:   mismatched types 'std::initializer_list<_Tp>' and 'const gvsu::Polynom*'
+  for (auto a : this){
+                ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:97:5: note: template<class _Tp, unsigned int _Nm> _Tp* std::end(_Tp (&)[_Nm])
+     end(_Tp (&__arr)[_Nm])
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:97:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:192:16: note:   mismatched types '_Tp [_Nm]' and 'const gvsu::Polynom* const'
+  for (auto a : this){
+                ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: note: template<class _Container> decltype (__cont.end()) std::end(const _Container&)
+     end(const _Container& __cont) -> decltype(__cont.end())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.end()) std::end(const _Container&) [with _Container = const gvsu::Polynom*]':
+..\src\Polynom.cpp:192:16:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: error: request for member 'end' in '__cont', which is of pointer type 'const gvsu::Polynom* const' (maybe you meant to use '->' ?)
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: note: template<class _Container> decltype (__cont.end()) std::end(_Container&)
+     end(_Container& __cont) -> decltype(__cont.end())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.end()) std::end(_Container&) [with _Container = const gvsu::Polynom* const]':
+..\src\Polynom.cpp:192:16:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: error: request for member 'end' in '__cont', which is of pointer type 'const gvsu::Polynom* const' (maybe you meant to use '->' ?)
+16:12:47 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:192:12: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+  for (auto a : this->coeff_expon){
+            ^
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:14:31 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:16:02 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:23:21 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:200:9: error: no match for 'operator+=' (operand types are 'gvsu::Polynom' and 'gvsu::Polynom')
+   final += temp;
+         ^
+16:23:35 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:24:22 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:32:23 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:32:58 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:33:29 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:38:52 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In constructor 'gvsu::Polynom::Polynom(std::initializer_list<float>, std::initializer_list<int>)':
+..\src\Polynom.cpp:25:54: error: 'invalid_argument' was not declared in this scope
+   throw invalid_argument("Inputs of different length");
+                                                      ^
+16:39:01 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:39:11 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:39:26 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:45:38 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:46:29 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:47:22 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:48:21 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:51:08 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:52:21 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:54:06 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:49:44: error: invalid conversion from 'int' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}' [-fpermissive]
+    outputBuilder.append(ostream(p[i].second));
+                                            ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:84:7: error:   initializing argument 1 of 'std::basic_ostream<_CharT, _Traits>::basic_ostream(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' [-fpermissive]
+       basic_ostream(__streambuf_type* __sb)
+       ^
+..\src\Polynom.cpp:49:45: error: invalid user-defined conversion from 'std::ostream {aka std::basic_ostream<char>}' to 'const char*' [-fpermissive]
+    outputBuilder.append(ostream(p[i].second));
+                                             ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:44:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_ios.h:115:7: note: candidate is: std::basic_ios<_CharT, _Traits>::operator void*() const [with _CharT = char; _Traits = std::char_traits<char>] <near match>
+       operator void*() const
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_ios.h:115:7: note:   no known conversion for implicit 'this' parameter from 'void*' to 'const char*'
+16:54:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:49:49: error: invalid conversion from 'int' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}' [-fpermissive]
+    outputBuilder.append(std::ostream(p[i].second));
+                                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:84:7: error:   initializing argument 1 of 'std::basic_ostream<_CharT, _Traits>::basic_ostream(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]' [-fpermissive]
+       basic_ostream(__streambuf_type* __sb)
+       ^
+..\src\Polynom.cpp:49:50: error: invalid user-defined conversion from 'std::ostream {aka std::basic_ostream<char>}' to 'const char*' [-fpermissive]
+    outputBuilder.append(std::ostream(p[i].second));
+                                                  ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:44:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_ios.h:115:7: note: candidate is: std::basic_ios<_CharT, _Traits>::operator void*() const [with _CharT = char; _Traits = std::char_traits<char>] <near match>
+       operator void*() const
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_ios.h:115:7: note:   no known conversion for implicit 'this' parameter from 'void*' to 'const char*'
+16:54:26 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:49:25: error: expected primary-expression before '<<' token
+    outputBuilder.append(<<(p[i].second));
+                         ^
+16:54:46 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:49:18: error: no match for 'operator<<' (operand types are 'std::string {aka std::basic_string<char>}' and 'int')
+    outputBuilder << (p[i].second));
+                  ^
+..\src\Polynom.cpp:49:18: note: candidates are:
+..\src\Polynom.cpp:35:10: note: std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)
+ ostream& operator<<(ostream& out, const Polynom& p) {
+          ^
+..\src\Polynom.cpp:35:10: note:   no known conversion for argument 1 from 'std::string {aka std::basic_string<char>}' to 'std::ostream& {aka std::basic_ostream<char>&}'
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3310:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::piecewise_linear_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3310:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3094:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::piecewise_constant_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3094:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2884:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::discrete_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2884:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2425:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::student_t_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2425:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2350:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::fisher_f_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2350:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2186:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::chi_squared_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2186:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2113:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::lognormal_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2113:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1817:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::binomial_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1817:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1552:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::poisson_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1552:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1347:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::negative_binomial_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1347:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:831:5: note: template<class _RandomNumberEngine, unsigned int __k, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::shuffle_order_engine<_RandomNumberEngine, __k>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:831:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:702:5: note: template<class _RandomNumberEngine, unsigned int __p, unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::discard_block_engine<_RandomNumberEngine, __p, __r>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:702:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:632:5: note: template<class _UIntType, unsigned int __w, unsigned int __s, unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:632:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:156:5: note: template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::linear_congruential_engine<_UIntType, __a, __c, __m>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:156:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2748:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::extreme_value_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2748:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2672:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::weibull_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2672:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1881:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::exponential_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1881:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2594:5: note: template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::gamma_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2594:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1232:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::geometric_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1232:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2048:5: note: template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::normal_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2048:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1150:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bernoulli_distribution&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1150:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2273:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::cauchy_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2273:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1088:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::uniform_real_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1088:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1029:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::uniform_int_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1029:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:477:5: note: template<class _UIntType1, unsigned int __w1, unsigned int __n1, unsigned int __m1, unsigned int __r1, _UIntType1 __a1, unsigned int __u1, _UIntType1 __d1, unsigned int __s1, _UIntType1 __b1, unsigned int __t1, _UIntType1 __c1, unsigned int __l1, _UIntType1 __f1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:477:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1277:5: note: template<class _RandomNumberEngine, unsigned int __w, class _UIntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1277:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:602:5: note: template<class _CharT, class _Traits, class _Tp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&)
+     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:602:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:548:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:543:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:530:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:609:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:513:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:493:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:488:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:482:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:476:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:471:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second));
+                                 ^
+..\src\Polynom.cpp:49:34: error: expected ';' before ')' token
+    outputBuilder << (p[i].second));
+                                  ^
+16:54:53 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:49:18: error: no match for 'operator<<' (operand types are 'std::string {aka std::basic_string<char>}' and 'int')
+    outputBuilder << (p[i].second);
+                  ^
+..\src\Polynom.cpp:49:18: note: candidates are:
+..\src\Polynom.cpp:35:10: note: std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)
+ ostream& operator<<(ostream& out, const Polynom& p) {
+          ^
+..\src\Polynom.cpp:35:10: note:   no known conversion for argument 1 from 'std::string {aka std::basic_string<char>}' to 'std::ostream& {aka std::basic_ostream<char>&}'
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3310:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::piecewise_linear_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3310:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3094:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::piecewise_constant_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:3094:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2884:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::discrete_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2884:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2425:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::student_t_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2425:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2350:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::fisher_f_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2350:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2186:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::chi_squared_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2186:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2113:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::lognormal_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2113:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1817:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::binomial_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1817:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1552:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::poisson_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1552:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1347:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::negative_binomial_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1347:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:831:5: note: template<class _RandomNumberEngine, unsigned int __k, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::shuffle_order_engine<_RandomNumberEngine, __k>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:831:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:702:5: note: template<class _RandomNumberEngine, unsigned int __p, unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::discard_block_engine<_RandomNumberEngine, __p, __r>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:702:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:632:5: note: template<class _UIntType, unsigned int __w, unsigned int __s, unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:632:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:156:5: note: template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::linear_congruential_engine<_UIntType, __a, __c, __m>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:156:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2748:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::extreme_value_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2748:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2672:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::weibull_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2672:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1881:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::exponential_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1881:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2594:5: note: template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::gamma_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2594:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1232:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::geometric_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1232:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2048:5: note: template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::normal_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2048:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1150:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bernoulli_distribution&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1150:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2273:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::cauchy_distribution<_RealType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:2273:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1088:5: note: template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::uniform_real_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1088:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1029:5: note: template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::uniform_int_distribution<_IntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:1029:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:477:5: note: template<class _UIntType1, unsigned int __w1, unsigned int __n1, unsigned int __m1, unsigned int __r1, _UIntType1 __a1, unsigned int __u1, _UIntType1 __d1, unsigned int __s1, _UIntType1 __b1, unsigned int __t1, _UIntType1 __c1, unsigned int __l1, _UIntType1 __f1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.tcc:477:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\Polynom.cpp:10:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1277:5: note: template<class _RandomNumberEngine, unsigned int __w, class _UIntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1277:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:602:5: note: template<class _CharT, class _Traits, class _Tp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&)
+     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:602:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:548:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:543:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:530:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:609:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:513:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:493:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:488:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:482:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<char, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:476:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:471:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:49:33: note:   'std::string {aka std::basic_string<char>}' is not derived from 'std::basic_ostream<_CharT, _Traits>'
+    outputBuilder << (p[i].second);
+                                 ^
+16:56:03 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:56:41 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:57:31 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:58:33 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+16:59:23 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+17:00:12 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:28: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream& out(outputBuilder);
+                            ^
+..\src\Polynom.cpp:58:28: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+17:00:18 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:29: error: declaration of 'std::ostream& out' shadows a parameter
+  ostream & out(outputBuilder);
+                             ^
+..\src\Polynom.cpp:58:29: error: invalid initialization of reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from expression of type 'std::string {aka std::basic_string<char>}'
+17:00:31 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:27: error: declaration of 'std::ostream out' shadows a parameter
+  ostream out(outputBuilder);
+                           ^
+..\src\Polynom.cpp:58:27: error: no matching function for call to 'std::basic_ostream<char>::basic_ostream(std::string&)'
+..\src\Polynom.cpp:58:27: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39:0,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:384:7: note: std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ostream()
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:384:7: note:   candidate expects 0 arguments, 1 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:84:7: note: std::basic_ostream<_CharT, _Traits>::basic_ostream(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       basic_ostream(__streambuf_type* __sb)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:84:7: note:   no known conversion for argument 1 from 'std::string {aka std::basic_string<char>}' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}'
+..\src\Polynom.cpp:58:10: warning: reference to local variable 'out' returned [-Wreturn-local-addr]
+  ostream out(outputBuilder);
+          ^
+17:00:48 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:14: error: expected initializer before '&' token
+  ostream  out&(outputBuilder);
+              ^
+17:01:01 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:19: error: no match for call to '(std::ostream {aka std::basic_ostream<char>}) (std::string&)'
+  out(outputBuilder);
+                   ^
+17:01:28 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:27: error: no match for call to '(std::ostream {aka std::basic_ostream<char>}) (const char*)'
+  out(outputBuilder.c_str());
+                           ^
+17:01:40 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:14: error: expected primary-expression before 'outputBuilder'
+  out(ostream outputBuilder.);
+              ^
+17:01:48 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:58:13: error: expected primary-expression before '&' token
+  out(ostream& outputBuilder.);
+             ^
+..\src\Polynom.cpp:58:29: error: expected unqualified-id before ')' token
+  out(ostream& outputBuilder.);
+                             ^
+17:02:05 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+Info: Nothing to build for HW2
+17:03:14 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 

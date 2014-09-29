@@ -4,8 +4,7 @@
  * Version : 1.1
  */
 #include "Polynom.h"
-#include <limits>
-#include <cmath>
+//#include <limits>//#include <cmath>
 #include <iostream>
 #include <iterator>
 #include <algorithm>
@@ -36,18 +35,16 @@ Polynom::Polynom(initializer_list<float> coef_list,
 ostream& operator<<(ostream& out, const Polynom& p) {
 	string outputBuilder = "";
 
-	for (int i = p.number_of_terms(); i >= 0; i--) { // Access things in reverse
+	for (int i = p.number_of_terms() - 1; i >= 0; i--) { // Access things in reverse
 		string sign;
-		if (p[i].first < 0)
-			sign = " - ";
-		else
-			sign = " + ";
+		(p[i].first < 0) ? sign = " - " : sign = " + ";
 
 		if (p[i].second <= 1) { // Exponent of 1 or 0
 			outputBuilder.append(sign);
 			//outputBuilder.append(std::to_string(p[i].first));
+			outputBuilder += (char) p[i].first;
 			outputBuilder.append("X^");
-			//outputBuilder.append(std::to_string(p[i].second));
+			outputBuilder += (char) p[i].second;
 //			} else {      On second though, it should still probably accurately represent
 //				if (){     any given input.  However, the equations will need to account for
 //					       the rules for exponents of 1 and 0.
@@ -55,10 +52,10 @@ ostream& operator<<(ostream& out, const Polynom& p) {
 //
 //				}
 //				output = output + sign +
-		}
+		} //TODO:Actually get this working properly...
 
 	}
-	//ostream & out(outputBuilder);
+	out << outputBuilder;
 	return out;
 }
 
@@ -95,15 +92,14 @@ Polynom Polynom::operator*(float m) const {
 }
 
 Polynom operator*(float val, const Polynom& p) {
-	if (val == 0)
-		return Polynom();
 	return p * val;
-
 }
 
 /* basic polynomial arithmetic between two polynomials: "*this" and "other" */
 Polynom Polynom::operator+(const Polynom& other) const {
 	Polynom temp;
+	if (other.num_terms == 0)
+		return *this;
 
 	//If the exponents are equal add the coeff.
 	for (int a = 0; a < this->num_terms; a++) {
@@ -112,11 +108,13 @@ Polynom Polynom::operator+(const Polynom& other) const {
 				temp.coeff_expon.push_back(
 						make_pair(coeff_expon.at(a).first + other[x].first,
 								coeff_expon.at(a).second));
+				temp.num_terms++;
 				break;
 			} else if (other[x].second < coeff_expon.at(a).second) {
 				temp.coeff_expon.push_back(
 						make_pair(coeff_expon.at(a).first,
 								coeff_expon.at(a).second));
+				temp.num_terms++;
 				break;
 			} /*else if (other[x].second > coeff_expon.at(a).second) {
 			 temp.coeff_expon.push_back(
@@ -191,8 +189,19 @@ Polynom Polynom::operator-(const Polynom& other) const {
 
 Polynom Polynom::operator*(const Polynom& other) const {
 	Polynom temp;
-	//TODO: Finish this, dont forget temp.num_terms++;
-	return temp;
+	Polynom final;
+	for (auto a : this->coeff_expon) {
+		for (auto b : other.coeff_expon) {
+			temp.coeff_expon.push_back(
+					make_pair(a.first * b.first, a.second + b.second));
+			temp.num_terms++;
+		}	//TODO: Need to add each a(1)*b + a(2)*b + a(3) *b  together
+		final = final + temp;
+		temp.coeff_expon.clear();
+		temp.num_terms = 0;
+	}
+	//TODO: Use a for loop like this: for (vector<float,int>& z : other.coeff_expon){continue;}
+	return final;
 }
 
 double Polynom::operator()(double val) const {

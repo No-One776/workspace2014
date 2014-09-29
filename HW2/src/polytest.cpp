@@ -53,7 +53,7 @@ TEST_CASE_METHOD(PolyTest, "term index") {
 	REQUIRE(Catch::Detail::Approx(p4[2].first) == 8.0);
 	REQUIRE(p4[2].second == 0);
 }
-#if 0
+
 TEST_CASE_METHOD(PolyTest, "addition") {
 	Polynom sum;
 	sum = linear + zero;
@@ -91,7 +91,7 @@ TEST_CASE_METHOD(PolyTest, "subtraction") {
 	REQUIRE(Catch::Detail::Approx(result[3].first) == 4);
 	REQUIRE(result[3].second == 0);
 }
-
+#if 0
 TEST_CASE_METHOD(PolyTest, "scalar multiple, polynom as LHS") {
 	Polynom result;
 	SECTION("Non zero scalar") {

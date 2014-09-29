@@ -43,8 +43,7 @@ public:
 	pair<float, int> operator[](int index) const;
 
 	/* modify this poly by multiplying all coefficents by m */
-	Polynom& operator *= (float m);
-
+	Polynom& operator *=(float m);
 
 	/*----- INSTRUCTIONS -----
 	 Move the "#if 0" line one step further to include the next function
@@ -54,13 +53,13 @@ public:
 
 	/* basic polynomial arithmetic between two polynomials: "*this" and "other" */
 	Polynom operator+(const Polynom& other) const;
+	Polynom operator-(const Polynom& other) const;
 #if 0
-	Polynom operator- (const Polynom& other) const;
+
 	Polynom operator* (const Polynom& other) const;
 
 	/* return a polynom as the result of multiplying all coefficiets of this polynom by m */
 	Polynom operator* (float m) const;
-
 
 	double operator() (double val) const; /* evaluate polynom at the given x-value */
 #endif

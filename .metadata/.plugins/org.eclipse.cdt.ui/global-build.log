@@ -1395,3 +1395,132 @@ c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1044:9: note:   tem
 ..\src\Polynom.cpp:140:34: note:   cannot convert 't' (type '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >') to type 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
          coeff_expon.at(a).second));
                                   ^
+10:25:26 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:138:34: error: no matching function for call to 'std::vector<std::pair<float, int> >::insert(__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >&, std::pair<float, int>) const'
+         coeff_expon.at(a).second));
+                                  ^
+..\src\Polynom.cpp:138:34: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:69:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:107:5: note: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, const value_type&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+     vector<_Tp, _Alloc>::
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\vector.tcc:107:5: note:   no known conversion for argument 1 from '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' to 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\Polynom.h:9,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:988:7: note: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+       insert(iterator __position, value_type&& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:988:7: note:   no known conversion for argument 1 from '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' to 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1005:7: note: void std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, std::initializer_list<_Tp>) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*]
+       insert(iterator __position, initializer_list<value_type> __l)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1005:7: note:   no known conversion for argument 1 from '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' to 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1023:7: note: void std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<float, int>*; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = std::pair<float, int>]
+       insert(iterator __position, size_type __n, const value_type& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1023:7: note:   candidate expects 3 arguments, 2 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1044:9: note: template<class _InputIterator, class> void std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = std::pair<float, int>; _Alloc = std::allocator<std::pair<float, int> >]
+         insert(iterator __position, _InputIterator __first,
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1044:9: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:138:34: note:   cannot convert 't' (type '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >') to type 'std::vector<std::pair<float, int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<float, int>*, std::vector<std::pair<float, int> > >}'
+         coeff_expon.at(a).second));
+                                  ^
+10:27:50 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:107:15: error: request for member 'begin' in 'exp', which is of non-class type 'std::vector<int> [(((sizetype)(((ssizetype)max) + -1)) + 1)]'
+  auto e = exp.begin();
+               ^
+10:29:12 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:141:17: error: no match for 'operator*' (operand type is 'std::vector<float>')
+  return Polynom(*coef, *exp);
+                 ^
+..\src\Polynom.cpp:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+10:29:39 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:141:17: error: no match for 'operator*' (operand type is 'std::vector<float>')
+  return Polynom(*coef, *exp);
+                 ^
+..\src\Polynom.cpp:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+10:31:46 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:32:06 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:63:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+10:32:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:32:59 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:39:16 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:43:13 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:47:36 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:47:54 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:52:44 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+Info: Nothing to build for HW2
+10:53:40 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+Info: Nothing to build for HW2
+10:54:46 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp:116:50: error: no 'gvsu::Polynom gvsu::Polynom::operator-(const gvsu::Polynom&) const' member function declared in class 'gvsu::Polynom'
+ Polynom Polynom::operator-(const Polynom& other) const {
+                                                  ^
+10:55:07 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:55:33 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+10:56:08 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 

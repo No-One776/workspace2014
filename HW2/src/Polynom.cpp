@@ -4,13 +4,14 @@
  * Version : 1.1
  */
 #include "Polynom.h"
-//#include <limits>//#include <cmath>
 #include <iostream>
 #include <iterator>
 #include <algorithm>
 #include <vector>
 #include <initializer_list>
 #include <string>
+#include <iomanip>
+
 namespace gvsu {
 using namespace std;
 
@@ -33,28 +34,31 @@ Polynom::Polynom(initializer_list<float> coef_list,
 }
 
 ostream& operator<<(ostream& out, const Polynom& p) {
-	string outputBuilder = "";
+	int first = 0;
+	for (int i = 0; i < p.number_of_terms(); i++) {
+		string sign = "";
+		float temp = p[i].first;
 
-	for (int i = p.number_of_terms() - 1; i >= 0; i--) { // Access things in reverse
-		string sign;
-		(p[i].first < 0) ? sign = " - " : sign = " + ";
+		if (p[i].first >= 0 && first != 0)
+			sign = " + ";
+		else if (p[i].first < 0 && first != 0) {
+			sign = " - ";
+			temp = abs(p[i].first);
+		}
+		first++;
 
-		if (p[i].second <= 1) { // Exponent of 1 or 0
-			outputBuilder.append(sign);
-			outputBuilder.append(std::to_string(p[i].first));
-			outputBuilder.append("X^");
-			outputBuilder.append(std::to_string(p[i].second));
-//			} else {      On second though, it should still probably accurately represent
-//				if (){     any given input.  However, the equations will need to account for
-//					       the rules for exponents of 1 and 0.
-//				} else {
-//
-//				}
-//				output = output + sign +
-		} //TODO:Actually get this working properly...
+		out.precision(2);
+		out << sign;
+		out << temp;
 
+		if (p[i].second > 1) {
+			out << "x^";
+			out << p[i].second;
+		} else if (p[i].second == 1)
+			out << "x";
+		else if (p[i].second == 0)
+			out << " ";
 	}
-	out << outputBuilder;
 	return out;
 }
 
@@ -147,7 +151,7 @@ Polynom Polynom::operator-(const Polynom& other) const {
 	if (this->coeff_expon == other.coeff_expon)
 		return Polynom();
 	int l = 0;
-//If the exponents are equal minus the coeff.
+	//If the exponents are equal minus the coeff.
 	for (int a = 0; a < this->num_terms; a++) {
 		for (int x = l; x < other.num_terms; x++) {
 			if (other[x].second == coeff_expon.at(a).second) {

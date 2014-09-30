@@ -1,7 +1,13 @@
-17:03:14 **** Incremental Build of configuration Debug for project HW2 ****
+22:04:23 **** Incremental Build of configuration Debug for project HW2 ****
 Info: Internal Builder is used for build
 g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
-g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:44:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:46:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^
 
-17:03:18 Build Finished (took 3s.260ms)
+22:04:24 Build Finished (took 938ms)
 

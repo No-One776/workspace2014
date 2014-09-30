@@ -41,10 +41,9 @@ ostream& operator<<(ostream& out, const Polynom& p) {
 
 		if (p[i].second <= 1) { // Exponent of 1 or 0
 			outputBuilder.append(sign);
-			//outputBuilder.append(std::to_string(p[i].first));
-			outputBuilder += (char) p[i].first;
+			outputBuilder.append(std::to_string(p[i].first));
 			outputBuilder.append("X^");
-			outputBuilder += (char) p[i].second;
+			outputBuilder.append(std::to_string(p[i].second));
 //			} else {      On second though, it should still probably accurately represent
 //				if (){     any given input.  However, the equations will need to account for
 //					       the rules for exponents of 1 and 0.
@@ -98,91 +97,93 @@ Polynom operator*(float val, const Polynom& p) {
 /* basic polynomial arithmetic between two polynomials: "*this" and "other" */
 Polynom Polynom::operator+(const Polynom& other) const {
 	Polynom temp;
-	if (other.num_terms == 0)
-		return *this;
-
+	int l = 0;
 	//If the exponents are equal add the coeff.
 	for (int a = 0; a < this->num_terms; a++) {
-		for (int x = 0; x < other.num_terms; x++) {
+		for (int x = l; x < other.num_terms; x++) {
 			if (other[x].second == coeff_expon.at(a).second) {
-				temp.coeff_expon.push_back(
-						make_pair(coeff_expon.at(a).first + other[x].first,
-								coeff_expon.at(a).second));
-				temp.num_terms++;
-				break;
-			} else if (other[x].second < coeff_expon.at(a).second) {
+				if (coeff_expon.at(a).first + other[x].first != 0) {
+					temp.coeff_expon.push_back(
+							make_pair(coeff_expon.at(a).first + other[x].first,
+									coeff_expon.at(a).second));
+					temp.num_terms++;
+					l++;
+					break;
+				} else {
+					l++;
+					break;
+				}
+			} else if (coeff_expon.at(a).second > other[x].second) {
 				temp.coeff_expon.push_back(
 						make_pair(coeff_expon.at(a).first,
 								coeff_expon.at(a).second));
 				temp.num_terms++;
 				break;
-			} /*else if (other[x].second > coeff_expon.at(a).second) {
-			 temp.coeff_expon.push_back(
-			 make_pair(other[x].first, other[x].second));
-			 break;
-			 }*/
+			} else if (other[x].second > coeff_expon.at(a).second) {
+				temp.coeff_expon.push_back(
+						make_pair(other[x].first, other[x].second));
+				temp.num_terms++;
+				l++;
+			}
 		}
-
 	}
-	/*
-	 int x = 0;
-	 for (int a = 0; a < this->num_terms; a++) {
-	 if (other[x].second == coeff_expon.at(a).second) {
-	 temp.coeff_expon.push_back(
-	 make_pair(other[x].first + coeff_expon.at(a).first,
-	 coeff_expon.at(a).second));
-	 temp.num_terms++;
-	 if (x < other.num_terms)
-	 x++;
-	 } else if (other[x].second < coeff_expon.at(a).second) {
-	 temp.coeff_expon.push_back(
-	 make_pair(coeff_expon.at(a).first,
-	 coeff_expon.at(a).second));
-	 temp.num_terms++;
-	 } else if (other[x].second > coeff_expon.at(a).second) {
-	 if (x < other.num_terms) {
-	 x++;
-	 temp.coeff_expon.push_back(
-	 make_pair(other[x].first, other[x].second));
-	 a--;
-	 temp.num_terms++;
-	 }
-	 }
-	 }
-	 */
+	int last = this->num_terms - 1;
+	for (int x = l; x < other.num_terms; x++) {
+		if (other[x].second < coeff_expon.at(last).second) {
+			temp.coeff_expon.push_back(
+					make_pair(other[x].first, other[x].second));
+			temp.num_terms++;
+		}
+	}
+
 	return temp;
 }
 
 Polynom Polynom::operator-(const Polynom& other) const {
 	Polynom temp;
-	if (other.number_of_terms() == 0) {
+	if (other.number_of_terms() == 0)
 		return *this;
-	}
+
 	if (this->coeff_expon == other.coeff_expon)
 		return Polynom();
+	int l = 0;
 //If the exponents are equal minus the coeff.
 	for (int a = 0; a < this->num_terms; a++) {
-		for (int x = 0; x < other.num_terms; x++) {
+		for (int x = l; x < other.num_terms; x++) {
 			if (other[x].second == coeff_expon.at(a).second) {
+				if (coeff_expon.at(a).first - other[x].first != 0) {
+					temp.coeff_expon.push_back(
+							make_pair(coeff_expon.at(a).first - other[x].first,
+									coeff_expon.at(a).second));
+					temp.num_terms++;
+					l++;
+					break;
+				} else {
+					l++;
+					break;
+				}
+			} else if (coeff_expon.at(a).second > other[x].second) {
 				temp.coeff_expon.push_back(
-						make_pair(coeff_expon.at(a).first - other[x].first,
+						make_pair(coeff_expon.at(a).first,
 								coeff_expon.at(a).second));
-				temp.num_terms++;
-				break;
-			} else if (other[x].second < coeff_expon.at(a).second) {
-				temp.coeff_expon.push_back(coeff_expon[a]);
 				temp.num_terms++;
 				break;
 			} else if (other[x].second > coeff_expon.at(a).second) {
 				temp.coeff_expon.push_back(
 						make_pair(0.0 - other[x].first, other[x].second));
 				temp.num_terms++;
-			} else {
-				temp.coeff_expon.push_back(coeff_expon[a]);
-				temp.num_terms++;
+				l++;
 			}
 		}
 
+	}
+	int last = this->num_terms - 1;
+	for (int x = l; x < other.num_terms; x++) {
+		if (other[x].second < coeff_expon.at(last).second) {
+			temp.coeff_expon.push_back(
+					make_pair(0.0 - other[x].first, other[x].second));
+			temp.num_terms++;
+		}
 	}
 	return temp;
 }
@@ -190,17 +191,18 @@ Polynom Polynom::operator-(const Polynom& other) const {
 Polynom Polynom::operator*(const Polynom& other) const {
 	Polynom temp;
 	Polynom final;
+	int firstTime = 0;
 	for (auto a : this->coeff_expon) {
 		for (auto b : other.coeff_expon) {
 			temp.coeff_expon.push_back(
 					make_pair(a.first * b.first, a.second + b.second));
 			temp.num_terms++;
-		}	//TODO: Need to add each a(1)*b + a(2)*b + a(3) *b  together
-		final = final + temp;
+		}
+		firstTime == 0 ? final = temp : final = final + temp;
+		firstTime++;
 		temp.coeff_expon.clear();
 		temp.num_terms = 0;
 	}
-	//TODO: Use a for loop like this: for (vector<float,int>& z : other.coeff_expon){continue;}
 	return final;
 }
 

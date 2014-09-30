@@ -3329,3 +3329,462 @@ Info: Nothing to build for HW2
 Info: Internal Builder is used for build
 g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
 g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+18:50:04 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+18:54:40 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:152:2: error: expected primary-expression before '/' token
+ */
+  ^
+..\src\Polynom.cpp:153:1: error: expected primary-expression before 'return'
+ return temp;
+ ^
+..\src\Polynom.cpp:153:1: error: expected ';' before 'return'
+..\src\Polynom.cpp:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+18:54:46 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+18:55:08 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp:119:6: warning: "/*" within comment [-Wcomment]
+    } /*else if (other[x].second > coeff_expon.at(a).second) {
+ ^
+..\src\Polynom.cpp:127:2: error: expected unqualified-id before '/' token
+ */
+  ^
+..\src\Polynom.cpp:127:2: error: expected constructor, destructor, or type conversion before '/' token
+..\src\Polynom.cpp:129:2: error: expected unqualified-id before 'for'
+  for (int a = 0; a < this->num_terms; a++) {
+  ^
+..\src\Polynom.cpp:129:18: error: 'a' does not name a type
+  for (int a = 0; a < this->num_terms; a++) {
+                  ^
+..\src\Polynom.cpp:129:39: error: 'a' does not name a type
+  for (int a = 0; a < this->num_terms; a++) {
+                                       ^
+..\src\Polynom.cpp:153:1: error: expected unqualified-id before 'return'
+ return temp;
+ ^
+..\src\Polynom.cpp:154:1: error: expected declaration before '}' token
+ }
+ ^
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:124:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+18:55:23 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp:119:6: warning: "/*" within comment [-Wcomment]
+    } /*else if (other[x].second > coeff_expon.at(a).second) {
+ ^
+..\src\Polynom.cpp:127:2: error: expected unqualified-id before '/' token
+ */
+  ^
+..\src\Polynom.cpp:127:2: error: expected constructor, destructor, or type conversion before '/' token
+..\src\Polynom.cpp:129:2: error: expected unqualified-id before 'for'
+  for (int a = 0; a < this->num_terms; a++) {
+  ^
+..\src\Polynom.cpp:129:18: error: 'a' does not name a type
+  for (int a = 0; a < this->num_terms; a++) {
+                  ^
+..\src\Polynom.cpp:129:39: error: 'a' does not name a type
+  for (int a = 0; a < this->num_terms; a++) {
+                                       ^
+..\src\Polynom.cpp:153:1: error: expected unqualified-id before 'return'
+ return temp;
+ ^
+..\src\Polynom.cpp:154:1: error: expected declaration before '}' token
+ }
+ ^
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:124:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+18:55:36 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp:119:6: warning: "/*" within comment [-Wcomment]
+    } /*else if (other[x].second > coeff_expon.at(a).second) {
+ ^
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+18:56:27 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:05:16 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:06:08 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:13:22 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:15:06 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:16:02 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:22:06 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:23:07 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:206:10: error: 'class gvsu::Polynom' has no member named 'numterms'
+    final.numterms++;
+          ^
+19:23:30 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:24:44 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:28:09 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:31:47 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:42:03 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:49:45 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:51:27 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:52:45 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:52:58 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:53:11 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:55:09 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+19:57:48 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:09:17 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator-(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:149:16: error: 'l' was not declared in this scope
+   for (int x = l; x < other.num_terms; x++) {
+                ^
+20:09:39 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:10:42 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:17:59 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:18:33 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:19:25 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:19:59 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:20:19 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:20:32 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:25:30 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:36:26 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+Info: Nothing to build for HW2
+20:37:24 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:40:00 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:41:22 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:41:48 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:42:49 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:50:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:51:11 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\polytest.o" "..\\src\\polytest.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:53:30 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:53:56 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:54:56 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:212:28: error: no match for 'operator*' (operand type is 'gvsu::Polynom')
+   firstTime == 1 ? final = *temp : final = final + temp;
+                            ^
+..\src\Polynom.cpp:212:28: note: candidates are:
+..\src\Polynom.cpp:81:9: note: gvsu::Polynom gvsu::Polynom::operator*(float) const
+ Polynom Polynom::operator*(float m) const {
+         ^
+..\src\Polynom.cpp:81:9: note:   candidate expects 1 argument, 0 provided
+..\src\Polynom.cpp:201:9: note: gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const
+ Polynom Polynom::operator*(const Polynom& other) const {
+         ^
+..\src\Polynom.cpp:201:9: note:   candidate expects 1 argument, 0 provided
+..\src\Polynom.cpp:94:9: note: gvsu::Polynom gvsu::operator*(float, const gvsu::Polynom&)
+ Polynom operator*(float val, const Polynom& p) {
+         ^
+..\src\Polynom.cpp:94:9: note:   candidate expects 2 arguments, 1 provided
+20:55:04 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:212:26: error: no match for 'operator=' (operand types are 'gvsu::Polynom' and 'gvsu::Polynom*')
+   firstTime == 1 ? final = &temp : final = final + temp;
+                          ^
+..\src\Polynom.cpp:212:26: note: candidates are:
+In file included from ..\src\Polynom.cpp:6:0:
+..\src\Polynom.h:14:7: note: gvsu::Polynom& gvsu::Polynom::operator=(const gvsu::Polynom&)
+ class Polynom {
+       ^
+..\src\Polynom.h:14:7: note:   no known conversion for argument 1 from 'gvsu::Polynom*' to 'const gvsu::Polynom&'
+..\src\Polynom.h:14:7: note: gvsu::Polynom& gvsu::Polynom::operator=(gvsu::Polynom&&)
+..\src\Polynom.h:14:7: note:   no known conversion for argument 1 from 'gvsu::Polynom*' to 'gvsu::Polynom&&'
+20:55:14 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:56:08 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+20:58:39 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+21:04:09 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+21:09:34 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator*(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:205:40: error: no matching function for call to 'begin(__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >&)'
+  for (auto a : this->coeff_expon.begin()) {
+                                        ^
+..\src\Polynom.cpp:205:40: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:42:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:89:5: note: template<class _Tp> constexpr const _Tp* std::begin(std::initializer_list<_Tp>)
+     begin(initializer_list<_Tp> __ils) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:89:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:205:40: note:   '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' is not derived from 'std::initializer_list<_Tp>'
+  for (auto a : this->coeff_expon.begin()) {
+                                        ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:87:5: note: template<class _Tp, unsigned int _Nm> _Tp* std::begin(_Tp (&)[_Nm])
+     begin(_Tp (&__arr)[_Nm])
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:87:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:205:40: note:   mismatched types '_Tp [_Nm]' and '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >'
+  for (auto a : this->coeff_expon.begin()) {
+                                        ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: note: template<class _Container> decltype (__cont.begin()) std::begin(const _Container&)
+     begin(const _Container& __cont) -> decltype(__cont.begin())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.begin()) std::begin(const _Container&) [with _Container = __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >]':
+..\src\Polynom.cpp:205:40:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:58:5: error: 'const class __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' has no member named 'begin'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: note: template<class _Container> decltype (__cont.begin()) std::begin(_Container&)
+     begin(_Container& __cont) -> decltype(__cont.begin())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.begin()) std::begin(_Container&) [with _Container = __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >]':
+..\src\Polynom.cpp:205:40:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:48:5: error: 'class __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' has no member named 'begin'
+..\src\Polynom.cpp:205:40: error: no matching function for call to 'end(__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >&)'
+  for (auto a : this->coeff_expon.begin()) {
+                                        ^
+..\src\Polynom.cpp:205:40: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:42:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:99:5: note: template<class _Tp> constexpr const _Tp* std::end(std::initializer_list<_Tp>)
+     end(initializer_list<_Tp> __ils) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\initializer_list:99:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:205:40: note:   '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' is not derived from 'std::initializer_list<_Tp>'
+  for (auto a : this->coeff_expon.begin()) {
+                                        ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:97:5: note: template<class _Tp, unsigned int _Nm> _Tp* std::end(_Tp (&)[_Nm])
+     end(_Tp (&__arr)[_Nm])
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:97:5: note:   template argument deduction/substitution failed:
+..\src\Polynom.cpp:205:40: note:   mismatched types '_Tp [_Nm]' and '__gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >'
+  for (auto a : this->coeff_expon.begin()) {
+                                        ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:51:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\Polynom.h:8,
+                 from ..\src\Polynom.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: note: template<class _Container> decltype (__cont.end()) std::end(const _Container&)
+     end(const _Container& __cont) -> decltype(__cont.end())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.end()) std::end(const _Container&) [with _Container = __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >]':
+..\src\Polynom.cpp:205:40:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:78:5: error: 'const class __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' has no member named 'end'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: note: template<class _Container> decltype (__cont.end()) std::end(_Container&)
+     end(_Container& __cont) -> decltype(__cont.end())
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h: In substitution of 'template<class _Container> decltype (__cont.end()) std::end(_Container&) [with _Container = __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >]':
+..\src\Polynom.cpp:205:40:   required from here
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\range_access.h:68:5: error: 'class __gnu_cxx::__normal_iterator<const std::pair<float, int>*, std::vector<std::pair<float, int> > >' has no member named 'end'
+21:09:52 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+Info: Nothing to build for HW2
+21:15:36 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In member function 'gvsu::Polynom gvsu::Polynom::operator+(const gvsu::Polynom&) const':
+..\src\Polynom.cpp:133:40: error: 'a' was not declared in this scope
+   if (other[x].second < coeff_expon.at(a).second) {
+                                        ^
+..\src\Polynom.cpp:131:6: warning: unused variable 'last' [-Wunused-variable]
+  int last = this->num_terms - 1;
+      ^
+21:15:54 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+21:18:15 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+g++ -o HW2.exe "src\\polytest.o" "src\\Polynom.o" 
+22:04:23 **** Incremental Build of configuration Debug for project HW2 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\MinGW\\lib\\gcc\\mingw32\\4.8.1\\include" -O0 -g3 -Wall -c -std=c++11 -fmessage-length=0 -o "src\\Polynom.o" "..\\src\\Polynom.cpp" 
+..\src\Polynom.cpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::Polynom&)':
+..\src\Polynom.cpp:44:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].first));
+                         ^
+..\src\Polynom.cpp:46:25: error: 'to_string' is not a member of 'std'
+    outputBuilder.append(std::to_string(p[i].second));
+                         ^

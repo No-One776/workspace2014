@@ -1,7 +1,7 @@
-08:23:13 **** Incremental Build of configuration Debug for project Project2 ****
+11:15:46 **** Incremental Build of configuration Debug for project Project2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
 gcc -o Project2.exe "src\\Project2.o" 
 
-08:23:14 Build Finished (took 585ms)
+11:15:46 Build Finished (took 498ms)
 

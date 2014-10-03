@@ -28,3 +28,40 @@ Info: Nothing to build for Project2
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
 gcc -o Project2.exe "src\\Project2.o" 
+10:49:40 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+..\src\Project2.c: In function 'transition':
+..\src\Project2.c:76:9: error: expected expression before 'float'
+  return float;
+         ^
+10:49:52 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+10:52:02 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+10:53:25 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+Info: Nothing to build for Project2
+Info: Nothing to build for Project2
+11:12:55 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+Info: Nothing to build for Project2
+Info: Nothing to build for Project2
+Info: Nothing to build for Project2
+Info: Nothing to build for Project2
+11:15:13 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+11:15:46 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 

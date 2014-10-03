@@ -21,10 +21,9 @@ typedef enum {
 	divop,
 	assignop,
 	stmttermop,
+	//operator,
 	build_id,
 	build_num,
-	build_frac,
-	build_expo,
 	stop
 } state;
 state transition(state current, char transition) {
@@ -63,29 +62,9 @@ state transition(state current, char transition) {
 	if (current == build_num) {
 		if (isdigit(transition))
 			return build_num;
-		if (transition == '.')
-			return build_frac;
-		if (transition == 'e' || transition == 'E')
-			return build_expo;
 		if (transition == ' ')
 			return integer;
-	}
-
-	if (current == build_frac) {
-		if (isdigit(transition))
-			return build_frac;
-		if (transition == ' ')
-			return floating;
-		if (transition == 'e' || transition == 'E')
-			return build_expo;
-	}
-	if (current == build_expo) {
-		if (transition == '+' || transition == '-')
-			return build_expo;
-		if (isdigit(transition))
-			return build_expo;
-		if (transition == ' ')
-			return floating;
+		//if (transition == '+' || transition == '-' || transition == '*' || transition == '/')
 	}
 	return stop;
 }
@@ -118,7 +97,7 @@ int main(void) {
 		} else if (current_state == stmttermop) {
 			printf(" – Statement Termination Operator\n");
 			current_state = start;
-		} else if (current_state == floating) {
+		}else if (current_state == floating) {
 			printf(" – Floating Point\n");
 			current_state = start;
 		}

@@ -21,10 +21,10 @@ typedef enum {
 	divop,
 	assignop,
 	stmttermop,
+	//operator,
 	build_id,
 	build_num,
-	build_frac,
-	build_expo,
+	build_float,
 	stop
 } state;
 state transition(state current, char transition) {
@@ -64,28 +64,13 @@ state transition(state current, char transition) {
 		if (isdigit(transition))
 			return build_num;
 		if (transition == '.')
-			return build_frac;
-		if (transition == 'e' || transition == 'E')
-			return build_expo;
+			return build_float;
 		if (transition == ' ')
 			return integer;
-	}
+	} //if (transition == '+' || transition == '-' || transition == '*' || transition == '/')
 
-	if (current == build_frac) {
-		if (isdigit(transition))
-			return build_frac;
-		if (transition == ' ')
-			return floating;
-		if (transition == 'e' || transition == 'E')
-			return build_expo;
-	}
-	if (current == build_expo) {
-		if (transition == '+' || transition == '-')
-			return build_expo;
-		if (isdigit(transition))
-			return build_expo;
-		if (transition == ' ')
-			return floating;
+	if (current == build_float) {
+
 	}
 	return stop;
 }

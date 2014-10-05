@@ -128,11 +128,9 @@ int main(void) {
 		//Scan the next character input into transition
 		scanf("%c", &transition_char);
 
-		//If the character is not blank, print it
 		if (transition_char != ' ')
 			printf("%c", transition_char);
 
-		//Get the next current state
 		current_state = transition(current_state, transition_char);
 
 	} while (current_state != stop);

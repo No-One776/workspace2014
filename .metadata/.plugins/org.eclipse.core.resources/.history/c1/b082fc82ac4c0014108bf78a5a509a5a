@@ -10,7 +10,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-/*Enum for the current state*/
 typedef enum {
 	start,
 	identifier,
@@ -28,7 +27,6 @@ typedef enum {
 	build_expo,
 	stop
 } state;
-/* Take the current state and the next character to determine which finite state or transition to return. */
 state transition(state current, char transition) {
 	if (current == start) {
 		if (isdigit(transition))
@@ -62,7 +60,6 @@ state transition(state current, char transition) {
 			return identifier;
 	}
 
-	//Build Num state can be an integer or can span off into a floating point which is either a fraction or exponent.
 	if (current == build_num) {
 		if (isdigit(transition))
 			return build_num;
@@ -125,14 +122,11 @@ int main(void) {
 			printf(" – Floating Point\n");
 			current_state = start;
 		}
-		//Scan the next character input into transition
 		scanf("%c", &transition_char);
 
-		//If the character is not blank, print it
 		if (transition_char != ' ')
 			printf("%c", transition_char);
 
-		//Get the next current state
 		current_state = transition(current_state, transition_char);
 
 	} while (current_state != stop);

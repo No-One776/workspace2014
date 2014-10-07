@@ -69,3 +69,126 @@ gcc -o Project2.exe "src\\Project2.o"
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
 gcc -o Project2.exe "src\\Project2.o" 
+20:48:10 **** Rebuild of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+Info: Nothing to build for Project2
+Info: Nothing to build for Project2
+Info: Nothing to build for Project2
+Info: Nothing to build for Project2
+21:10:12 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+..\src\Project2.c: In function 'main':
+..\src\Project2.c:129:3: warning: passing argument 1 of 'fgetc' from incompatible pointer type [enabled by default]
+   fgetc("%c", &transition_char);
+   ^
+In file included from ..\src\Project2.c:10:0:
+c:\mingw\include\stdio.h:339:37: note: expected 'struct FILE *' but argument is of type 'char *'
+ _CRTIMP int __cdecl __MINGW_NOTHROW fgetc (FILE*);
+                                     ^
+..\src\Project2.c:129:3: error: too many arguments to function 'fgetc'
+   fgetc("%c", &transition_char);
+   ^
+In file included from ..\src\Project2.c:10:0:
+c:\mingw\include\stdio.h:339:37: note: declared here
+ _CRTIMP int __cdecl __MINGW_NOTHROW fgetc (FILE*);
+                                     ^
+21:10:27 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+..\src\Project2.c: In function 'main':
+..\src\Project2.c:129:3: warning: passing argument 1 of 'fgetc' from incompatible pointer type [enabled by default]
+   fgetc(&transition_char);
+   ^
+In file included from ..\src\Project2.c:10:0:
+c:\mingw\include\stdio.h:339:37: note: expected 'struct FILE *' but argument is of type 'char *'
+ _CRTIMP int __cdecl __MINGW_NOTHROW fgetc (FILE*);
+                                     ^
+gcc -o Project2.exe "src\\Project2.o" 
+21:10:37 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+..\src\Project2.c: In function 'main':
+..\src\Project2.c:129:3: warning: passing argument 1 of 'fgetc' makes pointer from integer without a cast [enabled by default]
+   fgetc(transition_char);
+   ^
+In file included from ..\src\Project2.c:10:0:
+c:\mingw\include\stdio.h:339:37: note: expected 'struct FILE *' but argument is of type 'char'
+ _CRTIMP int __cdecl __MINGW_NOTHROW fgetc (FILE*);
+                                     ^
+gcc -o Project2.exe "src\\Project2.o" 
+21:10:42 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+..\src\Project2.c: In function 'main':
+..\src\Project2.c:129:9: error: invalid type argument of unary '*' (have 'int')
+   fgetc(*transition_char);
+         ^
+21:10:48 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+..\src\Project2.c: In function 'main':
+..\src\Project2.c:129:3: warning: passing argument 1 of 'fgetc' from incompatible pointer type [enabled by default]
+   fgetc(&transition_char);
+   ^
+In file included from ..\src\Project2.c:10:0:
+c:\mingw\include\stdio.h:339:37: note: expected 'struct FILE *' but argument is of type 'char *'
+ _CRTIMP int __cdecl __MINGW_NOTHROW fgetc (FILE*);
+                                     ^
+gcc -o Project2.exe "src\\Project2.o" 
+21:19:03 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+..\src\Project2.c: In function 'main':
+..\src\Project2.c:138:9: error: 'fp' undeclared (first use in this function)
+  fclose(fp);
+         ^
+..\src\Project2.c:138:9: note: each undeclared identifier is reported only once for each function it appears in
+21:19:13 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:23:16 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:24:41 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:26:03 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:26:22 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+Info: Nothing to build for Project2
+21:28:58 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:29:42 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:30:10 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:31:25 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+Info: Nothing to build for Project2
+21:32:40 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 
+21:33:57 **** Incremental Build of configuration Debug for project Project2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
+gcc -o Project2.exe "src\\Project2.o" 

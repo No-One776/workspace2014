@@ -134,7 +134,7 @@ int main(void) {
 		//Get the next current state
 		current_state = transition(current_state, transition_char);
 
-		if (transition_char != ' ' && current_state != stop && transition_char != '\n')
+		if (transition_char != ' ' && current_state != stop)
 					printf("%c", transition_char);
 
 	} while (current_state != stop);

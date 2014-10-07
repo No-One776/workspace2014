@@ -51,8 +51,6 @@ state transition(state current, char transition) {
 			return stop;
 		if (transition == ' ')
 			return start;
-		else
-			return start;
 	}
 
 	if (current == build_id) {
@@ -128,15 +126,16 @@ int main(void) {
 			current_state = start;
 		}
 		//Scan the next character input into transition
-		transition_char = fgetc(stdin);
+		scanf("%c", &transition_char);
+
 		//If the character is not blank, print it
+		if (transition_char != ' ')
+			printf("%c", transition_char);
 
 		//Get the next current state
 		current_state = transition(current_state, transition_char);
 
-		if (transition_char != ' ' && current_state != stop && transition_char != '\n')
-					printf("%c", transition_char);
-
 	} while (current_state != stop);
+
 	return EXIT_SUCCESS;
 }

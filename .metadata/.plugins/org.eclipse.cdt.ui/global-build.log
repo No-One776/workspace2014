@@ -508,3 +508,841 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
 gcc -o Project2.exe "src\\Project2.o" 
 >>>>>>> origin/master
+16:55:59 **** Rebuild of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In destructor 'gvsu::LinkedList<E>::~LinkedList()':
+..\src\hw311.hpp:61:16: error: expected primary-expression before '=' token
+  while (next !== nullptr) {
+                ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+16:56:13 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:06:25 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In destructor 'gvsu::LinkedList<E>::~LinkedList()':
+..\src\hw311.hpp:65:10: error: expected primary-expression before ';' token
+   delete ;
+          ^
+..\src\hw311.hpp: In member function 'int gvsu::LinkedList<E>::size() const':
+..\src\hw311.hpp:79:17: error: invalid operands of types '<unresolved overloaded function type>' and 'std::nullptr_t' to binary 'operator!='
+  while (next != nullptr) {
+                 ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'int gvsu::LinkedList<E>::size() const [with E = int]':
+..\src\hw311test.cpp:34:5:   required from here
+..\src\hw311.hpp:81:8: error: overloaded function with no contextual type information
+   next = head->next;
+        ^
+..\src\hw311.hpp: In instantiation of 'int gvsu::LinkedList<E>::size() const [with E = std::basic_string<char>]':
+..\src\hw311test.cpp:36:5:   required from here
+..\src\hw311.hpp:81:8: error: overloaded function with no contextual type information
+17:08:11 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In member function 'int gvsu::LinkedList<E>::size() const':
+..\src\hw311.hpp:80:17: error: invalid operands of types '<unresolved overloaded function type>' and 'std::nullptr_t' to binary 'operator!='
+  while (next != nullptr) {
+                 ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'int gvsu::LinkedList<E>::size() const [with E = int]':
+..\src\hw311test.cpp:34:5:   required from here
+..\src\hw311.hpp:82:8: error: overloaded function with no contextual type information
+   next = head->next;
+        ^
+..\src\hw311.hpp: In instantiation of 'int gvsu::LinkedList<E>::size() const [with E = std::basic_string<char>]':
+..\src\hw311test.cpp:36:5:   required from here
+..\src\hw311.hpp:82:8: error: overloaded function with no contextual type information
+17:08:23 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In member function 'int gvsu::LinkedList<E>::size() const':
+..\src\hw311.hpp:80:17: error: invalid operands of types '<unresolved overloaded function type>' and 'std::nullptr_t' to binary 'operator!='
+  while (next != nullptr) {
+                 ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'int gvsu::LinkedList<E>::size() const [with E = int]':
+..\src\hw311test.cpp:34:5:   required from here
+..\src\hw311.hpp:82:8: error: overloaded function with no contextual type information
+   next = head->next;
+        ^
+..\src\hw311.hpp: In instantiation of 'int gvsu::LinkedList<E>::size() const [with E = std::basic_string<char>]':
+..\src\hw311test.cpp:36:5:   required from here
+..\src\hw311.hpp:82:8: error: overloaded function with no contextual type information
+17:12:43 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:15:54 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:19:23 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:22:42 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:31:13 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:33:45 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:35:57 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:36:35 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:36:55 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:38:41 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:40:42 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+17:44:01 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'bool gvsu::LinkedList<E>::add(const E&) [with E = int]':
+..\src\hw311test.cpp:49:9:   required from here
+..\src\hw311.hpp:136:9: warning: variable 'prev' set but not used [-Wunused-but-set-variable]
+   Node* prev = new Node();
+         ^
+..\src\hw311.hpp: In instantiation of 'bool gvsu::LinkedList<E>::add(const E&) [with E = std::basic_string<char>]':
+..\src\hw311test.cpp:65:9:   required from here
+..\src\hw311.hpp:136:9: warning: variable 'prev' set but not used [-Wunused-but-set-variable]
+g++ -o HW3.exe "src\\hw311test.o" 
+17:44:33 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+13:48:38 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+13:50:04 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+13:50:24 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+13:50:47 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+13:51:22 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:02:03 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:08:53 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:09:14 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+Info: Nothing to build for HW3
+14:10:10 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:15:10 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:17:36 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311test.cpp:84:19:   required from here
+..\src\hw311.hpp:163:16: error: base operand of '->' has non-pointer type 'const gvsu::LinkedList<std::basic_string<char> >'
+  return theList->print(os);
+                ^
+..\src\hw311.hpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311.hpp:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:18:12 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&)':
+..\src\hw311.hpp:163:17: error: there are no arguments to 'print' that depend on a template parameter, so a declaration of 'print' must be available [-fpermissive]
+  return print(os);
+                 ^
+..\src\hw311.hpp:163:17: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311test.cpp:84:19:   required from here
+..\src\hw311.hpp:163:17: error: 'print' was not declared in this scope
+  return print(os);
+                 ^
+..\src\hw311.hpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311.hpp:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:19:10 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311test.cpp:84:19:   required from here
+..\src\hw311.hpp:163:25: error: invalid initialization of non-const reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from an rvalue of type 'void'
+  return theList.print(os);
+                         ^
+..\src\hw311.hpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311.hpp:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:19:37 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311test.cpp:84:19:   required from here
+..\src\hw311.hpp:163:26: error: no matching function for call to 'gvsu::LinkedList<std::basic_string<char> >::print(std::ostream*) const'
+  return theList.print(&os);
+                          ^
+..\src\hw311.hpp:163:26: note: candidate is:
+..\src\hw311.hpp:96:6: note: void gvsu::LinkedList<E>::print(std::ostream&) const [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]
+ void LinkedList<E>::print(ostream& output) const {
+      ^
+..\src\hw311.hpp:96:6: note:   no known conversion for argument 1 from 'std::ostream* {aka std::basic_ostream<char>*}' to 'std::ostream& {aka std::basic_ostream<char>&}'
+..\src\hw311.hpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311.hpp:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:20:02 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311test.cpp:84:19:   required from here
+..\src\hw311.hpp:163:25: error: invalid initialization of non-const reference of type 'std::ostream& {aka std::basic_ostream<char>&}' from an rvalue of type 'void'
+  return theList.print(os);
+                         ^
+..\src\hw311.hpp: In function 'std::ostream& gvsu::operator<<(std::ostream&, const gvsu::LinkedList<E>&) [with E = std::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+..\src\hw311.hpp:164:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+14:20:43 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+Info: Nothing to build for HW3
+14:25:37 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:26:50 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:27:34 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In member function 'bool gvsu::LinkedList<E>::remove(const E&)':
+..\src\hw311.hpp:170:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+..\src\hw311.hpp: At global scope:
+..\src\hw311.hpp:171:2: error: expected unqualified-id before 'return'
+  return false;
+  ^
+..\src\hw311.hpp:178:40: error: 'LinkedList' does not name a type
+ ostream& operator<<(ostream& os, const LinkedList<E>& theList) {
+                                        ^
+..\src\hw311.hpp:178:40: error: ISO C++ forbids declaration of 'parameter' with no type [-fpermissive]
+..\src\hw311.hpp:178:50: error: expected ',' or '...' before '<' token
+ ostream& operator<<(ostream& os, const LinkedList<E>& theList) {
+                                                  ^
+..\src\hw311.hpp: In function 'std::ostream& operator<<(std::ostream&, int)':
+..\src\hw311.hpp:180:2: error: 'theList' was not declared in this scope
+  theList.print(os);
+  ^
+..\src\hw311.hpp: At global scope:
+..\src\hw311.hpp:186:16: error: expected initializer before '<' token
+ void LinkedList<E>::print_reverse(ostream &os) {
+                ^
+..\src\hw311.hpp:191:1: error: expected declaration before '}' token
+ } /* end of namespace, don't write any code below this line */
+ ^
+14:27:51 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'bool gvsu::LinkedList<E>::remove(const E&) [with E = std::basic_string<char>]':
+..\src\hw311test.cpp:129:9:   required from here
+..\src\hw311.hpp:155:9: warning: variable 'next' set but not used [-Wunused-but-set-variable]
+   Node* next = new Node();
+         ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:28:33 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:28:51 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:29:15 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In instantiation of 'bool gvsu::LinkedList<E>::remove(const E&) [with E = std::basic_string<char>]':
+..\src\hw311test.cpp:129:9:   required from here
+..\src\hw311.hpp:156:9: warning: variable 'prev' set but not used [-Wunused-but-set-variable]
+   Node* prev = new Node();
+         ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:29:39 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:41:17 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:42:47 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+Info: Nothing to build for HW3
+14:46:04 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In member function 'bool gvsu::LinkedList<E>::remove(const E&)':
+..\src\hw311.hpp:160:5: error: expected ';' before 'if'
+     if (end != nullptr)
+     ^
+..\src\hw311.hpp:162:5: error: expected '}' before 'else'
+     else
+     ^
+..\src\hw311.hpp: At global scope:
+..\src\hw311.hpp:171:2: error: expected unqualified-id before 'return'
+  return false;
+  ^
+..\src\hw311.hpp:178:40: error: 'LinkedList' does not name a type
+ ostream& operator<<(ostream& os, const LinkedList<E>& theList) {
+                                        ^
+..\src\hw311.hpp:178:40: error: ISO C++ forbids declaration of 'parameter' with no type [-fpermissive]
+..\src\hw311.hpp:178:50: error: expected ',' or '...' before '<' token
+ ostream& operator<<(ostream& os, const LinkedList<E>& theList) {
+                                                  ^
+..\src\hw311.hpp: In function 'std::ostream& operator<<(std::ostream&, int)':
+..\src\hw311.hpp:180:2: error: 'theList' was not declared in this scope
+  theList.print(os);
+  ^
+..\src\hw311.hpp: At global scope:
+..\src\hw311.hpp:186:16: error: expected initializer before '<' token
+ void LinkedList<E>::print_reverse(ostream &os) {
+                ^
+..\src\hw311.hpp:191:1: error: expected declaration before '}' token
+ } /* end of namespace, don't write any code below this line */
+ ^
+14:46:18 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:57:48 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+14:58:13 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:02:28 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:09:18 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:10:49 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:16:37 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:18:04 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:18:50 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:19:11 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+15:30:35 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____146()':
+..\src\hw311test.cpp:175:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 

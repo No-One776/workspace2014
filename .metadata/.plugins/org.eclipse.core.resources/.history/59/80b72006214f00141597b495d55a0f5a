@@ -119,6 +119,7 @@ TEST_CASE("Non-destructive print") {
     REQUIRE(output1.str() == output1.str());
 }
 
+
 TEST_CASE("Remove") {
     vector<string> elements {"Hydrogen", "Nitrogen", "Lithium", "Carbon", "Magnesium",
         "Neon", "Oxygen"};
@@ -142,6 +143,7 @@ TEST_CASE("Remove") {
         REQUIRE (chem.size() == expected_size);
     }
 }
+
 
 TEST_CASE("Print the list reverse") {
     vector<string> elements {"Hydrogen", "Nitrogen", "Lithium", "Carbon", "Magnesium",

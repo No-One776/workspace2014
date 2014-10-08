@@ -54,7 +54,7 @@ public:
         alloc_map.erase(ptr);
         
         /* use the "global" delete to deallocate */
-         ::operator delete(ptr);
+        return ::operator delete(ptr);
     }
     
     static void report (const string& tname) {

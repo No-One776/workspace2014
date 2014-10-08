@@ -196,6 +196,7 @@ TEST_CASE("Print reverse shall not reverse the list") {
     after = intAlloc->allocation_status().first;
     nums.print(outafter);
     if (before != after) {
+    	//cout << before << "  " << after << endl;
         FAIL("print_reverse() allocates too much memory");
     }
     REQUIRE(outbefore.str() == outafter.str());

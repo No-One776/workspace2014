@@ -1,4 +1,4 @@
-15:30:35 **** Incremental Build of configuration Debug for project HW3 ****
+19:35:19 **** Incremental Build of configuration Debug for project HW3 ****
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
 ..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
@@ -11,5 +11,5 @@ g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\sr
                                            ^
 g++ -o HW3.exe "src\\hw311test.o" 
 
-15:30:46 Build Finished (took 11s.458ms)
+19:35:31 Build Finished (took 11s.498ms)
 

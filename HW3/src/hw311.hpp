@@ -34,7 +34,7 @@ private:
 	 * the head pointer below in your attempt make the design more efficient.
 	 */
 	Node *head; /* pointer to the first element */
-	/* You may add PRIVATE HELPER FUNCTIONS */
+	Node* reverse(Node* temp);
 public:
 	LinkedList();
 	~LinkedList();
@@ -54,17 +54,14 @@ LinkedList<E>::LinkedList() {
 template<class E>
 LinkedList<E>::~LinkedList() {
 	if (head != nullptr) {
-		Node* prev = new Node();
-		Node* next = head;
-		while (next != nullptr) {
-			prev = next;
-			next = next->next;
+		Node* prev;
+		Node* current = head;
+		while (current != nullptr) {
+			prev = current;
+			current = current->next;
 			delete prev;
 		}
-		delete next;
-	} else
-		delete head;
-	/* TODO: complete this function */
+	}
 }
 
 /*
@@ -74,8 +71,7 @@ template<class E>
 int LinkedList<E>::size() const {
 	int sum = 0;
 	if (head != nullptr) {
-		Node* next = new Node();
-		next = head;
+		Node* next = head;
 		while (next != nullptr) {
 			sum++;
 			next = next->next;
@@ -90,14 +86,12 @@ int LinkedList<E>::size() const {
 template<class E>
 void LinkedList<E>::print(ostream& output) const {
 	if (head != nullptr) {
-		Node* next = new Node();
-		next = head;
+		Node* next = head;
 		while (next != nullptr) {
 			output << next->data << endl;
 			next = next->next;
 		}
 	}
-	/* TODO: Test this function */
 }
 
 /*
@@ -106,8 +100,7 @@ void LinkedList<E>::print(ostream& output) const {
 template<class E>
 bool LinkedList<E>::contains(const E &value) const {
 	if (head != nullptr) {
-		Node* next = new Node();
-		next = head;
+		Node* next = head;
 		while (next != nullptr) {
 			if (next->data == value)
 				return true;
@@ -125,8 +118,8 @@ bool LinkedList<E>::add(const E& value) {
 		Node* insert = new Node();
 		insert->data = value;
 		insert->next = nullptr;
-		Node* next = new Node();
-		Node* prev = new Node();
+		Node* next;
+		Node* prev;
 		next = head;
 		while (next != nullptr) {
 			prev = next;
@@ -147,10 +140,9 @@ template<class E>
 bool LinkedList<E>::remove(const E& value) {
 	/* TODO: complete this function */
 	if (head != nullptr) {
-		Node* next = new Node();
-		Node* prev = new Node();
-		Node* end = new Node();
-		next = head;
+		Node* next = head;
+		Node* prev;
+		Node* end;
 		while (next != nullptr) {
 			if (next->data == value) {
 				end = next->next;
@@ -179,12 +171,29 @@ ostream& operator<<(ostream& os, const LinkedList<E>& theList) {
 	return os;
 }
 
+template<class E>
+typename LinkedList<E>::Node* LinkedList<E>::reverse(Node* temp) {
+	Node* next;
+	Node* prev = nullptr;
+	Node* current = temp;
+	while (current != nullptr) {
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+	return prev;
+}
+
 /* Prob 3.29: print the list in reverse, using only O(1) extra memory space */
 template<class E>
 void LinkedList<E>::print_reverse(ostream &os) {
 	/* TODO: complete this function */
-
-//Make a recursive helper function?
+	if (head != nullptr) {
+		head = this->reverse(head);
+		this->print(os);
+		head = this->reverse(head);
+	}
 }
 
 }

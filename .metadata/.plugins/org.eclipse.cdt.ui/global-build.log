@@ -1,71 +1,382 @@
-08:00:54 **** Rebuild of configuration Debug for project Project2 ****
+16:18:49 **** Rebuild of configuration Debug for project HW3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-Info: Nothing to build for Project2
-08:02:15 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-08:10:42 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-08:12:47 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-08:13:13 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-08:19:24 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-Info: Nothing to build for Project2
-08:23:13 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-10:49:40 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-..\src\Project2.c: In function 'transition':
-..\src\Project2.c:76:9: error: expected expression before 'float'
-  return float;
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+In file included from ..\src\hw311.hpp:6:0,
+                 from ..\src\hw311test.cpp:16:
+..\src\gvsu_alloc.hpp:29:9: warning: identifier 'nullptr' is a keyword in C++11 [-Wc++0x-compat]
+         if (_instance == nullptr)
          ^
-10:49:52 **** Incremental Build of configuration Debug for project Project2 ****
+..\src\gvsu_alloc.hpp: In static member function 'static GVSU_Allocator<T>* GVSU_Allocator<T>::get_instance()':
+..\src\gvsu_alloc.hpp:29:26: error: 'nullptr' was not declared in this scope
+         if (_instance == nullptr)
+                          ^
+..\src\gvsu_alloc.hpp: In static member function 'static void GVSU_Allocator<T>::report(const string&)':
+..\src\gvsu_alloc.hpp:67:14: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+         for (auto it = alloc_map.begin(); it != alloc_map.end(); ++it) {
+              ^
+..\src\gvsu_alloc.hpp:67:19: error: 'it' does not name a type
+         for (auto it = alloc_map.begin(); it != alloc_map.end(); ++it) {
+                   ^
+..\src\gvsu_alloc.hpp:67:43: error: expected ';' before 'it'
+         for (auto it = alloc_map.begin(); it != alloc_map.end(); ++it) {
+                                           ^
+..\src\gvsu_alloc.hpp:67:43: error: 'it' was not declared in this scope
+In file included from ..\src\hw311test.cpp:16:0:
+..\src\hw311.hpp: In constructor 'gvsu::LinkedList<E>::LinkedList()':
+..\src\hw311.hpp:58:16: error: 'nullptr' was not declared in this scope
+         head = nullptr;
+                ^
+..\src\hw311test.cpp: At global scope:
+..\src\hw311test.cpp:22:39: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+ GVSU_Allocator<T>* GVSU_Allocator<T>::_instance{};
+                                       ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____39()':
+..\src\hw311test.cpp:48:18: error: range-based 'for' loops are not allowed in C++98 mode
+     for (int x : numbers) {
+                  ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____55()':
+..\src\hw311test.cpp:56:20: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     vector<string> elements {"Hydrogen", "Nitrogen", "Lithium", "Carbon", "Magnesium",
+                    ^
+..\src\hw311test.cpp:57:25: error: in C++98 'elements' must be initialized by constructor, not by '{...}'
+         "Neon", "Oxygen"};
+                         ^
+..\src\hw311test.cpp:57:25: error: no matching function for call to 'std::vector<std::basic_string<char> >::vector(<brace-enclosed initializer list>)'
+..\src\hw311test.cpp:57:25: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note:   template argument deduction/substitution failed:
+..\src\hw311test.cpp:57:25: note:   cannot convert '"Lithium"' (type 'const char [8]') to type 'const allocator_type& {aka const std::allocator<std::basic_string<char> >&}'
+         "Neon", "Oxygen"};
+                         ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector(const vector& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note:   candidate expects 3 arguments, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(const allocator_type& __a)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector()
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note:   candidate expects 0 arguments, 7 provided
+..\src\hw311test.cpp:60:22: error: range-based 'for' loops are not allowed in C++98 mode
+     for (string& s : elements) {
+                      ^
+..\src\hw311test.cpp:64:22: error: range-based 'for' loops are not allowed in C++98 mode
+     for (string& s : elements) {
+                      ^
+..\src\hw311test.cpp:68:22: error: range-based 'for' loops are not allowed in C++98 mode
+     for (string& s : elements) {
+                      ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:75:20: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     vector<string> elements {"Hydrogen", "Nitrogen", "Lithium", "Carbon", "Magnesium",
+                    ^
+..\src\hw311test.cpp:76:25: error: in C++98 'elements' must be initialized by constructor, not by '{...}'
+         "Neon", "Oxygen"};
+                         ^
+..\src\hw311test.cpp:76:25: error: no matching function for call to 'std::vector<std::basic_string<char> >::vector(<brace-enclosed initializer list>)'
+..\src\hw311test.cpp:76:25: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note:   template argument deduction/substitution failed:
+..\src\hw311test.cpp:76:25: note:   cannot convert '"Lithium"' (type 'const char [8]') to type 'const allocator_type& {aka const std::allocator<std::basic_string<char> >&}'
+         "Neon", "Oxygen"};
+                         ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector(const vector& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note:   candidate expects 3 arguments, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(const allocator_type& __a)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector()
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note:   candidate expects 0 arguments, 7 provided
+..\src\hw311test.cpp:90:26: error: range-based 'for' loops are not allowed in C++98 mode
+         for (string& s : elements) {
+                          ^
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____106()':
+..\src\hw311test.cpp:107:20: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     vector<string> elements {"Hydrogen", "Nitrogen", "Lithium", "Carbon", "Magnesium",
+                    ^
+..\src\hw311test.cpp:108:25: error: in C++98 'elements' must be initialized by constructor, not by '{...}'
+         "Neon", "Oxygen"};
+                         ^
+..\src\hw311test.cpp:108:25: error: no matching function for call to 'std::vector<std::basic_string<char> >::vector(<brace-enclosed initializer list>)'
+..\src\hw311test.cpp:108:25: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note:   template argument deduction/substitution failed:
+..\src\hw311test.cpp:108:25: note:   cannot convert '"Lithium"' (type 'const char [8]') to type 'const allocator_type& {aka const std::allocator<std::basic_string<char> >&}'
+         "Neon", "Oxygen"};
+                         ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector(const vector& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note:   candidate expects 3 arguments, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(const allocator_type& __a)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector()
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note:   candidate expects 0 arguments, 7 provided
+..\src\hw311test.cpp:112:22: error: range-based 'for' loops are not allowed in C++98 mode
+     for (string& s : elements) {
+                      ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____123()':
+..\src\hw311test.cpp:124:20: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     vector<string> elements {"Hydrogen", "Nitrogen", "Lithium", "Carbon", "Magnesium",
+                    ^
+..\src\hw311test.cpp:125:25: error: in C++98 'elements' must be initialized by constructor, not by '{...}'
+         "Neon", "Oxygen"};
+                         ^
+..\src\hw311test.cpp:125:25: error: no matching function for call to 'std::vector<std::basic_string<char> >::vector(<brace-enclosed initializer list>)'
+..\src\hw311test.cpp:125:25: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note:   template argument deduction/substitution failed:
+..\src\hw311test.cpp:125:25: note:   cannot convert '"Lithium"' (type 'const char [8]') to type 'const allocator_type& {aka const std::allocator<std::basic_string<char> >&}'
+         "Neon", "Oxygen"};
+                         ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector(const vector& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note:   candidate expects 3 arguments, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(const allocator_type& __a)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector()
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note:   candidate expects 0 arguments, 7 provided
+..\src\hw311test.cpp:128:22: error: range-based 'for' loops are not allowed in C++98 mode
+     for (string& s : elements) {
+                      ^
+..\src\hw311test.cpp:132:22: error: range-based 'for' loops are not allowed in C++98 mode
+     for (string& s : elements) {
+                      ^
+..\src\hw311test.cpp:137:22: error: range-based 'for' loops are not allowed in C++98 mode
+     for (string& s : elements) {
+                      ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:149:20: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     vector<string> elements {"Hydrogen", "Nitrogen", "Lithium", "Carbon", "Magnesium",
+                    ^
+..\src\hw311test.cpp:150:25: error: in C++98 'elements' must be initialized by constructor, not by '{...}'
+         "Neon", "Oxygen"};
+                         ^
+..\src\hw311test.cpp:150:25: error: no matching function for call to 'std::vector<std::basic_string<char> >::vector(<brace-enclosed initializer list>)'
+..\src\hw311test.cpp:150:25: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:398:9: note:   template argument deduction/substitution failed:
+..\src\hw311test.cpp:150:25: note:   cannot convert '"Lithium"' (type 'const char [8]') to type 'const allocator_type& {aka const std::allocator<std::basic_string<char> >&}'
+         "Neon", "Oxygen"};
+                         ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from ..\src\catch.hpp:408,
+                 from ..\src\hw311test.cpp:15:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector(const vector& __x)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:310:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::size_type = unsigned int; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:295:7: note:   candidate expects 3 arguments, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::basic_string<char> >]
+       vector(const allocator_type& __a)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:256:7: note:   candidate expects 1 argument, 7 provided
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]
+       vector()
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:248:7: note:   candidate expects 0 arguments, 7 provided
+..\src\hw311test.cpp:169:26: error: range-based 'for' loops are not allowed in C++98 mode
+         for (string& s : elements) {
+                          ^
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____186()':
+..\src\hw311test.cpp:187:5: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     auto intAlloc = GVSU_Allocator<int>::get_instance();
+     ^
+..\src\hw311test.cpp:187:10: error: 'intAlloc' does not name a type
+     auto intAlloc = GVSU_Allocator<int>::get_instance();
+          ^
+..\src\hw311test.cpp:196:14: error: 'intAlloc' was not declared in this scope
+     before = intAlloc->allocation_status().first;
+              ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____206()':
+..\src\hw311test.cpp:207:5: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     auto intAlloc = GVSU_Allocator<int>::get_instance();
+     ^
+..\src\hw311test.cpp:207:10: error: 'intAlloc' does not name a type
+     auto intAlloc = GVSU_Allocator<int>::get_instance();
+          ^
+..\src\hw311test.cpp:208:5: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     auto strAlloc = GVSU_Allocator<string>::get_instance();
+     ^
+..\src\hw311test.cpp:208:10: error: 'strAlloc' does not name a type
+     auto strAlloc = GVSU_Allocator<string>::get_instance();
+          ^
+..\src\hw311test.cpp:212:5: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     auto stat = intAlloc->allocation_status();
+     ^
+..\src\hw311test.cpp:212:15: error: expected unqualified-id before '=' token
+     auto stat = intAlloc->allocation_status();
+               ^
+..\src\hw311test.cpp:213:13: error: expected primary-expression before '.' token
+     if( stat.first != stat.second) {
+             ^
+..\src\hw311test.cpp:213:27: error: expected primary-expression before '.' token
+     if( stat.first != stat.second) {
+                           ^
+..\src\hw311test.cpp:214:9: error: 'intAlloc' was not declared in this scope
+         intAlloc->report("int");
+         ^
+..\src\hw311test.cpp:216:24: error: expected primary-expression before '.' token
+         outmsg << (stat.first - stat.second)
+                        ^
+..\src\hw311test.cpp:216:37: error: expected primary-expression before '.' token
+         outmsg << (stat.first - stat.second)
+                                     ^
+..\src\hw311test.cpp:220:10: error: expected unqualified-id before '=' token
+     stat = strAlloc->allocation_status();
+          ^
+..\src\hw311test.cpp:221:13: error: expected primary-expression before '.' token
+     if( stat.first != stat.second) {
+             ^
+..\src\hw311test.cpp:221:27: error: expected primary-expression before '.' token
+     if( stat.first != stat.second) {
+                           ^
+..\src\hw311test.cpp:222:9: error: 'strAlloc' was not declared in this scope
+         strAlloc->report("string");
+         ^
+..\src\hw311test.cpp:224:24: error: expected primary-expression before '.' token
+         outmsg << (stat.first - stat.second)
+                        ^
+..\src\hw311test.cpp:224:37: error: expected primary-expression before '.' token
+         outmsg << (stat.first - stat.second)
+                                     ^
+16:21:24 **** Incremental Build of configuration Debug for project HW3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-10:52:02 **** Incremental Build of configuration Debug for project Project2 ****
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+16:37:07 **** Incremental Build of configuration Debug for project HW3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-10:53:25 **** Incremental Build of configuration Debug for project Project2 ****
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+Info: Nothing to build for HW3
+16:37:59 **** Incremental Build of configuration Debug for project HW3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-Info: Nothing to build for Project2
-Info: Nothing to build for Project2
-11:12:55 **** Incremental Build of configuration Debug for project Project2 ****
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+16:38:32 **** Incremental Build of configuration Debug for project HW3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-Info: Nothing to build for Project2
-Info: Nothing to build for Project2
-Info: Nothing to build for Project2
-Info: Nothing to build for Project2
-11:15:13 **** Incremental Build of configuration Debug for project Project2 ****
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+16:39:08 **** Incremental Build of configuration Debug for project HW3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-11:15:46 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
-12:30:15 **** Incremental Build of configuration Debug for project Project2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Project2.o" "..\\src\\Project2.c" 
-gcc -o Project2.exe "src\\Project2.o" 
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____148()':
+..\src\hw311test.cpp:177:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 

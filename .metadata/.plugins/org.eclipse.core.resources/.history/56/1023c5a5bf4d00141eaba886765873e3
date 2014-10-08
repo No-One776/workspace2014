@@ -51,8 +51,6 @@ state transition(state current, char transition) {
 			return stop;
 		if (transition == ' ')
 			return start;
-		else
-			return start;
 	}
 
 	if (current == build_id) {
@@ -98,6 +96,12 @@ state transition(state current, char transition) {
 int main(void) {
 	state current_state = start;
 	char transition_char = ' ';
+	FILE *fp;
+	fp = fopen("input-base-plus-opr-number.txt", "r");
+	if (fp == NULL) {
+		perror("Error in opening file");
+		return (-1);
+	}
 	do {
 		if (current_state == identifier) {
 			printf(" – Identifier\n");
@@ -128,15 +132,18 @@ int main(void) {
 			current_state = start;
 		}
 		//Scan the next character input into transition
-		transition_char = fgetc(stdin);
+		transition_char = fgetc(fp);
+		if (feof(fp))
+			break;
+
 		//If the character is not blank, print it
+		if (transition_char != ' ')
+			printf("%c", transition_char);
 
 		//Get the next current state
 		current_state = transition(current_state, transition_char);
 
-		if (transition_char != ' ' && current_state != stop && transition_char != '\n')
-					printf("%c", transition_char);
-
 	} while (current_state != stop);
+	fclose(fp);
 	return EXIT_SUCCESS;
 }

@@ -1,0 +1,6 @@
+17:40:21 **** Incremental Build of configuration Default for project Project3Make ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+17:40:21 Build Finished (took 72ms)
+

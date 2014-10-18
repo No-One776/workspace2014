@@ -20,8 +20,8 @@ char *infixToPostfix(char *infixStr) {
 		if (isLeftParen(infixStr))
 			stackPush(&s, infixStr);
 		if (isOperator(infixStr))
-			if (isOperator(stackPeek(&s)))
-				if (stackPrecedence(stackPeek(&s))
+			if (isOperator((char) stackPeek(&s)))
+				if (stackPrecedence((char) stackPeek(&s))
 						>= inputPrecedence(infixStr)) {
 					char c;
 					c = (char) stackPop(&s);
@@ -36,6 +36,7 @@ char *infixToPostfix(char *infixStr) {
 			}
 			stackPop(&s);
 		}
+		infixStr++;
 	}
 	return postfixStr;
 }
@@ -50,9 +51,7 @@ bool isOperator(char *str) {
 
 /* function that returns true if the string is an operand/integer */
 bool isOperand(char *str) {
-	if (isdigit(str))
-		return true;
-	return false;
+	return isdigit(str);
 }
 
 /* function that returns true if the string is a left parenthesis */
@@ -126,6 +125,6 @@ int applyOperator(int num1, int num2, char *opr) {
 	if (opr == '%')
 		return num1 % num2;
 	if (opr == '^')
-		return num1 ^ num2;
+		return num2 ^ num1;
 
 }

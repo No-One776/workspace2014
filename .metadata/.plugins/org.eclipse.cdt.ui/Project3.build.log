@@ -1,1 +1,6 @@
-Info: Nothing to build for Project3
+17:34:23 **** Incremental Build of configuration Debug for project Project3 ****
+Info: Internal Builder is used for build
+gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
+
+17:34:25 Build Finished (took 1s.380ms)
+

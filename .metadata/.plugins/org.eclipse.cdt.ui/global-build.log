@@ -2066,3 +2066,42 @@ g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\sr
          for (int k = 1; k < elements.size(); k++) {
                                            ^
 g++ -o HW3.exe "src\\hw311test.o" 
+22:38:17 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____146()':
+..\src\hw311test.cpp:175:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+Info: Nothing to build for HW3
+Info: Nothing to build for HW3
+Info: Nothing to build for HW3
+22:40:39 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____146()':
+..\src\hw311test.cpp:175:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 
+22:41:40 **** Incremental Build of configuration Debug for project HW3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\hw311test.o" "..\\src\\hw311test.cpp" 
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____74()':
+..\src\hw311test.cpp:97:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+..\src\hw311test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____146()':
+..\src\hw311test.cpp:175:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 1; k < elements.size(); k++) {
+                                           ^
+g++ -o HW3.exe "src\\hw311test.o" 

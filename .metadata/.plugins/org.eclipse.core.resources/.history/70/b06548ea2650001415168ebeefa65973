@@ -1,0 +1,207 @@
+//  hw311.hpp
+
+#ifndef CS263_PROB_3_11
+#define CS263_PROB_3_11
+#include <iostream>
+
+#include "gvsu_alloc.hpp"
+
+namespace gvsu {
+/* don't write any code above this line */
+
+using namespace std;
+
+template<class E>
+class LinkedList {
+	static GVSU_Allocator<E>* node_alloc;
+
+	/* DO NOT EDIT the Node class below */
+	class Node { /* inner class of Linked List */
+	private:
+	public:
+		E data; /* store the data item */
+		Node* next; /* pointer to the next node */
+
+		/* override new and delete to use our own allocator */
+		void* operator new(size_t s) {
+			return node_alloc->allocate(s);
+		}
+		void operator delete(void * ptr) {
+			node_alloc->deallocate(static_cast<E*>(ptr));
+		}
+	};
+
+private:
+	/* We know that the design choice used by this class is NOT EFFICIENT,
+	 * but you are NOT ALLOWED to add any other instance variable besides
+	 * the head pointer below in your attempt make the design more efficient.
+	 */
+	Node *head; /* pointer to the first element */
+
+	/* You may add PRIVATE HELPER FUNCTIONS */
+	Node* reverse(Node* temp);
+
+public:
+
+	LinkedList();
+	~LinkedList();
+	int size() const;  // part (a) return the size of the linked list
+	void print(ostream&) const;  // part (b) print the linked list
+	bool contains(const E& value) const; // part (c) test if the item is in the list
+	bool add(const E& value); // part (d)
+	bool remove(const E& value); // part (e) remove a value
+	void print_reverse(ostream&);  // prob 3.29
+};
+
+template<class E>
+LinkedList<E>::LinkedList() {
+	head = nullptr;
+}
+
+template<class E>
+LinkedList<E>::~LinkedList() {
+	if (head != nullptr) {
+		Node* current = head;
+		Node* prev;
+		while (current != nullptr) {
+			prev = current;
+			current = current->next;
+			delete prev;
+		}
+	}
+}
+
+/*
+ 3.11 (a) return the size of the linked list
+ */
+template<class E>
+int LinkedList<E>::size() const {
+	int count = 0;
+	if (head != nullptr) {
+		Node* temp = head;
+		while (temp != nullptr) {
+			count++;
+			temp = temp->next;
+		}
+	}
+	return count;
+}
+
+/*
+ 3.11 (b) print the linked list
+ */
+template<class E>
+void LinkedList<E>::print(ostream& output) const {
+	if (head != nullptr) {
+		Node* next = head;
+		while (next != nullptr) {
+			output << next->data << endl;
+			next = next->next;
+		}
+	}
+}
+
+/*
+ 3.11 (c) test if a value is contained in the linked list
+ */
+template<class E>
+bool LinkedList<E>::contains(const E &value) const {
+	if (head != nullptr) {
+		Node* current = head;
+		while (current != nullptr) {
+			if (current->data == value) {
+				return true;
+			} else {
+				current = current->next;
+			}
+		}
+	}
+	return false;
+}
+
+/* 3.11 (d) insert new_data at the end of the list (if it is not already
+ in the list). Return true if the item is inserted, false otherwise */
+template<class E>
+bool LinkedList<E>::add(const E& value) {
+	if (!contains(value)) {
+		Node* newNode = new Node();
+		newNode->data = value;
+		newNode->next = nullptr;
+		if (head == nullptr) {
+			head = newNode;
+			return true;
+		} else {
+			Node* current = head;
+			while (current->next != nullptr) {
+				current = current->next;
+			}
+			current->next = newNode;
+			return true;
+		}
+	}
+	return false;
+}
+
+/* 3.11 (d) insert new_data at the end of the list (if it is not already
+ in the list). Return true if the item is inserted, false otherwise */
+template<class E>
+bool LinkedList<E>::remove(const E& value) {
+	if (head != nullptr) {
+		Node* current = head;
+		Node* prev;
+		Node* end;
+		while (current != nullptr) {
+			if (current->data == value) {
+				end = current->next;
+				if (end != nullptr)
+					prev->next = end;
+				else
+					prev->next = nullptr;
+				if (current == head)
+					head = end;
+				delete current;
+				return true;
+			}
+			prev = current;
+			current = current->next;
+		}
+	}
+	return false;
+}
+
+/*
+ 3.11 (b) print the linked list
+ */
+template<class E>
+ostream& operator<<(ostream& os, const LinkedList<E>& theList) {
+	theList.print(os);
+	return os;
+}
+
+/* Prob 3.29: print the list in reverse, using only O(1) extra space */
+template<class E>
+void LinkedList<E>::print_reverse(ostream &os) {
+	if (head != nullptr) {
+		head = this->reverse(head);
+		this->print(os);
+		head = this->reverse(head);
+	}
+}
+
+template<class E>
+typename LinkedList<E>::Node* LinkedList<E>::reverse(Node* temp) {
+	Node* next;
+	Node* prev = nullptr;
+	Node* current = temp;
+	while (current != nullptr) {
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+	return prev;
+}
+}
+;
+/* end of namespace, don't write any code below this line */
+#endif

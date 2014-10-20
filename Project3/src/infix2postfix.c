@@ -56,16 +56,12 @@ bool isOperand(char *str) {
 
 /* function that returns true if the string is a left parenthesis */
 bool isLeftParen(char *str) {
-	if (str == '(')
-		return true;
-	return false;
+	return str == '(';
 }
 
 /* function that returns true if the string is a right parenthesis */
 bool isRightParen(char *str) {
-	if (str == ')')
-		return true;
-	return false;
+	return str == ')';
 }
 
 /* function that returns the stack precedence of given operator */

@@ -9,11 +9,13 @@
 
 /* function to convert an infix to postfix */
 char *infixToPostfix(char *infixStr) {
-	char *postfixStr = malloc(50 * sizeof(char));
+	char *postfixStr = malloc(50* sizeof(char));
 	stack s;
 	stackInit(&s);
 	char *str;
 	str = strtok(infixStr, " ");
+
+	//example
 	//int num1 = atoi(stackPop(&s));
 	//char *buffer = malloc(10 * sizeof(char));
 	//Allocate the buffer
@@ -21,24 +23,19 @@ char *infixToPostfix(char *infixStr) {
 	//stackPush(&s, buffer);
 
 	while (str != NULL) {
-		if (isOperand(str)) {
+		if (isOperand(str)){
 			strcat(postfixStr, str);
 			strcat(postfixStr, " ");
-		}
-		if (isLeftParen(str))
-			stackPush(&s, str);
-		if (isOperator(str)) {
-			while (!stackIsEmpty(&s)) {
-				if (stackPrecedence(stackPeek(&s)) >= inputPrecedence(str)) {
-					printf("Here in operator stack");
+		}	
+		if (isOperator(str)){
+			while (!stackIsEmpty(&s) && stackPrecedence(stackPeek(&s)) >= inputPrecedence(str)) {
 					char *c = malloc(10 * sizeof(char));
 					c = stackPop(&s);
-					strcat(postfixStr, c);
-					strcat(postfixStr, " ");
-				} else
-					break;
-			}
-
+					if (!isLeftParen(c)){
+						strcat(postfixStr, c);
+						strcat(postfixStr, " ");
+					}
+			}	
 			stackPush(&s, str);
 		}
 		if (isRightParen(str)) {
@@ -48,13 +45,11 @@ char *infixToPostfix(char *infixStr) {
 				strcat(postfixStr, c);
 				strcat(postfixStr, " ");
 			}
-
-			char *c = malloc(10 * sizeof(char));
-			c = stackPop(&s);
+			stackPop(&s);
 		}
 		str = strtok(NULL, " ");
 	}
-	while (!stackIsEmpty(&s)) {
+	while (!stackIsEmpty(&s)){
 		char *c = malloc(10 * sizeof(char));
 		c = stackPop(&s);
 		strcat(postfixStr, c);
@@ -119,21 +114,21 @@ int evaluatePostfix(char *postfixStr) {
 	stackInit(&s);
 	char *str;
 	str = strtok(postfixStr, " ");
-	while (str != NULL) {
-		if (isOperand(str))
-			stackPush(&s, str);
-		if (isOperator(str)) {
+	while (str != NULL){
+	  if (isOperand(str))
+	    stackPush(&s, str);
+	  if (isOperator(str)) {
 			int x, y;
 			y = atoi(stackPop(&s));
 			x = atoi(stackPop(&s));
-			char *c = malloc(10 * sizeof(char));
+			char *c = malloc(10*sizeof(char));
 			int z = applyOperator(x, y, str);
 			sprintf(c, "%d", z);
 			stackPush(&s, c);
 		}
 		str = strtok(NULL, " ");
 	}
-	return atoi(stackPop(&s));
+	return atoi( stackPop(&s));
 }
 
 /* apply operator to num1 and num2 and return the result */

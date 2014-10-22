@@ -9,91 +9,107 @@
 
 /* function to convert an infix to postfix */
 char *infixToPostfix(char *infixStr) {
-	char *postfixStr = "";
+	char *postfixStr = malloc(50* sizeof(char));
 	stack s;
 	stackInit(&s);
 	char *str;
 	str = strtok(infixStr, " ");
 
 	//example
-	int num1 = atoi(stackPop(&s));
-	char *buffer = malloc(10 * sizeof(char));
+	//int num1 = atoi(stackPop(&s));
+	//char *buffer = malloc(10 * sizeof(char));
 	//Allocate the buffer
-	sprintf(buffer, "%d", num1);
-	stackPush(&s, buffer);
+	//sprintf(buffer, "%d", num1);
+	//stackPush(&s, buffer);
 
 	while (str != NULL) {
-		if (isOperand(str))
+		if (isOperand(str)){
 			strcat(postfixStr, str);
+			strcat(postfixStr, " ");
+		}	
 		if (isLeftParen(str))
-			stackPush(&s, infixStr);
-		if (isOperator(str))
-			if (isOperator(stackPeek(&s)))
+			stackPush(&s, str);
+		if (isOperator(str)){
+			while (!stackIsEmpty(&s)){
 				if (stackPrecedence(stackPeek(&s)) >= inputPrecedence(str)) {
+					printf("Here in operator stack");
 					char *c = malloc(10 * sizeof(char));
 					c = stackPop(&s);
 					strcat(postfixStr, c);
-					stackPush(&s, str);
-				}
+					strcat(postfixStr, " ");
+				}else
+					break;
+			}
+				
+			stackPush(&s, str);
+		}
 		if (isRightParen(str)) {
 			while (!isLeftParen(stackPeek(&s))) {
 				char *c = malloc(10 * sizeof(char));
 				c = stackPop(&s);
 				strcat(postfixStr, c);
+				strcat(postfixStr, " ");
 			}
-			stackPop(&s);
+				char *c = malloc(10 * sizeof(char));
+                                c = stackPop(&s);
 		}
-		str = strtok(infixStr, " ");
+		str = strtok(NULL, " ");
 	}
+	while (!stackIsEmpty(&s)){
+	char *c = malloc(10 * sizeof(char));
+	c = stackPop(&s);
+	strcat(postfixStr, c);
+	strcat(postfixStr, " ");
+}
 	stackDestroy(&s);
 	return postfixStr;
 }
 
 /* function that returns true if the string is an operator */
 bool isOperator(char *str) {
-	if (str == '+' || str == '-' || str == '*' || str == '/' || str == '%'
-			|| str == '(' || str == '^')
+	if (*str == '+' || *str == '-' || *str == '*' || *str == '/' || *str == '%'
+			|| *str == '(' || *str == '^')
 		return true;
 	return false;
 }
 
 /* function that returns true if the string is an operand/integer */
 bool isOperand(char *str) {
-	return isdigit(str);
+	return isdigit(*str);
 }
 
 /* function that returns true if the string is a left parenthesis */
 bool isLeftParen(char *str) {
-	return str == '(';
+	return *str == '(';
 }
 
 /* function that returns true if the string is a right parenthesis */
 bool isRightParen(char *str) {
-	return str == ')';
+	return *str == ')';
 }
 
 /* function that returns the stack precedence of given operator */
 int stackPrecedence(char *str) {
-	if (str == '+' || str == '-')
+	if (*str == '+' || *str == '-')
 		return 1;
-	if (str == '*' || str == '/' || str == '%')
+	if (*str == '*' || *str == '/' || *str == '%')
 		return 2;
-	if (str == '^')
+	if (*str == '^')
 		return 3;
-	if (str == '(')
+	if (*str == '(')
 		return -1;
 	return 0;
 }
 
 /* function that returns the input precedence of given operator */
 int inputPrecedence(char *str) {
-	if (str == '+' || str == '-')
+	if (*str == '+' || *str == '-')
 		return 1;
-	if (str == '*' || str == '/' || str == '%')
+	if (*str == '*' || *str == '/' || *str == '%')
 		return 2;
-	if (str == '^')
+	if (*str == '^')
 		return 4;
-	if (str == '(')
+	if (*str == '(')
 		return 5;
 	return 0;
 }
@@ -104,33 +120,37 @@ int evaluatePostfix(char *postfixStr) {
 	stackInit(&s);
 	char *str;
 	str = strtok(postfixStr, " ");
-	while (str != NULL) {
-		if (isOperand(str))
-			stackPush(&s, str);
-		if (isOperator(str)) {
+	while (str != NULL){
+	  if (isOperand(str))
+	    stackPush(&s, str);
+	  if (isOperator(str)) {
 			int x, y;
 			y = atoi(stackPop(&s));
 			x = atoi(stackPop(&s));
-			stackPush(&s, applyOperator(x, y, str));
+			char *c = malloc(10*sizeof(char));
+			int z = applyOperator(x, y, str);
+			sprintf(c, "%d", z);
+			stackPush(&s, c);
 		}
-		str = strtok(postfixStr, " ");
+		str = strtok(NULL, " ");
 	}
-	return stackPop(&s);
+	return atoi( stackPop(&s));
 }
 
 /* apply operator to num1 and num2 and return the result */
 int applyOperator(int num1, int num2, char *opr) {
-	if (opr == "+")
+	if (*opr == '+')
 		return num1 + num2;
-	if (opr == '-')
+	if (*opr == '-')
 		return num1 - num2;
-	if (opr == '*')
+	if (*opr == '*')
 		return num1 * num2;
-	if (opr == '/')
+	if (*opr == '/')
 		return num1 / num2;
-	if (opr == '%')
+	if (*opr == '%')
 		return num1 % num2;
-	if (opr == '^')
-		return num2 ^ num1;
+	if (*opr == '^')
+		return pow(num1, num2);
+
 	return 0;
 }

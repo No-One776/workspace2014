@@ -1,14 +1,6 @@
 workspace2014
 =============
 
-Fall Classes Workspace
+Fall Classes Workspace for CIS 343 and CIS 263.
 
-char *token = strtok(infixStr, " ");
-while( token != null){
-
-  //if the second 
-  num1 = atoi(stackPop(&s);
-  buffer = malloc  //Allocate the buffer
-  sprintf(buffer, "%d", num1);
-  stackPush(&s, buffer);
-}
+It includes all projects and programming homework done for both classes.

@@ -9,13 +9,19 @@
 
 /* function to convert an infix to postfix */
 char *infixToPostfix(char *infixStr) {
-	char *postfixStr = ""; //= malloc(50 * sizeof(char));
+	char *postfixStr = malloc(50 * sizeof(char));
 	stack s;
 	stackInit(&s);
 	char *str;
 	str = strtok(infixStr, " ");
 
-	//Loop till there are no more tokens/characters left
+	//example
+	//int num1 = atoi(stackPop(&s));
+	//char *buffer = malloc(10 * sizeof(char));
+	//Allocate the buffer
+	//sprintf(buffer, "%d", num1);
+	//stackPush(&s, buffer);
+
 	while (str != NULL) {
 		if (isOperand(str)) {
 			strcat(postfixStr, str);
@@ -24,13 +30,17 @@ char *infixToPostfix(char *infixStr) {
 		if (isOperator(str)) {
 			while (!stackIsEmpty(&s)
 					&& stackPrecedence(stackPeek(&s)) >= inputPrecedence(str)) {
-				strcat(postfixStr, stackPop(&s));
+				char *c = malloc(10 * sizeof(char));
+				c = stackPop(&s);
+				strcat(postfixStr, c);
 				strcat(postfixStr, " ");
 			}
 			stackPush(&s, str);
 		}
 		if (isRightParen(str)) {
 			while (!isLeftParen(stackPeek(&s))) {
+				//char *c = malloc(10 * sizeof(char));
+				//c = stackPop(&s);
 				strcat(postfixStr, stackPop(&s));
 				strcat(postfixStr, " ");
 			}
@@ -38,9 +48,10 @@ char *infixToPostfix(char *infixStr) {
 		}
 		str = strtok(NULL, " ");
 	}
-	//Empty the remaining tokens on the stack to the postfixStr
 	while (!stackIsEmpty(&s)) {
-		strcat(postfixStr, stackPop(&s));
+		char *c = malloc(10 * sizeof(char));
+		c = stackPop(&s);
+		strcat(postfixStr, c);
 		strcat(postfixStr, " ");
 	}
 	stackDestroy(&s);

@@ -4103,3 +4103,30 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\
     char *c = malloc(10 * sizeof(char));
           ^
 gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
+14:56:56 **** Incremental Build of configuration Debug for project Project3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
+..\src\infix2postfix.c: In function 'infixToPostfix':
+..\src\infix2postfix.c:44:37: error: invalid operands to binary + (have 'stkElement' and 'char *')
+     strcat(postfixStr, stackPop(&s) + " ");
+                                     ^
+14:57:05 **** Incremental Build of configuration Debug for project Project3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
+gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
+14:58:49 **** Incremental Build of configuration Debug for project Project3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
+gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
+15:03:56 **** Incremental Build of configuration Debug for project Project3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
+..\src\infix2postfix.c: In function 'infixToPostfix':
+..\src\infix2postfix.c:21:10: warning: 'postfixStr' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    strcat(postfixStr, str);
+          ^
+gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
+15:04:18 **** Incremental Build of configuration Debug for project Project3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
+gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 

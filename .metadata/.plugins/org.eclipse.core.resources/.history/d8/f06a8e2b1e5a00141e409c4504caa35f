@@ -9,7 +9,7 @@
 
 /* function to convert an infix to postfix */
 char *infixToPostfix(char *infixStr) {
-	char *postfixStr = ""; //= malloc(50 * sizeof(char));
+	char *postfixStr = malloc(50 * sizeof(char));
 	stack s;
 	stackInit(&s);
 	char *str;

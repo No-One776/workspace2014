@@ -9,7 +9,39 @@
 
 /* function to convert an infix to postfix */
 char *infixToPostfix(char *infixStr) {
-	return NULL;
+	char *postfixStr = NULL;
+	stack s;
+	stackInit(&s);
+	char str;
+	sprintf(str, "%c", infixStr);
+	while (str != NULL) {
+		if (isOperand(infixStr)) {
+			postfixStr = infixStr;
+			postfixStr++;
+		}
+		if (isLeftParen(infixStr))
+			stackPush(&s, infixStr);
+		if (isOperator(infixStr))
+			if (isOperator((char) stackPeek(&s)))
+				if (stackPrecedence((char) stackPeek(&s))
+						>= inputPrecedence(infixStr)) {
+					char c;
+					c = (char) stackPop(&s);
+					postfixStr = c;
+					postfixStr++;
+					stackPush(&s, infixStr);
+				}
+		if (isRightParen(infixStr)) {
+			while (!isLeftParen(stackPeek(&s))) {
+				postfixStr = (char) stackPop(&s);
+				postfixStr++;
+			}
+			stackPop(&s);
+		}
+		infixStr++;
+	}
+	stackDestroy(&s);
+	return postfixStr;
 }
 
 /* function that returns true if the string is an operator */
@@ -22,23 +54,17 @@ bool isOperator(char *str) {
 
 /* function that returns true if the string is an operand/integer */
 bool isOperand(char *str) {
-	if (isdigit(str))
-		return true;
-	return false;
+	return isdigit(str);
 }
 
 /* function that returns true if the string is a left parenthesis */
 bool isLeftParen(char *str) {
-	if (str == '(')
-		return true;
-	return false;
+	return str == '(';
 }
 
 /* function that returns true if the string is a right parenthesis */
 bool isRightParen(char *str) {
-	if (str == ')')
-		return true;
-	return false;
+	return str == ')';
 }
 
 /* function that returns the stack precedence of given operator */
@@ -89,15 +115,15 @@ int evaluatePostfix(char *postfixStr) {
 int applyOperator(int num1, int num2, char *opr) {
 	if (opr == "+")
 		return num1 + num2;
-	if (str == '-')
+	if (opr == '-')
 		return num1 - num2;
-	if (str == '*')
+	if (opr == '*')
 		return num1 * num2;
-	if (str == '/')
+	if (opr == '/')
 		return num1 / num2;
-	if (str == '%')
+	if (opr == '%')
 		return num1 % num2;
-	if (str == '^')
-		return num1 ^ num2;
+	if (opr == '^')
+		return num2 ^ num1;
 
 }

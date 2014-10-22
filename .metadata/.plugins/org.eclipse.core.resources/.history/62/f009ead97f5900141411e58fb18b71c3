@@ -9,7 +9,35 @@
 
 /* function to convert an infix to postfix */
 char *infixToPostfix(char *infixStr) {
-	return NULL;
+	char *postfixStr = NULL;
+	stack s;
+	stackInit(&s);
+	char str = NULL;
+	sprintf(str, "%c", infixStr);
+	while (str != NULL) {
+		if (isOperand(str))
+			strcat(postfixStr, str);
+		if (isLeftParen(str))
+			stackPush(&s, infixStr);
+		if (isOperator(str))
+			if (isOperator((char) stackPeek(&s)))
+				if (stackPrecedence((char) stackPeek(&s))
+						>= inputPrecedence(infixStr)) {
+					char c;
+					c = (char) stackPop(&s);
+					strcat(postfixStr, "%c", c);
+					stackPush(&s, infixStr);
+				}
+		if (isRightParen(infixStr)) {
+			while (!isLeftParen(stackPeek(&s))) {
+				strcat(postfixStr, (char) stackPop(&s));
+			}
+			stackPop(&s);
+		}
+		sprintf(str, "%c", infixStr);
+	}
+	stackDestroy(&s);
+	return postfixStr;
 }
 
 /* function that returns true if the string is an operator */
@@ -22,23 +50,17 @@ bool isOperator(char *str) {
 
 /* function that returns true if the string is an operand/integer */
 bool isOperand(char *str) {
-	if (isdigit(str))
-		return true;
-	return false;
+	return isdigit(str);
 }
 
 /* function that returns true if the string is a left parenthesis */
 bool isLeftParen(char *str) {
-	if (str == '(')
-		return true;
-	return false;
+	return str == '(';
 }
 
 /* function that returns true if the string is a right parenthesis */
 bool isRightParen(char *str) {
-	if (str == ')')
-		return true;
-	return false;
+	return str == ')';
 }
 
 /* function that returns the stack precedence of given operator */
@@ -87,9 +109,17 @@ int evaluatePostfix(char *postfixStr) {
 
 /* apply operator to num1 and num2 and return the result */
 int applyOperator(int num1, int num2, char *opr) {
-//if (opr == "+")
-	//if (str == '-'
-	//		if (str == '*' || str == '/' || str == '%'
-	//			|| str == '(' || str == '^')
+	if (opr == "+")
+		return num1 + num2;
+	if (opr == '-')
+		return num1 - num2;
+	if (opr == '*')
+		return num1 * num2;
+	if (opr == '/')
+		return num1 / num2;
+	if (opr == '%')
+		return num1 % num2;
+	if (opr == '^')
+		return num2 ^ num1;
 
 }

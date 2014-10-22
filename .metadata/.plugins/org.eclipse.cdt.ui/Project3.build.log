@@ -1,6 +1,208 @@
-17:34:23 **** Incremental Build of configuration Debug for project Project3 ****
+20:10:53 **** Incremental Build of configuration Debug for project Project3 ****
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
+..\src\infix2postfix.c: In function 'infixToPostfix':
+..\src\infix2postfix.c:16:2: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [enabled by default]
+  sprintf(str, "%c", infixStr);
+  ^
+In file included from ..\src\infix2postfix.c:2:0:
+c:\mingw\include\stdio.h:247:5: note: expected 'char *' but argument is of type 'char'
+ int sprintf (char *__stream, const char *__format, ...)
+     ^
+..\src\infix2postfix.c:17:13: warning: comparison between pointer and integer [enabled by default]
+  while (str != NULL) {
+             ^
+..\src\infix2postfix.c:18:3: warning: passing argument 1 of 'isOperand' makes pointer from integer without a cast [enabled by default]
+   if (isOperand(str))
+   ^
+In file included from ..\src\infix2postfix.c:8:0:
+..\src\infix2postfix.h:19:6: note: expected 'char *' but argument is of type 'char'
+ bool isOperand(char *str);
+      ^
+..\src\infix2postfix.c:19:4: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [enabled by default]
+    strcat(postfixStr, str);
+    ^
+In file included from ..\src\infix2postfix.c:3:0:
+c:\mingw\include\string.h:53:39: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP char* __cdecl __MINGW_NOTHROW strcat (char*, const char*);
+                                       ^
+..\src\infix2postfix.c:20:3: warning: passing argument 1 of 'isLeftParen' makes pointer from integer without a cast [enabled by default]
+   if (isLeftParen(str))
+   ^
+In file included from ..\src\infix2postfix.c:8:0:
+..\src\infix2postfix.h:22:6: note: expected 'char *' but argument is of type 'char'
+ bool isLeftParen(char *str);
+      ^
+..\src\infix2postfix.c:22:3: warning: passing argument 1 of 'isOperator' makes pointer from integer without a cast [enabled by default]
+   if (isOperator(str))
+   ^
+In file included from ..\src\infix2postfix.c:8:0:
+..\src\infix2postfix.h:16:6: note: expected 'char *' but argument is of type 'char'
+ bool isOperator(char *str);
+      ^
+..\src\infix2postfix.c:23:19: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+    if (isOperator((char) stackPeek(&s)))
+                   ^
+..\src\infix2postfix.c:23:4: warning: passing argument 1 of 'isOperator' makes pointer from integer without a cast [enabled by default]
+    if (isOperator((char) stackPeek(&s)))
+    ^
+In file included from ..\src\infix2postfix.c:8:0:
+..\src\infix2postfix.h:16:6: note: expected 'char *' but argument is of type 'char'
+ bool isOperator(char *str);
+      ^
+..\src\infix2postfix.c:24:25: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if (stackPrecedence((char) stackPeek(&s))
+                         ^
+..\src\infix2postfix.c:24:5: warning: passing argument 1 of 'stackPrecedence' makes pointer from integer without a cast [enabled by default]
+     if (stackPrecedence((char) stackPeek(&s))
+     ^
+In file included from ..\src\infix2postfix.c:8:0:
+..\src\infix2postfix.h:28:5: note: expected 'char *' but argument is of type 'char'
+ int stackPrecedence(char *str);
+     ^
+..\src\infix2postfix.c:27:10: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      c = (char) stackPop(&s);
+          ^
+..\src\infix2postfix.c:28:6: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [enabled by default]
+      strcat(postfixStr, c);
+      ^
+In file included from ..\src\infix2postfix.c:3:0:
+c:\mingw\include\string.h:53:39: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP char* __cdecl __MINGW_NOTHROW strcat (char*, const char*);
+                                       ^
+..\src\infix2postfix.c:33:24: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     strcat(postfixStr, (char) stackPop(&s));
+                        ^
+..\src\infix2postfix.c:33:5: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [enabled by default]
+     strcat(postfixStr, (char) stackPop(&s));
+     ^
+In file included from ..\src\infix2postfix.c:3:0:
+c:\mingw\include\string.h:53:39: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP char* __cdecl __MINGW_NOTHROW strcat (char*, const char*);
+                                       ^
+..\src\infix2postfix.c:37:3: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [enabled by default]
+   sprintf(str, "%c", infixStr);
+   ^
+In file included from ..\src\infix2postfix.c:2:0:
+c:\mingw\include\stdio.h:247:5: note: expected 'char *' but argument is of type 'char'
+ int sprintf (char *__stream, const char *__format, ...)
+     ^
+..\src\infix2postfix.c: In function 'isOperator':
+..\src\infix2postfix.c:45:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-' || str == '*' || str == '/' || str == '%'
+          ^
+..\src\infix2postfix.c:45:24: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-' || str == '*' || str == '/' || str == '%'
+                        ^
+..\src\infix2postfix.c:45:38: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-' || str == '*' || str == '/' || str == '%'
+                                      ^
+..\src\infix2postfix.c:45:52: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-' || str == '*' || str == '/' || str == '%'
+                                                    ^
+..\src\infix2postfix.c:45:66: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-' || str == '*' || str == '/' || str == '%'
+                                                                  ^
+..\src\infix2postfix.c:46:11: warning: comparison between pointer and integer [enabled by default]
+    || str == '(' || str == '^')
+           ^
+..\src\infix2postfix.c:46:25: warning: comparison between pointer and integer [enabled by default]
+    || str == '(' || str == '^')
+                         ^
+..\src\infix2postfix.c: In function 'isOperand':
+..\src\infix2postfix.c:53:2: warning: passing argument 1 of 'isdigit' makes integer from pointer without a cast [enabled by default]
+  return isdigit(str);
+  ^
+In file included from ..\src\infix2postfix.c:5:0:
+c:\mingw\include\ctype.h:67:37: note: expected 'int' but argument is of type 'char *'
+ _CRTIMP int __cdecl __MINGW_NOTHROW isdigit(int);
+                                     ^
+..\src\infix2postfix.c: In function 'isLeftParen':
+..\src\infix2postfix.c:58:13: warning: comparison between pointer and integer [enabled by default]
+  return str == '(';
+             ^
+..\src\infix2postfix.c: In function 'isRightParen':
+..\src\infix2postfix.c:63:13: warning: comparison between pointer and integer [enabled by default]
+  return str == ')';
+             ^
+..\src\infix2postfix.c: In function 'stackPrecedence':
+..\src\infix2postfix.c:68:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-')
+          ^
+..\src\infix2postfix.c:68:24: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-')
+                        ^
+..\src\infix2postfix.c:70:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '*' || str == '/' || str == '%')
+          ^
+..\src\infix2postfix.c:70:24: warning: comparison between pointer and integer [enabled by default]
+  if (str == '*' || str == '/' || str == '%')
+                        ^
+..\src\infix2postfix.c:70:38: warning: comparison between pointer and integer [enabled by default]
+  if (str == '*' || str == '/' || str == '%')
+                                      ^
+..\src\infix2postfix.c:72:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '^')
+          ^
+..\src\infix2postfix.c:74:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '(')
+          ^
+..\src\infix2postfix.c: In function 'inputPrecedence':
+..\src\infix2postfix.c:81:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-')
+          ^
+..\src\infix2postfix.c:81:24: warning: comparison between pointer and integer [enabled by default]
+  if (str == '+' || str == '-')
+                        ^
+..\src\infix2postfix.c:83:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '*' || str == '/' || str == '%')
+          ^
+..\src\infix2postfix.c:83:24: warning: comparison between pointer and integer [enabled by default]
+  if (str == '*' || str == '/' || str == '%')
+                        ^
+..\src\infix2postfix.c:83:38: warning: comparison between pointer and integer [enabled by default]
+  if (str == '*' || str == '/' || str == '%')
+                                      ^
+..\src\infix2postfix.c:85:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '^')
+          ^
+..\src\infix2postfix.c:87:10: warning: comparison between pointer and integer [enabled by default]
+  if (str == '(')
+          ^
+..\src\infix2postfix.c: In function 'evaluatePostfix':
+..\src\infix2postfix.c:103:4: warning: passing argument 2 of 'stackPush' makes pointer from integer without a cast [enabled by default]
+    stackPush(&s, applyOperator(x, y, postfixStr));
+    ^
+In file included from ..\src\infix2postfix.c:7:0:
+..\src\stack.h:31:6: note: expected 'stkElement' but argument is of type 'int'
+ void stackPush(stack *stkPtr, stkElement element);
+      ^
+..\src\infix2postfix.c:107:2: warning: return makes integer from pointer without a cast [enabled by default]
+  return stackPop(&s);
+  ^
+..\src\infix2postfix.c: In function 'applyOperator':
+..\src\infix2postfix.c:112:10: warning: comparison with string literal results in unspecified behavior [-Waddress]
+  if (opr == "+")
+          ^
+..\src\infix2postfix.c:114:10: warning: comparison between pointer and integer [enabled by default]
+  if (opr == '-')
+          ^
+..\src\infix2postfix.c:116:10: warning: comparison between pointer and integer [enabled by default]
+  if (opr == '*')
+          ^
+..\src\infix2postfix.c:118:10: warning: comparison between pointer and integer [enabled by default]
+  if (opr == '/')
+          ^
+..\src\infix2postfix.c:120:10: warning: comparison between pointer and integer [enabled by default]
+  if (opr == '%')
+          ^
+..\src\infix2postfix.c:122:10: warning: comparison between pointer and integer [enabled by default]
+  if (opr == '^')
+          ^
+..\src\infix2postfix.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
 gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
 
-17:34:25 Build Finished (took 1s.380ms)
+20:10:56 Build Finished (took 2s.109ms)
 

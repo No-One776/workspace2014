@@ -12,32 +12,31 @@ char *infixToPostfix(char *infixStr) {
 	char *postfixStr = NULL;
 	stack s;
 	stackInit(&s);
-	while (infixStr != NULL) {
-		if (isOperand(infixStr)) {
-			postfixStr = infixStr;
-			postfixStr++;
-		}
-		if (isLeftParen(infixStr))
+	char str = NULL;
+	sprintf(str, "%c", infixStr);
+	while (str != NULL) {
+		if (isOperand(str))
+			strcat(postfixStr, str);
+		if (isLeftParen(str))
 			stackPush(&s, infixStr);
-		if (isOperator(infixStr))
+		if (isOperator(str))
 			if (isOperator((char) stackPeek(&s)))
 				if (stackPrecedence((char) stackPeek(&s))
 						>= inputPrecedence(infixStr)) {
 					char c;
 					c = (char) stackPop(&s);
-					postfixStr = c;
-					postfixStr++;
+					strcat(postfixStr, c);
 					stackPush(&s, infixStr);
 				}
 		if (isRightParen(infixStr)) {
 			while (!isLeftParen(stackPeek(&s))) {
-				postfixStr = (char) stackPop(&s);
-				postfixStr++;
+				strcat(postfixStr, (char) stackPop(&s));
 			}
 			stackPop(&s);
 		}
-		infixStr++;
+		sprintf(str, "%c", infixStr);
 	}
+	stackDestroy(&s);
 	return postfixStr;
 }
 

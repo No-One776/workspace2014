@@ -36,7 +36,7 @@ char *infixToPostfix(char *infixStr) {
 					stackPush(&s, str);
 				}
 		if (isRightParen(str)) {
-			while (!isLeftParen(stackPeek(&s))) {
+			while (!isLeftParen((char) stackPeek(&s))) {
 				char *c = malloc(10 * sizeof(char));
 				c = stackPop(&s);
 				strcat(postfixStr, c);

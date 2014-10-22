@@ -12,6 +12,7 @@ char *infixToPostfix(char *infixStr) {
 	char *postfixStr = "";
 	stack s;
 	stackInit(&s);
+
 	char *str;
 	str = strtok(infixStr, " ");
 
@@ -22,24 +23,24 @@ char *infixToPostfix(char *infixStr) {
 	sprintf(buffer, "%d", num1);
 	stackPush(&s, buffer);
 
+	//sprintf(str, "%c", infixStr);
 	while (str != NULL) {
 		if (isOperand(str))
 			strcat(postfixStr, str);
 		if (isLeftParen(str))
 			stackPush(&s, infixStr);
 		if (isOperator(str))
-			if (isOperator(stackPeek(&s)))
-				if (stackPrecedence(stackPeek(&s)) >= inputPrecedence(str)) {
+			if (isOperator((char) stackPeek(&s)))
+				if (stackPrecedence((char) stackPeek(&s))
+						>= inputPrecedence(str)) {
 					char *c = malloc(10 * sizeof(char));
-					c = stackPop(&s);
+					c = (char) stackPop(&s);
 					strcat(postfixStr, c);
 					stackPush(&s, str);
 				}
 		if (isRightParen(str)) {
-			while (!isLeftParen(stackPeek(&s))) {
-				char *c = malloc(10 * sizeof(char));
-				c = stackPop(&s);
-				strcat(postfixStr, c);
+			while (!isLeftParen((char) stackPeek(&s))) {
+				strcat(postfixStr, (char) stackPop(&s));
 			}
 			stackPop(&s);
 		}
@@ -113,7 +114,7 @@ int evaluatePostfix(char *postfixStr) {
 			x = atoi(stackPop(&s));
 			stackPush(&s, applyOperator(x, y, str));
 		}
-		str = strtok(postfixStr, " ");
+		str = strtok(infixStr, " ");
 	}
 	return stackPop(&s);
 }

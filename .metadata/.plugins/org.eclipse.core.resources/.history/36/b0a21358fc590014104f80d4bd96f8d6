@@ -28,17 +28,18 @@ char *infixToPostfix(char *infixStr) {
 		if (isLeftParen(str))
 			stackPush(&s, infixStr);
 		if (isOperator(str))
-			if (isOperator(stackPeek(&s)))
-				if (stackPrecedence(stackPeek(&s)) >= inputPrecedence(str)) {
+			if (isOperator((char) stackPeek(&s)))
+				if (stackPrecedence((char) stackPeek(&s))
+						>= inputPrecedence(str)) {
 					char *c = malloc(10 * sizeof(char));
-					c = stackPop(&s);
+					c = (char) stackPop(&s);
 					strcat(postfixStr, c);
 					stackPush(&s, str);
 				}
 		if (isRightParen(str)) {
-			while (!isLeftParen(stackPeek(&s))) {
+			while (!isLeftParen((char) stackPeek(&s))) {
 				char *c = malloc(10 * sizeof(char));
-				c = stackPop(&s);
+				c =  stackPop(&s);
 				strcat(postfixStr, c);
 			}
 			stackPop(&s);

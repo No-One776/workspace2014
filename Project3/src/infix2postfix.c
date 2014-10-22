@@ -13,6 +13,19 @@ char *infixToPostfix(char *infixStr) {
 	stack s;
 	stackInit(&s);
 	char str = NULL;
+
+	//In-class notes on tokenizing and memory
+	char *token = strtok(infixStr, " ");
+	while( token != null){
+
+	  	//if the second 
+	  	num1 = atoi(stackPop(&s);
+	  	buffer = malloc  //Allocate the buffer
+	  	sprintf(buffer, "%d", num1);
+	  	stackPush(&s, buffer);
+	}
+
+	
 	sprintf(str, "%c", infixStr);
 	while (str != NULL) {
 		if (isOperand(str))

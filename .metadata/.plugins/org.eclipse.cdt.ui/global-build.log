@@ -4092,3 +4092,14 @@ In file included from ..\src\infix2postfix.c:7:0:
   if (opr == '^')
           ^
 gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
+13:52:49 **** Rebuild of configuration Debug for project Project3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\stacktest.o" "..\\src\\stacktest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\stack.o" "..\\src\\stack.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\driver.o" "..\\src\\driver.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
+..\src\infix2postfix.c: In function 'infixToPostfix':
+..\src\infix2postfix.c:53:10: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+    char *c = malloc(10 * sizeof(char));
+          ^
+gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 

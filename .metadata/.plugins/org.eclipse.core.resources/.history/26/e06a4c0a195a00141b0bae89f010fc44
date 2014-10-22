@@ -14,6 +14,7 @@ char *infixToPostfix(char *infixStr) {
 	stackInit(&s);
 	char *str;
 	str = strtok(infixStr, " ");
+
 	//int num1 = atoi(stackPop(&s));
 	//char *buffer = malloc(10 * sizeof(char));
 	//Allocate the buffer
@@ -51,6 +52,7 @@ char *infixToPostfix(char *infixStr) {
 
 			char *c = malloc(10 * sizeof(char));
 			c = stackPop(&s);
+			free(c);
 		}
 		str = strtok(NULL, " ");
 	}

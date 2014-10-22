@@ -1,7 +1,1 @@
-15:11:32 **** Incremental Build of configuration Debug for project Project3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
-gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
-
-15:11:33 Build Finished (took 1s.660ms)
-
+Info: Nothing to build for Project3

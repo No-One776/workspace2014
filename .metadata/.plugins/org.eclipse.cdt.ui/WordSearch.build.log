@@ -1,16 +1,9 @@
-16:39:04 **** Incremental Build of configuration Debug for project WordSearch ****
+21:05:22 **** Incremental Build of configuration Debug for project WordSearch ****
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
-In file included from c:\mingw\include\dirent.h:14:0,
-                 from ..\src\FileSystem.h:14,
-                 from ..\src\WordSearch.h:18,
-                 from ..\src\ws_test.cpp:8:
-c:\mingw\include\io.h:288:14: error: '_off64_t' does not name a type
- __CRT_INLINE _off64_t lseek64 (int, _off64_t, int);
-              ^
-c:\mingw\include\io.h:289:14: error: '_off64_t' does not name a type
- __CRT_INLINE _off64_t lseek64 (int fd, _off64_t offset, int whence) 
-              ^
+g++: error: ..\src\ws_test.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
 
-16:39:07 Build Finished (took 2s.588ms)
+21:05:22 Build Finished (took 280ms)
 

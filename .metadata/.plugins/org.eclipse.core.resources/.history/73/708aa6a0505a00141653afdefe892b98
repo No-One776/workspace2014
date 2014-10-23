@@ -1,5 +1,3 @@
-// Justin Rohr & Kyle Niewiada
-// Infix to Post Fix Converter
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>

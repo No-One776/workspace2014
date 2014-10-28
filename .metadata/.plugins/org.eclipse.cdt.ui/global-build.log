@@ -1,984 +1,938 @@
-16:22:45 **** Rebuild of configuration Debug for project HW4 ****
+20:10:13 **** Clean-only build of configuration Debug for project WordSearch ****
+rm -rf src/ws_test.o src/WordSearch.d src/hw411_test.o WordSearch.exe src/WordSearch.o src/hw411_test.d src/ws_test.d 
+20:10:15 **** Rebuild of configuration Debug for project WordSearch ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HW4.o" "..\\src\\HW4.cpp" 
-g++ -o HW4.exe "src\\HW4.o" 
-c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../libmingw32.a(main.o):main.c:(.text.startup+0xa7): undefined reference to `WinMain@16'
-collect2.exe: error: ld returned 1 exit status
-Info: Nothing to build for Project3
-16:22:49 **** Rebuild of configuration Debug for project WordSearch ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
-..\src\ws_test.cpp:7:21: fatal error: catch.hpp: No such file or directory
- #include "catch.hpp"
-                     ^
-compilation terminated.
-16:23:51 **** Incremental Build of configuration Debug for project HW4 ****
-Info: Internal Builder is used for build
-g++ -o HW4.exe "src\\HW4.o" 
-c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../libmingw32.a(main.o):main.c:(.text.startup+0xa7): undefined reference to `WinMain@16'
-collect2.exe: error: ld returned 1 exit status
-Info: Nothing to build for Project3
-16:23:52 **** Incremental Build of configuration Debug for project WordSearch ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
-g++ -o WordSearch.exe "src\\ws_test.o" "src\\hw411_test.o" "src\\WordSearch.o" 
-src\hw411_test.o: In function `ZSt19__iterator_categoryIPKSsENSt15iterator_traitsIT_E17iterator_categoryERKS3_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: multiple definition of `Catch::getResultCapture()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: first defined here
-src\hw411_test.o: In function `ZN5Catch7AutoRegC2EPFvvERKNS_14SourceLineInfoERKNS_11NameAndDescE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5531: multiple definition of `Catch::AutoReg::AutoReg(void (*)(), Catch::SourceLineInfo const&, Catch::NameAndDesc const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5531: first defined here
-src\hw411_test.o: In function `ZN5Catch7AutoRegC2EPFvvERKNS_14SourceLineInfoERKNS_11NameAndDescE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5531: multiple definition of `Catch::AutoReg::AutoReg(void (*)(), Catch::SourceLineInfo const&, Catch::NameAndDesc const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5531: first defined here
-src\hw411_test.o: In function `ZN5Catch7AutoRegD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5537: multiple definition of `Catch::AutoReg::~AutoReg()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5537: first defined here
-src\hw411_test.o: In function `ZN5Catch7AutoRegD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5537: multiple definition of `Catch::AutoReg::~AutoReg()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5537: first defined here
-src\hw411_test.o: In function `ZNK5Catch5Clara6Parser15parseIntoTokensEiPKPKcRSt6vectorINS1_5TokenESaIS7_EE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5542: multiple definition of `Catch::AutoReg::registerTestCase(Catch::ITestCase*, char const*, Catch::NameAndDesc const&, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5542: first defined here
-src\hw411_test.o: In function `ZN5Catch14getRegistryHubEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5704: multiple definition of `Catch::getRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5704: first defined here
-src\hw411_test.o: In function `ZN5Catch21getMutableRegistryHubEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5707: multiple definition of `Catch::getMutableRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5707: first defined here
-src\hw411_test.o: In function `ZN5Catch7cleanUpEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5710: multiple definition of `Catch::cleanUp()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5710: first defined here
-src\hw411_test.o: In function `ZN5Catch24translateActiveExceptionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5715: multiple definition of `Catch::translateActiveException()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5715: first defined here
-src\hw411_test.o: In function `ZN5Catch23NotImplementedExceptionC2ERKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5728: multiple definition of `Catch::NotImplementedException::NotImplementedException(Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5728: first defined here
-src\hw411_test.o: In function `ZN5Catch23NotImplementedExceptionC2ERKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5728: multiple definition of `Catch::NotImplementedException::NotImplementedException(Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5728: first defined here
-src\hw411_test.o: In function `ZNK5Catch23NotImplementedException4whatEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5736: multiple definition of `Catch::NotImplementedException::what() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5736: first defined here
-src\hw411_test.o: In function `ZN5Catch6StreamC2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5811: multiple definition of `Catch::Stream::Stream()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5811: first defined here
-src\hw411_test.o: In function `ZN5Catch6StreamC2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5811: multiple definition of `Catch::Stream::Stream()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5811: first defined here
-src\hw411_test.o: In function `ZN5Catch6StreamC2EPSt15basic_streambufIcSt11char_traitsIcEEb':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5815: multiple definition of `Catch::Stream::Stream(std::basic_streambuf<char, std::char_traits<char> >*, bool)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5815: first defined here
-src\hw411_test.o: In function `ZN5Catch6StreamC2EPSt15basic_streambufIcSt11char_traitsIcEEb':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5815: multiple definition of `Catch::Stream::Stream(std::basic_streambuf<char, std::char_traits<char> >*, bool)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5815: first defined here
-src\hw411_test.o: In function `ZN5Catch6Stream7releaseEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5819: multiple definition of `Catch::Stream::release()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5819: first defined here
-src\hw411_test.o: In function `ZN5Catch24getCurrentMutableContextEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5901: multiple definition of `Catch::getCurrentMutableContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5901: first defined here
-src\hw411_test.o: In function `ZN5Catch17getCurrentContextEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5906: multiple definition of `Catch::getCurrentContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5906: first defined here
-src\hw411_test.o: In function `ZN5Catch12createStreamERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5910: multiple definition of `Catch::createStream(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5910: first defined here
-src\hw411_test.o: In function `ZN5Catch14cleanUpContextEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5918: multiple definition of `Catch::cleanUpContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5918: first defined here
-src\hw411_test.o: In function `ZN5Catch6ColourC2ENS0_4CodeE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6066: multiple definition of `Catch::Colour::Colour(Catch::Colour::Code)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6066: first defined here
-src\hw411_test.o: In function `ZN5Catch6ColourC2ENS0_4CodeE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6066: multiple definition of `Catch::Colour::Colour(Catch::Colour::Code)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6066: first defined here
-src\hw411_test.o: In function `ZN5Catch6ColourC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6067: multiple definition of `Catch::Colour::Colour(Catch::Colour const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6067: first defined here
-src\hw411_test.o: In function `ZN5Catch6ColourC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6067: multiple definition of `Catch::Colour::Colour(Catch::Colour const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6067: first defined here
-src\hw411_test.o: In function `ZN5Catch6ColourD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6068: multiple definition of `Catch::Colour::~Colour()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6068: first defined here
-src\hw411_test.o: In function `ZN5Catch6ColourD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6068: multiple definition of `Catch::Colour::~Colour()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6068: first defined here
-src\hw411_test.o: In function `ZN5Catch6Colour3useENS0_4CodeE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6069: multiple definition of `Catch::Colour::use(Catch::Colour::Code)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6069: first defined here
-src\hw411_test.o: In function `ZN5Catch6Colour4implEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6073: multiple definition of `Catch::Colour::impl()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6073: first defined here
-src\hw411_test.o: In function `ZN5Catch23createGeneratorsForTestEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6149: multiple definition of `Catch::createGeneratorsForTest()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6149: first defined here
-src\hw411_test.o: In function `ZN5Catch13AssertionInfoC2ERKSsRKNS_14SourceLineInfoES2_NS_17ResultDisposition5FlagsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6160: multiple definition of `Catch::AssertionInfo::AssertionInfo(std::string const&, Catch::SourceLineInfo const&, std::string const&, Catch::ResultDisposition::Flags)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6160: first defined here
-src\hw411_test.o: In function `ZN5Catch13AssertionInfoC2ERKSsRKNS_14SourceLineInfoES2_NS_17ResultDisposition5FlagsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6160: multiple definition of `Catch::AssertionInfo::AssertionInfo(std::string const&, Catch::SourceLineInfo const&, std::string const&, Catch::ResultDisposition::Flags)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6160: first defined here
-src\hw411_test.o: In function `ZN5Catch15AssertionResultC2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6170: multiple definition of `Catch::AssertionResult::AssertionResult()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6170: first defined here
-src\hw411_test.o: In function `ZN5Catch15AssertionResultC2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6170: multiple definition of `Catch::AssertionResult::AssertionResult()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6170: first defined here
-src\hw411_test.o: In function `ZN5Catch15AssertionResultC2ERKNS_13AssertionInfoERKNS_19AssertionResultDataE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6172: multiple definition of `Catch::AssertionResult::AssertionResult(Catch::AssertionInfo const&, Catch::AssertionResultData const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6172: first defined here
-src\hw411_test.o: In function `ZN5Catch15AssertionResultC2ERKNS_13AssertionInfoERKNS_19AssertionResultDataE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6172: multiple definition of `Catch::AssertionResult::AssertionResult(Catch::AssertionInfo const&, Catch::AssertionResultData const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6172: first defined here
-src\hw411_test.o: In function `ZN5Catch15AssertionResultD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6177: multiple definition of `Catch::AssertionResult::~AssertionResult()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6177: first defined here
-src\hw411_test.o: In function `ZN5Catch15AssertionResultD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6177: multiple definition of `Catch::AssertionResult::~AssertionResult()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6177: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult9succeededEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6180: multiple definition of `Catch::AssertionResult::succeeded() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6180: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult4isOkEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6185: multiple definition of `Catch::AssertionResult::isOk() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6185: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult13getResultTypeEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6189: multiple definition of `Catch::AssertionResult::getResultType() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6189: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult13hasExpressionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6193: multiple definition of `Catch::AssertionResult::hasExpression() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6193: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult10hasMessageEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6197: multiple definition of `Catch::AssertionResult::hasMessage() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6197: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult13getExpressionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6201: multiple definition of `Catch::AssertionResult::getExpression() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6201: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult20getExpressionInMacroEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6207: multiple definition of `Catch::AssertionResult::getExpressionInMacro() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6207: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult21hasExpandedExpressionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6214: multiple definition of `Catch::AssertionResult::hasExpandedExpression() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6214: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult21getExpandedExpressionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6218: multiple definition of `Catch::AssertionResult::getExpandedExpression() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6218: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult10getMessageEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6222: multiple definition of `Catch::AssertionResult::getMessage() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6222: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult13getSourceInfoEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6225: multiple definition of `Catch::AssertionResult::getSourceInfo() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6225: first defined here
-src\hw411_test.o: In function `ZNK5Catch15AssertionResult16getTestMacroNameEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6229: multiple definition of `Catch::AssertionResult::getTestMacroName() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6229: first defined here
-src\hw411_test.o: In function `ZN5Catch12makeTestCaseEPNS_9ITestCaseERKSsS3_S3_RKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6278: multiple definition of `Catch::makeTestCase(Catch::ITestCase*, std::string const&, std::string const&, std::string const&, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6278: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestCaseInfoC2ERKSsS2_S2_RKSt3setISsSt4lessISsESaISsEERKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6317: multiple definition of `Catch::TestCaseInfo::TestCaseInfo(std::string const&, std::string const&, std::string const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6317: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestCaseInfoC2ERKSsS2_S2_RKSt3setISsSt4lessISsESaISsEERKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6317: multiple definition of `Catch::TestCaseInfo::TestCaseInfo(std::string const&, std::string const&, std::string const&, std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6317: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestCaseInfoC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6339: multiple definition of `Catch::TestCaseInfo::TestCaseInfo(Catch::TestCaseInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6339: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestCaseInfoC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6339: multiple definition of `Catch::TestCaseInfo::TestCaseInfo(Catch::TestCaseInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6339: first defined here
-src\hw411_test.o: In function `ZNK5Catch12TestCaseInfo8isHiddenEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6350: multiple definition of `Catch::TestCaseInfo::isHidden() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6350: first defined here
-src\hw411_test.o: In function `ZNK5Catch12TestCaseInfo6throwsEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6353: multiple definition of `Catch::TestCaseInfo::throws() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6353: first defined here
-src\hw411_test.o: In function `ZNK5Catch12TestCaseInfo8okToFailEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6356: multiple definition of `Catch::TestCaseInfo::okToFail() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6356: first defined here
-src\hw411_test.o: In function `ZNK5Catch12TestCaseInfo14expectedToFailEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6359: multiple definition of `Catch::TestCaseInfo::expectedToFail() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6359: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestCaseC2EPNS_9ITestCaseERKNS_12TestCaseInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6363: multiple definition of `Catch::TestCase::TestCase(Catch::ITestCase*, Catch::TestCaseInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6363: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestCaseC2EPNS_9ITestCaseERKNS_12TestCaseInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6363: multiple definition of `Catch::TestCase::TestCase(Catch::ITestCase*, Catch::TestCaseInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6363: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestCaseC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6365: multiple definition of `Catch::TestCase::TestCase(Catch::TestCase const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6365: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestCaseC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6365: multiple definition of `Catch::TestCase::TestCase(Catch::TestCase const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6365: first defined here
-src\hw411_test.o: In function `ZNK5Catch8TestCase8withNameERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6370: multiple definition of `Catch::TestCase::withName(std::string const&) const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6370: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestCase4swapERS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6376: multiple definition of `Catch::TestCase::swap(Catch::TestCase&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6376: first defined here
-src\hw411_test.o: In function `ZNK5Catch8TestCase6invokeEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6388: multiple definition of `Catch::TestCase::invoke() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6388: first defined here
-src\hw411_test.o: In function `ZNK5Catch8TestCaseeqERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6392: multiple definition of `Catch::TestCase::operator==(Catch::TestCase const&) const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6392: first defined here
-src\hw411_test.o: In function `ZNK5Catch8TestCaseltERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6398: multiple definition of `Catch::TestCase::operator<(Catch::TestCase const&) const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6398: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestCaseaSERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6401: multiple definition of `Catch::TestCase::operator=(Catch::TestCase const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6401: first defined here
-src\hw411_test.o: In function `ZNK5Catch8TestCase15getTestCaseInfoEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6408: multiple definition of `Catch::TestCase::getTestCaseInfo() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6408: first defined here
-src\hw411_test.o: In function `ZN5Catch11MessageInfoC2ERKSsRKNS_14SourceLineInfoENS_9ResultWas6OfTypeE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6428: multiple definition of `Catch::MessageInfo::MessageInfo(std::string const&, Catch::SourceLineInfo const&, Catch::ResultWas::OfType)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6428: first defined here
-src\hw411_test.o: In function `ZN5Catch11MessageInfoC2ERKSsRKNS_14SourceLineInfoENS_9ResultWas6OfTypeE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6428: multiple definition of `Catch::MessageInfo::MessageInfo(std::string const&, Catch::SourceLineInfo const&, Catch::ResultWas::OfType)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6428: first defined here
-src\hw411_test.o: In function `ZN5Catch13ScopedMessageC2ERKNS_14MessageBuilderE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6442: multiple definition of `Catch::ScopedMessage::ScopedMessage(Catch::MessageBuilder const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6442: first defined here
-src\hw411_test.o: In function `ZN5Catch13ScopedMessageC2ERKNS_14MessageBuilderE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6442: multiple definition of `Catch::ScopedMessage::ScopedMessage(Catch::MessageBuilder const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6442: first defined here
-src\hw411_test.o: In function `ZN5Catch13ScopedMessageC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6448: multiple definition of `Catch::ScopedMessage::ScopedMessage(Catch::ScopedMessage const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6448: first defined here
-src\hw411_test.o: In function `ZN5Catch13ScopedMessageC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6448: multiple definition of `Catch::ScopedMessage::ScopedMessage(Catch::ScopedMessage const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6448: first defined here
-src\hw411_test.o: In function `ZN5Catch13ScopedMessageD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6452: multiple definition of `Catch::ScopedMessage::~ScopedMessage()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6452: first defined here
-src\hw411_test.o: In function `ZN5Catch13ScopedMessageD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6452: multiple definition of `Catch::ScopedMessage::~ScopedMessage()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6452: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapterC2ERKNS_3PtrINS_9IReporterEEE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6512: multiple definition of `Catch::LegacyReporterAdapter::LegacyReporterAdapter(Catch::Ptr<Catch::IReporter> const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6512: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapterC2ERKNS_3PtrINS_9IReporterEEE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6512: multiple definition of `Catch::LegacyReporterAdapter::LegacyReporterAdapter(Catch::Ptr<Catch::IReporter> const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6512: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6515: multiple definition of `Catch::LegacyReporterAdapter::~LegacyReporterAdapter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6515: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6515: multiple definition of `Catch::LegacyReporterAdapter::~LegacyReporterAdapter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6515: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapterD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6515: multiple definition of `Catch::LegacyReporterAdapter::~LegacyReporterAdapter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6515: first defined here
-src\hw411_test.o: In function `ZNK5Catch21LegacyReporterAdapter14getPreferencesEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6517: multiple definition of `Catch::LegacyReporterAdapter::getPreferences() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6517: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter19noMatchingTestCasesERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6523: multiple definition of `Catch::LegacyReporterAdapter::noMatchingTestCases(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6523: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter15testRunStartingERKNS_11TestRunInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6524: multiple definition of `Catch::LegacyReporterAdapter::testRunStarting(Catch::TestRunInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6524: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter17testGroupStartingERKNS_9GroupInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6527: multiple definition of `Catch::LegacyReporterAdapter::testGroupStarting(Catch::GroupInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6527: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter16testCaseStartingERKNS_12TestCaseInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6530: multiple definition of `Catch::LegacyReporterAdapter::testCaseStarting(Catch::TestCaseInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6530: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter15sectionStartingERKNS_11SectionInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6533: multiple definition of `Catch::LegacyReporterAdapter::sectionStarting(Catch::SectionInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6533: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter17assertionStartingERKNS_13AssertionInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6536: multiple definition of `Catch::LegacyReporterAdapter::assertionStarting(Catch::AssertionInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6536: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter14assertionEndedERKNS_14AssertionStatsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6540: multiple definition of `Catch::LegacyReporterAdapter::assertionEnded(Catch::AssertionStats const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6540: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter12sectionEndedERKNS_12SectionStatsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6557: multiple definition of `Catch::LegacyReporterAdapter::sectionEnded(Catch::SectionStats const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6557: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter13testCaseEndedERKNS_13TestCaseStatsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6562: multiple definition of `Catch::LegacyReporterAdapter::testCaseEnded(Catch::TestCaseStats const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6562: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter14testGroupEndedERKNS_14TestGroupStatsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6569: multiple definition of `Catch::LegacyReporterAdapter::testGroupEnded(Catch::TestGroupStats const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6569: first defined here
-src\hw411_test.o: In function `ZN5Catch21LegacyReporterAdapter12testRunEndedERKNS_12TestRunStatsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6574: multiple definition of `Catch::LegacyReporterAdapter::testRunEnded(Catch::TestRunStats const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6574: first defined here
-src\hw411_test.o: In function `ZN5Catch5Timer5startEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6615: multiple definition of `Catch::Timer::start()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6615: first defined here
-src\hw411_test.o: In function `ZNK5Catch5Timer21getElapsedNanosecondsEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6618: multiple definition of `Catch::Timer::getElapsedNanoseconds() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6618: first defined here
-src\hw411_test.o: In function `ZNK5Catch5Timer22getElapsedMillisecondsEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6621: multiple definition of `Catch::Timer::getElapsedMilliseconds() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6621: first defined here
-src\hw411_test.o: In function `ZNK5Catch5Timer17getElapsedSecondsEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6624: multiple definition of `Catch::Timer::getElapsedSeconds() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6624: first defined here
-src\hw411_test.o: In function `ZN5Catch10startsWithERKSsS1_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6638: multiple definition of `Catch::startsWith(std::string const&, std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6638: first defined here
-src\hw411_test.o: In function `ZN5Catch8endsWithERKSsS1_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6641: multiple definition of `Catch::endsWith(std::string const&, std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6641: first defined here
-src\hw411_test.o: In function `ZN5Catch8containsERKSsS1_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6644: multiple definition of `Catch::contains(std::string const&, std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6644: first defined here
-src\hw411_test.o: In function `ZN5Catch14toLowerInPlaceERSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6647: multiple definition of `Catch::toLowerInPlace(std::string&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6647: first defined here
-src\hw411_test.o: In function `ZN5Catch7toLowerERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6650: multiple definition of `Catch::toLower(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6650: first defined here
-src\hw411_test.o: In function `ZN5Catch4trimERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6655: multiple definition of `Catch::trim(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6655: first defined here
-src\hw411_test.o: In function `ZN5Catch9pluraliseC2EjRKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6663: multiple definition of `Catch::pluralise::pluralise(unsigned int, std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6663: first defined here
-src\hw411_test.o: In function `ZN5Catch9pluraliseC2EjRKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6663: multiple definition of `Catch::pluralise::pluralise(unsigned int, std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6663: first defined here
-src\hw411_test.o: In function `ZN5CatchlsERSoRKNS_9pluraliseE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6668: multiple definition of `Catch::operator<<(std::ostream&, Catch::pluralise const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6668: first defined here
-src\hw411_test.o: In function `ZN5Catch14SourceLineInfoC2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6675: multiple definition of `Catch::SourceLineInfo::SourceLineInfo()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6675: first defined here
-src\hw411_test.o: In function `ZN5Catch14SourceLineInfoC2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6675: multiple definition of `Catch::SourceLineInfo::SourceLineInfo()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6675: first defined here
-src\hw411_test.o: In function `ZN5Catch14SourceLineInfoC2EPKcj':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6676: multiple definition of `Catch::SourceLineInfo::SourceLineInfo(char const*, unsigned int)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6676: first defined here
-src\hw411_test.o: In function `ZN5Catch14SourceLineInfoC2EPKcj':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6676: multiple definition of `Catch::SourceLineInfo::SourceLineInfo(char const*, unsigned int)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6676: first defined here
-src\hw411_test.o: In function `ZN5Catch14SourceLineInfoC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6680: multiple definition of `Catch::SourceLineInfo::SourceLineInfo(Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6680: first defined here
-src\hw411_test.o: In function `ZN5Catch14SourceLineInfoC2ERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6680: multiple definition of `Catch::SourceLineInfo::SourceLineInfo(Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6680: first defined here
-src\hw411_test.o: In function `ZNK5Catch14SourceLineInfo5emptyEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6684: multiple definition of `Catch::SourceLineInfo::empty() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6684: first defined here
-src\hw411_test.o: In function `ZNK5Catch14SourceLineInfoeqERKS0_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6687: multiple definition of `Catch::SourceLineInfo::operator==(Catch::SourceLineInfo const&) const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6687: first defined here
-src\hw411_test.o: In function `ZN5CatchlsERSoRKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6691: multiple definition of `Catch::operator<<(std::ostream&, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6691: first defined here
-src\hw411_test.o: In function `ZN5Catch15throwLogicErrorERKSsRKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6700: multiple definition of `Catch::throwLogicError(std::string const&, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6700: first defined here
-src\hw411_test.o: In function `ZN5Catch11SectionInfoC2ERKNS_14SourceLineInfoERKSsS5_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6713: multiple definition of `Catch::SectionInfo::SectionInfo(Catch::SourceLineInfo const&, std::string const&, std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6713: first defined here
-src\hw411_test.o: In function `ZN5Catch11SectionInfoC2ERKNS_14SourceLineInfoERKSsS5_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6713: multiple definition of `Catch::SectionInfo::SectionInfo(Catch::SourceLineInfo const&, std::string const&, std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6713: first defined here
-src\hw411_test.o: In function `ZN5Catch7SectionC2ERKNS_11SectionInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6722: multiple definition of `Catch::Section::Section(Catch::SectionInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6722: first defined here
-src\hw411_test.o: In function `ZN5Catch7SectionC2ERKNS_11SectionInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6722: multiple definition of `Catch::Section::Section(Catch::SectionInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6722: first defined here
-src\hw411_test.o: In function `ZN5Catch7SectionD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6729: multiple definition of `Catch::Section::~Section()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6729: first defined here
-src\hw411_test.o: In function `ZN5Catch7SectionD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6729: multiple definition of `Catch::Section::~Section()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6729: first defined here
-src\hw411_test.o: In function `ZNK5Catch7SectioncvbEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6735: multiple definition of `Catch::Section::operator bool() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6735: first defined here
-src\hw411_test.o: In function `ZN5Catch16isDebuggerActiveEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6804: multiple definition of `Catch::isDebuggerActive()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6804: first defined here
-src\hw411_test.o: In function `ZN5Catch19writeToDebugConsoleERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6817: multiple definition of `Catch::writeToDebugConsole(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6817: first defined here
-src\hw411_test.o: In function `ZN5Catch6Detail17rawMemoryToStringEPKvj':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6854: multiple definition of `Catch::Detail::rawMemoryToString(void const*, unsigned int)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6854: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6871: multiple definition of `Catch::toString(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6871: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringERKSbIwSt11char_traitsIwESaIwEE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6889: multiple definition of `Catch::toString(std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6889: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEPKc':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6898: multiple definition of `Catch::toString(char const*)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6898: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEPc':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6902: multiple definition of `Catch::toString(char*)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6902: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEPKw':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6907: multiple definition of `Catch::toString(wchar_t const*)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6907: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEPw':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6912: multiple definition of `Catch::toString(wchar_t*)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6912: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEi':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6916: multiple definition of `Catch::toString(int)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6916: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEm':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6922: multiple definition of `Catch::toString(unsigned long)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6922: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEj':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6931: multiple definition of `Catch::toString(unsigned int)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6931: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEd':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6951: multiple definition of `Catch::toString(double)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6951: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEf':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6954: multiple definition of `Catch::toString(float)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6954: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEb':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6958: multiple definition of `Catch::toString(bool)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6958: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEc':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6962: multiple definition of `Catch::toString(char)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6962: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEa':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6968: multiple definition of `Catch::toString(signed char)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6968: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEh':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6972: multiple definition of `Catch::toString(unsigned char)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6972: first defined here
-src\hw411_test.o: In function `ZN5Catch8toStringEDn':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6977: multiple definition of `Catch::toString(decltype(nullptr))'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:6977: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilderC2EPKcRKNS_14SourceLineInfoES2_NS_17ResultDisposition5FlagsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7005: multiple definition of `Catch::ResultBuilder::ResultBuilder(char const*, Catch::SourceLineInfo const&, char const*, Catch::ResultDisposition::Flags)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7005: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilderC2EPKcRKNS_14SourceLineInfoES2_NS_17ResultDisposition5FlagsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7005: multiple definition of `Catch::ResultBuilder::ResultBuilder(char const*, Catch::SourceLineInfo const&, char const*, Catch::ResultDisposition::Flags)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7005: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder13setResultTypeENS_9ResultWas6OfTypeE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7014: multiple definition of `Catch::ResultBuilder::setResultType(Catch::ResultWas::OfType)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7014: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder13setResultTypeEb':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7018: multiple definition of `Catch::ResultBuilder::setResultType(bool)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7018: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder6setLhsERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7022: multiple definition of `Catch::ResultBuilder::setLhs(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7022: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder6setRhsERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7026: multiple definition of `Catch::ResultBuilder::setRhs(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7026: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder5setOpERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7030: multiple definition of `Catch::ResultBuilder::setOp(std::string const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7030: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder13endExpressionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7035: multiple definition of `Catch::ResultBuilder::endExpression()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7035: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder18useActiveExceptionENS_17ResultDisposition5FlagsE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7040: multiple definition of `Catch::ResultBuilder::useActiveException(Catch::ResultDisposition::Flags)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7040: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder13captureResultENS_9ResultWas6OfTypeE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7046: multiple definition of `Catch::ResultBuilder::captureResult(Catch::ResultWas::OfType)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7046: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder17captureExpressionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7051: multiple definition of `Catch::ResultBuilder::captureExpression()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7051: first defined here
-src\hw411_test.o: In function `ZN5Catch13ResultBuilder5reactEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7062: multiple definition of `Catch::ResultBuilder::react()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7062: first defined here
-src\hw411_test.o: In function `ZNK5Catch13ResultBuilder16shouldDebugBreakEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7067: multiple definition of `Catch::ResultBuilder::shouldDebugBreak() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7067: first defined here
-src\hw411_test.o: In function `ZNK5Catch13ResultBuilder11allowThrowsEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7068: multiple definition of `Catch::ResultBuilder::allowThrows() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7068: first defined here
-src\hw411_test.o: In function `ZNK5Catch13ResultBuilder5buildEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7071: multiple definition of `Catch::ResultBuilder::build() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7071: first defined here
-src\hw411_test.o: In function `ZNK5Catch13ResultBuilder21reconstructExpressionEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7094: multiple definition of `Catch::ResultBuilder::reconstructExpression() const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7094: first defined here
-src\hw411_test.o: In function `ZN5Catch16TagAliasRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7142: multiple definition of `Catch::TagAliasRegistry::~TagAliasRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7142: first defined here
-src\hw411_test.o: In function `ZN5Catch16TagAliasRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7142: multiple definition of `Catch::TagAliasRegistry::~TagAliasRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7142: first defined here
-src\hw411_test.o: In function `ZN5Catch16TagAliasRegistryD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7142: multiple definition of `Catch::TagAliasRegistry::~TagAliasRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7142: first defined here
-src\hw411_test.o: In function `ZNK5Catch16TagAliasRegistry4findERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7144: multiple definition of `Catch::TagAliasRegistry::find(std::string const&) const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7144: first defined here
-src\hw411_test.o: In function `ZNK5Catch16TagAliasRegistry13expandAliasesERKSs':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7152: multiple definition of `Catch::TagAliasRegistry::expandAliases(std::string const&) const'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7152: first defined here
-src\hw411_test.o: In function `ZN5Catch16TagAliasRegistry3addEPKcS2_RKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7167: multiple definition of `Catch::TagAliasRegistry::add(char const*, char const*, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7167: first defined here
-src\hw411_test.o: In function `ZN5Catch16TagAliasRegistry3getEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7183: multiple definition of `Catch::TagAliasRegistry::get()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7183: first defined here
-src\hw411_test.o: In function `ZN5Catch17ITagAliasRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7189: multiple definition of `Catch::ITagAliasRegistry::~ITagAliasRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7189: first defined here
-src\hw411_test.o: In function `ZN5Catch17ITagAliasRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7189: multiple definition of `Catch::ITagAliasRegistry::~ITagAliasRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7189: first defined here
-src\hw411_test.o: In function `ZN5Catch17ITagAliasRegistryD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7189: multiple definition of `Catch::ITagAliasRegistry::~ITagAliasRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7189: first defined here
-src\hw411_test.o: In function `ZN5Catch17ITagAliasRegistry3getEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7190: multiple definition of `Catch::ITagAliasRegistry::get()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7190: first defined here
-src\hw411_test.o: In function `ZN5Catch22RegistrarForTagAliasesC2EPKcS2_RKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7192: multiple definition of `Catch::RegistrarForTagAliases::RegistrarForTagAliases(char const*, char const*, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7192: first defined here
-src\hw411_test.o: In function `ZN5Catch22RegistrarForTagAliasesC2EPKcS2_RKNS_14SourceLineInfoE':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7192: multiple definition of `Catch::RegistrarForTagAliases::RegistrarForTagAliases(char const*, char const*, Catch::SourceLineInfo const&)'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:7192: first defined here
-src\hw411_test.o: In function `ZN5Catch11NonCopyableD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8755: multiple definition of `Catch::NonCopyable::~NonCopyable()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8755: first defined here
-src\hw411_test.o: In function `ZN5Catch11NonCopyableD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8755: multiple definition of `Catch::NonCopyable::~NonCopyable()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8755: first defined here
-src\hw411_test.o: In function `ZN5Catch11NonCopyableD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8755: multiple definition of `Catch::NonCopyable::~NonCopyable()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8755: first defined here
-src\hw411_test.o: In function `ZN5Catch7ISharedD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8756: multiple definition of `Catch::IShared::~IShared()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8756: first defined here
-src\hw411_test.o: In function `ZN5Catch7ISharedD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8756: multiple definition of `Catch::IShared::~IShared()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8756: first defined here
-src\hw411_test.o: In function `ZN5Catch7ISharedD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8756: multiple definition of `Catch::IShared::~IShared()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8756: first defined here
-src\hw411_test.o: In function `ZN5Catch13StreamBufBaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8757: multiple definition of `Catch::StreamBufBase::~StreamBufBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8757: first defined here
-src\hw411_test.o: In function `ZN5Catch13StreamBufBaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8757: multiple definition of `Catch::StreamBufBase::~StreamBufBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8757: first defined here
-src\hw411_test.o: In function `ZN5Catch13StreamBufBaseD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8757: multiple definition of `Catch::StreamBufBase::~StreamBufBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8757: first defined here
-src\hw411_test.o: In function `ZN5Catch8IContextD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8758: multiple definition of `Catch::IContext::~IContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8758: first defined here
-src\hw411_test.o: In function `ZN5Catch8IContextD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8758: multiple definition of `Catch::IContext::~IContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8758: first defined here
-src\hw411_test.o: In function `ZN5Catch8IContextD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8758: multiple definition of `Catch::IContext::~IContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8758: first defined here
-src\hw411_test.o: In function `ZN5Catch14IResultCaptureD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8759: multiple definition of `Catch::IResultCapture::~IResultCapture()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8759: first defined here
-src\hw411_test.o: In function `ZN5Catch14IResultCaptureD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8759: multiple definition of `Catch::IResultCapture::~IResultCapture()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8759: first defined here
-src\hw411_test.o: In function `ZN5Catch14IResultCaptureD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8759: multiple definition of `Catch::IResultCapture::~IResultCapture()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8759: first defined here
-src\hw411_test.o: In function `ZN5Catch9ITestCaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8760: multiple definition of `Catch::ITestCase::~ITestCase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8760: first defined here
-src\hw411_test.o: In function `ZN5Catch9ITestCaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8760: multiple definition of `Catch::ITestCase::~ITestCase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8760: first defined here
-src\hw411_test.o: In function `ZN5Catch9ITestCaseD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8760: multiple definition of `Catch::ITestCase::~ITestCase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8760: first defined here
-src\hw411_test.o: In function `ZN5Catch17ITestCaseRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8761: multiple definition of `Catch::ITestCaseRegistry::~ITestCaseRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8761: first defined here
-src\hw411_test.o: In function `ZN5Catch17ITestCaseRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8761: multiple definition of `Catch::ITestCaseRegistry::~ITestCaseRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8761: first defined here
-src\hw411_test.o: In function `ZN5Catch17ITestCaseRegistryD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8761: multiple definition of `Catch::ITestCaseRegistry::~ITestCaseRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8761: first defined here
-src\hw411_test.o: In function `ZN5Catch12IRegistryHubD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8762: multiple definition of `Catch::IRegistryHub::~IRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8762: first defined here
-src\hw411_test.o: In function `ZN5Catch12IRegistryHubD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8762: multiple definition of `Catch::IRegistryHub::~IRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8762: first defined here
-src\hw411_test.o: In function `ZN5Catch12IRegistryHubD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8762: multiple definition of `Catch::IRegistryHub::~IRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8762: first defined here
-src\hw411_test.o: In function `ZN5Catch19IMutableRegistryHubD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8763: multiple definition of `Catch::IMutableRegistryHub::~IMutableRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8763: first defined here
-src\hw411_test.o: In function `ZN5Catch19IMutableRegistryHubD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8763: multiple definition of `Catch::IMutableRegistryHub::~IMutableRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8763: first defined here
-src\hw411_test.o: In function `ZN5Catch19IMutableRegistryHubD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8763: multiple definition of `Catch::IMutableRegistryHub::~IMutableRegistryHub()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8763: first defined here
-src\hw411_test.o: In function `ZN5Catch20IExceptionTranslatorD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8764: multiple definition of `Catch::IExceptionTranslator::~IExceptionTranslator()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8764: first defined here
-src\hw411_test.o: In function `ZN5Catch20IExceptionTranslatorD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8764: multiple definition of `Catch::IExceptionTranslator::~IExceptionTranslator()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8764: first defined here
-src\hw411_test.o: In function `ZN5Catch20IExceptionTranslatorD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8764: multiple definition of `Catch::IExceptionTranslator::~IExceptionTranslator()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8764: first defined here
-src\hw411_test.o: In function `ZN5Catch28IExceptionTranslatorRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8765: multiple definition of `Catch::IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8765: first defined here
-src\hw411_test.o: In function `ZN5Catch28IExceptionTranslatorRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8765: multiple definition of `Catch::IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8765: first defined here
-src\hw411_test.o: In function `ZN5Catch28IExceptionTranslatorRegistryD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8765: multiple definition of `Catch::IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8765: first defined here
-src\hw411_test.o: In function `ZN5Catch9IReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8766: multiple definition of `Catch::IReporter::~IReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8766: first defined here
-src\hw411_test.o: In function `ZN5Catch9IReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8766: multiple definition of `Catch::IReporter::~IReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8766: first defined here
-src\hw411_test.o: In function `ZN5Catch9IReporterD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8766: multiple definition of `Catch::IReporter::~IReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8766: first defined here
-src\hw411_test.o: In function `ZN5Catch16IReporterFactoryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8767: multiple definition of `Catch::IReporterFactory::~IReporterFactory()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8767: first defined here
-src\hw411_test.o: In function `ZN5Catch16IReporterFactoryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8767: multiple definition of `Catch::IReporterFactory::~IReporterFactory()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8767: first defined here
-src\hw411_test.o: In function `ZN5Catch16IReporterFactoryD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8767: multiple definition of `Catch::IReporterFactory::~IReporterFactory()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8767: first defined here
-src\hw411_test.o: In function `ZN5Catch17IReporterRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8768: multiple definition of `Catch::IReporterRegistry::~IReporterRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8768: first defined here
-src\hw411_test.o: In function `ZN5Catch17IReporterRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8768: multiple definition of `Catch::IReporterRegistry::~IReporterRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8768: first defined here
-src\hw411_test.o: In function `ZN5Catch17IReporterRegistryD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8768: multiple definition of `Catch::IReporterRegistry::~IReporterRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8768: first defined here
-src\hw411_test.o: In function `ZN5Catch18IStreamingReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8769: multiple definition of `Catch::IStreamingReporter::~IStreamingReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8769: first defined here
-src\hw411_test.o: In function `ZN5Catch18IStreamingReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8769: multiple definition of `Catch::IStreamingReporter::~IStreamingReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8769: first defined here
-src\hw411_test.o: In function `ZN5Catch18IStreamingReporterD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8769: multiple definition of `Catch::IStreamingReporter::~IStreamingReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8769: first defined here
-src\hw411_test.o: In function `ZN5Catch14AssertionStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8770: multiple definition of `Catch::AssertionStats::~AssertionStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8770: first defined here
-src\hw411_test.o: In function `ZN5Catch14AssertionStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8770: multiple definition of `Catch::AssertionStats::~AssertionStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8770: first defined here
-src\hw411_test.o: In function `ZN5Catch14AssertionStatsD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8770: multiple definition of `Catch::AssertionStats::~AssertionStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8770: first defined here
-src\hw411_test.o: In function `ZN5Catch12SectionStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8771: multiple definition of `Catch::SectionStats::~SectionStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8771: first defined here
-src\hw411_test.o: In function `ZN5Catch12SectionStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8771: multiple definition of `Catch::SectionStats::~SectionStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8771: first defined here
-src\hw411_test.o: In function `ZN5Catch12SectionStatsD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8771: multiple definition of `Catch::SectionStats::~SectionStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8771: first defined here
-src\hw411_test.o: In function `ZN5Catch13TestCaseStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8772: multiple definition of `Catch::TestCaseStats::~TestCaseStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8772: first defined here
-src\hw411_test.o: In function `ZN5Catch13TestCaseStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8772: multiple definition of `Catch::TestCaseStats::~TestCaseStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8772: first defined here
-src\hw411_test.o: In function `ZN5Catch13TestCaseStatsD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8772: multiple definition of `Catch::TestCaseStats::~TestCaseStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8772: first defined here
-src\hw411_test.o: In function `ZN5Catch14TestGroupStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8773: multiple definition of `Catch::TestGroupStats::~TestGroupStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8773: first defined here
-src\hw411_test.o: In function `ZN5Catch14TestGroupStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8773: multiple definition of `Catch::TestGroupStats::~TestGroupStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8773: first defined here
-src\hw411_test.o: In function `ZN5Catch14TestGroupStatsD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8773: multiple definition of `Catch::TestGroupStats::~TestGroupStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8773: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestRunStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8774: multiple definition of `Catch::TestRunStats::~TestRunStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8774: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestRunStatsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8774: multiple definition of `Catch::TestRunStats::~TestRunStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8774: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestRunStatsD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8774: multiple definition of `Catch::TestRunStats::~TestRunStats()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8774: first defined here
-src\hw411_test.o: In function `ZN5Catch22CumulativeReporterBase11SectionNodeD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8775: multiple definition of `Catch::CumulativeReporterBase::SectionNode::~SectionNode()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8775: first defined here
-src\hw411_test.o: In function `ZN5Catch22CumulativeReporterBase11SectionNodeD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8775: multiple definition of `Catch::CumulativeReporterBase::SectionNode::~SectionNode()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8775: first defined here
-src\hw411_test.o: In function `ZN5Catch22CumulativeReporterBase11SectionNodeD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8775: multiple definition of `Catch::CumulativeReporterBase::SectionNode::~SectionNode()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8775: first defined here
-src\hw411_test.o: In function `ZN5Catch22CumulativeReporterBaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8776: multiple definition of `Catch::CumulativeReporterBase::~CumulativeReporterBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8776: first defined here
-src\hw411_test.o: In function `ZN5Catch22CumulativeReporterBaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8776: multiple definition of `Catch::CumulativeReporterBase::~CumulativeReporterBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8776: first defined here
-src\hw411_test.o: In function `ZN5Catch22CumulativeReporterBaseD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8776: multiple definition of `Catch::CumulativeReporterBase::~CumulativeReporterBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8776: first defined here
-src\hw411_test.o: In function `ZN5Catch21StreamingReporterBaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8778: multiple definition of `Catch::StreamingReporterBase::~StreamingReporterBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8778: first defined here
-src\hw411_test.o: In function `ZN5Catch21StreamingReporterBaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8778: multiple definition of `Catch::StreamingReporterBase::~StreamingReporterBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8778: first defined here
-src\hw411_test.o: In function `ZN5Catch21StreamingReporterBaseD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8778: multiple definition of `Catch::StreamingReporterBase::~StreamingReporterBase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8778: first defined here
-src\hw411_test.o: In function `ZN5Catch15ConsoleReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8779: multiple definition of `Catch::ConsoleReporter::~ConsoleReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8779: first defined here
-src\hw411_test.o: In function `ZN5Catch15ConsoleReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8779: multiple definition of `Catch::ConsoleReporter::~ConsoleReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8779: first defined here
-src\hw411_test.o: In function `ZN5Catch15ConsoleReporterD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8779: multiple definition of `Catch::ConsoleReporter::~ConsoleReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8779: first defined here
-src\hw411_test.o: In function `ZN5Catch15CompactReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8780: multiple definition of `Catch::CompactReporter::~CompactReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8780: first defined here
-src\hw411_test.o: In function `ZN5Catch15CompactReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8780: multiple definition of `Catch::CompactReporter::~CompactReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8780: first defined here
-src\hw411_test.o: In function `ZN5Catch15CompactReporterD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8780: multiple definition of `Catch::CompactReporter::~CompactReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8780: first defined here
-src\hw411_test.o: In function `ZN5Catch7IRunnerD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8781: multiple definition of `Catch::IRunner::~IRunner()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8781: first defined here
-src\hw411_test.o: In function `ZN5Catch7IRunnerD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8781: multiple definition of `Catch::IRunner::~IRunner()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8781: first defined here
-src\hw411_test.o: In function `ZN5Catch7IRunnerD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8781: multiple definition of `Catch::IRunner::~IRunner()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8781: first defined here
-src\hw411_test.o: In function `ZN5Catch15IMutableContextD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8782: multiple definition of `Catch::IMutableContext::~IMutableContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8782: first defined here
-src\hw411_test.o: In function `ZN5Catch15IMutableContextD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8782: multiple definition of `Catch::IMutableContext::~IMutableContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8782: first defined here
-src\hw411_test.o: In function `ZN5Catch15IMutableContextD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8782: multiple definition of `Catch::IMutableContext::~IMutableContext()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8782: first defined here
-src\hw411_test.o: In function `ZN5Catch7IConfigD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8783: multiple definition of `Catch::IConfig::~IConfig()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8783: first defined here
-src\hw411_test.o: In function `ZN5Catch7IConfigD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8783: multiple definition of `Catch::IConfig::~IConfig()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8783: first defined here
-src\hw411_test.o: In function `ZN5Catch7IConfigD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8783: multiple definition of `Catch::IConfig::~IConfig()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8783: first defined here
-src\hw411_test.o: In function `ZN5Catch11XmlReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8784: multiple definition of `Catch::XmlReporter::~XmlReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8784: first defined here
-src\hw411_test.o: In function `ZN5Catch11XmlReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8784: multiple definition of `Catch::XmlReporter::~XmlReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8784: first defined here
-src\hw411_test.o: In function `ZN5Catch11XmlReporterD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8784: multiple definition of `Catch::XmlReporter::~XmlReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8784: first defined here
-src\hw411_test.o: In function `ZN5Catch13JunitReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8785: multiple definition of `Catch::JunitReporter::~JunitReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8785: first defined here
-src\hw411_test.o: In function `ZN5Catch13JunitReporterD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8785: multiple definition of `Catch::JunitReporter::~JunitReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8785: first defined here
-src\hw411_test.o: In function `ZN5Catch13JunitReporterD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8785: multiple definition of `Catch::JunitReporter::~JunitReporter()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8785: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8786: multiple definition of `Catch::TestRegistry::~TestRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8786: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestRegistryD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8786: multiple definition of `Catch::TestRegistry::~TestRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8786: first defined here
-src\hw411_test.o: In function `ZN5Catch12TestRegistryD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8786: multiple definition of `Catch::TestRegistry::~TestRegistry()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8786: first defined here
-src\hw411_test.o: In function `ZN5Catch20FreeFunctionTestCaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8787: multiple definition of `Catch::FreeFunctionTestCase::~FreeFunctionTestCase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8787: first defined here
-src\hw411_test.o: In function `ZN5Catch20FreeFunctionTestCaseD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8787: multiple definition of `Catch::FreeFunctionTestCase::~FreeFunctionTestCase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8787: first defined here
-src\hw411_test.o: In function `ZN5Catch20FreeFunctionTestCaseD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8787: multiple definition of `Catch::FreeFunctionTestCase::~FreeFunctionTestCase()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8787: first defined here
-src\hw411_test.o: In function `ZN5Catch14IGeneratorInfoD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8788: multiple definition of `Catch::IGeneratorInfo::~IGeneratorInfo()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8788: first defined here
-src\hw411_test.o: In function `ZN5Catch14IGeneratorInfoD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8788: multiple definition of `Catch::IGeneratorInfo::~IGeneratorInfo()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8788: first defined here
-src\hw411_test.o: In function `ZN5Catch14IGeneratorInfoD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8788: multiple definition of `Catch::IGeneratorInfo::~IGeneratorInfo()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8788: first defined here
-src\hw411_test.o: In function `ZN5Catch18IGeneratorsForTestD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8789: multiple definition of `Catch::IGeneratorsForTest::~IGeneratorsForTest()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8789: first defined here
-src\hw411_test.o: In function `ZN5Catch18IGeneratorsForTestD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8789: multiple definition of `Catch::IGeneratorsForTest::~IGeneratorsForTest()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8789: first defined here
-src\hw411_test.o: In function `ZN5Catch18IGeneratorsForTestD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8789: multiple definition of `Catch::IGeneratorsForTest::~IGeneratorsForTest()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8789: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec7PatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8790: multiple definition of `Catch::TestSpec::Pattern::~Pattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8790: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec7PatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8790: multiple definition of `Catch::TestSpec::Pattern::~Pattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8790: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec7PatternD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8790: multiple definition of `Catch::TestSpec::Pattern::~Pattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8790: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec11NamePatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8791: multiple definition of `Catch::TestSpec::NamePattern::~NamePattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8791: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec11NamePatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8791: multiple definition of `Catch::TestSpec::NamePattern::~NamePattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8791: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec11NamePatternD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8791: multiple definition of `Catch::TestSpec::NamePattern::~NamePattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8791: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec10TagPatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8792: multiple definition of `Catch::TestSpec::TagPattern::~TagPattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8792: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec10TagPatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8792: multiple definition of `Catch::TestSpec::TagPattern::~TagPattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8792: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec10TagPatternD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8792: multiple definition of `Catch::TestSpec::TagPattern::~TagPattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8792: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec15ExcludedPatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8793: multiple definition of `Catch::TestSpec::ExcludedPattern::~ExcludedPattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8793: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec15ExcludedPatternD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8793: multiple definition of `Catch::TestSpec::ExcludedPattern::~ExcludedPattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8793: first defined here
-src\hw411_test.o: In function `ZN5Catch8TestSpec15ExcludedPatternD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8793: multiple definition of `Catch::TestSpec::ExcludedPattern::~ExcludedPattern()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8793: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString6EqualsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8795: multiple definition of `Catch::Matchers::Impl::StdString::Equals::~Equals()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8795: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString6EqualsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8795: multiple definition of `Catch::Matchers::Impl::StdString::Equals::~Equals()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8795: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString6EqualsD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8795: multiple definition of `Catch::Matchers::Impl::StdString::Equals::~Equals()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8795: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString8ContainsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8796: multiple definition of `Catch::Matchers::Impl::StdString::Contains::~Contains()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8796: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString8ContainsD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8796: multiple definition of `Catch::Matchers::Impl::StdString::Contains::~Contains()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8796: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString8ContainsD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8796: multiple definition of `Catch::Matchers::Impl::StdString::Contains::~Contains()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8796: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString10StartsWithD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8797: multiple definition of `Catch::Matchers::Impl::StdString::StartsWith::~StartsWith()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8797: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString10StartsWithD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8797: multiple definition of `Catch::Matchers::Impl::StdString::StartsWith::~StartsWith()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8797: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString10StartsWithD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8797: multiple definition of `Catch::Matchers::Impl::StdString::StartsWith::~StartsWith()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8797: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString8EndsWithD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8798: multiple definition of `Catch::Matchers::Impl::StdString::EndsWith::~EndsWith()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8798: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString8EndsWithD2Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8798: multiple definition of `Catch::Matchers::Impl::StdString::EndsWith::~EndsWith()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8798: first defined here
-src\hw411_test.o: In function `ZN5Catch8Matchers4Impl9StdString8EndsWithD0Ev':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8798: multiple definition of `Catch::Matchers::Impl::StdString::EndsWith::~EndsWith()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8798: first defined here
-src\hw411_test.o: In function `ZN5Catch6Config5dummyEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8800: multiple definition of `Catch::Config::dummy()'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8800: first defined here
-src\hw411_test.o: In function `main':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8818: multiple definition of `main'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:8818: first defined here
-src\hw411_test.o: In function `ZSt19__iterator_categoryIPKSsENSt15iterator_traitsIT_E17iterator_categoryERKS3_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: multiple definition of `Catch::Clara::_'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: first defined here
-src\hw411_test.o: In function `ZSt19__iterator_categoryIPKSsENSt15iterator_traitsIT_E17iterator_categoryERKS3_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: multiple definition of `Catch::Session::alreadyInstantiated'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: first defined here
-src\hw411_test.o: In function `ZSt19__iterator_categoryIPKSsENSt15iterator_traitsIT_E17iterator_categoryERKS3_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: multiple definition of `Catch::libraryVersion'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5196: first defined here
-src\hw411_test.o: In function `ZN9__gnu_cxx13new_allocatorIN5Catch5Clara11CommandLineINS1_10ConfigDataEE3ArgEE7destroyIS6_EEvPT_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5197: multiple definition of `Catch::MessageInfo::globalCount'
-src\ws_test.o:C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/catch.hpp:5197: first defined here
-src\WordSearch.o: In function `ZN10WordSearchC2ERKSsS1_':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:24: undefined reference to `gvsu::FileSystem::FileSystem(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:26: undefined reference to `gvsu::FileSystem::gv_iter::operator++()'
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:26: undefined reference to `gvsu::FileSystem::gv_iter::operator!=(gvsu::FileSystem::gv_iter const&) const'
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:26: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:29: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:26: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:29: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
-src\WordSearch.o: In function `ZNK4gvsu10FileSystem5beginEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:31: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
-src\WordSearch.o: In function `ZNK4gvsu10FileSystem3endEv':
-C:\Users\Justin\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:35: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter()'
-collect2.exe: error: ld returned 1 exit status
-Info: Nothing to build for Project3
-16:39:04 **** Incremental Build of configuration Debug for project WordSearch ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
 In file included from c:\mingw\include\dirent.h:14:0,
                  from ..\src\FileSystem.h:14,
                  from ..\src\WordSearch.h:18,
-                 from ..\src\ws_test.cpp:8:
+                 from ..\src\WordSearch.cpp:20:
 c:\mingw\include\io.h:288:14: error: '_off64_t' does not name a type
  __CRT_INLINE _off64_t lseek64 (int, _off64_t, int);
               ^
 c:\mingw\include\io.h:289:14: error: '_off64_t' does not name a type
  __CRT_INLINE _off64_t lseek64 (int fd, _off64_t offset, int whence) 
               ^
-21:05:15 **** Incremental Build of configuration Debug for project Project3 ****
+20:15:34 **** Rebuild of configuration Debug for project HW4 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\infix2postfix.o" "..\\src\\infix2postfix.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\driver.o" "..\\src\\driver.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\stack.o" "..\\src\\stack.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\stacktest.o" "..\\src\\stacktest.c" 
-gcc -o Project3.exe "src\\stacktest.o" "src\\stack.o" "src\\infix2postfix.o" "src\\driver.o" 
-21:05:22 **** Incremental Build of configuration Debug for project WordSearch ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
-g++: error: ..\src\ws_test.cpp: No such file or directory
-g++: fatal error: no input files
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+..\src\hw411_test.cpp:12:21: fatal error: catch.hpp: No such file or directory
+ #include "catch.hpp"
+                     ^
 compilation terminated.
+20:15:35 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
+In file included from c:\mingw\include\dirent.h:14:0,
+                 from ..\src\FileSystem.h:14,
+                 from ..\src\WordSearch.h:18,
+                 from ..\src\WordSearch.cpp:20:
+c:\mingw\include\io.h:288:14: error: '_off64_t' does not name a type
+ __CRT_INLINE _off64_t lseek64 (int, _off64_t, int);
+              ^
+c:\mingw\include\io.h:289:14: error: '_off64_t' does not name a type
+ __CRT_INLINE _off64_t lseek64 (int fd, _off64_t offset, int whence) 
+              ^
+20:15:49 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:16:01 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
+In file included from c:\mingw\include\dirent.h:14:0,
+                 from ..\src\FileSystem.h:14,
+                 from ..\src\WordSearch.h:18,
+                 from ..\src\WordSearch.cpp:20:
+c:\mingw\include\io.h:288:14: error: '_off64_t' does not name a type
+ __CRT_INLINE _off64_t lseek64 (int, _off64_t, int);
+              ^
+c:\mingw\include\io.h:289:14: error: '_off64_t' does not name a type
+ __CRT_INLINE _off64_t lseek64 (int fd, _off64_t offset, int whence) 
+              ^
+20:27:56 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:30:27 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:31:01 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:35:24 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:53:40 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'bool gvsu::BinaryTree<Z>::insert_into(gvsu::BinaryTree<Z>::Node*&, const Z&) const':
+..\src\hw411_binarytree.hpp:130:6: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+   if (pos->data > key)
+      ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:56:10 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:58:41 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+20:59:22 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'bool gvsu::BinaryTree<Z>::insert_into(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:137:14: warning: 'in' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     in->data = key;
+              ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+21:02:09 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'bool gvsu::BinaryTree<Z>::insert_into(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:31:   required from 'bool gvsu::BinaryTree<Z>::insert(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:20:19:   required from here
+..\src\hw411_binarytree.hpp:140:15: error: cannot convert 'gvsu::BinaryTree<std::basic_string<char> >::Node**' to 'gvsu::BinaryTree<std::basic_string<char> >::Node*' in assignment
+     pos->left = &in;
+               ^
+..\src\hw411_binarytree.hpp:151:16: error: cannot convert 'gvsu::BinaryTree<std::basic_string<char> >::Node**' to 'gvsu::BinaryTree<std::basic_string<char> >::Node*' in assignment
+     pos->right = &in;
+                ^
+21:02:18 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4
+21:06:55 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'bool gvsu::BinaryTree<Z>::insert_into(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:31:   required from 'bool gvsu::BinaryTree<Z>::insert(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:20:19:   required from here
+..\src\hw411_binarytree.hpp:136:26: error: invalid initialization of non-const reference of type 'gvsu::BinaryTree<std::basic_string<char> >::Node*&' from an rvalue of type 'gvsu::BinaryTree<std::basic_string<char> >::Node*'
+     Node*& in = new Node();
+                          ^
+..\src\hw411_binarytree.hpp:147:26: error: invalid initialization of non-const reference of type 'gvsu::BinaryTree<std::basic_string<char> >::Node*&' from an rvalue of type 'gvsu::BinaryTree<std::basic_string<char> >::Node*'
+     Node*& in = new Node();
+                          ^
+21:07:11 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'bool gvsu::BinaryTree<Z>::insert_into(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:31:   required from 'bool gvsu::BinaryTree<Z>::insert(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:20:19:   required from here
+..\src\hw411_binarytree.hpp:136:24: error: conversion from 'gvsu::BinaryTree<std::basic_string<char> >::Node*' to non-scalar type 'gvsu::BinaryTree<std::basic_string<char> >::Node' requested
+     Node in = new Node();
+                        ^
+..\src\hw411_binarytree.hpp:137:7: error: base operand of '->' has non-pointer type 'gvsu::BinaryTree<std::basic_string<char> >::Node'
+     in->data = key;
+       ^
+..\src\hw411_binarytree.hpp:138:7: error: base operand of '->' has non-pointer type 'gvsu::BinaryTree<std::basic_string<char> >::Node'
+     in->left = nullptr;
+       ^
+..\src\hw411_binarytree.hpp:139:7: error: base operand of '->' has non-pointer type 'gvsu::BinaryTree<std::basic_string<char> >::Node'
+     in->right = nullptr;
+       ^
+..\src\hw411_binarytree.hpp:140:15: error: cannot convert 'gvsu::BinaryTree<std::basic_string<char> >::Node' to 'gvsu::BinaryTree<std::basic_string<char> >::Node*' in assignment
+     pos->left = in;
+               ^
+..\src\hw411_binarytree.hpp:147:24: error: conversion from 'gvsu::BinaryTree<std::basic_string<char> >::Node*' to non-scalar type 'gvsu::BinaryTree<std::basic_string<char> >::Node' requested
+     Node in = new Node();
+                        ^
+..\src\hw411_binarytree.hpp:148:7: error: base operand of '->' has non-pointer type 'gvsu::BinaryTree<std::basic_string<char> >::Node'
+     in->data = key;
+       ^
+..\src\hw411_binarytree.hpp:149:7: error: base operand of '->' has non-pointer type 'gvsu::BinaryTree<std::basic_string<char> >::Node'
+     in->left = nullptr;
+       ^
+..\src\hw411_binarytree.hpp:150:7: error: base operand of '->' has non-pointer type 'gvsu::BinaryTree<std::basic_string<char> >::Node'
+     in->right = nullptr;
+       ^
+..\src\hw411_binarytree.hpp:151:16: error: cannot convert 'gvsu::BinaryTree<std::basic_string<char> >::Node' to 'gvsu::BinaryTree<std::basic_string<char> >::Node*' in assignment
+     pos->right = in;
+                ^
+21:07:23 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+21:07:55 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+21:09:49 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'bool gvsu::BinaryTree<Z>::insert_into(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:31:   required from 'bool gvsu::BinaryTree<Z>::insert(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:20:19:   required from here
+..\src\hw411_binarytree.hpp:140:15: error: cannot convert 'gvsu::BinaryTree<std::basic_string<char> >::Node' to 'gvsu::BinaryTree<std::basic_string<char> >::Node*' in assignment
+     pos->left = *in;
+               ^
+21:10:01 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+21:12:47 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'bool gvsu::BinaryTree<Z>::insert_into(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:31:   required from 'bool gvsu::BinaryTree<Z>::insert(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:20:19:   required from here
+..\src\hw411_binarytree.hpp:130:17: error: no match for 'operator!=' (operand types are 'std::basic_string<char>' and 'std::nullptr_t')
+   if (pos->data != nullptr) {
+                 ^
+..\src\hw411_binarytree.hpp:130:17: note: candidates are:
+In file included from c:\mingw\include\ole2.h:9:0,
+                 from c:\mingw\include\windows.h:114,
+                 from ..\src\catch.hpp:5943,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\include\objbase.h:80:13: note: BOOL operator!=(const GUID&, const GUID&)
+ inline BOOL operator!=(const GUID& g1, const GUID& g2)
+             ^
+c:\mingw\include\objbase.h:80:13: note:   no known conversion for argument 1 from 'std::basic_string<char>' to 'const GUID& {aka const _GUID&}'
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\map:62:0,
+                 from ..\src\catch.hpp:3322,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multimap.h:887:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multimap.h:887:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Alloc>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\map:61:0,
+                 from ..\src\catch.hpp:3322,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_map.h:985:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_map.h:985:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::map<_Key, _Tp, _Compare, _Alloc>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:62:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multiset.h:761:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator!=(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multiset.h:761:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::multiset<_Key, _Compare, _Alloc>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:61:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_set.h:776:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator!=(const set<_Key, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_set.h:776:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::set<_Key, _Compare, _Alloc>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:60:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:924:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator!=(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:924:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:60:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:316:5: note: template<class _Val> bool std::operator!=(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator!=(const _Rb_tree_iterator<_Val>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:316:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::_Rb_tree_iterator<_Tp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iterator:66:0,
+                 from ..\src\catch.hpp:1744,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stream_iterator.h:137:5: note: template<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator!=(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)
+     operator!=(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stream_iterator.h:137:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:354:5: note: template<class _Tp> bool std::operator!=(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator!=(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:354:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:349:5: note: template<class _Tp> bool std::operator!=(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator!=(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:349:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::shared_ptr<_Tp1>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:343:5: note: template<class _Tp1, class _Tp2> bool std::operator!=(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator!=(const shared_ptr<_Tp1>& __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:343:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::shared_ptr<_Tp1>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1085:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator!=(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1085:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1080:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator!=(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1080:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1074:5: note: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator!=(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1074:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::__shared_ptr<_Tp1, _Lp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:81:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:517:5: note: template<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:517:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:81:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:512:5: note: template<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:512:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:81:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:506:5: note: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:506:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_facets.h:48:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_ios.h:37,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\hw411_test.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2558:5: note: template<class _Res, class ... _Args> bool std::operator!=(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)
+     operator!=(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2558:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2552:5: note: template<class _Res, class ... _Args> bool std::operator!=(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)
+     operator!=(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2552:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::function<_Res(_ArgTypes ...)>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:55:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\tuple:833:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator!=(const tuple<_TElements...>& __t,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\tuple:833:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::tuple<_Elements ...>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\tuple:39:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:55,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\array:233:5: note: template<class _Tp, unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\array:233:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::array<_Tp, _Nm>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:6005:5: note: template<class _RealType> bool std::operator!=(const std::piecewise_linear_distribution<_RealType>&, const std::piecewise_linear_distribution<_RealType>&)
+     operator!=(const std::piecewise_linear_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:6005:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::piecewise_linear_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5735:5: note: template<class _RealType> bool std::operator!=(const std::piecewise_constant_distribution<_RealType>&, const std::piecewise_constant_distribution<_RealType>&)
+     operator!=(const std::piecewise_constant_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5735:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::piecewise_constant_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5468:5: note: template<class _IntType> bool std::operator!=(const std::discrete_distribution<_IntType>&, const std::discrete_distribution<_IntType>&)
+     operator!=(const std::discrete_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5468:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::discrete_distribution<_IntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5208:5: note: template<class _RealType> bool std::operator!=(const std::extreme_value_distribution<_RealType>&, const std::extreme_value_distribution<_RealType>&)
+     operator!=(const std::extreme_value_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5208:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::extreme_value_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5005:5: note: template<class _RealType> bool std::operator!=(const std::weibull_distribution<_RealType>&, const std::weibull_distribution<_RealType>&)
+     operator!=(const std::weibull_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5005:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::weibull_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4802:5: note: template<class _RealType> bool std::operator!=(const std::exponential_distribution<_RealType>&, const std::exponential_distribution<_RealType>&)
+     operator!=(const std::exponential_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4802:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::exponential_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4624:5: note: template<class _IntType> bool std::operator!=(const std::poisson_distribution<_IntType>&, const std::poisson_distribution<_IntType>&)
+     operator!=(const std::poisson_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4624:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::poisson_distribution<_IntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4408:5: note: template<class _IntType> bool std::operator!=(const std::negative_binomial_distribution<_IntType>&, const std::negative_binomial_distribution<_IntType>&)
+     operator!=(const std::negative_binomial_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4408:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::negative_binomial_distribution<_IntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4163:5: note: template<class _IntType> bool std::operator!=(const std::geometric_distribution<_IntType>&, const std::geometric_distribution<_IntType>&)
+     operator!=(const std::geometric_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4163:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::geometric_distribution<_IntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3994:5: note: template<class _IntType> bool std::operator!=(const std::binomial_distribution<_IntType>&, const std::binomial_distribution<_IntType>&)
+     operator!=(const std::binomial_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3994:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::binomial_distribution<_IntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3729:3: note: bool std::operator!=(const std::bernoulli_distribution&, const std::bernoulli_distribution&)
+   operator!=(const std::bernoulli_distribution& __d1,
+   ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3729:3: note:   no known conversion for argument 1 from 'std::basic_string<char>' to 'const std::bernoulli_distribution&'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3553:5: note: template<class _RealType> bool std::operator!=(const std::student_t_distribution<_RealType>&, const std::student_t_distribution<_RealType>&)
+     operator!=(const std::student_t_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3553:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::student_t_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3340:5: note: template<class _RealType> bool std::operator!=(const std::fisher_f_distribution<_RealType>&, const std::fisher_f_distribution<_RealType>&)
+     operator!=(const std::fisher_f_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3340:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::fisher_f_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3084:5: note: template<class _RealType> bool std::operator!=(const std::cauchy_distribution<_RealType>&, const std::cauchy_distribution<_RealType>&)
+     operator!=(const std::cauchy_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3084:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::cauchy_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2917:5: note: template<class _RealType> bool std::operator!=(const std::chi_squared_distribution<_RealType>&, const std::chi_squared_distribution<_RealType>&)
+     operator!=(const std::chi_squared_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2917:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::chi_squared_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2707:6: note: template<class _RealType> bool std::operator!=(const std::gamma_distribution<_RealType>&, const std::gamma_distribution<_RealType>&)
+      operator!=(const std::gamma_distribution<_RealType>& __d1,
+      ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2707:6: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::gamma_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2487:5: note: template<class _RealType> bool std::operator!=(const std::lognormal_distribution<_RealType>&, const std::lognormal_distribution<_RealType>&)
+     operator!=(const std::lognormal_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2487:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::lognormal_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2283:5: note: template<class _RealType> bool std::operator!=(const std::normal_distribution<_RealType>&, const std::normal_distribution<_RealType>&)
+     operator!=(const std::normal_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2283:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::normal_distribution<_RealType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2034:5: note: template<class _IntType> bool std::operator!=(const std::uniform_real_distribution<_IntType>&, const std::uniform_real_distribution<_IntType>&)
+     operator!=(const std::uniform_real_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2034:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::uniform_real_distribution<_IntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1825:5: note: template<class _IntType> bool std::operator!=(const std::uniform_int_distribution<_IntType>&, const std::uniform_int_distribution<_IntType>&)
+     operator!=(const std::uniform_int_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1825:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::uniform_int_distribution<_IntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1510:5: note: template<class _RandomNumberEngine, unsigned int __k> bool std::operator!=(const std::shuffle_order_engine<_RandomNumberEngine, __k>&, const std::shuffle_order_engine<_RandomNumberEngine, __k>&)
+     operator!=(const std::shuffle_order_engine<_RandomNumberEngine,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1510:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::shuffle_order_engine<_RandomNumberEngine, __k>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1258:5: note: template<class _RandomNumberEngine, unsigned int __w, class _UIntType> bool std::operator!=(const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&, const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&)
+     operator!=(const std::independent_bits_engine<_RandomNumberEngine, __w,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1258:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1062:5: note: template<class _RandomNumberEngine, unsigned int __p, unsigned int __r> bool std::operator!=(const std::discard_block_engine<_RandomNumberEngine, __p, __r>&, const std::discard_block_engine<_RandomNumberEngine, __p, __r>&)
+     operator!=(const std::discard_block_engine<_RandomNumberEngine, __p,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1062:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::discard_block_engine<_RandomNumberEngine, __p, __r>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:840:5: note: template<class _UIntType, unsigned int __w, unsigned int __s, unsigned int __r> bool std::operator!=(const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&, const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&)
+     operator!=(const std::subtract_with_carry_engine<_UIntType, __w,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:840:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:641:5: note: template<class _UIntType, unsigned int __w, unsigned int __n, unsigned int __m, unsigned int __r, _UIntType __a, unsigned int __u, _UIntType __d, unsigned int __s, _UIntType __b, unsigned int __t, _UIntType __c, unsigned int __l, _UIntType __f> bool std::operator!=(const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&, const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)
+     operator!=(const std::mersenne_twister_engine<_UIntType, __w, __n, __m,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:641:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:409:5: note: template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m> bool std::operator!=(const std::linear_congruential_engine<_UIntType, __a, __c, __m>&, const std::linear_congruential_engine<_UIntType, __a, __c, __m>&)
+     operator!=(const std::linear_congruential_engine<_UIntType, __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:409:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::linear_congruential_engine<_UIntType, __a, __c, __m>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:34,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1427:5: note: template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1427:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::vector<_Tp, _Alloc>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   mismatched types 'const _CharT*' and 'std::nullptr_t'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   mismatched types 'const _CharT*' and 'std::basic_string<char>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   mismatched types 'const std::basic_string<_CharT, _Traits, _Alloc>' and 'std::nullptr_t'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:41:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_Tp>&, const std::allocator<_Tp>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:143:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::allocator<_Tp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:41:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_Tp>&, const std::allocator<_Tp>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:138:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::allocator<_Tp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\char_traits.h:40:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\postypes.h:221:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::fpos<_StateT>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::move_iterator<_Iterator>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::move_iterator<_Iterator>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::reverse_iterator<_Iterator>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::reverse_iterator<_Iterator>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\utility:70:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:60,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const std::pair<_T1, _T2>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\mingw32\bits\c++allocator.h:33:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:46,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\new_allocator.h:144:5: note: template<class _Tp> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator!=(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\new_allocator.h:144:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const __gnu_cxx::new_allocator<_Tp>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:823:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:823:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+   if (pos->data != nullptr) {
+                 ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:817:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:817:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:130:17: note:   'std::basic_string<char>' is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   if (pos->data != nullptr) {
+                 ^
+21:13:21 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4

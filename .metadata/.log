@@ -10139,3 +10139,1149 @@ Binding(ALT+ARROW_LEFT,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.cdt.ui.macroExpansionHoverScope,,,system)
+!SESSION 2014-10-27 18:39:30.367 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-27 18:40:04.534
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-27 18:40:04.555
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rohrj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-10-27 18:58:19.925
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2014-10-27 18:58:19.925
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-10-27 18:58:19.925
+!MESSAGE "Eclipse XML Editors and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2014-10-27 18:58:19.925
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE Software being installed: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE Software currently installed: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.925
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE DTD Editor infopops 1.0.400.v201008112018 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201008112018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE DTD Editor infopops 1.0.400.v201309112106 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201309112106)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.925
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE From: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE To: org.eclipse.wst.ws_ui.feature.feature.group [3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.925
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE From: Web Services Tools 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM (org.eclipse.wst.ws_ui.feature.feature.group 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE To: org.eclipse.wst.xml_ui.feature.feature.group [3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.925
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF (org.eclipse.wst.xml_ui.feature.feature.group 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201008112018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.925
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.925
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201309112106]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-10-27 18:58:19.937
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2014-10-27 18:58:19.937
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-10-27 18:58:19.937
+!MESSAGE "Eclipse XML Editors and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2014-10-27 18:58:19.937
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.937
+!MESSAGE Software being installed: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.937
+!MESSAGE Software currently installed: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.937
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE DTD Editor infopops 1.0.400.v201008112018 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201008112018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE DTD Editor infopops 1.0.400.v201309112106 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201309112106)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.938
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE From: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE To: org.eclipse.wst.ws_ui.feature.feature.group [3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.938
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE From: Web Services Tools 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM (org.eclipse.wst.ws_ui.feature.feature.group 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE To: org.eclipse.wst.xml_ui.feature.feature.group [3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.938
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF (org.eclipse.wst.xml_ui.feature.feature.group 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201008112018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.938
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.938
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201309112106]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-10-27 18:58:19.952
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2014-10-27 18:58:19.952
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-10-27 18:58:19.952
+!MESSAGE "Eclipse XML Editors and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2014-10-27 18:58:19.952
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE Software being installed: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE Software currently installed: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.952
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE DTD Editor infopops 1.0.400.v201008112018 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201008112018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE DTD Editor infopops 1.0.400.v201309112106 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201309112106)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.952
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE From: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE To: org.eclipse.wst.ws_ui.feature.feature.group [3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.952
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE From: Web Services Tools 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM (org.eclipse.wst.ws_ui.feature.feature.group 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE To: org.eclipse.wst.xml_ui.feature.feature.group [3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.952
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF (org.eclipse.wst.xml_ui.feature.feature.group 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201008112018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.952
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.952
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201309112106]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-10-27 18:58:19.956
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2014-10-27 18:58:19.956
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-10-27 18:58:19.956
+!MESSAGE "Eclipse XML Editors and Tools" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2014-10-27 18:58:19.956
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE Software being installed: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE Software currently installed: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.956
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE DTD Editor infopops 1.0.400.v201008112018 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201008112018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE DTD Editor infopops 1.0.400.v201309112106 (org.eclipse.wst.dtd.ui.infopop 1.0.400.v201309112106)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.956
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE From: Eclipse Java Web Developer Tools 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ (org.eclipse.jst.web_ui.feature.feature.group 3.6.0.v201405151800-7G7JFb4CzCV-t-7s2npnOyp-GIS_uC0-gQtFkTxZ)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE To: org.eclipse.wst.ws_ui.feature.feature.group [3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.956
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE From: Web Services Tools 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM (org.eclipse.wst.ws_ui.feature.feature.group 3.6.0.v201405061940-7I7GFvNEtEolSIEDBEgtri7dq-l7xhneVZaUCsvM)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE To: org.eclipse.wst.xml_ui.feature.feature.group [3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.956
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF (org.eclipse.wst.xml_ui.feature.feature.group 3.6.0.v201405062148-7H7NFm0DxumWv9-7bhgNooiVMQ_TBruLpRz012TF)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201008112018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-10-27 18:58:19.956
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE From: Eclipse XML Editors and Tools 3.6.1.v201409111852 (org.eclipse.wst.xml_ui.feature.feature.group 3.6.1.v201409111852)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-10-27 18:58:19.956
+!MESSAGE To: org.eclipse.wst.dtd.ui.infopop [1.0.400.v201309112106]
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2014-10-27 19:03:17.024
+!MESSAGE Connection to http://mirror.cc.vt.edu/pub/eclipse/releases/luna/201409261001/plugins/org.eclipse.wst.wsi.ui.doc.user_1.0.750.v201309242123.jar.pack.gz failed on Connection to http://mirror.cc.vt.edu refused. Retry attempt 0 started
+!STACK 0
+org.apache.http.conn.HttpHostConnectException: Connection to http://mirror.cc.vt.edu refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2014-10-27 19:03:17.414
+!MESSAGE Connection to http://mirror.cc.vt.edu/pub/eclipse/releases/luna/201409261001/features/org.eclipse.wst.xml_userdoc.feature_3.6.0.v201405062147.jar failed on Connection to http://mirror.cc.vt.edu refused. Retry attempt 0 started
+!STACK 0
+org.apache.http.conn.HttpHostConnectException: Connection to http://mirror.cc.vt.edu refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 11 more
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2014-10-27 19:04:08.871
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\rohrj\AppData\Local\Temp\epp.package.standard_292a7b44c820_c0a80166e422
+!SESSION 2014-10-27 19:05:40.191 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-10-27 19:05:55.187
+!MESSAGE Unable to find feature.xml in directory: C:\Eclipse\features\org.eclipse.mylyn.commons.notifications_1.4.0.v20140605-1728
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-27 19:06:14.385
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-27 19:06:14.391
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rohrj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 4 2014-10-27 21:20:50.004
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2014-10-27 21:20:50.007
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2014-10-27 21:20:50.016
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2014-10-27 21:20:50.019
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2014-10-27 21:20:50.022
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2014-10-27 21:20:50.026
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:54.961
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:54.962
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:54.978
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:54.979
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:54.991
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:54.991
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.004
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.004
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.020
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.021
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.035
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.035
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.043
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.043
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.048
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.048
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.055
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.055
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.060
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.060
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.065
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.065
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.076
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.077
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.095
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.095
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.123
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.123
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.128
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.128
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.137
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.137
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.159
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.159
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.165
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.166
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.172
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.172
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.184
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.184
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.189
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.190
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.205
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.205
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.210
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.210
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.217
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.217
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.221
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.222
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.225
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.225
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.236
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.236
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.251
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.251
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.275
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.275
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.288
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.288
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.314
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.314
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.325
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.325
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.337
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.337
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.347
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.347
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.354
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.354
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.359
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.359
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:20:55.406
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Invalid object
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:190)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:90)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:142)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.debug.internal.core.srcfinder.CSourceFinder.toLocalPath(CSourceFinder.java:162)
+	at org.eclipse.cdt.debug.internal.core.executables.StandardSourceFileRemapping.remapSourceFile(StandardSourceFileRemapping.java:30)
+	at org.eclipse.cdt.debug.core.executables.Executable.remapSourceFile(Executable.java:172)
+	at org.eclipse.cdt.debug.core.executables.Executable.getSourceFiles(Executable.java:212)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.SourceFilesContentProvider$QuickParseJob.run(SourceFilesContentProvider.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 -1 2014-10-27 21:20:55.406
+!MESSAGE Invalid object
+
+!ENTRY org.eclipse.debug.core 4 125 2014-10-27 21:21:09.281
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at org.eclipse.cdt.debug.core.executables.StandardExecutableProvider.removeExecutable(StandardExecutableProvider.java:132)
+	at org.eclipse.cdt.debug.core.executables.ExecutablesManager.removeExecutables(ExecutablesManager.java:588)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.ExecutablesView$6$1.runInUIThread(ExecutablesView.java:453)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Contains: Could not delete 'C:\Users\rohrj\workspace\workspace2014\HW4\Debug\HW4.exe'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at org.eclipse.cdt.debug.core.executables.StandardExecutableProvider.removeExecutable(StandardExecutableProvider.java:132)
+	at org.eclipse.cdt.debug.core.executables.ExecutablesManager.removeExecutables(ExecutablesManager.java:588)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.ExecutablesView$6$1.runInUIThread(ExecutablesView.java:453)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Contains: Could not delete: C:\Users\rohrj\workspace\workspace2014\HW4\Debug\HW4.exe.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2014-10-27 21:21:09.282
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2014-10-27 21:21:09.282
+!MESSAGE Could not delete 'C:\Users\rohrj\workspace\workspace2014\HW4\Debug\HW4.exe'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at org.eclipse.cdt.debug.core.executables.StandardExecutableProvider.removeExecutable(StandardExecutableProvider.java:132)
+	at org.eclipse.cdt.debug.core.executables.ExecutablesManager.removeExecutables(ExecutablesManager.java:588)
+	at org.eclipse.cdt.debug.internal.ui.views.executables.ExecutablesView$6$1.runInUIThread(ExecutablesView.java:453)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Contains: Could not delete: C:\Users\rohrj\workspace\workspace2014\HW4\Debug\HW4.exe.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2014-10-27 21:21:09.282
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2014-10-27 21:21:09.282
+!MESSAGE Could not delete: C:\Users\rohrj\workspace\workspace2014\HW4\Debug\HW4.exe.
+!SESSION 2014-10-27 21:23:05.245 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-27 21:23:22.780
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-27 21:23:22.786
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rohrj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

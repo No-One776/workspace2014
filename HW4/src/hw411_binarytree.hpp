@@ -34,26 +34,22 @@ public:
 	}
 
 	int numberOfNodes() const {
-		FAIL(
-				"I have to complete Question 4.31(a) by writing a private helper recursive function");
+		return numberNodes(root);
 		/* in your recursive private function, make sure to avoid duplicate recursive calls */
-		return 0;
+
 	}
 
 	/* Definition: a leaf node has no children */
 	int numberOfLeaves() const {
-		FAIL(
-				"I have to complete Question 4.31(b) by writing a private helper recursive function");
+
 		/* in your recursive private function, make sure to avoid duplicate recursive calls */
 		return 0;
 	}
 
 	/* Definition:  a full node has two children */
 	int numberOfFullNodes() const {
-		FAIL(
-				"I have to complete Question 4.31(c) by writing a private helper recursive function");
+		return numFullNodes(root);
 		/* in your recursive private function, make sure to avoid duplicate recursive calls */
-		return 0;
 	}
 
 	/* copy assignment */
@@ -109,6 +105,32 @@ public:
 private:
 
 	/* TODO: add as many as private functions as you wish */
+	int numberNodes(Node* pos) const {
+		int count = 0;
+		if (pos) {
+			if (pos->left != nullptr)
+				count += numberNodes(pos->left);
+			if (pos->right != nullptr)
+				count += numberNodes(pos->right);
+			return count;
+		}
+		return count;
+	}
+
+	int numFullNodes(Node* pos) const {
+		int count = 0;
+		if (pos) {
+			if (pos->left != nullptr && pos->right != nullptr)
+				count++;
+			if (pos->left != nullptr)
+				count += numberNodes(pos->left);
+			if (pos->right != nullptr)
+				count += numberNodes(pos->right);
+			return count;
+		}
+		return count;
+	}
+
 	Node * duplicate_from(Node *theOtherNode) {
 		if (theOtherNode->data == root->data)
 			return root;
@@ -117,17 +139,21 @@ private:
 	}
 
 	bool is_element_of(Node *pos, const Z& key) const {
-		if (pos->data == key)
-			return true;
-		if (pos->right != nullptr)
-			return is_element_of(pos->right, key);
-		if (pos->left != nullptr)
-			return is_element_of(pos->left, key);
+		if (pos) { //TODO: Fix the return false ahead of checking all points.
+			if (pos->data == key)
+				return true;
+			if (pos->right != nullptr)
+				is_element_of(pos->right, key);
+			if (pos->left != nullptr)
+				is_element_of(pos->left, key);
+			if (pos->left == nullptr && pos->right == nullptr)
+				return false;
+		}
 		return false;
 	}
 
 	bool insert_into(Node*& pos, const Z& key) const {
-		if (pos != nullptr) { //TODO:Fix the exe error
+		if (pos) {
 			if (pos->data == key)
 				return false;
 			if (pos->data > key) {
@@ -154,19 +180,40 @@ private:
 				}
 			}
 		} else {
+			pos = new Node();
 			pos->data = key;
+			pos->left = nullptr;
+			pos->right = nullptr;
 			return true;
 		}
 		return false;
 	}
 
 	void remove_from(Node*& pos, const Z& key) const {
-		FAIL("I have to complete this recursive function");
+		if (pos) {
+			if (pos->data == key) {
+				//TODO: Remove Node and properly update for nodes below..
+
+			}
+			if (pos->left != nullptr)
+				remove_from(pos->left, key);
+			if (pos->right != nullptr)
+				remove_from(pos->left, key);
+		}
+
 	}
 
-	void clearAll(Node* & pos) // remove all the nodes from this tree
-			{
-		FAIL("I have to complete clearAll");
+	void clearAll(Node* & pos) {
+		if (pos) {
+			if (pos->left != nullptr) {
+				clearAll(pos->left);
+			}
+			if (pos->right != nullptr) {
+				clearAll(pos->right);
+			}
+			delete pos;
+		}
+
 	}
 
 	void print_from(Node *pos, ostream& os, const string&& path) const {
@@ -176,7 +223,8 @@ private:
 			print_from(pos->right, os, path + "R");
 		}
 	}
-};
+}
+;
 
 template<typename Z>
 ostream& operator<<(ostream& os, const BinaryTree<Z>& t) {

@@ -34,22 +34,17 @@ public:
 	}
 
 	int numberOfNodes() const {
-		return numberNodes(root);
-		/* in your recursive private function, make sure to avoid duplicate recursive calls */
-
+		return numberNodes(root, 1);
 	}
 
 	/* Definition: a leaf node has no children */
 	int numberOfLeaves() const {
-
-		/* in your recursive private function, make sure to avoid duplicate recursive calls */
-		return 0;
+		return numLeafNodes(root, 0);
 	}
 
 	/* Definition:  a full node has two children */
 	int numberOfFullNodes() const {
-		return numFullNodes(root);
-		/* in your recursive private function, make sure to avoid duplicate recursive calls */
+		return numFullNodes(root, 0);
 	}
 
 	/* copy assignment */
@@ -105,27 +100,41 @@ public:
 private:
 
 	/* TODO: add as many as private functions as you wish */
-	int numberNodes(Node* pos) const {
-		int count = 0;
+	/* Recursive helper method to count the number of nodes */
+	int numberNodes(Node* pos, int count) const {
 		if (pos) {
 			if (pos->left != nullptr)
-				count += numberNodes(pos->left);
+				count = 1 + numberNodes(pos->left, count);
 			if (pos->right != nullptr)
-				count += numberNodes(pos->right);
+				count = 1 + numberNodes(pos->right, count);
+			return count;
+		}
+		return count - 1;
+	}
+
+	/* Recursive helper method to count the number of full nodes */
+	int numFullNodes(Node* pos, int count) const {
+		if (pos) {
+			if (pos->left != nullptr && pos->right != nullptr) //If the Node is full, increment count
+				count++;
+			if (pos->left != nullptr)
+				count = numFullNodes(pos->left, count);
+			if (pos->right != nullptr)
+				count = numFullNodes(pos->right, count);
 			return count;
 		}
 		return count;
 	}
 
-	int numFullNodes(Node* pos) const {
-		int count = 0;
+	/* Recursive helper method to count the number of leaf nodes */
+	int numLeafNodes(Node* pos, int count) const {
 		if (pos) {
-			if (pos->left != nullptr && pos->right != nullptr)
+			if (pos->left == nullptr && pos->right == nullptr) //If there are no nodes to the L & R, it is a leaf node
 				count++;
 			if (pos->left != nullptr)
-				count += numberNodes(pos->left);
+				count = numLeafNodes(pos->left, count);
 			if (pos->right != nullptr)
-				count += numberNodes(pos->right);
+				count = numLeafNodes(pos->right, count);
 			return count;
 		}
 		return count;
@@ -134,7 +143,7 @@ private:
 	Node * duplicate_from(Node *theOtherNode) {
 		if (theOtherNode->data == root->data)
 			return root;
-		FAIL("I have to complete duplicate");
+		FAIL("I have to complete duplicate"); //TODO:Finish this
 		return nullptr;
 	}
 
@@ -192,8 +201,29 @@ private:
 	void remove_from(Node*& pos, const Z& key) const {
 		if (pos) {
 			if (pos->data == key) {
-				//TODO: Remove Node and properly update for nodes below..
-
+				if (pos->left == nullptr && pos->right == nullptr)
+					delete pos;
+				if (pos->left != nullptr && pos->right == nullptr) {
+					Node *temp = pos;
+					pos = pos->left;
+					delete temp;
+				}
+				if (pos->left == nullptr && pos->right != nullptr) {
+					Node *temp = pos;
+					pos = pos->right;
+					delete temp;
+				}
+				if (pos->left != nullptr && pos->right != nullptr) {
+					//TODO: Remove Node and properly update for nodes below..
+					int l = numberNodes(pos->left, 1);
+					int r = numberNodes(pos->right, 1);
+					if (l > r)
+						; //Promote from left side, right recursive helper to do this
+					if (r > l)
+						; //Promote from right side
+					if (r == l)
+						; //Pick a side to promote from.
+				}
 			}
 			if (pos->left != nullptr)
 				remove_from(pos->left, key);

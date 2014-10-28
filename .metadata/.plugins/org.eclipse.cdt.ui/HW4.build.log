@@ -1,7 +1,7 @@
-22:53:13 **** Incremental Build of configuration Debug for project HW4 ****
+16:36:43 **** Incremental Build of configuration Debug for project HW4 ****
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
 g++ -o HW4.exe "src\\hw411_test.o" 
 
-22:53:24 Build Finished (took 10s.425ms)
+16:36:53 Build Finished (took 10s.287ms)
 

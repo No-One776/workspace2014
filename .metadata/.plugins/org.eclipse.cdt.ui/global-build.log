@@ -2929,3 +2929,409 @@ g++ -o HW4.exe "src\\hw411_test.o"
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
 g++ -o HW4.exe "src\\hw411_test.o" 
+12:34:06 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
+g++: error: ..\src\ws_test.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+12:38:11 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
+In file included from c:\mingw\include\dirent.h:29:0,
+                 from ..\src\FileSystem.h:14,
+                 from ..\src\WordSearch.h:18,
+                 from ..\src\WordSearch.cpp:20:
+c:\mingw\include\io.h:301:14: error: 'off64_t' does not name a type
+ __CRT_INLINE off64_t lseek64 (int, off64_t, int);
+              ^
+c:\mingw\include\io.h:302:14: error: 'off64_t' does not name a type
+ __CRT_INLINE off64_t lseek64 (int fd, off64_t offset, int whence) {
+              ^
+12:39:36 **** Rebuild of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
+..\src\ws_test.cpp:7:21: fatal error: catch.hpp: No such file or directory
+ #include "catch.hpp"
+                     ^
+compilation terminated.
+12:39:54 **** Rebuild of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+12:40:05 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\regex:35:0,
+                 from ..\src\FileSystem.h:16,
+                 from ..\src\WordSearch.h:18,
+                 from ..\src\ws_test.cpp:8:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+In file included from ..\src\WordSearch.h:18:0,
+                 from ..\src\ws_test.cpp:8:
+..\src\FileSystem.h:23:2: error: 'regex' does not name a type
+  regex name_filter;
+  ^
+..\src\FileSystem.h:28:39: error: 'regex' in namespace 'std' does not name a type
+  FileSystem(const std::string&, const std::regex&);
+                                       ^
+..\src\FileSystem.h:28:49: error: ISO C++ forbids declaration of 'parameter' with no type [-fpermissive]
+  FileSystem(const std::string&, const std::regex&);
+                                                 ^
+..\src\FileSystem.h:43:26: error: '>>' should be '> >' within a nested template argument list
+   stack<pair<DIR*, string>> dir_stack;
+                          ^
+..\src\FileSystem.h:45:3: error: 'regex' does not name a type
+   regex filter;
+   ^
+..\src\FileSystem.h:49:37: error: 'regex' does not name a type
+   gv_iter(const string& path, const regex&);
+                                     ^
+..\src\FileSystem.h:49:42: error: ISO C++ forbids declaration of 'parameter' with no type [-fpermissive]
+   gv_iter(const string& path, const regex&);
+                                          ^
+..\src\FileSystem.h: In member function 'gvsu::FileSystem::gv_iter gvsu::FileSystem::begin() const':
+..\src\FileSystem.h:31:27: error: 'name_filter' was not declared in this scope
+   return gv_iter(absPath, name_filter);
+                           ^
+In file included from ..\src\ws_test.cpp:8:0:
+..\src\WordSearch.h: At global scope:
+..\src\WordSearch.h:44:31: error: '>>' should be '> >' within a nested template argument list
+  pair<unsigned int, set<string>> most_frequent_words() const
+                               ^
+..\src\ws_test.cpp:27:12: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+ WordSearch gb_lib { TOP_DIR + "/ebooks/partial", TOP_DIR + "/ignored.txt" };
+            ^
+..\src\ws_test.cpp:27:75: error: in C++98 'gb_lib' must be initialized by constructor, not by '{...}'
+ WordSearch gb_lib { TOP_DIR + "/ebooks/partial", TOP_DIR + "/ignored.txt" };
+                                                                           ^
+..\src\ws_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____139()':
+..\src\ws_test.cpp:143:3: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+   auto myset = gb_lib.words_of_length(len);
+   ^
+..\src\ws_test.cpp:143:8: error: 'myset' does not name a type
+   auto myset = gb_lib.words_of_length(len);
+        ^
+In file included from ..\src\ws_test.cpp:7:0:
+..\src\ws_test.cpp:144:23: error: 'myset' was not declared in this scope
+   CHECK (vals[len] == myset.size());
+                       ^
+..\src\catch.hpp:1478:31: note: in definition of macro 'INTERNAL_CATCH_TEST'
+             ( __catchResult->*expr ).endExpression(); \
+                               ^
+..\src\ws_test.cpp:144:3: note: in expansion of macro 'CHECK'
+   CHECK (vals[len] == myset.size());
+   ^
+..\src\ws_test.cpp:144:23: error: 'myset' was not declared in this scope
+   CHECK (vals[len] == myset.size());
+                       ^
+..\src\catch.hpp:1484:39: note: in definition of macro 'INTERNAL_CATCH_TEST'
+     } while( Catch::isTrue( false && (expr) ) ) // expr here is never evaluated at runtime but it forces the compiler to give it a look
+                                       ^
+..\src\ws_test.cpp:144:3: note: in expansion of macro 'CHECK'
+   CHECK (vals[len] == myset.size());
+   ^
+..\src\ws_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____152()':
+..\src\ws_test.cpp:153:2: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+  auto result = gb_lib.most_frequent_words();
+  ^
+..\src\ws_test.cpp:153:7: error: 'result' does not name a type
+  auto result = gb_lib.most_frequent_words();
+       ^
+In file included from ..\src\ws_test.cpp:7:0:
+..\src\ws_test.cpp:154:9: error: 'result' was not declared in this scope
+  CHECK (result.first == 6069);
+         ^
+..\src\catch.hpp:1478:31: note: in definition of macro 'INTERNAL_CATCH_TEST'
+             ( __catchResult->*expr ).endExpression(); \
+                               ^
+..\src\ws_test.cpp:154:2: note: in expansion of macro 'CHECK'
+  CHECK (result.first == 6069);
+  ^
+..\src\ws_test.cpp:154:9: error: 'result' was not declared in this scope
+  CHECK (result.first == 6069);
+         ^
+..\src\catch.hpp:1484:39: note: in definition of macro 'INTERNAL_CATCH_TEST'
+     } while( Catch::isTrue( false && (expr) ) ) // expr here is never evaluated at runtime but it forces the compiler to give it a look
+                                       ^
+..\src\ws_test.cpp:154:2: note: in expansion of macro 'CHECK'
+  CHECK (result.first == 6069);
+  ^
+..\src\ws_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____159()':
+..\src\ws_test.cpp:160:2: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+  auto result = gb_lib.files_with_most_frequent_words();
+  ^
+..\src\ws_test.cpp:160:7: error: 'result' does not name a type
+  auto result = gb_lib.files_with_most_frequent_words();
+       ^
+In file included from ..\src\ws_test.cpp:7:0:
+..\src\ws_test.cpp:161:9: error: 'result' was not declared in this scope
+  CHECK (result.size() == 10);
+         ^
+..\src\catch.hpp:1478:31: note: in definition of macro 'INTERNAL_CATCH_TEST'
+             ( __catchResult->*expr ).endExpression(); \
+                               ^
+..\src\ws_test.cpp:161:2: note: in expansion of macro 'CHECK'
+  CHECK (result.size() == 10);
+  ^
+..\src\ws_test.cpp:161:9: error: 'result' was not declared in this scope
+  CHECK (result.size() == 10);
+         ^
+..\src\catch.hpp:1484:39: note: in definition of macro 'INTERNAL_CATCH_TEST'
+     } while( Catch::isTrue( false && (expr) ) ) // expr here is never evaluated at runtime but it forces the compiler to give it a look
+                                       ^
+..\src\ws_test.cpp:161:2: note: in expansion of macro 'CHECK'
+  CHECK (result.size() == 10);
+  ^
+..\src\ws_test.cpp:163:18: error: range-based 'for' loops are not allowed in C++98 mode
+  for (string f : result) {
+                  ^
+..\src\ws_test.cpp:164:3: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+   auto pos = f.find_last_of("/");
+   ^
+..\src\ws_test.cpp:164:8: error: 'pos' does not name a type
+   auto pos = f.find_last_of("/");
+        ^
+..\src\ws_test.cpp:165:16: error: 'pos' was not declared in this scope
+   if (f.substr(pos) == "/4warn10.txt") {
+                ^
+..\src\ws_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____173()':
+..\src\ws_test.cpp:174:2: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+  auto result = gb_lib.least_frequent_words(10);
+  ^
+..\src\ws_test.cpp:174:7: error: 'result' does not name a type
+  auto result = gb_lib.least_frequent_words(10);
+       ^
+In file included from ..\src\ws_test.cpp:7:0:
+..\src\ws_test.cpp:175:8: error: 'result' was not declared in this scope
+  CHECK(result.size() == 22167);
+        ^
+..\src\catch.hpp:1478:31: note: in definition of macro 'INTERNAL_CATCH_TEST'
+             ( __catchResult->*expr ).endExpression(); \
+                               ^
+..\src\ws_test.cpp:175:2: note: in expansion of macro 'CHECK'
+  CHECK(result.size() == 22167);
+  ^
+..\src\ws_test.cpp:175:8: error: 'result' was not declared in this scope
+  CHECK(result.size() == 22167);
+        ^
+..\src\catch.hpp:1484:39: note: in definition of macro 'INTERNAL_CATCH_TEST'
+     } while( Catch::isTrue( false && (expr) ) ) // expr here is never evaluated at runtime but it forces the compiler to give it a look
+                                       ^
+..\src\ws_test.cpp:175:2: note: in expansion of macro 'CHECK'
+  CHECK(result.size() == 22167);
+  ^
+..\src\ws_test.cpp: In function 'void ____C_A_T_C_H____T_E_S_T____180()':
+..\src\ws_test.cpp:181:2: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+  auto result = gb_lib.files_with_least_frequent_words(5);
+  ^
+..\src\ws_test.cpp:181:7: error: 'result' does not name a type
+  auto result = gb_lib.files_with_least_frequent_words(5);
+       ^
+In file included from ..\src\ws_test.cpp:7:0:
+..\src\ws_test.cpp:182:8: error: 'result' was not declared in this scope
+  CHECK(result.size() == 10);
+        ^
+..\src\catch.hpp:1478:31: note: in definition of macro 'INTERNAL_CATCH_TEST'
+             ( __catchResult->*expr ).endExpression(); \
+                               ^
+..\src\ws_test.cpp:182:2: note: in expansion of macro 'CHECK'
+  CHECK(result.size() == 10);
+  ^
+..\src\ws_test.cpp:182:8: error: 'result' was not declared in this scope
+  CHECK(result.size() == 10);
+        ^
+..\src\catch.hpp:1484:39: note: in definition of macro 'INTERNAL_CATCH_TEST'
+     } while( Catch::isTrue( false && (expr) ) ) // expr here is never evaluated at runtime but it forces the compiler to give it a look
+                                       ^
+..\src\ws_test.cpp:182:2: note: in expansion of macro 'CHECK'
+  CHECK(result.size() == 10);
+  ^
+Info: Nothing to build for HW4
+12:41:10 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
+In file included from c:\mingw\include\dirent.h:29:0,
+                 from ..\src\FileSystem.h:14,
+                 from ..\src\WordSearch.h:18,
+                 from ..\src\WordSearch.cpp:20:
+c:\mingw\include\io.h:301:14: error: 'off64_t' does not name a type
+ __CRT_INLINE off64_t lseek64 (int, off64_t, int);
+              ^
+c:\mingw\include\io.h:302:14: error: 'off64_t' does not name a type
+ __CRT_INLINE off64_t lseek64 (int fd, off64_t offset, int whence) {
+              ^
+Info: Nothing to build for HW4
+12:42:24 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
+g++ -o WordSearch.exe "src\\ws_test.o" "src\\WordSearch.o" 
+src\WordSearch.o: In function `ZN10WordSearchC2ERKSsS1_':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:29: undefined reference to `gvsu::FileSystem::FileSystem(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::operator++()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::operator!=(gvsu::FileSystem::gv_iter const&) const'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:34: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:34: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+src\WordSearch.o: In function `ZNK4gvsu10FileSystem5beginEv':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:31: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
+src\WordSearch.o: In function `ZNK4gvsu10FileSystem3endEv':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:35: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter()'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for HW4
+12:48:52 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
+In file included from ..\src\WordSearch.h:18:0,
+                 from ..\src\WordSearch.cpp:20:
+..\src\FileSystem.h:49:45: error: constructors may not be cv-qualified
+   gv_iter(const string& path, const regex&) const;
+                                             ^
+Info: Nothing to build for HW4
+12:49:04 **** Incremental Build of configuration Debug for project WordSearch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
+g++ -o WordSearch.exe "src\\ws_test.o" "src\\WordSearch.o" 
+src\WordSearch.o: In function `ZN10WordSearchC2ERKSsS1_':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:29: undefined reference to `gvsu::FileSystem::FileSystem(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::operator++()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::operator!=(gvsu::FileSystem::gv_iter const&) const'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:34: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:34: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+src\WordSearch.o: In function `ZNK4gvsu10FileSystem5beginEv':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:31: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
+src\WordSearch.o: In function `ZNK4gvsu10FileSystem3endEv':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:35: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter()'
+collect2.exe: error: ld returned 1 exit status
+13:02:27 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'int gvsu::BinaryTree<Z>::numFullNodes(gvsu::BinaryTree<Z>::Node*) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:51:27:   required from 'int gvsu::BinaryTree<Z>::numberOfFullNodes() const [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:56:2:   required from here
+..\src\hw411_binarytree.hpp:125:35: error: no matching function for call to 'gvsu::BinaryTree<std::basic_string<char> >::numberNodes(gvsu::BinaryTree<std::basic_string<char> >::Node*&) const'
+     count += numberNodes(pos->left);
+                                   ^
+..\src\hw411_binarytree.hpp:125:35: note: candidate is:
+..\src\hw411_binarytree.hpp:108:6: note: int gvsu::BinaryTree<Z>::numberNodes(gvsu::BinaryTree<Z>::Node*, int) const [with Z = std::basic_string<char>]
+  int numberNodes(Node* pos, int count) const {
+      ^
+..\src\hw411_binarytree.hpp:108:6: note:   candidate expects 2 arguments, 1 provided
+..\src\hw411_binarytree.hpp:127:36: error: no matching function for call to 'gvsu::BinaryTree<std::basic_string<char> >::numberNodes(gvsu::BinaryTree<std::basic_string<char> >::Node*&) const'
+     count += numberNodes(pos->right);
+                                    ^
+..\src\hw411_binarytree.hpp:127:36: note: candidate is:
+..\src\hw411_binarytree.hpp:108:6: note: int gvsu::BinaryTree<Z>::numberNodes(gvsu::BinaryTree<Z>::Node*, int) const [with Z = std::basic_string<char>]
+  int numberNodes(Node* pos, int count) const {
+      ^
+..\src\hw411_binarytree.hpp:108:6: note:   candidate expects 2 arguments, 1 provided
+13:02:52 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:05:08 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:05:55 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:07:25 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'int gvsu::BinaryTree<Z>::numFullNodes(gvsu::BinaryTree<Z>::Node*, int) const':
+..\src\hw411_binarytree.hpp:120:7: error: declaration of 'int count' shadows a parameter
+   int count = 0;
+       ^
+..\src\hw411_binarytree.hpp: In instantiation of 'int gvsu::BinaryTree<Z>::numFullNodes(gvsu::BinaryTree<Z>::Node*, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:51:30:   required from 'int gvsu::BinaryTree<Z>::numberOfFullNodes() const [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:56:2:   required from here
+..\src\hw411_binarytree.hpp:120:15: error: declaration of 'int count' shadows a parameter
+   int count = 0;
+               ^
+13:07:45 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:08:34 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4
+13:11:36 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:13:11 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:14:35 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:15:25 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:15:56 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:18:08 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:18:50 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+13:19:08 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+16:19:32 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+16:20:20 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+16:34:37 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const':
+..\src\hw411_binarytree.hpp:220:4: error: expected primary-expression before '}' token
+    }
+    ^
+..\src\hw411_binarytree.hpp:220:4: error: expected ';' before '}' token
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:45:18:   required from here
+..\src\hw411_binarytree.hpp:219:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if (r = l )
+     ^
+16:35:09 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+16:35:31 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+16:36:43 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 

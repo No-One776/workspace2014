@@ -1,16 +1,21 @@
-20:16:01 **** Incremental Build of configuration Debug for project WordSearch ****
+12:49:04 **** Incremental Build of configuration Debug for project WordSearch ****
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\WordSearch.o" "..\\src\\WordSearch.cpp" 
-In file included from c:\mingw\include\dirent.h:14:0,
-                 from ..\src\FileSystem.h:14,
-                 from ..\src\WordSearch.h:18,
-                 from ..\src\WordSearch.cpp:20:
-c:\mingw\include\io.h:288:14: error: '_off64_t' does not name a type
- __CRT_INLINE _off64_t lseek64 (int, _off64_t, int);
-              ^
-c:\mingw\include\io.h:289:14: error: '_off64_t' does not name a type
- __CRT_INLINE _off64_t lseek64 (int fd, _off64_t offset, int whence) 
-              ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\ws_test.o" "..\\src\\ws_test.cpp" 
+g++ -o WordSearch.exe "src\\ws_test.o" "src\\WordSearch.o" 
+src\WordSearch.o: In function `ZN10WordSearchC2ERKSsS1_':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:29: undefined reference to `gvsu::FileSystem::FileSystem(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::operator++()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::operator!=(gvsu::FileSystem::gv_iter const&) const'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:34: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:31: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/WordSearch.cpp:34: undefined reference to `gvsu::FileSystem::gv_iter::~gv_iter()'
+src\WordSearch.o: In function `ZNK4gvsu10FileSystem5beginEv':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:31: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter(std::string const&, std::basic_regex<char, std::regex_traits<char> > const&)'
+src\WordSearch.o: In function `ZNK4gvsu10FileSystem3endEv':
+C:\Users\rohrj\workspace\workspace2014\WordSearch\Debug/../src/FileSystem.h:35: undefined reference to `gvsu::FileSystem::gv_iter::gv_iter()'
+collect2.exe: error: ld returned 1 exit status
 
-20:16:02 Build Finished (took 1s.30ms)
+12:49:17 Build Finished (took 13s.507ms)
 

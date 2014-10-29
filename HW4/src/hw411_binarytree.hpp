@@ -100,6 +100,10 @@ public:
 private:
 
 	/* TODO: add as many as private functions as you wish */
+	void level() {
+
+	}
+
 	/* Recursive helper method to count the number of nodes */
 	int numberNodes(Node* pos, int count) const {
 		if (pos) {
@@ -148,17 +152,20 @@ private:
 	}
 
 	bool is_element_of(Node *pos, const Z& key) const {
-		if (pos) { //TODO: Fix the return false ahead of checking all points.
-			if (pos->data == key)
-				return true;
+		int bol = 0;
+		if (pos) { //TODO: Fix the errors.
+			if (pos->data == key) {
+				return 1;
+				cout << "Data: " << pos->data << "  Key: " << key << endl;
+			}
 			if (pos->right != nullptr)
-				is_element_of(pos->right, key);
+				bol = is_element_of(pos->right, key);
+			//if (bol == 1)
+				//return 1;
 			if (pos->left != nullptr)
-				is_element_of(pos->left, key);
-			if (pos->left == nullptr && pos->right == nullptr)
-				return false;
+				bol = is_element_of(pos->left, key);
 		}
-		return false;
+		return bol;
 	}
 
 	bool insert_into(Node*& pos, const Z& key) const {

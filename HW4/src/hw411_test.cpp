@@ -29,8 +29,10 @@ public:
 
 TEST_CASE_METHOD (TreeTest, "contains") {
 	CHECK_NOTHROW(items.contains("power"));
-	for (auto p = refData.begin(); p != refData.end(); ++p)
+	for (auto p = refData.begin(); p != refData.end(); ++p){
 		CHECK(items.contains(*p));
+		cout << "Item: " << *p << endl;
+	}
 	CHECK_FALSE(items.contains("POWER"));
 }
 

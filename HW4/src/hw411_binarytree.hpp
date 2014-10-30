@@ -76,8 +76,8 @@ public:
 
 	vector<Z> levelOrder() const {
 		vector<Z> output;
-		/* The returned string must be separated by commas */
-		FAIL("I have to complete Question 4.40 by invoking a private function");
+		level(output, root);
+		//FAIL("I have to complete Question 4.40 by invoking a private function");
 		return output;
 	}
 
@@ -100,8 +100,12 @@ public:
 private:
 
 	/* TODO: add as many as private functions as you wish */
-	void level() {
-
+	void level(vector<Z>& output, Node* pos) const{
+		output.push_back(pos->data); //TODO: Fix calling down oneside first
+		if (pos->left != nullptr)
+			level(output, pos->left);
+		if (pos->right != nullptr)
+			level(output, pos->right);
 	}
 
 	/* Recursive helper method to count the number of nodes */
@@ -152,19 +156,20 @@ private:
 	}
 
 	bool is_element_of(Node *pos, const Z& key) const {
-		int bol = 0;
-		if (pos) { //TODO: Fix the errors.
+		bool bol = false;
+		if (pos) {
 			if (pos->data == key) {
-				return 1;
-				cout << "Data: " << pos->data << "  Key: " << key << endl;
+				return true;
+			} else {
+				if (pos->left != nullptr)
+					bol = is_element_of(pos->left, key);
+				if (bol)
+					return true;
+				if (pos->right != nullptr)
+					bol = is_element_of(pos->right, key);
 			}
-			if (pos->right != nullptr)
-				bol = is_element_of(pos->right, key);
-			//if (bol == 1)
-				//return 1;
-			if (pos->left != nullptr)
-				bol = is_element_of(pos->left, key);
 		}
+
 		return bol;
 	}
 
@@ -206,37 +211,44 @@ private:
 	}
 
 	void remove_from(Node*& pos, const Z& key) const {
-		if (pos) {
-			if (pos->data == key) {
-				if (pos->left == nullptr && pos->right == nullptr)
-					delete pos;
-				if (pos->left != nullptr && pos->right == nullptr) {
-					Node *temp = pos;
-					pos = pos->left;
-					delete temp;
-				}
-				if (pos->left == nullptr && pos->right != nullptr) {
-					Node *temp = pos;
-					pos = pos->right;
-					delete temp;
-				}
-				if (pos->left != nullptr && pos->right != nullptr) {
-					//TODO: Remove Node and properly update for nodes below..
-					int l = numberNodes(pos->left, 1);
-					int r = numberNodes(pos->right, 1);
-					if (l > r)
-						; //Promote from left side, right recursive helper to do this
-					if (r > l)
-						; //Promote from right side
-					if (r == l)
-						; //Pick a side to promote from.
-				}
-			}
-			if (pos->left != nullptr)
-				remove_from(pos->left, key);
-			if (pos->right != nullptr)
-				remove_from(pos->left, key);
-		}
+		/*if (pos) {
+		 if (pos->data == key) {
+		 cout << "here" << endl;
+		 if (pos->left != nullptr && pos->right == nullptr) {
+		 Node *temp = pos;
+		 pos = pos->left;
+		 delete temp;
+		 }
+		 cout << "here 1" << endl;
+		 if (pos->left == nullptr && pos->right != nullptr) {
+		 Node *temp = pos;
+		 pos = pos->right;
+		 delete temp;
+		 }
+		 cout << "here 2" << endl;
+		 if (pos->left != nullptr && pos->right != nullptr) {
+		 //TODO: Remove Node and properly update for nodes below..
+		 int l = numberNodes(pos->left, 1);
+		 int r = numberNodes(pos->right, 1);
+		 if (l > r)
+		 ; //Promote from left side, right recursive helper to do this
+		 if (r > l)
+		 ; //Promote from right side
+		 if (r == l)
+		 ; //Pick a side to promote from.
+		 }
+		 cout << "here 3" << endl;
+		 if (pos->left == nullptr && pos->right == nullptr)
+		 delete pos;
+		 } else {
+		 cout << "else here" << endl;
+		 if (pos->left != nullptr)
+		 remove_from(pos->left, key);
+		 if (pos->right != nullptr)
+		 remove_from(pos->left, key);
+		 }
+		 return;
+		 }*/
 
 	}
 

@@ -58,3 +58,178 @@ g++ -o HW4.exe "src\\hw411_test.o"
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
 g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4
+Info: Nothing to build for HW4
+14:43:21 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:45:19 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:52:39 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'bool gvsu::BinaryTree<Z>::is_element_of(gvsu::BinaryTree<Z>::Node*, const Z&) const':
+..\src\hw411_binarytree.hpp:162:13: error: 'bol' was not declared in this scope
+      return bol = is_element_of(pos->right, key);
+             ^
+..\src\hw411_binarytree.hpp:168:10: error: 'bol' was not declared in this scope
+   return bol;
+          ^
+..\src\hw411_binarytree.hpp: In member function 'bool gvsu::BinaryTree<Z>::is_element_of(gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:169:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+14:52:56 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:53:31 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'bool gvsu::BinaryTree<Z>::is_element_of(gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:66:33:   required from 'bool gvsu::BinaryTree<Z>::contains(const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:31:2:   required from here
+..\src\hw411_binarytree.hpp:168:3: error: return-statement with no value, in function returning 'bool' [-fpermissive]
+   return;
+   ^
+14:53:50 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'bool gvsu::BinaryTree<Z>::is_element_of(gvsu::BinaryTree<Z>::Node*, const Z&) const':
+..\src\hw411_binarytree.hpp:168:10: error: expected primary-expression before 'continue'
+   return continue;
+          ^
+..\src\hw411_binarytree.hpp:168:10: error: expected ';' before 'continue'
+..\src\hw411_binarytree.hpp:168:10: error: continue statement not within a loop
+..\src\hw411_binarytree.hpp: In member function 'bool gvsu::BinaryTree<Z>::is_element_of(gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:169:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+14:54:36 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:00:30 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:01:07 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:03:55 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:05:34 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:06:38 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:09:54 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:12:05 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:13:33 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:15:06 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:15:59 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:18:23 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:18:58 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:20:15 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:21:40 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:23:41 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:33:06 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:34:38 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:43:53 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+15:45:36 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]':
+..\src\hw411_test.cpp:75:42:   required from here
+..\src\hw411_binarytree.hpp:79:21: error: passing 'const gvsu::BinaryTree<std::basic_string<char> >' as 'this' argument of 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) [with Z = std::basic_string<char>]' discards qualifiers [-fpermissive]
+   level(output, root);
+                     ^
+15:45:57 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]':
+..\src\hw411_test.cpp:75:42:   required from here
+..\src\hw411_binarytree.hpp:79:22: error: no matching function for call to 'gvsu::BinaryTree<std::basic_string<char> >::level(std::vector<std::basic_string<char> >*, gvsu::BinaryTree<std::basic_string<char> >::Node* const&) const'
+   level(&output, root);
+                      ^
+..\src\hw411_binarytree.hpp:79:22: note: candidate is:
+..\src\hw411_binarytree.hpp:103:7: note: void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) [with Z = std::basic_string<char>]
+  void level(vector<Z>& output, Node* pos) {
+       ^
+..\src\hw411_binarytree.hpp:103:7: note:   no known conversion for argument 1 from 'std::vector<std::basic_string<char> >*' to 'std::vector<std::basic_string<char> >&'
+15:46:34 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]':
+..\src\hw411_test.cpp:75:42:   required from here
+..\src\hw411_binarytree.hpp:79:9: error: no match for 'operator*' (operand type is 'std::vector<std::basic_string<char> >')
+   level(*output, root);
+         ^
+15:47:20 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]':
+..\src\hw411_test.cpp:75:42:   required from here
+..\src\hw411_binarytree.hpp:79:21: error: passing 'const gvsu::BinaryTree<std::basic_string<char> >' as 'this' argument of 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) [with Z = std::basic_string<char>]' discards qualifiers [-fpermissive]
+   level(output, root);
+                     ^
+15:47:41 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4

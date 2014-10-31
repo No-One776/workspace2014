@@ -1,1 +1,12 @@
-Info: Nothing to build for HW4
+23:14:23 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:296:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+
+23:14:33 Build Finished (took 9s.137ms)
+

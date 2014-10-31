@@ -100,7 +100,7 @@ public:
 private:
 
 	/* TODO: add as many as private functions as you wish */
-	void level(vector<Z>& output, Node* pos) const{
+	void level(vector<Z>& output, Node* pos) const {
 		output.push_back(pos->data); //TODO: Fix calling down oneside first
 		if (pos->left != nullptr)
 			level(output, pos->left);
@@ -169,7 +169,6 @@ private:
 					bol = is_element_of(pos->right, key);
 			}
 		}
-
 		return bol;
 	}
 
@@ -211,45 +210,89 @@ private:
 	}
 
 	void remove_from(Node*& pos, const Z& key) const {
-		/*if (pos) {
-		 if (pos->data == key) {
-		 cout << "here" << endl;
-		 if (pos->left != nullptr && pos->right == nullptr) {
-		 Node *temp = pos;
-		 pos = pos->left;
-		 delete temp;
-		 }
-		 cout << "here 1" << endl;
-		 if (pos->left == nullptr && pos->right != nullptr) {
-		 Node *temp = pos;
-		 pos = pos->right;
-		 delete temp;
-		 }
-		 cout << "here 2" << endl;
-		 if (pos->left != nullptr && pos->right != nullptr) {
-		 //TODO: Remove Node and properly update for nodes below..
-		 int l = numberNodes(pos->left, 1);
-		 int r = numberNodes(pos->right, 1);
-		 if (l > r)
-		 ; //Promote from left side, right recursive helper to do this
-		 if (r > l)
-		 ; //Promote from right side
-		 if (r == l)
-		 ; //Pick a side to promote from.
-		 }
-		 cout << "here 3" << endl;
-		 if (pos->left == nullptr && pos->right == nullptr)
-		 delete pos;
-		 } else {
-		 cout << "else here" << endl;
-		 if (pos->left != nullptr)
-		 remove_from(pos->left, key);
-		 if (pos->right != nullptr)
-		 remove_from(pos->left, key);
-		 }
-		 return;
-		 }*/
+		if (pos) {
+			if (pos->data == key) {
+				cout << "Found a Match - Left: " << pos->left << " Right: "
+						<< pos->right << endl;
+				if (pos->left != nullptr && pos->right == nullptr) {
+					cout << "Left Not Null" << endl;
+					Node *temp = pos;
+					pos = pos->left;
+					delete temp;
+				} else if (pos->left == nullptr && pos->right != nullptr) {
+					cout << "Right Not Null" << endl;
+					Node *temp = pos;
+					pos = pos->right;
+					delete temp;
+				} else if (pos->left != nullptr && pos->right != nullptr) {
+					cout << "Both Not Null" << endl;
+					int l = numberNodes(pos->left, 1);
+					int r = numberNodes(pos->right, 1);
+					if (l > r) {
+						Node* temp = pos;
+						pos = removeHelper(pos->left, 1);
+						pos->left = temp->left;
+						pos->right = temp->right;
+						delete temp;
+					} else if (r > l) {
+						Node* temp = pos;
+						pos = removeHelper(pos->right, -1);
+						pos->left = temp->left;
+						pos->right = temp->right;
+						delete temp;
+					} else {
+						Node* temp = pos;
+						pos = removeHelper(pos->left, 1);
+						pos->left = temp->left;
+						pos->right = temp->right;
+						delete temp;
+					}
+				} else
+					//if (pos->left == nullptr && pos->right == nullptr)
+					delete pos;
+				cout << "End of Match" << endl;
+			} else {
+				cout << "else here" << endl;
+				if (pos->left != nullptr)
+					remove_from(pos->left, key);
+				cout << "End 1 Here" << endl;
+				if (pos->right != nullptr)
+					remove_from(pos->left, key);
+				cout << "End Here" << endl;
+			}
+		}
+		//cout << "End of Remove: " << pos->data << "Left: " << pos->left << " Right: " << pos->right << endl;
+	}
 
+	Node* removeHelper(Node* pos, int direction) const {
+		Node* temp;
+		//cout << "Pos: " << pos << " PosL: " << pos->left << " PosR: " << pos->right << endl;
+		if (direction == 1) {
+			if (pos->right != nullptr)
+				return removeHelper(pos->right, 1);
+			else if (pos->left != nullptr) {
+				temp = pos;
+				pos = pos->left;
+				return temp;
+			} else {
+				Node* temp = pos;
+				delete pos;
+				return temp;
+			}
+		}
+		if (direction == -1) {
+			if (pos->left != nullptr)
+				return removeHelper(pos->left, -1);
+			else if (pos->right != nullptr) {
+				temp = pos;
+				pos = pos->right;
+				return temp;
+			} else {
+				Node* temp = pos;
+				delete pos;
+				return temp;
+			}
+		}
 	}
 
 	void clearAll(Node* & pos) {

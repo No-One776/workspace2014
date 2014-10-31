@@ -230,19 +230,19 @@ private:
 					int r = numberNodes(pos->right, 1);
 					if (l > r) {
 						Node* temp = pos;
-						pos = removeHelper(pos->left, 1);
+						pos = removeHelper(pos->left, pos, 1);
 						pos->left = temp->left;
 						pos->right = temp->right;
 						delete temp;
 					} else if (r > l) {
 						Node* temp = pos;
-						pos = removeHelper(pos->right, -1);
+						pos = removeHelper(pos->right, pos, -1);
 						pos->left = temp->left;
 						pos->right = temp->right;
 						delete temp;
 					} else {
 						Node* temp = pos;
-						pos = removeHelper(pos->left, 1);
+						pos = removeHelper(pos->left, pos, 1);
 						pos->left = temp->left;
 						pos->right = temp->right;
 						delete temp;
@@ -252,47 +252,44 @@ private:
 					delete pos;
 				cout << "End of Match" << endl;
 			} else {
-				cout << "else here" << endl;
 				if (pos->left != nullptr)
 					remove_from(pos->left, key);
-				cout << "End 1 Here" << endl;
 				if (pos->right != nullptr)
 					remove_from(pos->left, key);
-				cout << "End Here" << endl;
+				cout << "End Else Here" << endl;
 			}
 		}
-		//cout << "End of Remove: " << pos->data << "Left: " << pos->left << " Right: " << pos->right << endl;
+		cout << "End of Remove: " << pos->data << " Left: " << pos->left
+				<< " Right: " << pos->right << endl;
 	}
 
-	Node* removeHelper(Node* pos, int direction) const {
-		Node* temp;
-		//cout << "Pos: " << pos << " PosL: " << pos->left << " PosR: " << pos->right << endl;
+	Node* removeHelper(Node* pos, Node* prev, int direction) const {
+		Node* temp = pos;
 		if (direction == 1) {
-			if (pos->right != nullptr)
-				return removeHelper(pos->right, 1);
-			else if (pos->left != nullptr) {
+			if (pos->right != nullptr) {
+				return removeHelper(pos->right, pos, 1);
+			} else if (pos->left != nullptr) {
 				temp = pos;
 				pos = pos->left;
 				return temp;
 			} else {
-				Node* temp = pos;
-				delete pos;
-				return temp;
+				prev->right = nullptr;
+				return pos;
 			}
 		}
 		if (direction == -1) {
-			if (pos->left != nullptr)
-				return removeHelper(pos->left, -1);
-			else if (pos->right != nullptr) {
+			if (pos->left != nullptr) {
+				return removeHelper(pos->left, pos, 1);
+			} else if (pos->right != nullptr) {
 				temp = pos;
 				pos = pos->right;
 				return temp;
 			} else {
-				Node* temp = pos;
-				delete pos;
-				return temp;
+				prev->left = nullptr;
+				return pos;
 			}
 		}
+		return temp;
 	}
 
 	void clearAll(Node* & pos) {

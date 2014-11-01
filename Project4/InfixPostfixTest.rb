@@ -1,4 +1,6 @@
+#require 'minitest/spec'
 require 'minitest/autorun'
+#require 'mini/test'
 require './InfixPostfix.rb'
 
 #

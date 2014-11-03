@@ -45,7 +45,7 @@ TEST_CASE_METHOD (TreeTest, "remove") {
 	for (auto p = refData.begin(); p != refData.end(); ++p) {
 		cout << "Remove Item: " << *p << endl;
 		items.remove(*p);
-		cout << "Check False after Remove: "  << endl;
+		cout << "Check False after Remove: " << items  << endl;
 		CHECK_FALSE(items.contains(*p));
 		cout << "End Remove Test"<< endl;
 	}

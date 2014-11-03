@@ -142,3 +142,76 @@ g++ -o HW4.exe "src\\hw411_test.o"
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
 g++ -o HW4.exe "src\\hw411_test.o" 
+14:14:20 **** Rebuild of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:19:52 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:33:48 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:34:27 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:36:10 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:36:32 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:36:55 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:37:39 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:38:11 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:40:11 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:41:24 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:42:21 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:44:32 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:46:47 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:50:33 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4
+14:50:59 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:51:22 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 
+14:57:19 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+g++ -o HW4.exe "src\\hw411_test.o" 

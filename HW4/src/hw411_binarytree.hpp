@@ -211,21 +211,18 @@ private:
 	void remove_from(Node*& pos, const Z& key) const {
 		if (pos) {
 			if (pos->data == key) {
-				cout << "Found a Match - Left: " << pos->left->data
-						<< " Right: " << pos->right->data << endl;
+				//cout << "Found a Match - Left: " << pos->left->data << " Right: " << pos->right->data << endl;
 				if (pos->left != nullptr && pos->right == nullptr) {
-					cout << "Left Not Null" << endl;
 					Node *temp = pos;
 					pos = pos->left;
 					delete temp;
 				} else if (pos->left == nullptr && pos->right != nullptr) {
-					cout << "Right Not Null" << endl;
 					Node *temp = pos;
 					pos = pos->right;
 					delete temp;
 				} else if (pos->left != nullptr && pos->right != nullptr) {
-					int l = numberNodes(pos->left, 1);
-					int r = numberNodes(pos->right, 1);
+					int l = 1; //numberNodes(pos->left, 1);
+					int r = 0; //numberNodes(pos->right, 1);
 					if (l > r) {
 						Node* temp = pos;
 						pos = removeHelper(pos->left, pos, 1);
@@ -248,8 +245,10 @@ private:
 						pos->right = temp->right;
 						delete temp;
 					}
-				} else
+				} else {
+					//TODO: Need to remove reference to POS from previous
 					delete pos;
+				}
 			} else {
 				if (pos->left != nullptr)
 					remove_from(pos->left, key);
@@ -257,8 +256,7 @@ private:
 					remove_from(pos->left, key);
 			}
 		}
-		cout << "End of Remove: " << pos->data << " Left: " << pos->left->data
-				<< " Right: " << (pos->right)->data << endl;
+		//cout << "End of Remove: " << pos->data << " Left: " << pos->left->data	<< " Right: " << (pos->right)->data << endl;
 	}
 
 	Node* removeHelper(Node* pos, Node* prev, int direction) const {
@@ -267,9 +265,9 @@ private:
 			if (pos->right != nullptr) {
 				return removeHelper(pos->right, pos, 1);
 			} else if (pos->left != nullptr) {
-				temp = pos;
-				pos = pos->left;
-				return temp;
+				//temp = pos;
+				prev->right = pos->left;
+				return pos;
 			} else {
 				if (prev->right == pos)
 					prev->right = nullptr;

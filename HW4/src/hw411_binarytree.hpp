@@ -75,7 +75,7 @@ public:
 
 	vector<Z> levelOrder() const {
 		vector<Z> output;
-		level(output, root);
+		//level(output, root);
 		//FAIL("I have to complete Question 4.40 by invoking a private function");
 		return output;
 	}
@@ -99,13 +99,25 @@ public:
 private:
 
 	/* TODO: add as many as private functions as you wish */
-	void level(vector<Z>& output, Node* pos) const {
-		output.push_back(pos->data); //TODO: Fix calling down oneside first
-		if (pos->left != nullptr)
-			level(output, pos->left);
-		if (pos->right != nullptr)
-			level(output, pos->right);
-	}
+	/*void level(vector<Z>& output, Node* pos) const {
+	 queue<Node*> element;
+	 if (pos) {
+	 element.push(root);
+	 cout << pos->data << " ";
+	 }
+	 while (!element.empty()) {
+	 Node* temp_node = element.front();
+	 element.pop();
+	 if (temp_node->left) {
+	 element.push(temp_node->left);
+	 cout << temp_node->left->data << " ";
+	 }
+	 if (temp_node->right) {
+	 element.push(temp_node->right);
+	 cout << temp_node->right->data << " ";
+	 }
+	 }
+	 }*/
 
 	/* Recursive helper method to count the number of nodes */
 	int numberNodes(Node* pos, int count) const {
@@ -215,50 +227,39 @@ private:
 	void remove(Node*& pos, Node* prev, const Z& key) const {
 		if (pos) {
 			if (pos->data == key) {
-				//cout << "Found a Match - Left: " << pos->left->data << " Right: " << pos->right->data << endl;
-				if (pos->left != nullptr && pos->right == nullptr) {
+				if (pos->left != nullptr && pos->right != nullptr) { //Node has 2 children
+					cout << "Here Both" << endl;
 					Node* temp = pos;
-					pos = pos->left;
-					delete temp;
-				} else if (pos->left == nullptr && pos->right != nullptr) {
-					Node *temp = pos;
-					pos = pos->right;
-					delete temp;
-				} else if (pos->left != nullptr && pos->right != nullptr) {
-					/*int l = 2; //numberNodes(pos->left, 1);
-					 int r = 0; //numberNodes(pos->right, 1);
-					 if (l > r) {*/
-					Node* temp = pos;
-					pos = removeHelper(pos->left, pos, 1);
-					//cout << pos->data << "  " << temp->right->data << "  "
-					//		<< temp->left->data << "  " << temp->data << endl;
-					if (pos != temp->left)
+					pos = removeHelper(pos->left, pos->left, 1);
+					if (pos != temp->left) //Update the replacement nodes left pointer
 						pos->left = temp->left;
-					pos->right = temp->right;
-					if (prev->left == temp)
+					if (pos != temp->right) // Update the replacement nodes right pointer
+						pos->right = temp->right;
+					if (prev->left == temp) //Update Previous Pointers to the new node (left or right)
 						prev->left = pos;
-					if (prev->right == temp)
+					else if (prev->right == temp)
 						prev->right = pos;
 					delete temp;
-					/*} else if (r > l) {
-					 Node* temp = pos;
-					 pos = removeHelper(pos->right, pos, -1);
-					 pos->left = temp->left;
-					 if (pos != temp->right)
-					 pos->right = temp->right;
-					 delete temp;
-					 } else {
-					 Node* temp = pos;
-					 pos = removeHelper(pos->left, pos, 1);
-					 if (pos != temp->left)
-					 pos->left = temp->left;
-					 pos->right = temp->right;
-					 delete temp;
-					 }*/
-				} else {
+				} else if (pos->left != nullptr) { //If it has a sub-tree to the left, pull that up.
+					cout << "Here Left" << endl;
+					/*if (prev->left == pos)
+					 prev->left = pos->left;
+					 else if (prev->right == pos)
+					 prev->right = pos->left;
+					 delete pos;*/
+					/*Node* temp = pos;
+					pos = pos->left;
+					delete temp;*/
+				} else if (pos->right != nullptr) { //If it has a sub-tree to the right, pull that up
+					cout << "Here Right" << endl;
+					Node* temp = pos;
+					pos = pos->right;
+					delete temp;
+				} else { //If the Node is a leaf
+					cout << "Here" << endl;
 					if (prev->left == pos)
 						prev->left = nullptr;
-					if (prev->right == pos)
+					else if (prev->right == pos)
 						prev->right == nullptr;
 					delete pos;
 				}
@@ -269,44 +270,24 @@ private:
 					remove(pos->left, pos, key);
 			}
 		}
-		//cout << "End of Remove: " << pos->data << " Left: " << pos->left->data
-			//	<< " Right: " << (pos->right)->data << "Prev Left: " << prev->left << endl;
-
 	}
 
 	Node* removeHelper(Node* pos, Node*& prev, int direction) const {
-		Node* temp = pos;
 		if (direction == 1) {
 			if (pos->right != nullptr) {
 				return removeHelper(pos->right, pos, 1);
 			} else if (pos->left != nullptr) {
-				//temp = pos;
-				prev->left = pos->left;
+				if (prev != pos)
+					prev->right = pos->left;
 				return pos;
 			} else {
-				if (prev->right == pos)
+				if (prev->right != nullptr && prev->right == pos)
 					prev->right = nullptr;
 				else if (prev->left == pos)
 					prev->left = nullptr;
 				return pos;
 			}
 		}
-		if (direction == -1) {
-			if (pos->left != nullptr) {
-				return removeHelper(pos->left, pos, 1);
-			} else if (pos->right != nullptr) {
-				temp = pos;
-				pos = pos->right;
-				return temp;
-			} else {
-				if (prev->left == pos)
-					prev->left = nullptr;
-				else if (prev->left == pos)
-					prev->right = nullptr;
-				return pos;
-			}
-		}
-		return temp;
 	}
 
 	void clearAll(Node* & pos) {

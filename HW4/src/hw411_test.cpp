@@ -41,11 +41,8 @@ TEST_CASE_METHOD (TreeTest, "insert should not accept duplicate") {
 }
 
 TEST_CASE_METHOD (TreeTest, "remove") {
-	//cout << items << endl;
 	for (auto p = refData.begin(); p != refData.end(); ++p) {
-		cout << "Remove Item: " << *p << endl;
 		items.remove(*p);
-		cout << "Check False after Remove: \n" << items << endl;
 		CHECK_FALSE(items.contains(*p));
 	}
 }
@@ -53,7 +50,6 @@ TEST_CASE_METHOD (TreeTest, "remove") {
 TEST_CASE_METHOD(TreeTest, "Tree counters ") {
 	/* Tester function for Question 4.13 a-c */
 	gvsu::BinaryTree<string> ctest;
-	cout << "Here" << endl;
 	CHECK(ctest.numberOfNodes() == 0);
 	CHECK(ctest.numberOfLeaves() == 0);
 	CHECK(ctest.numberOfFullNodes() == 0);

@@ -2015,3 +2015,358 @@ In file included from ..\src\hw411_test.cpp:14:0:
   }
   ^
 g++ -o HW4.exe "src\\hw411_test.o" 
+23:38:44 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:102:3: error: 'Queue' was not declared in this scope
+   Queue<Node*> q;
+   ^
+..\src\hw411_binarytree.hpp:102:13: error: expected primary-expression before '*' token
+   Queue<Node*> q;
+             ^
+..\src\hw411_binarytree.hpp:102:14: error: expected primary-expression before '>' token
+   Queue<Node*> q;
+              ^
+..\src\hw411_binarytree.hpp:102:16: error: 'q' was not declared in this scope
+   Queue<Node*> q;
+                ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:220:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:259:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:287:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:39:07 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:103:3: error: 'Queue' was not declared in this scope
+   Queue<Node*> q;
+   ^
+..\src\hw411_binarytree.hpp:103:13: error: expected primary-expression before '*' token
+   Queue<Node*> q;
+             ^
+..\src\hw411_binarytree.hpp:103:14: error: expected primary-expression before '>' token
+   Queue<Node*> q;
+              ^
+..\src\hw411_binarytree.hpp:103:16: error: 'q' was not declared in this scope
+   Queue<Node*> q;
+                ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:260:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:288:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:39:37 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:103:3: error: 'Queue' was not declared in this scope
+   Queue<Node*> q = new Queue;
+   ^
+..\src\hw411_binarytree.hpp:103:13: error: expected primary-expression before '*' token
+   Queue<Node*> q = new Queue;
+             ^
+..\src\hw411_binarytree.hpp:103:14: error: expected primary-expression before '>' token
+   Queue<Node*> q = new Queue;
+              ^
+..\src\hw411_binarytree.hpp:103:16: error: 'q' was not declared in this scope
+   Queue<Node*> q = new Queue;
+                ^
+..\src\hw411_binarytree.hpp:103:24: error: expected type-specifier before 'Queue'
+   Queue<Node*> q = new Queue;
+                        ^
+..\src\hw411_binarytree.hpp:103:24: error: expected ';' before 'Queue'
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:260:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:288:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:40:30 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:103:3: error: 'Queue' was not declared in this scope
+   Queue<Node*> q = new Queue();
+   ^
+..\src\hw411_binarytree.hpp:103:13: error: expected primary-expression before '*' token
+   Queue<Node*> q = new Queue();
+             ^
+..\src\hw411_binarytree.hpp:103:14: error: expected primary-expression before '>' token
+   Queue<Node*> q = new Queue();
+              ^
+..\src\hw411_binarytree.hpp:103:16: error: 'q' was not declared in this scope
+   Queue<Node*> q = new Queue();
+                ^
+..\src\hw411_binarytree.hpp:103:24: error: expected type-specifier before 'Queue'
+   Queue<Node*> q = new Queue();
+                        ^
+..\src\hw411_binarytree.hpp:103:24: error: expected ';' before 'Queue'
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:260:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:288:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:41:23 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:103:24: error: expected type-specifier before 'Queue'
+   queue<Node*> q = new Queue();
+                        ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:21:   required from 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:73:42:   required from here
+..\src\hw411_binarytree.hpp:109:4: error: invalid use of void expression
+    output.push_back(q.pop());
+    ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:260:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:288:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:42:25 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:102:16: error: template argument 1 is invalid
+   queue<Node* n> q = new Queue();
+                ^
+..\src\hw411_binarytree.hpp:102:16: error: template argument 2 is invalid
+..\src\hw411_binarytree.hpp:102:20: error: invalid type in declaration before '=' token
+   queue<Node* n> q = new Queue();
+                    ^
+..\src\hw411_binarytree.hpp:102:26: error: expected type-specifier before 'Queue'
+   queue<Node* n> q = new Queue();
+                          ^
+..\src\hw411_binarytree.hpp:104:6: error: request for member 'push' in 'q', which is of non-class type 'int'
+    q.push(pos);
+      ^
+..\src\hw411_binarytree.hpp:106:13: error: request for member 'empty' in 'q', which is of non-class type 'int'
+   while (!q.empty()) {
+             ^
+..\src\hw411_binarytree.hpp:107:24: error: request for member 'front' in 'q', which is of non-class type 'int'
+    Node* temp_node = q.front();
+                        ^
+..\src\hw411_binarytree.hpp:108:23: error: request for member 'pop' in 'q', which is of non-class type 'int'
+    output.push_back(q.pop());
+                       ^
+..\src\hw411_binarytree.hpp:110:7: error: request for member 'push' in 'q', which is of non-class type 'int'
+     q.push(temp_node->left);
+       ^
+..\src\hw411_binarytree.hpp:113:7: error: request for member 'push' in 'q', which is of non-class type 'int'
+     q.push(temp_node->right);
+       ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:220:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:259:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:287:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:42:44 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:102:24: error: expected type-specifier before 'Queue'
+   queue<Node*> q = new Queue();
+                        ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:21:   required from 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:73:42:   required from here
+..\src\hw411_binarytree.hpp:108:4: error: invalid use of void expression
+    output.push_back(q.pop());
+    ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:220:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:259:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:287:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:43:04 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:102:24: error: expected type-specifier before 'Queue'
+   queue<Node*> q = new Queue();
+                        ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:21:   required from 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:73:42:   required from here
+..\src\hw411_binarytree.hpp:108:28: error: void value not ignored as it ought to be
+    output.push_back(q.pop()->data);
+                            ^
+..\src\hw411_binarytree.hpp:108:28: error: base operand of '->' is not a pointer
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:220:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:259:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:287:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:43:36 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:102:24: error: expected type-specifier before 'Queue'
+   queue<Node*> q = new Queue();
+                        ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:79:21:   required from 'std::vector<_RealType> gvsu::BinaryTree<Z>::levelOrder() const [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:73:42:   required from here
+..\src\hw411_binarytree.hpp:108:22: error: void value not ignored as it ought to be
+    Node* pop = q.pop();
+                      ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:260:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:288:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:45:03 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In member function 'void gvsu::BinaryTree<Z>::level(std::vector<_RealType>&, gvsu::BinaryTree<Z>::Node*) const':
+..\src\hw411_binarytree.hpp:102:24: error: expected type-specifier before 'Queue'
+   queue<Node*> q = new Queue();
+                        ^
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:260:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:288:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+23:45:19 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:260:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:288:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4
+23:46:48 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:222:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:261:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:289:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+23:49:22 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:222:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:256:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp:263:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:291:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+23:53:49 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:221:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:74:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:45:18:   required from here
+..\src\hw411_binarytree.hpp:252:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp:258:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+..\src\hw411_binarytree.hpp: In member function 'gvsu::BinaryTree<Z>::Node* gvsu::BinaryTree<Z>::removeHelper(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, int) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:286:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+g++ -o HW4.exe "src\\hw411_test.o" 

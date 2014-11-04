@@ -5,6 +5,7 @@
 #define CS263_BinaryTree
 #include <stdexcept>
 #include <ostream>
+#include <queue>
 using namespace std;
 namespace gvsu {
 template<typename Z>
@@ -75,8 +76,7 @@ public:
 
 	vector<Z> levelOrder() const {
 		vector<Z> output;
-		//level(output, root);
-		//FAIL("I have to complete Question 4.40 by invoking a private function");
+		level(output, root);
 		return output;
 	}
 
@@ -98,26 +98,23 @@ public:
 
 private:
 
-	/* TODO: add as many as private functions as you wish */
-	/*void level(vector<Z>& output, Node* pos) const {
-	 queue<Node*> element;
-	 if (pos) {
-	 element.push(root);
-	 cout << pos->data << " ";
-	 }
-	 while (!element.empty()) {
-	 Node* temp_node = element.front();
-	 element.pop();
-	 if (temp_node->left) {
-	 element.push(temp_node->left);
-	 cout << temp_node->left->data << " ";
-	 }
-	 if (temp_node->right) {
-	 element.push(temp_node->right);
-	 cout << temp_node->right->data << " ";
-	 }
-	 }
-	 }*/
+	void level(vector<Z>& output, Node* pos) const {
+		queue<Node*> q; // = new Queue();
+		if (pos) {
+			q.push(pos);
+		}
+		while (!q.empty()) {
+			Node* temp_node = q.front();
+			Node* pop = q.front();
+			output.push_back(pop->data);
+			if (temp_node->left) {
+				q.push(temp_node->left);
+			}
+			if (temp_node->right) {
+				q.push(temp_node->right);
+			}
+		}
+	}
 
 	/* Recursive helper method to count the number of nodes */
 	int numberNodes(Node* pos, int count) const {
@@ -228,7 +225,6 @@ private:
 		if (pos) {
 			if (pos->data == key) {
 				if (pos->left != nullptr && pos->right != nullptr) { //Node has 2 children
-					cout << "Here Both" << endl;
 					Node* temp = pos;
 					pos = removeHelper(pos->left, pos->left, 1);
 					if (pos != temp->left) //Update the replacement nodes left pointer
@@ -241,22 +237,21 @@ private:
 						prev->right = pos;
 					delete temp;
 				} else if (pos->left != nullptr) { //If it has a sub-tree to the left, pull that up.
-					cout << "Here Left" << endl;
-					/*if (prev->left == pos)
-					 prev->left = pos->left;
-					 else if (prev->right == pos)
-					 prev->right = pos->left;
-					 delete pos;*/
+					if (prev->left == pos)
+						prev->left = pos->left;
+					else if (prev->right == pos)
+						prev->right = pos->left;
+					delete pos;
 					/*Node* temp = pos;
-					pos = pos->left;
-					delete temp;*/
+					 pos = pos->left;
+					 delete temp;*/
 				} else if (pos->right != nullptr) { //If it has a sub-tree to the right, pull that up
-					cout << "Here Right" << endl;
-					Node* temp = pos;
-					pos = pos->right;
-					delete temp;
+					if (prev->left == pos)
+						prev->left = nullptr;
+					else if (prev->right == pos)
+						prev->right == nullptr;
+					delete pos;
 				} else { //If the Node is a leaf
-					cout << "Here" << endl;
 					if (prev->left == pos)
 						prev->left = nullptr;
 					else if (prev->right == pos)

@@ -230,15 +230,12 @@ private:
 					 if (l > r) {*/
 					Node* temp = pos;
 					pos = removeHelper(pos->left, pos, 1);
-					//cout << pos->data << "  " << temp->right->data << "  "
-					//		<< temp->left->data << "  " << temp->data << endl;
+					cout << pos->data << "  " << temp->right->data << "  "
+							<< temp->left->data << "  " << temp->data << endl;
 					if (pos != temp->left)
 						pos->left = temp->left;
 					pos->right = temp->right;
-					if (prev->left == temp)
-						prev->left = pos;
-					if (prev->right == temp)
-						prev->right = pos;
+					prev->left = pos;
 					delete temp;
 					/*} else if (r > l) {
 					 Node* temp = pos;
@@ -269,8 +266,8 @@ private:
 					remove(pos->left, pos, key);
 			}
 		}
-		//cout << "End of Remove: " << pos->data << " Left: " << pos->left->data
-			//	<< " Right: " << (pos->right)->data << "Prev Left: " << prev->left << endl;
+		cout << "End of Remove: " << pos->data << " Left: " << pos->left->data
+				<< " Right: " << (pos->right)->data << endl;
 
 	}
 

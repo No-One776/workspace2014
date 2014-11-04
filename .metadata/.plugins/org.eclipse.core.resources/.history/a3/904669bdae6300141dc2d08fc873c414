@@ -43,8 +43,6 @@ TEST_CASE_METHOD (TreeTest, "insert should not accept duplicate") {
 TEST_CASE_METHOD (TreeTest, "remove") {
 	//cout << items << endl;
 	for (auto p = refData.begin(); p != refData.end(); ++p) {
-
-
 		cout << "Remove Item: " << *p << endl;
 		items.remove(*p);
 		//cout << "Check False after Remove: " << items << endl;

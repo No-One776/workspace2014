@@ -280,3 +280,1165 @@ g++ -o HW4.exe "src\\hw411_test.o"
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
 g++ -o HW4.exe "src\\hw411_test.o" 
+18:07:19 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:09:33 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:09:56 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:11:07 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:11:29 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4
+18:15:34 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:17:03 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:17:28 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:18:57 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*, gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:19:20 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:25:14 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:27:11 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:28:53 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:30:48 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:258:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:36:13 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:36:46 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:38:29 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:41:04 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:234:21: error: no match for 'operator!=' (operand types are 'std::basic_string<char>' and 'gvsu::BinaryTree<std::basic_string<char> >::Node*')
+       if (pos->data != temp->left)
+                     ^
+..\src\hw411_binarytree.hpp:234:21: note: candidates are:
+In file included from c:\mingw\include\ole2.h:9:0,
+                 from c:\mingw\include\windows.h:114,
+                 from ..\src\catch.hpp:5943,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\include\objbase.h:80:13: note: BOOL operator!=(const GUID&, const GUID&)
+ inline BOOL operator!=(const GUID& g1, const GUID& g2)
+             ^
+c:\mingw\include\objbase.h:80:13: note:   no known conversion for argument 1 from 'std::basic_string<char>' to 'const GUID& {aka const _GUID&}'
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\map:62:0,
+                 from ..\src\catch.hpp:3322,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multimap.h:887:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multimap.h:887:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Alloc>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\map:61:0,
+                 from ..\src\catch.hpp:3322,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_map.h:985:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_map.h:985:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::map<_Key, _Tp, _Compare, _Alloc>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:62:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multiset.h:761:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator!=(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_multiset.h:761:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::multiset<_Key, _Compare, _Alloc>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:61:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_set.h:776:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator!=(const set<_Key, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_set.h:776:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::set<_Key, _Compare, _Alloc>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:60:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:924:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator!=(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:924:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\set:60:0,
+                 from ..\src\catch.hpp:2427,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:316:5: note: template<class _Val> bool std::operator!=(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator!=(const _Rb_tree_iterator<_Val>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_tree.h:316:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::_Rb_tree_iterator<_Tp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iterator:66:0,
+                 from ..\src\catch.hpp:1744,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stream_iterator.h:137:5: note: template<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator!=(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)
+     operator!=(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stream_iterator.h:137:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:354:5: note: template<class _Tp> bool std::operator!=(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator!=(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:354:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:349:5: note: template<class _Tp> bool std::operator!=(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator!=(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:349:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::shared_ptr<_Tp1>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:343:5: note: template<class _Tp1, class _Tp2> bool std::operator!=(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator!=(const shared_ptr<_Tp1>& __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:343:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::shared_ptr<_Tp1>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1085:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator!=(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1085:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1080:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator!=(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1080:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:82,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1074:5: note: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator!=(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\shared_ptr_base.h:1074:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::__shared_ptr<_Tp1, _Lp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:81:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:517:5: note: template<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:517:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:81:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:512:5: note: template<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:512:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\memory:81:0,
+                 from ..\src\catch.hpp:407,
+                 from ..\src\hw411_test.cpp:12:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:506:5: note: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\unique_ptr.h:506:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_facets.h:48:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_ios.h:37,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from ..\src\hw411_test.cpp:6:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2558:5: note: template<class _Res, class ... _Args> bool std::operator!=(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)
+     operator!=(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2558:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   cannot convert 'pos->gvsu::BinaryTree<std::basic_string<char> >::Node::data' (type 'std::basic_string<char>') to type 'std::nullptr_t'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2552:5: note: template<class _Res, class ... _Args> bool std::operator!=(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)
+     operator!=(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:2552:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::function<_Res(_ArgTypes ...)>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:55:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\tuple:833:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator!=(const tuple<_TElements...>& __t,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\tuple:833:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::tuple<_Elements ...>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\tuple:39:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\functional:55,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:66,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\array:233:5: note: template<class _Tp, unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\array:233:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::array<_Tp, _Nm>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:6005:5: note: template<class _RealType> bool std::operator!=(const std::piecewise_linear_distribution<_RealType>&, const std::piecewise_linear_distribution<_RealType>&)
+     operator!=(const std::piecewise_linear_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:6005:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::piecewise_linear_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5735:5: note: template<class _RealType> bool std::operator!=(const std::piecewise_constant_distribution<_RealType>&, const std::piecewise_constant_distribution<_RealType>&)
+     operator!=(const std::piecewise_constant_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5735:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::piecewise_constant_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5468:5: note: template<class _IntType> bool std::operator!=(const std::discrete_distribution<_IntType>&, const std::discrete_distribution<_IntType>&)
+     operator!=(const std::discrete_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5468:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::discrete_distribution<_IntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5208:5: note: template<class _RealType> bool std::operator!=(const std::extreme_value_distribution<_RealType>&, const std::extreme_value_distribution<_RealType>&)
+     operator!=(const std::extreme_value_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5208:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::extreme_value_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5005:5: note: template<class _RealType> bool std::operator!=(const std::weibull_distribution<_RealType>&, const std::weibull_distribution<_RealType>&)
+     operator!=(const std::weibull_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:5005:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::weibull_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4802:5: note: template<class _RealType> bool std::operator!=(const std::exponential_distribution<_RealType>&, const std::exponential_distribution<_RealType>&)
+     operator!=(const std::exponential_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4802:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::exponential_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4624:5: note: template<class _IntType> bool std::operator!=(const std::poisson_distribution<_IntType>&, const std::poisson_distribution<_IntType>&)
+     operator!=(const std::poisson_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4624:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::poisson_distribution<_IntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4408:5: note: template<class _IntType> bool std::operator!=(const std::negative_binomial_distribution<_IntType>&, const std::negative_binomial_distribution<_IntType>&)
+     operator!=(const std::negative_binomial_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4408:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::negative_binomial_distribution<_IntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4163:5: note: template<class _IntType> bool std::operator!=(const std::geometric_distribution<_IntType>&, const std::geometric_distribution<_IntType>&)
+     operator!=(const std::geometric_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:4163:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::geometric_distribution<_IntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3994:5: note: template<class _IntType> bool std::operator!=(const std::binomial_distribution<_IntType>&, const std::binomial_distribution<_IntType>&)
+     operator!=(const std::binomial_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3994:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::binomial_distribution<_IntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3729:3: note: bool std::operator!=(const std::bernoulli_distribution&, const std::bernoulli_distribution&)
+   operator!=(const std::bernoulli_distribution& __d1,
+   ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3729:3: note:   no known conversion for argument 1 from 'std::basic_string<char>' to 'const std::bernoulli_distribution&'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3553:5: note: template<class _RealType> bool std::operator!=(const std::student_t_distribution<_RealType>&, const std::student_t_distribution<_RealType>&)
+     operator!=(const std::student_t_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3553:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::student_t_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3340:5: note: template<class _RealType> bool std::operator!=(const std::fisher_f_distribution<_RealType>&, const std::fisher_f_distribution<_RealType>&)
+     operator!=(const std::fisher_f_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3340:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::fisher_f_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3084:5: note: template<class _RealType> bool std::operator!=(const std::cauchy_distribution<_RealType>&, const std::cauchy_distribution<_RealType>&)
+     operator!=(const std::cauchy_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:3084:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::cauchy_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2917:5: note: template<class _RealType> bool std::operator!=(const std::chi_squared_distribution<_RealType>&, const std::chi_squared_distribution<_RealType>&)
+     operator!=(const std::chi_squared_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2917:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::chi_squared_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2707:6: note: template<class _RealType> bool std::operator!=(const std::gamma_distribution<_RealType>&, const std::gamma_distribution<_RealType>&)
+      operator!=(const std::gamma_distribution<_RealType>& __d1,
+      ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2707:6: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::gamma_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2487:5: note: template<class _RealType> bool std::operator!=(const std::lognormal_distribution<_RealType>&, const std::lognormal_distribution<_RealType>&)
+     operator!=(const std::lognormal_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2487:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::lognormal_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2283:5: note: template<class _RealType> bool std::operator!=(const std::normal_distribution<_RealType>&, const std::normal_distribution<_RealType>&)
+     operator!=(const std::normal_distribution<_RealType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2283:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::normal_distribution<_RealType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2034:5: note: template<class _IntType> bool std::operator!=(const std::uniform_real_distribution<_IntType>&, const std::uniform_real_distribution<_IntType>&)
+     operator!=(const std::uniform_real_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:2034:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::uniform_real_distribution<_IntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1825:5: note: template<class _IntType> bool std::operator!=(const std::uniform_int_distribution<_IntType>&, const std::uniform_int_distribution<_IntType>&)
+     operator!=(const std::uniform_int_distribution<_IntType>& __d1,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1825:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::uniform_int_distribution<_IntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1510:5: note: template<class _RandomNumberEngine, unsigned int __k> bool std::operator!=(const std::shuffle_order_engine<_RandomNumberEngine, __k>&, const std::shuffle_order_engine<_RandomNumberEngine, __k>&)
+     operator!=(const std::shuffle_order_engine<_RandomNumberEngine,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1510:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::shuffle_order_engine<_RandomNumberEngine, __k>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1258:5: note: template<class _RandomNumberEngine, unsigned int __w, class _UIntType> bool std::operator!=(const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&, const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&)
+     operator!=(const std::independent_bits_engine<_RandomNumberEngine, __w,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1258:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1062:5: note: template<class _RandomNumberEngine, unsigned int __p, unsigned int __r> bool std::operator!=(const std::discard_block_engine<_RandomNumberEngine, __p, __r>&, const std::discard_block_engine<_RandomNumberEngine, __p, __r>&)
+     operator!=(const std::discard_block_engine<_RandomNumberEngine, __p,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:1062:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::discard_block_engine<_RandomNumberEngine, __p, __r>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:840:5: note: template<class _UIntType, unsigned int __w, unsigned int __s, unsigned int __r> bool std::operator!=(const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&, const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&)
+     operator!=(const std::subtract_with_carry_engine<_UIntType, __w,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:840:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:641:5: note: template<class _UIntType, unsigned int __w, unsigned int __n, unsigned int __m, unsigned int __r, _UIntType __a, unsigned int __u, _UIntType __d, unsigned int __s, _UIntType __b, unsigned int __t, _UIntType __c, unsigned int __l, _UIntType __f> bool std::operator!=(const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&, const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)
+     operator!=(const std::mersenne_twister_engine<_UIntType, __w, __n, __m,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:641:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:409:5: note: template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m> bool std::operator!=(const std::linear_congruential_engine<_UIntType, __a, __c, __m>&, const std::linear_congruential_engine<_UIntType, __a, __c, __m>&)
+     operator!=(const std::linear_congruential_engine<_UIntType, __a,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:409:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::linear_congruential_engine<_UIntType, __a, __c, __m>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\vector:64:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\random.h:34,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:50,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1427:5: note: template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_vector.h:1427:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::vector<_Tp, _Alloc>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   deduced conflicting types for parameter 'const _CharT' ('char' and 'gvsu::BinaryTree<std::basic_string<char> >::Node')
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   mismatched types 'const _CharT*' and 'std::basic_string<char>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   mismatched types 'const std::basic_string<_CharT, _Traits, _Alloc>' and 'gvsu::BinaryTree<std::basic_string<char> >::Node*'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:41:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_Tp>&, const std::allocator<_Tp>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:143:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::allocator<_Tp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:41:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_Tp>&, const std::allocator<_Tp>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:138:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::allocator<_Tp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\char_traits.h:40:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\postypes.h:221:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::fpos<_StateT>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::move_iterator<_Iterator>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::move_iterator<_Iterator>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::reverse_iterator<_Iterator>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::reverse_iterator<_Iterator>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\utility:70:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:60,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const std::pair<_T1, _T2>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\mingw32\bits\c++allocator.h:33:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\allocator.h:46,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\random:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algo.h:65,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:62,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\new_allocator.h:144:5: note: template<class _Tp> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator!=(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ext\new_allocator.h:144:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const __gnu_cxx::new_allocator<_Tp>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:823:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:823:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+       if (pos->data != temp->left)
+                     ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\algorithm:61,
+                 from ..\src\hw411_test.cpp:5:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:817:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\stl_iterator.h:817:5: note:   template argument deduction/substitution failed:
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp:234:21: note:   'std::basic_string<char>' is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+       if (pos->data != temp->left)
+                     ^
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+18:41:36 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:48:05 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:49:24 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:52:26 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+Info: Nothing to build for HW4
+18:57:04 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:57:44 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+18:58:11 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:00:59 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:01:26 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:02:12 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:06:54 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:257:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:09:39 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:258:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:12:39 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:258:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:16:23 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:259:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:18:20 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:262:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:19:12 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:262:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 
+19:23:11 **** Incremental Build of configuration Debug for project HW4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\hw411_test.o" "..\\src\\hw411_test.cpp" 
+In file included from ..\src\hw411_test.cpp:14:0:
+..\src\hw411_binarytree.hpp: In instantiation of 'void gvsu::BinaryTree<Z>::remove(gvsu::BinaryTree<Z>::Node*&, gvsu::BinaryTree<Z>::Node*, const Z&) const [with Z = std::basic_string<char>]':
+..\src\hw411_binarytree.hpp:212:23:   required from 'void gvsu::BinaryTree<Z>::remove_from(gvsu::BinaryTree<Z>::Node*&, const Z&) const [with Z = std::basic_string<char>]'
+..\src\hw411_binarytree.hpp:73:24:   required from 'void gvsu::BinaryTree<Z>::remove(const Z&) [with Z = std::basic_string<char>]'
+..\src\hw411_test.cpp:47:18:   required from here
+..\src\hw411_binarytree.hpp:262:7: warning: statement has no effect [-Wunused-value]
+       prev->right == nullptr;
+       ^
+g++ -o HW4.exe "src\\hw411_test.o" 

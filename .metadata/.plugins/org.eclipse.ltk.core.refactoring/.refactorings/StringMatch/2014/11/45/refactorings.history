@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;StringMatch/src/StringMatch.cpp&apos; to &apos;stringmatch.cpp&apos;" description="Rename resource &apos;StringMatch.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/StringMatch.cpp" name="stringmatch.cpp" stamp="1415222783167" updateReferences="true"/>
+</session>

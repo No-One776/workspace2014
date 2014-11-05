@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.dltk.ruby.testing.launchConfig">
+<stringAttribute key="mainScript" value="SimpleDateTest.rb"/>
+<stringAttribute key="nature" value="org.eclipse.dltk.ruby.core.nature"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Project5/SimpleDateTest.rb"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.debug.ui.ATTR_CONSOLE_OUTPUT_ON" value="true"/>
+<stringAttribute key="org.eclipse.dltk.testing.engineId" value="org.eclipse.dltk.ruby.testing.testunit"/>
+<stringAttribute key="project" value="Project5"/>
+</launchConfiguration>

@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\rohrj\workspace\workspace2014"/>
 			<item value="C:\Users\Justin\workspace\workspace2014"/>
 			<item value="C:\Users\rohrj\workspace"/>
 		</list>

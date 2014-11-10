@@ -1,0 +1,11 @@
+16:43:33 **** Incremental Build of configuration Debug for project StringMatch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+..\src\stringmatch.cpp: In function 'long int hashOf(const string&)':
+..\src\stringmatch.cpp:19:9: warning: 'hash' is used uninitialized in this function [-Wuninitialized]
+  return hash;
+         ^
+g++ -o StringMatch.exe "src\\stringmatch.o" "src\\matchtest.o" 
+
+16:43:37 Build Finished (took 4s.39ms)
+

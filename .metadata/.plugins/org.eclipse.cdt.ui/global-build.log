@@ -2370,3 +2370,24 @@ In file included from ..\src\hw411_test.cpp:14:0:
   }
   ^
 g++ -o HW4.exe "src\\hw411_test.o" 
+16:37:36 **** Rebuild of configuration Debug for project StringMatch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\matchtest.o" "..\\src\\matchtest.cpp" 
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+..\src\stringmatch.cpp: In function 'int findFirst(const string&, const string&)':
+..\src\stringmatch.cpp:24:7: warning: unused variable 'hash1' [-Wunused-variable]
+  long hash1 = hashOf(pattern);
+       ^
+..\src\stringmatch.cpp: In function 'long int hashOf(const string&)':
+..\src\stringmatch.cpp:19:9: warning: 'hash' is used uninitialized in this function [-Wuninitialized]
+  return hash;
+         ^
+g++ -o StringMatch.exe "src\\stringmatch.o" "src\\matchtest.o" 
+16:43:33 **** Incremental Build of configuration Debug for project StringMatch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+..\src\stringmatch.cpp: In function 'long int hashOf(const string&)':
+..\src\stringmatch.cpp:19:9: warning: 'hash' is used uninitialized in this function [-Wuninitialized]
+  return hash;
+         ^
+g++ -o StringMatch.exe "src\\stringmatch.o" "src\\matchtest.o" 

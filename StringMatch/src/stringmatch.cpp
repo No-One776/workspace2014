@@ -8,32 +8,31 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
 const int PRIME_BASE = 53;  // 37 in the textbook
 long hashOf(const string& s) {
-	long hash = 0;
-	/* Use a polynomial with a prime number (Refer to Section 5.2,
-	 * Figure 5.4)
-	 */
+	long hash;
 	for (char c : s)
-		hash = 37 * hash + c;
+		hash = PRIME_BASE * hash + c;
 	return hash;
 }
 
 int findFirst(const string& pattern, const string& input) {
-	/* TODO: Complete this function as described in Question 5.15 */
-	long hash1 = hashOf(pattern);
-	long hash2 = hashOf(input);
+	long matchHash = hashOf(pattern);
 	int length = pattern.length();
-	int inputEnd = input.length();
-	for (int x = 0; x < inputEnd - length; x++) {
-		if (hash1 == hash2) //TODO: Actually figure out how to implement the right compare
+	int end = input.length() - length;
+	//if (end < 0 || length < 0)
+	//	return -1;
+	long hash2 = hashOf(input.substr(0, length));
+	for (int x = 0; x <= end; x++) {
+		cout << matchHash << " = " << hash2 << endl;
+		if (matchHash == hash2)
 			if (pattern.compare(input.substr(x, length)) == 0)
 				return x;
+		// newHash = [Prime_base * (oldHash - (oldChar * Prime_base ^ (length-1))] + newChar
+		hash2 = (PRIME_BASE
+				* (hash2 - (input[x] * (long) pow(PRIME_BASE, length - 1))))
+				+ input[x + length];
 	}
-	/* Return the position where pattern is found within input,
-	 * or return -1 if pattern is not found in the input
-	 */
 	return -1;
 }
 

@@ -2391,3 +2391,75 @@ g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\
   return hash;
          ^
 g++ -o StringMatch.exe "src\\stringmatch.o" "src\\matchtest.o" 
+16:18:07 **** Rebuild of configuration Debug for project StringMatch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+g++: error: ..\src\stringmatch.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+Info: Nothing to build for StringMatch
+20:28:31 **** Incremental Build of configuration Debug for project StringMatch ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\matchtest.o" "..\\src\\matchtest.cpp" 
+g++ -o StringMatch.exe "src\\stringmatch.o" "src\\matchtest.o" 
+g++: error: src\stringmatch.o: No such file or directory
+20:28:48 **** Incremental Build of configuration Debug for project StringMatch ****
+Info: Internal Builder is used for build
+g++ -o StringMatch.exe "src\\stringmatch.o" "src\\matchtest.o" 
+g++: error: src\stringmatch.o: No such file or directory
+20:37:27 **** Incremental Build of configuration Debug for project StringMatch ****
+Info: Internal Builder is used for build
+g++ -o StringMatch.exe "src\\stringmatch.o" "src\\matchtest.o" 
+g++: error: src\stringmatch.o: No such file or directory
+20:39:00 **** Rebuild of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\matchtest.o" "..\\src\\matchtest.cpp" 
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+g++ -o StringMatchHW5.exe "src\\stringmatch.o" "src\\matchtest.o" 
+Info: Nothing to build for StringMatchHW5
+20:40:17 **** Incremental Build of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+..\src\stringmatch.cpp: In function 'int findFirst(const string&, const string&)':
+..\src\stringmatch.cpp:33:3: error: expected ';' before 'hash2'
+   hash2 = (PRIME_BASE * hash2) + input[x + length];
+   ^
+20:40:34 **** Incremental Build of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+g++ -o StringMatchHW5.exe "src\\stringmatch.o" "src\\matchtest.o" 
+21:30:04 **** Incremental Build of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+..\src\stringmatch.cpp: In function 'long long int hashOf(const string&)':
+..\src\stringmatch.cpp:15:8: error: cannot convert 'std::reverse_iterator<__gnu_cxx::__normal_iterator<const char*, std::basic_string<char> > >' to 'long long int' in assignment
+   hash = PRIME_BASE * hash + x;
+        ^
+21:30:15 **** Incremental Build of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+..\src\stringmatch.cpp: In function 'long long int hashOf(const string&)':
+..\src\stringmatch.cpp:15:31: error: no match for 'operator[]' (operand types are 'const string {aka const std::basic_string<char>}' and 'std::reverse_iterator<__gnu_cxx::__normal_iterator<const char*, std::basic_string<char> > >')
+   hash = PRIME_BASE * hash + s[x];
+                               ^
+..\src\stringmatch.cpp:15:31: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from ..\src\stringmatch.cpp:7:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:826:7: note: std::basic_string<_CharT, _Traits, _Alloc>::const_reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::const_reference = const char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+       operator[] (size_type __pos) const
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:826:7: note:   no known conversion for argument 1 from 'std::reverse_iterator<__gnu_cxx::__normal_iterator<const char*, std::basic_string<char> > >' to 'std::basic_string<char>::size_type {aka unsigned int}'
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:843:7: note: std::basic_string<_CharT, _Traits, _Alloc>::reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::reference = char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+       operator[](size_type __pos)
+       ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:843:7: note:   no known conversion for argument 1 from 'std::reverse_iterator<__gnu_cxx::__normal_iterator<const char*, std::basic_string<char> > >' to 'std::basic_string<char>::size_type {aka unsigned int}'
+21:30:26 **** Incremental Build of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+g++ -o StringMatchHW5.exe "src\\stringmatch.o" "src\\matchtest.o" 
+Info: Nothing to build for StringMatchHW5
+Info: Nothing to build for StringMatchHW5
+21:33:13 **** Incremental Build of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+g++ -o StringMatchHW5.exe "src\\stringmatch.o" "src\\matchtest.o" 

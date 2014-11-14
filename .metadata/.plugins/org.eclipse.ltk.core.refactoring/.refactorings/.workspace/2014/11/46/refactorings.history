@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;StringMatchHW5/src/StringMatchHW5.cpp&apos;" deleteContents="false" description="Delete resource &apos;StringMatchHW5/src/StringMatchHW5.cpp&apos;" element1="/StringMatchHW5/src/StringMatchHW5.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1415929098790"/>
+</session>

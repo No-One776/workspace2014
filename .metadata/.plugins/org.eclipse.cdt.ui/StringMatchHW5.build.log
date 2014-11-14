@@ -1,0 +1,7 @@
+21:33:13 **** Incremental Build of configuration Debug for project StringMatchHW5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -std=c++11 -c -fmessage-length=0 -o "src\\stringmatch.o" "..\\src\\stringmatch.cpp" 
+g++ -o StringMatchHW5.exe "src\\stringmatch.o" "src\\matchtest.o" 
+
+21:33:15 Build Finished (took 2s.714ms)
+

@@ -29,7 +29,7 @@ int findFirst(const string& pattern, const string& input) {
 			if (pattern.compare(input.substr(x, length)) == 0)
 				return x;
 		// newHash = [Prime_base * (oldHash - (oldChar * Prime_base ^ (length-1))] + newChar
-		hash2 = hash2 - (input[x] * (long) pow(PRIME_BASE, length - 1));
+		hash2 = hash2 - (input[x] * (long long) pow(PRIME_BASE, length - 1));
 		hash2 = (PRIME_BASE * hash2) + input[x + length];
 	}
 

@@ -70,6 +70,7 @@ class SimpleDate:
         daysElapsed = 0;
         for y in range(MIN_YEAR, self.year):
             daysElapsed += self.dayInYear(y)
+        
         daysElapsed += self.ordinalDate(self)
         return daysElapsed % 7
       

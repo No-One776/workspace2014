@@ -34,7 +34,7 @@ class SimpleDate:
     """
     def __init__(self, month, day, year):
         if  not SimpleDate.validDate(month, day, year):
-            raise argparse.ArgumentTypeError("Arguments aren't valid")
+            raise argparse.ArgumentTypeError('Argument is not a Simple Date object')
         self.month = month
         self.day = day
         self.year = year
@@ -48,7 +48,7 @@ class SimpleDate:
         yield self.year()   
     
     """
-    # Defines an ordering between this SimpleDate object and the other object.
+    # Defines an ordering between this SimpleDate object and other SimpleDate object.
     # Returns a negative, zero, or postive number depending on whether the receiver
     # is less than, equal to, or greater than the other object. If the other
     # object is not comparable then the <=> operator should return null.
@@ -63,13 +63,14 @@ class SimpleDate:
         return self.year - other.year    
    
     """
-    # Returns an integer (must be same as constants SUNDAY, MONDAY, etc.)
-    # representing the day of the week for this date.
+    # Returns an integer (must be same as constants SUNDAY, MONDAY, etc.) representing
+    # the day of the week for this date.
     """
     def dayOfWeek(self):
         daysElapsed = 0;
         for y in range(MIN_YEAR, self.year):
             daysElapsed += self.dayInYear(y)
+        
         daysElapsed += self.ordinalDate(self)
         return daysElapsed % 7
       
@@ -93,6 +94,7 @@ class SimpleDate:
         ordinalDate = DAYS_THUS_FAR[self.month] + self.day
         if self.leapYear(self) and self.month > 2:
             ordinalDate += 1
+        
         return ordinalDate
        
     """

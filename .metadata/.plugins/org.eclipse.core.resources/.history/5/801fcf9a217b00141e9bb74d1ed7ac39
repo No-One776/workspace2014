@@ -34,7 +34,7 @@ class SimpleDate:
     """
     def __init__(self, month, day, year):
         if  not SimpleDate.validDate(month, day, year):
-            raise argparse.ArgumentTypeError("Arguments aren't valid")
+            raise argparse.ArgumentTypeError('Argument is not a Simple Date object')
         self.month = month
         self.day = day
         self.year = year
@@ -70,6 +70,7 @@ class SimpleDate:
         daysElapsed = 0;
         for y in range(MIN_YEAR, self.year):
             daysElapsed += self.dayInYear(y)
+        
         daysElapsed += self.ordinalDate(self)
         return daysElapsed % 7
       

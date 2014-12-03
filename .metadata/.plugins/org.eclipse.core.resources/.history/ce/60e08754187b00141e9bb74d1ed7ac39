@@ -1,9 +1,7 @@
 #!/usr/bin/python
-"""
 # Authors: Justin Rohr & Kyle Niewiada 
 # Python Term Paper Project
-# Description: Simple Date project in Python with test case
-"""
+# Description: Simple Date project in Python
 import argparse
 from _overlapped import NULL
 
@@ -29,29 +27,29 @@ class SimpleDate:
     # Initializes the instance variables @month, @day, and @year using the values
     # of parameters.
     #
-    # Raises ArgumenttypeError exception when the following is true:
+    # Raises ArgumentError exception when the following is true:
     #     values of month, day, and year do not represent a valid date
     """
     def __init__(self, month, day, year):
         if  not SimpleDate.validDate(month, day, year):
-            raise argparse.ArgumentTypeError("Arguments aren't valid")
+            raise argparse.ArgumentTypeError('Argument is not a Simple Date object')
         self.month = month
         self.day = day
         self.year = year
-   
     """    
     # yields @month, @day, and @year values one at a time in that order
     """
     def each(self):
         yield self.month()
         yield self.day()
-        yield self.year()   
+        yield self.year()
+      
     
     """
-    # Defines an ordering between this SimpleDate object and the other object.
+    # Defines an ordering between this SimpleDate object and other SimpleDate object.
     # Returns a negative, zero, or postive number depending on whether the receiver
     # is less than, equal to, or greater than the other object. If the other
-    # object is not comparable then the <=> operator should return null.
+    # object is not comparable then the <=> operator should return nil.
     """
     def compareTo(self, other):
         if not isinstance(other, SimpleDate):
@@ -61,15 +59,15 @@ class SimpleDate:
                 return self.day - other.day
             return self.month - other.month
         return self.year - other.year    
-   
     """
-    # Returns an integer (must be same as constants SUNDAY, MONDAY, etc.)
-    # representing the day of the week for this date.
+    # Returns an integer (must be same as constants SUNDAY, MONDAY, etc.) representing
+    # the day of the week for this date.
     """
     def dayOfWeek(self):
         daysElapsed = 0;
         for y in range(MIN_YEAR, self.year):
             daysElapsed += self.dayInYear(y)
+        
         daysElapsed += self.ordinalDate(self)
         return daysElapsed % 7
       
@@ -79,6 +77,7 @@ class SimpleDate:
     def daysInYear(self):
         self.daysInYear(self.year())
       
+    
     """
     # Returns true if this date is in a leap year, false otherwise
     """
@@ -86,15 +85,16 @@ class SimpleDate:
         self.isleapYear(self.year)
     
     """
-    # Returns the number of days that have elapsed (including this day)
-    # since 1 January.
+    # Returns the number of days that have elapsed (including this day) since 1 January.
     """
     def ordinalDate(self):
         ordinalDate = DAYS_THUS_FAR[self.month] + self.day
         if self.leapYear(self) and self.month > 2:
             ordinalDate += 1
+        
         return ordinalDate
-       
+      
+    
     """
     # Returns a SimpleDate object representing the next date of this date.
     """
@@ -103,23 +103,27 @@ class SimpleDate:
             return SimpleDate(self.month, self.day+1, self.year)
         elif self.month == NUM_MONTHS:
             return SimpleDate(1, 1, self.year+1)
-        return SimpleDate(self.month+1, 1, self.year)
         
+        return SimpleDate(self.month+1, 1, self.year)
+      
+    
     """
-    # Returns a SimpleDate object representing the previous date of this date 
-    # or nil if previous date is before the MIN_YEAR (i.e.. 1753).
+    # Returns a SimpleDate object representing the previous date of this date or nil if
+    # previous date is before the MIN_YEAR (i.e.. 1753).
     """
     def prevDate(self): 
         if self.day > 1:
             return SimpleDate(self.month, self.day-1, self.year)
         elif self.month == 1:
             return SimpleDate(NUM_MONTHS, SimpleDate.daysInMonth(NUM_MONTHS, self.year), self.year - 1)
-        return SimpleDate(self.month-1, SimpleDate.daysInMonth(self.month-1, self.year), self.year)    
+        
+        return SimpleDate(self.month-1, SimpleDate.daysInMonth(self.month-1, self.year), self.year)
+      
     
     """
     # Returns a new SimpleDate object representing the date n days ago.
     # If n is negative, then return the date n days in the future.
-    # Raise ArgumentTypeError if the new date is before the minimum allowable date.
+    # Raise ArgumentError if the new date is before the minimum allowable date (1/1/1753).
     """
     def daysAgo(self, n):
         if n == 0:
@@ -132,12 +136,14 @@ class SimpleDate:
             current = SimpleDate.prevDate(current)
             if not SimpleDate.validDate(current.month, current.day, current.year):
                 raise argparse.ArgumentError("New Date Doesn't meet minimum")
-        return current     
+        
+        return current
+      
     
     """
     # Returns a new SimpleDate object representing the date n days from now.
     # If n is negative, then return the date n days in the past.
-    # Raise ArgumentTypeError if the new date is before the minimum allowable date.
+    # Raise ArgumentError if the new date is before the minimum allowable date (1/1/1753).
     """
     def daysFromNow(self, n):  
         if n < 1:
@@ -148,7 +154,8 @@ class SimpleDate:
             for i in range(0,n):
                 current = SimpleDate.nextDate(current)    
             return current
-        return self      
+        return self
+      
     
     """
     # Returns a string representation of this SimpleDate object.
@@ -157,14 +164,12 @@ class SimpleDate:
         return str(self.month) + "/" + str(self.day) + "/" + str(self.year)
     
     """
-    # Class method that returns true if the given year is a leap year,
-    # false otherwise.
+    # Class method that returns true if the given year is a leap year, false otherwise.
     """
     def isleapYear(year):  # @NoSelf
         if ((year%4==0 and year%100!=0) or year%400==0):
             return True
         return False
-   
     """
     # Class method that returns the number of days in the given year.
     """
@@ -173,7 +178,6 @@ class SimpleDate:
             return DAYS_LEAP_YEAR
         else:
             return DAYS_YEAR 
-  
     """
     # Class method that returns the number of days in a month for a given year.
     """
@@ -182,10 +186,8 @@ class SimpleDate:
             return 29
         else:    
             return DAYS_IN_MONTH[month] 
- 
     """
-    # Class method that determines if values for 
-    # month, day, and year represent a valid date.
+    # Class method that determines if values for month, day, and year represent a valid date.
     """
     def validDate(month, day, year):  # @NoSelf
         if month < 1 or month > NUM_MONTHS:
@@ -197,9 +199,7 @@ class SimpleDate:
         return True
        
 # end of SimpleDate class
-"""
-#Test Cases below to test the Simple Date classes' functions for full operation
-"""
+
 
 date = SimpleDate
 date.__init__(date, 1, 2, 2014)
